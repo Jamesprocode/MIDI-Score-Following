@@ -59,7 +59,7 @@ def resolve_entry(entry):
     value = json.loads(json.dumps(entry))
     value["annotation_path"] = str(BENCH / "data/annotations" / entry["protocol"] / (entry["song"] + ".json"))
     for item in value["midi_files"]:
-        item["path"] = str(PROJECT / "SAMBA dataset" / (entry["protocol"] + "_midi") /
+        item["path"] = str(PROJECT / "Dataset" / "SAMBA dataset" / (entry["protocol"] + "_midi") /
                            "songs" / entry["song"] / entry["take"] / item["name"])
         if not Path(item["path"]).is_file():
             raise FileNotFoundError(item["path"])

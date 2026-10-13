@@ -1,0 +1,144 @@
+{
+  "total_files_in_folder": 178561,
+  "sample": 2000,
+  "seed": 0,
+  "errors": {
+    "OSError": 17,
+    "EOFError": 17,
+    "KeySignatureError": 4,
+    "ValueError": 4
+  },
+  "funnel": [
+    [
+      "sampled",
+      2000
+    ],
+    [
+      "opens without error",
+      1958
+    ],
+    [
+      "≥30 s and ≥50 pitched notes",
+      1797
+    ],
+    [
+      "explicit, constant 4/4",
+      1182
+    ],
+    [
+      "≥90% of note starts on 16th/triplet grid",
+      499
+    ],
+    [
+      "snare not on beats 1 & 3 (not shifted)",
+      475
+    ]
+  ],
+  "duration_min_median": 3.26,
+  "parts_median": 8.0,
+  "has_drums": 0.685,
+  "has_piano_family": 0.697,
+  "family_share": {
+    "piano": 0.697,
+    "bass": 0.635,
+    "guitar": 0.566,
+    "ensemble": 0.485,
+    "reed": 0.245,
+    "brass": 0.243,
+    "pipe": 0.203,
+    "organ": 0.187,
+    "synth_pad": 0.153,
+    "synth_lead": 0.145,
+    "chrom_perc": 0.144,
+    "strings": 0.142,
+    "synth_fx": 0.079,
+    "percussive": 0.077,
+    "ethnic": 0.06,
+    "sound_fx": 0.046
+  },
+  "has_lyrics": 0.132,
+  "time_signature": {
+    "none": 0.095,
+    "constant_4_4": 0.653,
+    "other_constant": 0.113,
+    "changes": 0.139,
+    "top": [
+      [
+        "4/4",
+        1501
+      ],
+      [
+        "2/4",
+        196
+      ],
+      [
+        "3/4",
+        185
+      ],
+      [
+        "1/4",
+        65
+      ],
+      [
+        "6/8",
+        62
+      ],
+      [
+        "1/8",
+        37
+      ]
+    ]
+  },
+  "tempo": {
+    "single_tempo": 0.728,
+    "exactly_120_only": 0.127,
+    "first_bpm_quartiles": [
+      75.0,
+      92.0,
+      120.0,
+      132.0,
+      160.0
+    ]
+  },
+  "on_grid_deciles": [
+    0.263,
+    0.482,
+    0.666,
+    0.79,
+    0.884,
+    0.948,
+    0.987,
+    1.0,
+    1.0
+  ],
+  "on_grid_share_ge_0.9": 0.476,
+  "on_grid_share_lt_0.5": 0.206,
+  "drum_check_among_constant_44": {
+    "unclear": 103,
+    "too_few_snares": 471,
+    "backbeat_2_4": 642,
+    "on_1_3_shifted": 63
+  },
+  "ticks_per_beat_top": [
+    [
+      384,
+      411
+    ],
+    [
+      120,
+      377
+    ],
+    [
+      480,
+      351
+    ],
+    [
+      96,
+      292
+    ],
+    [
+      192,
+      262
+    ]
+  ]
+}

@@ -22,6 +22,9 @@ experiments/ground_truth_player/data.json
 experiments/ground_truth_player/green_dolphin.json
 experiments/ground_truth_player/samba_de_orfeu.json
 
+# Per-file Lakh survey rows (local paths); regenerate with lakh_survey.py.
+experiments/lakh_survey/results/rows.jsonl
+
 # Generated result tables over 1 MB. Kept on disk; regenerate with the study scripts.
 experiments/harmony_pilot/results_published_matchers/predictions.csv
 experiments/harmony_pilot/results/predictions_primary.csv

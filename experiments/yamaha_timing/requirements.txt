@@ -1,3 +1,5 @@
 # Verified locally with Python 3.10, torch 2.10.0, and numpy 1.26.4.
 torch>=2.0
 numpy>=1.24
+mido>=1.2  # prepare_lakh.py only; training reads the packed .npz files
+wandb>=0.17  # training curves (online on ICE; WANDB_MODE=disabled for local smoke tests)

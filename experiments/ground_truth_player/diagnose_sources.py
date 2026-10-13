@@ -49,7 +49,7 @@ def diagnostic(performance_id, manifest):
     annotation = BENCHMARK / "data/annotations" / protocol / f"{song}.json"
     entry["annotation_path"] = str(annotation)
     for item in entry["midi_files"]:
-        path = PROJECT / "SAMBA dataset" / f"{protocol}_midi" / "songs" / song / take / item["name"]
+        path = PROJECT / "Dataset" / "SAMBA dataset" / f"{protocol}_midi" / "songs" / song / take / item["name"]
         assert sha(path) == item["sha256"]
         item["path"] = str(path)
     data = run_study.benchmark.common.load_performance(entry)

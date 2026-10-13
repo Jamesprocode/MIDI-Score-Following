@@ -44,10 +44,11 @@ class ConfigTests(FrameworkTestCase):
         self.assertEqual(config.midi_low, 21)
         self.assertEqual(config.channels, 512)
         self.assertEqual(config.bar_bins, 32)
-        self.assertEqual(config.context_frames, 120)
-        self.assertEqual(config.context_seconds, 6.0)
-        # The explicit rolling context is not silently mislabeled as the RF.
-        self.assertEqual(config.receptive_field_frames, 255)
+        self.assertEqual(config.dropout, 0.1)
+        # Seven kernel-2 layers, dilations 1..64: 6.4 s, the paper's "6 seconds".
+        self.assertEqual(config.receptive_field_frames, 128)
+        self.assertEqual(config.context_frames, config.receptive_field_frames)
+        self.assertEqual(config.context_seconds, 6.4)
 
     def test_json_round_trip(self):
         original = tiny_config()
@@ -62,6 +63,7 @@ class ConfigTests(FrameworkTestCase):
             {"bar_bins": 0}, {"midi_low": -1}, {"midi_low": 80},
             {"dilations": ()}, {"dilations": (1, 0)},
             {"context_frames": 3.5}, {"frame_rate": True},
+            {"dropout": 1.0}, {"dropout": -0.1}, {"dropout": True},
         ]
         for kwargs in cases:
             with self.subTest(kwargs=kwargs), self.assertRaises(ValueError):
@@ -159,6 +161,31 @@ class StreamingTests(FrameworkTestCase):
             self.assertEqual(record["context_ready"], index + 1 >= config.context_frames)
             self.assertEqual(record["timestamp_s"], index / config.frame_rate)
             json.dumps(record, allow_nan=False)
+
+    def test_window_equal_to_receptive_field_matches_whole_sequence_pass(self):
+        # Training runs whole songs in one causal pass; live use runs a rolling
+        # window over silent (zero) startup frames. They agree exactly when the
+        # window equals the receptive field and the whole sequence is preceded
+        # by RF-1 silent frames: per-layer zero padding is not the same as
+        # zero input, so training data carries that silent lead-in.
+        config = tiny_config()
+        config = tiny_config(context_frames=config.receptive_field_frames)
+        lead = config.receptive_field_frames - 1
+        model = YamahaTimingTCN(config).eval()
+        tracker = StreamingTimingTracker(model)
+        frames = (torch.rand(40, 88) < 0.1).float()
+        hints = [None if index % 7 == 3 else 100.0 + index for index in range(40)]
+        padded = torch.cat((torch.zeros(lead, 88), frames)).unsqueeze(0)
+        with torch.no_grad():
+            whole = model(padded,
+                          bpm_hint=torch.tensor([[120.0] * lead + [value or 120.0 for value in hints]]),
+                          hint_valid=torch.tensor([[False] * lead + [value is not None for value in hints]]))
+        for index, frame in enumerate(frames):
+            record = tracker.push_frame(frame, index / config.frame_rate, bpm_hint=hints[index])
+            for name in ("bar", "beat"):
+                torch.testing.assert_close(torch.tensor(record[f"{name}_phase_probabilities"]),
+                                           whole[f"{name}_logits"][0, lead + index].softmax(-1),
+                                           atol=1e-5, rtol=1e-5)
 
     def test_startup_silence_and_reset(self):
         config = tiny_config(context_frames=4)

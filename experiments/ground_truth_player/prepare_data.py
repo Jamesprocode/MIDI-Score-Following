@@ -191,7 +191,7 @@ def build(spec):
                                if e["performance_id"] == spec["id"]))
     protocol, song, take = spec["id"].split("/")
     annotation_path = BENCHMARK / "data/annotations" / protocol / f"{song}.json"
-    midi_dir = PROJECT / "SAMBA dataset" / f"{protocol}_midi" / "songs" / song / take
+    midi_dir = PROJECT / "Dataset" / "SAMBA dataset" / f"{protocol}_midi" / "songs" / song / take
     entry["annotation_path"] = str(annotation_path)
     for item in entry["midi_files"]:
         item["path"] = str(midi_dir / item["name"])

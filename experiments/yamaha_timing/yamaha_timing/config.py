@@ -1,11 +1,17 @@
 """Configuration for a documented Maezawa-inspired timing reconstruction.
 
-The paper states a 20 FPS piano roll, seven residual TCN stages, a
-512-dimensional feature, and 32 within-measure phase classes. Kernel size,
-head width, causal padding, and beat-phase class count are reconstruction
-choices. A six-second rolling input is distinct from the theoretical TCN
-receptive field: the default two kernel-2 convolutions per stage see at most
-255 frames if a longer input is supplied.
+The paper states a 20 FPS piano roll, a six-second receptive field, seven
+residual TCN layers of "two layers of 1d convolution with dilation 2^i", ELU,
+a 512-dimensional feature, and 32 within-measure phase classes.
+
+Each layer follows the TCN layer of the two TCN papers Maezawa cites (Davies &
+Boeck 2019; Oyama et al. 2021, Fig. 3): one dilated convolution, ELU, dropout,
+and a 1x1 convolution, with a 1x1 convolution on the residual path. With
+kernel size 2 and dilations 1..64 the receptive field is 128 frames (6.4 s),
+which matches the paper's six seconds; the cited papers' kernel size 5 would
+give 25 s. Dropout 0.1 follows both cited papers. Head width and the
+beat-phase class count remain reconstruction choices. The rolling streaming
+window equals the receptive field, so streaming and whole-sequence outputs agree.
 """
 
 from dataclasses import asdict, dataclass
@@ -21,13 +27,14 @@ class TimingConfig:
     frame_rate: float = 20
     input_pitches: int = 88
     midi_low: int = 21
-    context_frames: int = 120
+    context_frames: int = 128
     channels: int = 512
     dilations: tuple[int, ...] = (1, 2, 4, 8, 16, 32, 64)
     kernel_size: int = 2
     head_hidden: int = 128
     beat_bins: int = 32
     bar_bins: int = 32
+    dropout: float = 0.1
 
     def __post_init__(self) -> None:
         if (
@@ -47,6 +54,12 @@ class TimingConfig:
                 raise ValueError(f"{name} must be a positive integer")
         if self.beat_bins < 2 or self.bar_bins < 2:
             raise ValueError("phase heads must contain at least two bins")
+        if (
+            isinstance(self.dropout, bool)
+            or not isinstance(self.dropout, Real)
+            or not 0 <= self.dropout < 1
+        ):
+            raise ValueError("dropout must be in [0, 1)")
         if (
             isinstance(self.midi_low, bool)
             or not isinstance(self.midi_low, Integral)
@@ -71,12 +84,12 @@ class TimingConfig:
 
     @property
     def receptive_field_frames(self) -> int:
-        """Maximum TCN history, including the current frame; defaults to 255."""
-        return 1 + 2 * (self.kernel_size - 1) * sum(self.dilations)
+        """TCN history including the current frame: one dilated conv per layer; defaults to 128."""
+        return 1 + (self.kernel_size - 1) * sum(self.dilations)
 
     @property
     def context_seconds(self) -> float:
-        """Duration of the independently configured rolling input window."""
+        """Duration of the rolling streaming input window."""
         return self.context_frames / self.frame_rate
 
     def to_dict(self) -> dict[str, Any]:

@@ -15,6 +15,9 @@ import torch.nn.functional as F
 from .config import TimingConfig
 from .model import YamahaTimingTCN
 
+# 2: cited-paper TCN layer (dilated conv + 1x1 conv, 1x1 residual) and dropout.
+CHECKPOINT_SCHEMA = 2
+
 
 def masked_phase_loss(outputs: dict[str, torch.Tensor],
                       beat_targets: torch.Tensor, bar_targets: torch.Tensor,
@@ -57,7 +60,7 @@ def save_checkpoint(path: str | Path, model: YamahaTimingTCN,
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "schema_version": 1,
+        "schema_version": CHECKPOINT_SCHEMA,
         "config": model.config.to_dict(),
         "state_dict": {key: value.detach().cpu() for key, value in model.state_dict().items()},
         "provenance": provenance or {},
@@ -68,8 +71,11 @@ def save_checkpoint(path: str | Path, model: YamahaTimingTCN,
 def load_checkpoint(path: str | Path, device: str | torch.device = "cpu") -> tuple[YamahaTimingTCN, dict[str, Any]]:
     """Load a tensor-only baseline checkpoint, never arbitrary pickled classes."""
     payload = torch.load(path, map_location=device, weights_only=True)
-    if not isinstance(payload, dict) or payload.get("schema_version") != 1:
-        raise ValueError("unsupported timing checkpoint schema")
+    if not isinstance(payload, dict) or payload.get("schema_version") != CHECKPOINT_SCHEMA:
+        raise ValueError(
+            f"unsupported timing checkpoint schema {payload.get('schema_version') if isinstance(payload, dict) else None}; "
+            f"expected {CHECKPOINT_SCHEMA} (schema 1 used the earlier two-dilated-conv layer)"
+        )
     config = TimingConfig(**payload["config"])
     model = YamahaTimingTCN(config).to(device)
     model.load_state_dict(payload["state_dict"], strict=True)

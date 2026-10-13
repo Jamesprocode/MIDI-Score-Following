@@ -60,7 +60,7 @@ class TrainingTests(unittest.TestCase):
     def test_synthetic_supervision_matches_last_frame_window_contract(self):
         config = TimingConfig(channels=16, head_hidden=12)
         data = overfit_windows(config)
-        self.assertEqual(data["piano_roll"].shape[1:], (120, 88))
+        self.assertEqual(data["piano_roll"].shape[1:], (config.context_frames, 88))
         self.assertTrue(data["beat_mask"][:, -1].all())
         self.assertFalse(data["beat_mask"][:, :-1].any())
         self.assertTrue(torch.equal(data["beat_mask"], data["bar_mask"]))

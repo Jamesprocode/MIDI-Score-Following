@@ -31,28 +31,37 @@ class _CausalConv1d(nn.Module):
 
 
 class _ResidualTCNBlock(nn.Module):
-    """Two causal convolutions; ELU after the first and after the residual sum.
+    """Dilated causal conv, ELU, dropout, 1x1 conv; 1x1 conv on the residual path.
 
-    This precise placement and kernel size are documented reconstruction
-    choices. No normalization mixes frames or introduces future information.
+    Layout of the TCN layer in Oyama et al. (2021, Fig. 3), the phase-based
+    tracker Maezawa cites; no activation follows the residual sum. Causal left
+    padding replaces the cited papers' offline (non-causal) convolution.
     """
 
-    def __init__(self, channels: int, kernel_size: int, dilation: int) -> None:
+    def __init__(self, channels: int, kernel_size: int, dilation: int, dropout: float) -> None:
         super().__init__()
-        self.first = _CausalConv1d(channels, kernel_size, dilation)
-        self.second = _CausalConv1d(channels, kernel_size, dilation)
+        self.dilated = _CausalConv1d(channels, kernel_size, dilation)
         self.activation = nn.ELU()
+        self.dropout = nn.Dropout(dropout)
+        self.pointwise = nn.Conv1d(channels, channels, kernel_size=1)
+        self.residual = nn.Conv1d(channels, channels, kernel_size=1)
 
     def forward(self, features: Tensor) -> Tensor:
-        update = self.second(self.activation(self.first(features)))
-        return self.activation(features + update)
+        update = self.pointwise(self.dropout(self.activation(self.dilated(features))))
+        return self.residual(features) + update
 
 
-def _phase_head(channels: int, hidden: int, bins: int) -> nn.Sequential:
-    """Two 1x1 convolutions with a configurable, paper-unspecified hidden width."""
+def _phase_head(channels: int, hidden: int, bins: int, dropout: float) -> nn.Sequential:
+    """Oyama et al.'s decoder (dropout, dense, ELU, dropout, dense) as 1x1 convs.
+
+    Softmax is applied by the loss or ``probabilities``; the hidden width is
+    unspecified in all three papers.
+    """
     return nn.Sequential(
+        nn.Dropout(dropout),
         nn.Conv1d(channels, hidden, kernel_size=1),
         nn.ELU(),
+        nn.Dropout(dropout),
         nn.Conv1d(hidden, bins, kernel_size=1),
     )
 
@@ -79,15 +88,15 @@ class YamahaTimingTCN(nn.Module):
         cfg = self.config
         self.input_projection = nn.Conv1d(cfg.input_pitches, cfg.channels, kernel_size=1)
         self.backbone = nn.Sequential(*(
-            _ResidualTCNBlock(cfg.channels, cfg.kernel_size, dilation)
+            _ResidualTCNBlock(cfg.channels, cfg.kernel_size, dilation, cfg.dropout)
             for dilation in cfg.dilations
         ))
         self.tempo_projection = nn.Linear(8, cfg.channels)
         self.register_buffer(
             "tempo_centers", 30 * 2 ** torch.arange(8, dtype=torch.float64),
         )
-        self.beat_head = _phase_head(cfg.channels, cfg.head_hidden, cfg.beat_bins)
-        self.bar_head = _phase_head(cfg.channels, cfg.head_hidden, cfg.bar_bins)
+        self.beat_head = _phase_head(cfg.channels, cfg.head_hidden, cfg.beat_bins, cfg.dropout)
+        self.bar_head = _phase_head(cfg.channels, cfg.head_hidden, cfg.bar_bins, cfg.dropout)
 
     @staticmethod
     def _expand_hint(value: Any, batch: int, frames: int, name: str, device: torch.device) -> Tensor:
