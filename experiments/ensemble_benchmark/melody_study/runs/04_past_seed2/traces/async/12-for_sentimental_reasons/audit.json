@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/12-for_sentimental_reasons/preferred",
+  "lead_instruments": [
+    "saxophone_tenor"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 389
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 171,
+  "reference_comparisons": 7577
+}

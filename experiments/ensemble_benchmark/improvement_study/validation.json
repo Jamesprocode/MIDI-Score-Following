@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "data_files_unchanged": 462,
+  "baseline_reproductions": 75,
+  "rhythm_checks": {
+    "prefix_invariance": true,
+    "future_offsets_ignored": true,
+    "relative_phase_origin": true,
+    "bass_with_offbeats": true,
+    "offbeat_only_ambiguity_exposed": true,
+    "silence_neutral": true,
+    "same_instrument_chord_coalescing": true,
+    "bounded_potential": true,
+    "dynamic_grid": true,
+    "direct_kernel_equivalence": true
+  },
+  "sequence_checks": {
+    "silence_max_error_beats": 0.0,
+    "late_tempo_change_mean_abs_error_beats": 0.5124000000001597,
+    "late_tempo_change_mean_estimated_bpm": 146.37,
+    "final_beam_size": 256
+  },
+  "particle_checks": {
+    "prefix_invariance": true,
+    "seed_repeatability": true,
+    "silence_no_resampling": true,
+    "silence_max_error_beats": 0.6909968119465333,
+    "tempo_change_last_10s_mae_beats": 0.1063255197126847,
+    "clock_last_10s_mae_beats": 17.159999999999997,
+    "tempo_change_resamplings": 20,
+    "zero_likelihood_finite": true,
+    "neutral_overflow": true,
+    "tempo_bounds": true,
+    "systematic_resampling": true
+  },
+  "runs": [
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/01_diagnostics",
+      "rows": 1125,
+      "traces_verified": 1125,
+      "absent_drum_controls": 0
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/02_rhythm_sequence",
+      "rows": 1200,
+      "traces_verified": 1200,
+      "absent_drum_controls": 98
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/03_bass_root_alternate",
+      "rows": 49,
+      "traces_verified": 49,
+      "absent_drum_controls": 0
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/04_bass_root_tempo_stress",
+      "rows": 150,
+      "traces_verified": 150,
+      "absent_drum_controls": 0
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/05_continuous_tempo",
+      "rows": 825,
+      "traces_verified": 825,
+      "absent_drum_controls": 0
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/06_finalists_alternate",
+      "rows": 98,
+      "traces_verified": 98,
+      "absent_drum_controls": 0
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/07_finalists_tempo_stress",
+      "rows": 300,
+      "traces_verified": 300,
+      "absent_drum_controls": 0
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/08_particles_seed1",
+      "rows": 75,
+      "traces_verified": 75,
+      "absent_drum_controls": 0
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/09_particles_seed2",
+      "rows": 75,
+      "traces_verified": 75,
+      "absent_drum_controls": 0
+    }
+  ],
+  "claim_boundary": "Checks establish causal implementation and artifact consistency, not independent AMT annotation alignment, live latency, or external generalization."
+}

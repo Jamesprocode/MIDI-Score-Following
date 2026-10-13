@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/69-one_note_samba/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 479
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 247,
+  "reference_comparisons": 16468
+}

@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "chord_complete": true,
+  "position_complete": true,
+  "performances": 124,
+  "chord_metric_rows": 16864,
+  "position_metric_rows": 2786,
+  "runtime_seconds": 59.945346708002035,
+  "methods": [
+    "cosine_onsets",
+    "cosine_duration",
+    "pardo",
+    "yamaha_active",
+    "empirical_profile"
+  ],
+  "schemas": [
+    "triad",
+    "seventh"
+  ],
+  "checks": "module analytical/causality checks passed; full output review separate",
+  "position_status": "finished",
+  "position_performances": 124,
+  "position_runtime_seconds": 210.62120333400526,
+  "position_runner": "run_positions_only.py",
+  "position_summary_file": "position_summary.json"
+}

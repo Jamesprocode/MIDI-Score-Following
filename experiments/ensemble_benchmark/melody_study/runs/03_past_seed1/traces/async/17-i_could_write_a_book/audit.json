@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/17-i_could_write_a_book/preferred",
+  "lead_instruments": [
+    "saxophone_alto"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 2636
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 108,
+  "reference_comparisons": 4674
+}

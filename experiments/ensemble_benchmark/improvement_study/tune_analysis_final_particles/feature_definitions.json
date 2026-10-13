@@ -1,0 +1,310 @@
+{
+  "duration_seconds": {
+    "group": "reference structure",
+    "definition": "Elapsed musical annotation coverage, excluding leading padding."
+  },
+  "bars": {
+    "group": "chart structure",
+    "definition": "Number of unfolded musical bars, including all planned chorus/repeat occurrences."
+  },
+  "beats_per_bar": {
+    "group": "chart structure",
+    "definition": "Quarter-note beats per bar from catalog meter."
+  },
+  "catalog_bpm": {
+    "group": "catalog metadata",
+    "definition": "Catalog nominal quarter-note BPM supplied for initialization."
+  },
+  "pitched_instruments": {
+    "group": "MIDI content summary",
+    "definition": "Number of locally available pitched instrument streams; excludes drums."
+  },
+  "reference_bar_bpm_median": {
+    "group": "reference timing: evaluation-only",
+    "definition": "Median bar-equivalent BPM: 60 times catalog quarter beats per bar divided by annotated bar seconds. Evaluation-only."
+  },
+  "reference_bar_bpm_cv": {
+    "group": "reference timing: evaluation-only",
+    "definition": "Population SD/mean of bar-equivalent BPM; sensitive to pickups, endings and interpolation. Evaluation-only."
+  },
+  "reference_catalog_bpm_abs_fraction": {
+    "group": "reference timing: evaluation-only",
+    "definition": "Absolute fractional difference between reference median bar-equivalent BPM and catalog BPM. Evaluation-only."
+  },
+  "reference_catalog_bpm_signed_fraction": {
+    "group": "reference timing: evaluation-only",
+    "definition": "Signed fractional difference: reference median bar-equivalent BPM/catalog BPM minus one. Evaluation-only."
+  },
+  "reference_final_clock_mismatch_beats": {
+    "group": "reference timing: evaluation-only",
+    "definition": "Absolute difference between total score beats and duration times catalog BPM/60. Directly related to clock drift; evaluation-only."
+  },
+  "triad_vocabulary": {
+    "group": "chart harmony",
+    "definition": "Number of distinct pitched reduced chart labels."
+  },
+  "triad_chord_entropy_bits": {
+    "group": "chart harmony",
+    "definition": "Shannon entropy of chord labels weighted by musical beats in the unfolded plan."
+  },
+  "triad_largest_chord_beat_share": {
+    "group": "chart harmony",
+    "definition": "Largest chord-class share of pitched musical score beats."
+  },
+  "triad_changes_per_minute": {
+    "group": "chart harmony plus reference duration",
+    "definition": "Actual changes between successive reduced pitched labels per minute of reference duration; adjacent identical labels merged."
+  },
+  "triad_repeated_1gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 1-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "triad_repeated_2gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 2-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "triad_repeated_4gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 4-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "triad_repeated_8gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 8-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "triad_unique_bar_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Distinct exact within-bar reduced harmonic patterns divided by unfolded bars; includes chord durations, merging adjacent identical reduced labels."
+  },
+  "triad_repeated_4bar_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of four-bar start positions whose complete timed-in-score harmonic pattern occurs elsewhere."
+  },
+  "seventh_vocabulary": {
+    "group": "chart harmony",
+    "definition": "Number of distinct pitched reduced chart labels."
+  },
+  "seventh_chord_entropy_bits": {
+    "group": "chart harmony",
+    "definition": "Shannon entropy of chord labels weighted by musical beats in the unfolded plan."
+  },
+  "seventh_largest_chord_beat_share": {
+    "group": "chart harmony",
+    "definition": "Largest chord-class share of pitched musical score beats."
+  },
+  "seventh_changes_per_minute": {
+    "group": "chart harmony plus reference duration",
+    "definition": "Actual changes between successive reduced pitched labels per minute of reference duration; adjacent identical labels merged."
+  },
+  "seventh_repeated_1gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 1-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "seventh_repeated_2gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 2-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "seventh_repeated_4gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 4-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "seventh_repeated_8gram_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of start positions whose exact 8-event chord-label sequence appears elsewhere in the unfolded plan; adjacent identical labels merged, N.C. retained."
+  },
+  "seventh_unique_bar_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Distinct exact within-bar reduced harmonic patterns divided by unfolded bars; includes chord durations, merging adjacent identical reduced labels."
+  },
+  "seventh_repeated_4bar_fraction": {
+    "group": "chart ambiguity",
+    "definition": "Fraction of four-bar start positions whose complete timed-in-score harmonic pattern occurs elsewhere."
+  },
+  "quality_flagged_pitched_files": {
+    "group": "MIDI quality audit",
+    "definition": "Number of fixed-audit flagged pitched files: polyphony>4, any note>10s, or outside88keys; no filtering."
+  },
+  "pooled_note_count": {
+    "group": "MIDI content summary",
+    "definition": "Number of note-on events during musical annotation coverage; simultaneous notes count separately."
+  },
+  "pooled_onsets_per_second": {
+    "group": "MIDI content summary",
+    "definition": "Note-on count during musical annotation coverage divided by its elapsed seconds; simultaneous notes count separately."
+  },
+  "pooled_active_coverage": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of 200-ms grid instants with at least one sounding note, preserving instrument multiplicity."
+  },
+  "pooled_onset_coverage_1s": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of grid instants with a note-on in the causal trailing one-second window."
+  },
+  "pooled_maximum_polyphony": {
+    "group": "MIDI content summary",
+    "definition": "Maximum overlapping note instances during musical annotation coverage; separate instruments/unisons count separately."
+  },
+  "pooled_median_note_seconds": {
+    "group": "MIDI content summary",
+    "definition": "Median complete exported duration of notes starting inside musical annotation coverage; diagnostic only."
+  },
+  "pooled_p95_note_seconds": {
+    "group": "MIDI content summary",
+    "definition": "95th percentile exported duration of those notes; diagnostic only."
+  },
+  "pooled_note_fraction_over_10s": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of those notes with exported duration exceeding ten seconds; diagnostic only."
+  },
+  "bass_note_count": {
+    "group": "MIDI content summary",
+    "definition": "Number of note-on events during musical annotation coverage; simultaneous notes count separately."
+  },
+  "bass_onsets_per_second": {
+    "group": "MIDI content summary",
+    "definition": "Note-on count during musical annotation coverage divided by its elapsed seconds; simultaneous notes count separately."
+  },
+  "bass_active_coverage": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of 200-ms grid instants with at least one sounding note, preserving instrument multiplicity."
+  },
+  "bass_onset_coverage_1s": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of grid instants with a note-on in the causal trailing one-second window."
+  },
+  "bass_maximum_polyphony": {
+    "group": "MIDI content summary",
+    "definition": "Maximum overlapping note instances during musical annotation coverage; separate instruments/unisons count separately."
+  },
+  "bass_median_note_seconds": {
+    "group": "MIDI content summary",
+    "definition": "Median complete exported duration of notes starting inside musical annotation coverage; diagnostic only."
+  },
+  "bass_p95_note_seconds": {
+    "group": "MIDI content summary",
+    "definition": "95th percentile exported duration of those notes; diagnostic only."
+  },
+  "bass_note_fraction_over_10s": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of those notes with exported duration exceeding ten seconds; diagnostic only."
+  },
+  "bass_reference_harmony_onset_count": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Number of positive-duration MIDI note-ons inside musical coverage with an active pitched reference chord. Each simultaneous note counts separately; N.C./annotation gaps excluded."
+  },
+  "bass_reference_harmony_excluded_onset_count": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Note-ons inside musical coverage excluded because the timestamp is N.C. or lacks a pitched chord annotation."
+  },
+  "bass_reference_root_onset_fraction": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Fraction of eligible note-ons whose pitch class equals the annotated chord root at onset. Exact half-open timestamp intervals; N.C./gaps excluded; slash bass ignored. All exported pitches count, including outside88keys. Evaluation-only."
+  },
+  "bass_reference_base_tone_onset_fraction": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Fraction of eligible note-ons inside the annotated base chord template (major/minor/diminished/augmented/sus2/sus4/power/root as canonicalized). Sevenths, extensions, alterations and slash bass ignored. Same event denominator as root fraction. Evaluation-only."
+  },
+  "bass_reference_harmony_active_frames": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Number of 200-ms grid instants with a pitched reference chord and at least one active note in this role. N.C./gaps and silence excluded."
+  },
+  "bass_reference_root_active_fraction": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Fraction of eligible active-role frames containing at least one note at the annotated root pitch class. Denominator excludes silence, N.C. and gaps; all exported pitches count. Note state uses onset<=time<offset. Evaluation-only."
+  },
+  "horns_note_count": {
+    "group": "MIDI content summary",
+    "definition": "Number of note-on events during musical annotation coverage; simultaneous notes count separately."
+  },
+  "horns_onsets_per_second": {
+    "group": "MIDI content summary",
+    "definition": "Note-on count during musical annotation coverage divided by its elapsed seconds; simultaneous notes count separately."
+  },
+  "horns_active_coverage": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of 200-ms grid instants with at least one sounding note, preserving instrument multiplicity."
+  },
+  "horns_onset_coverage_1s": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of grid instants with a note-on in the causal trailing one-second window."
+  },
+  "horns_maximum_polyphony": {
+    "group": "MIDI content summary",
+    "definition": "Maximum overlapping note instances during musical annotation coverage; separate instruments/unisons count separately."
+  },
+  "horns_median_note_seconds": {
+    "group": "MIDI content summary",
+    "definition": "Median complete exported duration of notes starting inside musical annotation coverage; diagnostic only."
+  },
+  "horns_p95_note_seconds": {
+    "group": "MIDI content summary",
+    "definition": "95th percentile exported duration of those notes; diagnostic only."
+  },
+  "horns_note_fraction_over_10s": {
+    "group": "MIDI content summary",
+    "definition": "Fraction of those notes with exported duration exceeding ten seconds; diagnostic only."
+  },
+  "horns_reference_harmony_onset_count": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Number of positive-duration MIDI note-ons inside musical coverage with an active pitched reference chord. Each simultaneous note counts separately; N.C./annotation gaps excluded."
+  },
+  "horns_reference_harmony_excluded_onset_count": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Note-ons inside musical coverage excluded because the timestamp is N.C. or lacks a pitched chord annotation."
+  },
+  "horns_reference_root_onset_fraction": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Fraction of eligible note-ons whose pitch class equals the annotated chord root at onset. Exact half-open timestamp intervals; N.C./gaps excluded; slash bass ignored. All exported pitches count, including outside88keys. Evaluation-only."
+  },
+  "horns_reference_base_tone_onset_fraction": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Fraction of eligible note-ons inside the annotated base chord template (major/minor/diminished/augmented/sus2/sus4/power/root as canonicalized). Sevenths, extensions, alterations and slash bass ignored. Same event denominator as root fraction. Evaluation-only."
+  },
+  "horns_reference_harmony_active_frames": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Number of 200-ms grid instants with a pitched reference chord and at least one active note in this role. N.C./gaps and silence excluded."
+  },
+  "horns_reference_root_active_fraction": {
+    "group": "reference harmonic clarity: evaluation-only",
+    "definition": "Fraction of eligible active-role frames containing at least one note at the annotated root pitch class. Denominator excludes silence, N.C. and gaps; all exported pitches count. Note state uses onset<=time<offset. Evaluation-only."
+  },
+  "baseline_triad_cosine_onsets_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_triad_cosine_duration_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_triad_pardo_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_triad_yamaha_active_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_triad_empirical_profile_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_seventh_cosine_onsets_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_seventh_cosine_duration_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_seventh_pardo_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_seventh_yamaha_active_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  },
+  "baseline_seventh_empirical_profile_chord_accuracy": {
+    "group": "evaluation outcome: not inference input",
+    "definition": "Saved baseline pooled raw chord-classification accuracy at fixed one-second context (instantaneous for Yamaha)."
+  }
+}

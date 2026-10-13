@@ -1,0 +1,1165 @@
+[
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 396,
+      "trumpet": 385
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": true,
+    "neutral_reproduction": true,
+    "query_updates": 385,
+    "reference_comparisons": 20777
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 400
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 196,
+    "reference_comparisons": 9784
+  },
+  {
+    "performance_id": "async/03-all_of_me/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 232,
+      "trumpet": 2796
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 326,
+    "reference_comparisons": 47639
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 512
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": true,
+    "neutral_reproduction": true,
+    "query_updates": 286,
+    "reference_comparisons": 20864
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 419
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 185,
+    "reference_comparisons": 9545
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 248,
+      "trumpet": 281
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 222,
+    "reference_comparisons": 5300
+  },
+  {
+    "performance_id": "async/05-au_privave/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 329,
+      "trumpet": 347
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 328,
+    "reference_comparisons": 13248
+  },
+  {
+    "performance_id": "async/07-blue_bossa/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 315,
+      "trumpet": 325
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 304,
+    "reference_comparisons": 12155
+  },
+  {
+    "performance_id": "async/09-caravan/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 304,
+      "trumpet": 412
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 85,
+    "reference_comparisons": 767
+  },
+  {
+    "performance_id": "async/08-blue_skies/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 299
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 146,
+    "reference_comparisons": 5489
+  },
+  {
+    "performance_id": "async/13-four/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 366
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 191,
+    "reference_comparisons": 10064
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 158
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 23,
+    "reference_comparisons": 179
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 389
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 171,
+    "reference_comparisons": 7577
+  },
+  {
+    "performance_id": "async/10-desafinado/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 3271
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 380,
+    "reference_comparisons": 74396
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 286
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 150,
+    "reference_comparisons": 5874
+  },
+  {
+    "performance_id": "async/15-frenesi/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 419
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 246,
+    "reference_comparisons": 17117
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 2636
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 108,
+    "reference_comparisons": 4674
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 296
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 162,
+    "reference_comparisons": 6995
+  },
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 210
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 50,
+    "reference_comparisons": 683
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 417
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 233,
+    "reference_comparisons": 14508
+  },
+  {
+    "performance_id": "async/22-lazy_bird/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 272
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 86,
+    "reference_comparisons": 1969
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 1250
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 172,
+    "reference_comparisons": 7794
+  },
+  {
+    "performance_id": "async/24-long_ago/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 326
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 155,
+    "reference_comparisons": 6302
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 325
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 135,
+    "reference_comparisons": 4903
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 379
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 221,
+    "reference_comparisons": 12773
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 1539,
+      "trumpet": 407
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 352,
+    "reference_comparisons": 18833
+  },
+  {
+    "performance_id": "async/27-meditation/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 459
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 206,
+    "reference_comparisons": 10642
+  },
+  {
+    "performance_id": "async/28-moonglow/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 359
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 153,
+    "reference_comparisons": 6031
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 533
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 283,
+    "reference_comparisons": 20602
+  },
+  {
+    "performance_id": "async/30-nicas_dream/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 528
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 214,
+    "reference_comparisons": 12655
+  },
+  {
+    "performance_id": "async/31-o_pato/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 530
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 312,
+    "reference_comparisons": 26476
+  },
+  {
+    "performance_id": "async/33-peris_scope/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 253
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 118,
+    "reference_comparisons": 4272
+  },
+  {
+    "performance_id": "async/32-ornithology/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 346,
+      "trumpet": 407
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 404,
+    "reference_comparisons": 24558
+  },
+  {
+    "performance_id": "async/35-recordame/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 381
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 201,
+    "reference_comparisons": 11279
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 381
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 197,
+    "reference_comparisons": 10229
+  },
+  {
+    "performance_id": "async/38-spain/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 277,
+      "trumpet": 350
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 139,
+    "reference_comparisons": 3059
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 225,
+      "trumpet": 300
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 230,
+    "reference_comparisons": 7721
+  },
+  {
+    "performance_id": "async/36-road_song/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 369,
+      "trumpet": 397
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 387,
+    "reference_comparisons": 19640
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 398
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 232,
+    "reference_comparisons": 16132
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 305,
+      "trumpet": 373
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 328,
+    "reference_comparisons": 14422
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 249,
+      "trumpet": 273
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 338,
+    "reference_comparisons": 16018
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 249
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 164,
+    "reference_comparisons": 6180
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 298,
+      "trumpet": 293
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 184,
+    "reference_comparisons": 4693
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 439
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 235,
+    "reference_comparisons": 13936
+  },
+  {
+    "performance_id": "async/45-tour_de_force/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 387,
+      "trumpet": 411
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 405,
+    "reference_comparisons": 23246
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 239
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 124,
+    "reference_comparisons": 3879
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 245,
+      "trumpet": 224
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 182,
+    "reference_comparisons": 4433
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 324
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 164,
+    "reference_comparisons": 7159
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 142
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 49,
+    "reference_comparisons": 654
+  },
+  {
+    "performance_id": "async/47-wave/preferred",
+    "lead_instruments": [
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 499,
+      "trumpet": 457
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 563,
+    "reference_comparisons": 41806
+  },
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 314
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 169,
+    "reference_comparisons": 7968
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 2447
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 251,
+    "reference_comparisons": 36861
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 563
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 246,
+    "reference_comparisons": 17178
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 302
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 147,
+    "reference_comparisons": 5548
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 486
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 285,
+    "reference_comparisons": 22275
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 719
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 400,
+    "reference_comparisons": 48830
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 457
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 261,
+    "reference_comparisons": 18350
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 360
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 170,
+    "reference_comparisons": 9298
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 7957
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 460,
+    "reference_comparisons": 149954
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 569,
+      "trumpet": 417
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 333,
+    "reference_comparisons": 16821
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 424
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 163,
+    "reference_comparisons": 6818
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 298,
+      "trumpet": 346
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 315,
+    "reference_comparisons": 13534
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 311
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 163,
+    "reference_comparisons": 7096
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 528
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 221,
+    "reference_comparisons": 13091
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 2636
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 114,
+    "reference_comparisons": 18185
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 215
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 77,
+    "reference_comparisons": 1671
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 414
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 157,
+    "reference_comparisons": 6458
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 479
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 247,
+    "reference_comparisons": 16468
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 552
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 314,
+    "reference_comparisons": 26717
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 286
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 147,
+    "reference_comparisons": 5610
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 473
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 243,
+    "reference_comparisons": 16132
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 426
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 228,
+    "reference_comparisons": 13209
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 323
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 78,
+    "reference_comparisons": 1696
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 249
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 105,
+    "reference_comparisons": 2942
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 2991
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 244,
+    "reference_comparisons": 43528
+  }
+]

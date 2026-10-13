@@ -1,0 +1,51 @@
+Papers/
+
+SAMBA dataset/
+
+Research Proposal/
+
+# OS and Python clutter
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+# Generated per-song follower traces (~348 MB, ~9k files). Kept on disk;
+# regenerate with each study's run script.
+*.npz
+
+# SAMBA-derived content (copies of dataset annotations and note data).
+# Not ours to redistribute; rebuild locally from the SAMBA dataset.
+# The ground_truth_player viewer needs `python3 prepare_data.py` after a fresh clone.
+experiments/*/data/annotations/
+experiments/ground_truth_player/data.json
+experiments/ground_truth_player/green_dolphin.json
+experiments/ground_truth_player/samba_de_orfeu.json
+
+# Generated result tables over 1 MB. Kept on disk; regenerate with the study scripts.
+experiments/harmony_pilot/results_published_matchers/predictions.csv
+experiments/harmony_pilot/results/predictions_primary.csv
+experiments/ensemble_benchmark/results/chord_metrics.csv
+experiments/ensemble_benchmark/audit/midi_files.json
+experiments/ensemble_benchmark/melody_study/analysis/seed_analysis.json
+experiments/ensemble_benchmark/melody_study/analysis/per_song_seed_consistency.csv
+experiments/ensemble_benchmark/melody_study/analysis/per_song_gains.csv
+experiments/ensemble_benchmark/melody_study/runs/01_past_all/metrics.csv
+experiments/ensemble_benchmark/melody_study/runs/03_past_seed1/metrics.csv
+experiments/ensemble_benchmark/melody_study/runs/04_past_seed2/metrics.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis/section_metrics.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_diagnostics/section_metrics.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_diagnostics/high_low_feature_medians.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_diagnostics/method_comparisons.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_beam/section_metrics.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_beam/high_low_feature_medians.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_beam/paired_change_associations.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_beam/paired_method_changes.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_beam/method_comparisons.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_beam/rank_associations.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_particles/section_metrics.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_particles/high_low_feature_medians.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_particles/paired_change_associations.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_particles/paired_method_changes.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_particles/method_comparisons.csv
+experiments/ensemble_benchmark/improvement_study/tune_analysis_final_particles/rank_associations.csv

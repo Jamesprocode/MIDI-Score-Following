@@ -1,0 +1,1075 @@
+{
+  "song": "66-nardis",
+  "protocol": "sync",
+  "title": "Nardis",
+  "source_title": [
+    "Nardis"
+  ],
+  "source_row_id": "170994",
+  "matched_row_ids": [
+    "170994"
+  ],
+  "row_selection": "lowest numeric matched row ID; never selected by performance results",
+  "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+  "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+  "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/sync__66-nardis__row170994.musicxml",
+  "xml_sha256": "9747eb229aeb2fe8dbb5c076af57083b93a44172622801db5dbfcc4fc5aa0f55",
+  "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/sync__66-nardis.json",
+  "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/sync/66-nardis.json",
+  "annotation_sha256": "626941d4466e0ea15021eeaf382620dfcd8a038b4ac76ec3ce98f98d7a89aaa4",
+  "notes": [
+    {
+      "pitch": 71,
+      "onset_beats": 0.0,
+      "duration_beats": 2.0,
+      "score_measure": "0",
+      "expanded_measure_index": 0
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 2.0,
+      "duration_beats": 4.0,
+      "score_measure": "1",
+      "expanded_measure_index": 1
+    },
+    {
+      "pitch": 63,
+      "onset_beats": 6.5,
+      "duration_beats": 0.5,
+      "score_measure": "2",
+      "expanded_measure_index": 2
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 7.0,
+      "duration_beats": 0.5,
+      "score_measure": "2",
+      "expanded_measure_index": 2
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 7.5,
+      "duration_beats": 0.5,
+      "score_measure": "2",
+      "expanded_measure_index": 2
+    },
+    {
+      "pitch": 75,
+      "onset_beats": 8.0,
+      "duration_beats": 1.5,
+      "score_measure": "2",
+      "expanded_measure_index": 2
+    },
+    {
+      "pitch": 72,
+      "onset_beats": 9.5,
+      "duration_beats": 0.5,
+      "score_measure": "2",
+      "expanded_measure_index": 2
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 10.0,
+      "duration_beats": 8.0,
+      "score_measure": "3",
+      "expanded_measure_index": 3
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 18.5,
+      "duration_beats": 1.5,
+      "score_measure": "5",
+      "expanded_measure_index": 5
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 20.0,
+      "duration_beats": 1.0,
+      "score_measure": "5",
+      "expanded_measure_index": 5
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 21.0,
+      "duration_beats": 1.0,
+      "score_measure": "5",
+      "expanded_measure_index": 5
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 22.0,
+      "duration_beats": 1.5,
+      "score_measure": "6",
+      "expanded_measure_index": 6
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 23.5,
+      "duration_beats": 2.5,
+      "score_measure": "6",
+      "expanded_measure_index": 6
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 26.0,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "7",
+      "expanded_measure_index": 7
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 26.333333333333332,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "7",
+      "expanded_measure_index": 7
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 26.666666666666668,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "7",
+      "expanded_measure_index": 7
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 27.0,
+      "duration_beats": 2.0,
+      "score_measure": "7",
+      "expanded_measure_index": 7
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 29.0,
+      "duration_beats": 3.0,
+      "score_measure": "7",
+      "expanded_measure_index": 7
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 32.0,
+      "duration_beats": 2.0,
+      "score_measure": "8",
+      "expanded_measure_index": 8
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 34.0,
+      "duration_beats": 4.0,
+      "score_measure": "9",
+      "expanded_measure_index": 9
+    },
+    {
+      "pitch": 63,
+      "onset_beats": 38.5,
+      "duration_beats": 0.5,
+      "score_measure": "10",
+      "expanded_measure_index": 10
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 39.0,
+      "duration_beats": 0.5,
+      "score_measure": "10",
+      "expanded_measure_index": 10
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 39.5,
+      "duration_beats": 0.5,
+      "score_measure": "10",
+      "expanded_measure_index": 10
+    },
+    {
+      "pitch": 75,
+      "onset_beats": 40.0,
+      "duration_beats": 1.5,
+      "score_measure": "10",
+      "expanded_measure_index": 10
+    },
+    {
+      "pitch": 72,
+      "onset_beats": 41.5,
+      "duration_beats": 0.5,
+      "score_measure": "10",
+      "expanded_measure_index": 10
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 42.0,
+      "duration_beats": 8.0,
+      "score_measure": "11",
+      "expanded_measure_index": 11
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 50.5,
+      "duration_beats": 1.5,
+      "score_measure": "13",
+      "expanded_measure_index": 13
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 52.0,
+      "duration_beats": 1.0,
+      "score_measure": "13",
+      "expanded_measure_index": 13
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 53.0,
+      "duration_beats": 1.0,
+      "score_measure": "13",
+      "expanded_measure_index": 13
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 54.0,
+      "duration_beats": 1.5,
+      "score_measure": "14",
+      "expanded_measure_index": 14
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 55.5,
+      "duration_beats": 2.5,
+      "score_measure": "14",
+      "expanded_measure_index": 14
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 58.0,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "15",
+      "expanded_measure_index": 15
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 58.333333333333336,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "15",
+      "expanded_measure_index": 15
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 58.666666666666664,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "15",
+      "expanded_measure_index": 15
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 59.0,
+      "duration_beats": 2.0,
+      "score_measure": "15",
+      "expanded_measure_index": 15
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 61.0,
+      "duration_beats": 3.0,
+      "score_measure": "15",
+      "expanded_measure_index": 15
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 64.0,
+      "duration_beats": 2.0,
+      "score_measure": "16",
+      "expanded_measure_index": 16
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 66.0,
+      "duration_beats": 3.0,
+      "score_measure": "17",
+      "expanded_measure_index": 17
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 69.0,
+      "duration_beats": 3.0,
+      "score_measure": "17",
+      "expanded_measure_index": 17
+    },
+    {
+      "pitch": 59,
+      "onset_beats": 72.0,
+      "duration_beats": 0.5,
+      "score_measure": "18",
+      "expanded_measure_index": 18
+    },
+    {
+      "pitch": 60,
+      "onset_beats": 72.5,
+      "duration_beats": 0.5,
+      "score_measure": "18",
+      "expanded_measure_index": 18
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 73.0,
+      "duration_beats": 0.5,
+      "score_measure": "18",
+      "expanded_measure_index": 18
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 73.5,
+      "duration_beats": 0.5,
+      "score_measure": "18",
+      "expanded_measure_index": 18
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 74.0,
+      "duration_beats": 3.0,
+      "score_measure": "19",
+      "expanded_measure_index": 19
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 77.0,
+      "duration_beats": 4.0,
+      "score_measure": "19",
+      "expanded_measure_index": 19
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 82.5,
+      "duration_beats": 1.5,
+      "score_measure": "21",
+      "expanded_measure_index": 21
+    },
+    {
+      "pitch": 74,
+      "onset_beats": 84.0,
+      "duration_beats": 1.0,
+      "score_measure": "21",
+      "expanded_measure_index": 21
+    },
+    {
+      "pitch": 72,
+      "onset_beats": 85.0,
+      "duration_beats": 1.0,
+      "score_measure": "21",
+      "expanded_measure_index": 21
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 86.0,
+      "duration_beats": 2.0,
+      "score_measure": "22",
+      "expanded_measure_index": 22
+    },
+    {
+      "pitch": 74,
+      "onset_beats": 88.0,
+      "duration_beats": 2.0,
+      "score_measure": "22",
+      "expanded_measure_index": 22
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 90.0,
+      "duration_beats": 3.0,
+      "score_measure": "23",
+      "expanded_measure_index": 23
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 93.0,
+      "duration_beats": 3.0,
+      "score_measure": "23",
+      "expanded_measure_index": 23
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 96.0,
+      "duration_beats": 2.0,
+      "score_measure": "24",
+      "expanded_measure_index": 24
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 98.0,
+      "duration_beats": 4.0,
+      "score_measure": "25",
+      "expanded_measure_index": 25
+    },
+    {
+      "pitch": 63,
+      "onset_beats": 102.5,
+      "duration_beats": 0.5,
+      "score_measure": "26",
+      "expanded_measure_index": 26
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 103.0,
+      "duration_beats": 0.5,
+      "score_measure": "26",
+      "expanded_measure_index": 26
+    },
+    {
+      "pitch": 76,
+      "onset_beats": 103.5,
+      "duration_beats": 0.5,
+      "score_measure": "26",
+      "expanded_measure_index": 26
+    },
+    {
+      "pitch": 75,
+      "onset_beats": 104.0,
+      "duration_beats": 1.5,
+      "score_measure": "26",
+      "expanded_measure_index": 26
+    },
+    {
+      "pitch": 72,
+      "onset_beats": 105.5,
+      "duration_beats": 0.5,
+      "score_measure": "26",
+      "expanded_measure_index": 26
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 106.0,
+      "duration_beats": 8.0,
+      "score_measure": "27",
+      "expanded_measure_index": 27
+    },
+    {
+      "pitch": 71,
+      "onset_beats": 114.5,
+      "duration_beats": 1.5,
+      "score_measure": "29",
+      "expanded_measure_index": 29
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 116.0,
+      "duration_beats": 1.0,
+      "score_measure": "29",
+      "expanded_measure_index": 29
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 117.0,
+      "duration_beats": 1.0,
+      "score_measure": "29",
+      "expanded_measure_index": 29
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 118.0,
+      "duration_beats": 1.5,
+      "score_measure": "30",
+      "expanded_measure_index": 30
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 119.5,
+      "duration_beats": 2.5,
+      "score_measure": "30",
+      "expanded_measure_index": 30
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 122.0,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "31",
+      "expanded_measure_index": 31
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 122.33333333333333,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "31",
+      "expanded_measure_index": 31
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 122.66666666666667,
+      "duration_beats": 0.3333333333333333,
+      "score_measure": "31",
+      "expanded_measure_index": 31
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 123.0,
+      "duration_beats": 2.0,
+      "score_measure": "31",
+      "expanded_measure_index": 31
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 125.0,
+      "duration_beats": 3.0,
+      "score_measure": "31",
+      "expanded_measure_index": 31
+    },
+    {
+      "pitch": 64,
+      "onset_beats": 128.0,
+      "duration_beats": 2.0,
+      "score_measure": "32",
+      "expanded_measure_index": 32
+    }
+  ],
+  "chords": [
+    {
+      "onset_beats": 2.0,
+      "root": 4,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "1",
+      "expanded_measure_index": 1
+    },
+    {
+      "onset_beats": 6.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "2",
+      "expanded_measure_index": 2
+    },
+    {
+      "onset_beats": 10.0,
+      "root": 11,
+      "base_quality": "maj",
+      "source_kind": "dominant-seventh",
+      "score_measure": "3",
+      "expanded_measure_index": 3
+    },
+    {
+      "onset_beats": 14.0,
+      "root": 0,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "4",
+      "expanded_measure_index": 4
+    },
+    {
+      "onset_beats": 18.0,
+      "root": 9,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "5",
+      "expanded_measure_index": 5
+    },
+    {
+      "onset_beats": 22.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "6",
+      "expanded_measure_index": 6
+    },
+    {
+      "onset_beats": 26.0,
+      "root": 4,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "7",
+      "expanded_measure_index": 7
+    },
+    {
+      "onset_beats": 30.0,
+      "root": 4,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "8",
+      "expanded_measure_index": 8
+    },
+    {
+      "onset_beats": 38.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "10",
+      "expanded_measure_index": 10
+    },
+    {
+      "onset_beats": 42.0,
+      "root": 11,
+      "base_quality": "maj",
+      "source_kind": "dominant-seventh",
+      "score_measure": "11",
+      "expanded_measure_index": 11
+    },
+    {
+      "onset_beats": 46.0,
+      "root": 0,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "12",
+      "expanded_measure_index": 12
+    },
+    {
+      "onset_beats": 50.0,
+      "root": 9,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "13",
+      "expanded_measure_index": 13
+    },
+    {
+      "onset_beats": 54.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "14",
+      "expanded_measure_index": 14
+    },
+    {
+      "onset_beats": 58.0,
+      "root": 4,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "15",
+      "expanded_measure_index": 15
+    },
+    {
+      "onset_beats": 62.0,
+      "root": 4,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "16",
+      "expanded_measure_index": 16
+    },
+    {
+      "onset_beats": 66.0,
+      "root": 9,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "17",
+      "expanded_measure_index": 17
+    },
+    {
+      "onset_beats": 70.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "18",
+      "expanded_measure_index": 18
+    },
+    {
+      "onset_beats": 74.0,
+      "root": 9,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "19",
+      "expanded_measure_index": 19
+    },
+    {
+      "onset_beats": 78.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "20",
+      "expanded_measure_index": 20
+    },
+    {
+      "onset_beats": 82.0,
+      "root": 2,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "21",
+      "expanded_measure_index": 21
+    },
+    {
+      "onset_beats": 86.0,
+      "root": 7,
+      "base_quality": "maj",
+      "source_kind": "dominant-seventh",
+      "score_measure": "22",
+      "expanded_measure_index": 22
+    },
+    {
+      "onset_beats": 90.0,
+      "root": 0,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "23",
+      "expanded_measure_index": 23
+    },
+    {
+      "onset_beats": 94.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "dominant-seventh",
+      "score_measure": "24",
+      "expanded_measure_index": 24
+    },
+    {
+      "onset_beats": 98.0,
+      "root": 4,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "25",
+      "expanded_measure_index": 25
+    },
+    {
+      "onset_beats": 102.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "26",
+      "expanded_measure_index": 26
+    },
+    {
+      "onset_beats": 106.0,
+      "root": 11,
+      "base_quality": "maj",
+      "source_kind": "dominant-seventh",
+      "score_measure": "27",
+      "expanded_measure_index": 27
+    },
+    {
+      "onset_beats": 110.0,
+      "root": 0,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "28",
+      "expanded_measure_index": 28
+    },
+    {
+      "onset_beats": 114.0,
+      "root": 9,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "29",
+      "expanded_measure_index": 29
+    },
+    {
+      "onset_beats": 118.0,
+      "root": 5,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "30",
+      "expanded_measure_index": 30
+    },
+    {
+      "onset_beats": 122.0,
+      "root": 4,
+      "base_quality": "maj",
+      "source_kind": "major-seventh",
+      "score_measure": "31",
+      "expanded_measure_index": 31
+    },
+    {
+      "onset_beats": 126.0,
+      "root": 4,
+      "base_quality": "min",
+      "source_kind": "minor-seventh",
+      "score_measure": "32",
+      "expanded_measure_index": 32
+    }
+  ],
+  "measures": [
+    {
+      "expanded_measure_index": 0,
+      "score_measure": "0",
+      "onset_beats": 0.0,
+      "end_beats": 2.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": false,
+      "meter": null
+    },
+    {
+      "expanded_measure_index": 1,
+      "score_measure": "1",
+      "onset_beats": 2.0,
+      "end_beats": 6.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 2,
+      "score_measure": "2",
+      "onset_beats": 6.0,
+      "end_beats": 10.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 3,
+      "score_measure": "3",
+      "onset_beats": 10.0,
+      "end_beats": 14.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 4,
+      "score_measure": "4",
+      "onset_beats": 14.0,
+      "end_beats": 18.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 5,
+      "score_measure": "5",
+      "onset_beats": 18.0,
+      "end_beats": 22.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 6,
+      "score_measure": "6",
+      "onset_beats": 22.0,
+      "end_beats": 26.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 7,
+      "score_measure": "7",
+      "onset_beats": 26.0,
+      "end_beats": 30.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 8,
+      "score_measure": "8",
+      "onset_beats": 30.0,
+      "end_beats": 34.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 9,
+      "score_measure": "9",
+      "onset_beats": 34.0,
+      "end_beats": 38.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 10,
+      "score_measure": "10",
+      "onset_beats": 38.0,
+      "end_beats": 42.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 11,
+      "score_measure": "11",
+      "onset_beats": 42.0,
+      "end_beats": 46.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 12,
+      "score_measure": "12",
+      "onset_beats": 46.0,
+      "end_beats": 50.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 13,
+      "score_measure": "13",
+      "onset_beats": 50.0,
+      "end_beats": 54.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 14,
+      "score_measure": "14",
+      "onset_beats": 54.0,
+      "end_beats": 58.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 15,
+      "score_measure": "15",
+      "onset_beats": 58.0,
+      "end_beats": 62.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 16,
+      "score_measure": "16",
+      "onset_beats": 62.0,
+      "end_beats": 66.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 17,
+      "score_measure": "17",
+      "onset_beats": 66.0,
+      "end_beats": 70.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 18,
+      "score_measure": "18",
+      "onset_beats": 70.0,
+      "end_beats": 74.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 19,
+      "score_measure": "19",
+      "onset_beats": 74.0,
+      "end_beats": 78.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 20,
+      "score_measure": "20",
+      "onset_beats": 78.0,
+      "end_beats": 82.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 21,
+      "score_measure": "21",
+      "onset_beats": 82.0,
+      "end_beats": 86.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 22,
+      "score_measure": "22",
+      "onset_beats": 86.0,
+      "end_beats": 90.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 23,
+      "score_measure": "23",
+      "onset_beats": 90.0,
+      "end_beats": 94.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 24,
+      "score_measure": "24",
+      "onset_beats": 94.0,
+      "end_beats": 98.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 25,
+      "score_measure": "25",
+      "onset_beats": 98.0,
+      "end_beats": 102.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 26,
+      "score_measure": "26",
+      "onset_beats": 102.0,
+      "end_beats": 106.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 27,
+      "score_measure": "27",
+      "onset_beats": 106.0,
+      "end_beats": 110.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 28,
+      "score_measure": "28",
+      "onset_beats": 110.0,
+      "end_beats": 114.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 29,
+      "score_measure": "29",
+      "onset_beats": 114.0,
+      "end_beats": 118.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 30,
+      "score_measure": "30",
+      "onset_beats": 118.0,
+      "end_beats": 122.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 31,
+      "score_measure": "31",
+      "onset_beats": 122.0,
+      "end_beats": 126.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    },
+    {
+      "expanded_measure_index": 32,
+      "score_measure": "32",
+      "onset_beats": 126.0,
+      "end_beats": 130.0,
+      "nominal_bar_beats": 4.0,
+      "complete_bar": true,
+      "meter": "4/4"
+    }
+  ],
+  "duration_beats": 130.0,
+  "repeat_status": "expanded",
+  "repeat_error": null,
+  "explicit_instrument_transposition_semitones": 0,
+  "pitch_basis": "MusicXML pitches plus explicit transpose only; missing transpose treated as concert. Instrument-name inferred transpositions ignored.",
+  "unsupported_chord_kinds": {},
+  "parser_warnings": []
+}

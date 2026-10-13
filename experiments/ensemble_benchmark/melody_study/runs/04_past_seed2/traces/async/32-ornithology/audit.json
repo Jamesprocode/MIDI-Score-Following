@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/32-ornithology/preferred",
+  "lead_instruments": [
+    "saxophone_tenor",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 346,
+    "trumpet": 407
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 404,
+  "reference_comparisons": 24492
+}

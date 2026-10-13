@@ -1,0 +1,12 @@
+{
+  "status": "finished",
+  "complete": false,
+  "scope_finished": true,
+  "metric_rows": 16,
+  "expected_rows": 16,
+  "performances": 1,
+  "settings": 16,
+  "source_changes": [],
+  "seconds": 6.851622707996285,
+  "error": null
+}

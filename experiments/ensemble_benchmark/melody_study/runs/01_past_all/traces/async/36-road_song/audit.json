@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/36-road_song/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 369,
+    "trumpet": 397
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 387,
+  "reference_comparisons": 19640
+}

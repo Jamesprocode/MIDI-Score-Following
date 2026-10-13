@@ -1,0 +1,19 @@
+{
+  "objective": "Try different methods to improve bar accuracy across the available dataset, identify characteristics of high-accuracy tunes, and document methods, failures, results, and limitations.",
+  "status": "complete",
+  "requirements": {
+    "all_song_method_comparison": "42 settings across 75 songs; comparison/ and runs/",
+    "causality_and_reproduction": "validation.json: passed; 75 exact baseline reproductions",
+    "selection_and_robustness": "comparison/selected_metrics.csv and runs/03,04,06,07,08,09",
+    "tune_characteristics": "tune_analysis_final_particles/ and tune_analysis_final_beam/",
+    "documentation": "report.html, findings.json, source snapshots, traces and run logs"
+  },
+  "verified_evaluations": 3897,
+  "remaining_research_limitations": [
+    "Independent audio/MIDI/annotation alignment",
+    "Untouched external compositions",
+    "Live end-to-end latency",
+    "Adaptive learned fusion",
+    "Matched no-harmony ablations for final beam and particle configurations"
+  ]
+}

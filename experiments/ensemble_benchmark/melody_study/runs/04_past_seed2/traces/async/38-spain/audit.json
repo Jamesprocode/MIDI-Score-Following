@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/38-spain/preferred",
+  "lead_instruments": [
+    "saxophone_tenor",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 277,
+    "trumpet": 350
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 139,
+  "reference_comparisons": 3059
+}

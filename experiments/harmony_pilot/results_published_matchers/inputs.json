@@ -1,0 +1,416 @@
+[
+  {
+    "song": "00-a_night_in_tunisia",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/preferred/bass.transcribed.derived.mid",
+    "sha256": "4ec82aeb1b26c8c9c20c44f11497008d62fcc1e3cba012cdf466a27fbbc20abe",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      324
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        342857
+      ]
+    ],
+    "note_count": 324,
+    "first_note_seconds": 1.3871422791666665,
+    "last_note_off_seconds": 316.09986829166667,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "00-a_night_in_tunisia",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/preferred/saxophone_alto.transcribed.derived.mid",
+    "sha256": "f036ff07439e3e36a213c2d13c1bf76e77e45ed91104e6d9d4f0536a979d5958",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      396
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        342857
+      ]
+    ],
+    "note_count": 396,
+    "first_note_seconds": 12.1499949375,
+    "last_note_off_seconds": 315.51986853333335,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "00-a_night_in_tunisia",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/preferred/trumpet.transcribed.derived.mid",
+    "sha256": "8dd25bcb5cbcab33a4cd5f14db4d927287f4b6ab9eed0ca7f09529a0ab2dfba5",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      385
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        342857
+      ]
+    ],
+    "note_count": 385,
+    "first_note_seconds": 12.087852106249999,
+    "last_note_off_seconds": 315.5998685,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "00-a_night_in_tunisia",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/alternate/bass.transcribed.derived.mid",
+    "sha256": "ba3626373764ea7abebf60ca4acdef691e2953ec27618838b8f755ad34dd8a6d",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      544
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        342857
+      ]
+    ],
+    "note_count": 544,
+    "first_note_seconds": 1.362856575,
+    "last_note_off_seconds": 316.76272515833335,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "00-a_night_in_tunisia",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/alternate/saxophone_alto.transcribed.derived.mid",
+    "sha256": "3e3b58faae31d27baf4ecce1f21ac19cb5438a725390af62a1ce771f23fa942a",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      416
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        342857
+      ]
+    ],
+    "note_count": 416,
+    "first_note_seconds": 12.1499949375,
+    "last_note_off_seconds": 315.51986853333335,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "00-a_night_in_tunisia",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/alternate/trumpet.transcribed.derived.mid",
+    "sha256": "41b0a7547a5fa888b1b0c52cfe1fb0d5adbb137a1767b69874053fc4a42c2821",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      372
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        342857
+      ]
+    ],
+    "note_count": 372,
+    "first_note_seconds": 12.062852116666667,
+    "last_note_off_seconds": 315.4891542604167,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "07-blue_bossa",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/07-blue_bossa/preferred/bass.transcribed.derived.mid",
+    "sha256": "d5f53cfe1cc908a0efae968a5b07e72ee3076ccbb101a486fd742efb0376af06",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      826
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        375000
+      ]
+    ],
+    "note_count": 826,
+    "first_note_seconds": 2.28984375,
+    "last_note_off_seconds": 361.2375,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "07-blue_bossa",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/07-blue_bossa/preferred/saxophone_alto.transcribed.derived.mid",
+    "sha256": "af9d9d63a0995041d9aa9cdafffe5b3976748975faf19d071e781d2642b06f1d",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      315
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        375000
+      ]
+    ],
+    "note_count": 315,
+    "first_note_seconds": 13.1,
+    "last_note_off_seconds": 361.36953125,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "07-blue_bossa",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/07-blue_bossa/preferred/trumpet.transcribed.derived.mid",
+    "sha256": "6a4d6093e29d49e0b6cc01a0ce3ea6983e30917917c22ec62ba48c6eaa5cb452",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      325
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        375000
+      ]
+    ],
+    "note_count": 325,
+    "first_note_seconds": 13.08046875,
+    "last_note_off_seconds": 358.53046875,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "07-blue_bossa",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/07-blue_bossa/alternate/bass.transcribed.derived.mid",
+    "sha256": "bf71470d0decf65da3bea92be7e7f30c5c5c9aa5d8277e9605b9898fd680425f",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      1067
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        375000
+      ]
+    ],
+    "note_count": 1067,
+    "first_note_seconds": 3.0125,
+    "last_note_off_seconds": 362.7875,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "07-blue_bossa",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/07-blue_bossa/alternate/saxophone_alto.transcribed.derived.mid",
+    "sha256": "4536fba512d09625fec3ef54af98fd758baf182cc776f2beb9c4df093c30ee63",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      301
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        375000
+      ]
+    ],
+    "note_count": 301,
+    "first_note_seconds": 13.05,
+    "last_note_off_seconds": 362.4,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "07-blue_bossa",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/07-blue_bossa/alternate/trumpet.transcribed.derived.mid",
+    "sha256": "713be2784a236a7c73b302bf0398366147f980ff1a231b468ccc001544b6ff11",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      317
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        375000
+      ]
+    ],
+    "note_count": 317,
+    "first_note_seconds": 13.1,
+    "last_note_off_seconds": 362.1375,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "14-freddie_freeloader",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/14-freddie_freeloader/preferred/bass.transcribed.derived.mid",
+    "sha256": "d89ed01a76264b8122c38eae80e3c9bd2197f6bfc3285ab96974393a3f53cdcb",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      365
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        444444
+      ]
+    ],
+    "note_count": 365,
+    "first_note_seconds": 8.88702815,
+    "last_note_off_seconds": 300.61266235000005,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "14-freddie_freeloader",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/14-freddie_freeloader/preferred/saxophone_tenor.transcribed.derived.mid",
+    "sha256": "cdc68b271f9c58409440d4b3822d28fe440a54ddfe24c61842e13f1cf637c84a",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      158
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        444444
+      ]
+    ],
+    "note_count": 158,
+    "first_note_seconds": 1.710183475,
+    "last_note_off_seconds": 301.33673569999996,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "14-freddie_freeloader",
+    "take": "preferred",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/14-freddie_freeloader/preferred/trumpet.transcribed.derived.mid",
+    "sha256": "d7a9260676d9ffe7867ef8ca856fa67ea6351673843d081f3813bb6064816e66",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      161
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        444444
+      ]
+    ],
+    "note_count": 161,
+    "first_note_seconds": 15.587947375,
+    "last_note_off_seconds": 299.761737275,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "14-freddie_freeloader",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/14-freddie_freeloader/alternate/bass.transcribed.derived.mid",
+    "sha256": "4a7cd042659d9472513937eba08458a43923da85d7abbc6d969782b1b6b2bfb4",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      162
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        444444
+      ]
+    ],
+    "note_count": 162,
+    "first_note_seconds": 21.712015325,
+    "last_note_off_seconds": 297.61266535000004,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "14-freddie_freeloader",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/14-freddie_freeloader/alternate/saxophone_tenor.transcribed.derived.mid",
+    "sha256": "90fbce6d4e3283dd243b7e68b5dba911ab6fa3a70567e22f7e88f54c411c9bd4",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      173
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        444444
+      ]
+    ],
+    "note_count": 173,
+    "first_note_seconds": 1.480554075,
+    "last_note_off_seconds": 300.10988507499997,
+    "notes_outside_yamaha_piano_range": 0
+  },
+  {
+    "song": "14-freddie_freeloader",
+    "take": "alternate",
+    "path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/14-freddie_freeloader/alternate/trumpet.transcribed.derived.mid",
+    "sha256": "6263b553130bf9f7f1a13d122520d9656b29fa2eb20624dd335cfa16f958c4f2",
+    "format": 1,
+    "tracks": 2,
+    "note_counts_by_track": [
+      0,
+      133
+    ],
+    "ppq": 480,
+    "tempo_events": [
+      [
+        0,
+        444444
+      ]
+    ],
+    "note_count": 133,
+    "first_note_seconds": 6.8999931,
+    "last_note_off_seconds": 300.24969975,
+    "notes_outside_yamaha_piano_range": 0
+  }
+]

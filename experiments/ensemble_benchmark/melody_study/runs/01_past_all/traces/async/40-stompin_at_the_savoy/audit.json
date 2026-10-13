@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/40-stompin_at_the_savoy/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 305,
+    "trumpet": 373
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 328,
+  "reference_comparisons": 14422
+}

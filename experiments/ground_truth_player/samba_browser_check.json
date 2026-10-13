@@ -1,0 +1,37 @@
+{
+  "state": {
+    "error": "Different bars · 21.50 beats behind",
+    "estimate": "Bar 173",
+    "metrics": "Bass only · 10.9% correct bar · 31.08 beats mean error · evidence present at 79.6% of checks",
+    "overflow": false,
+    "playback": {
+      "activeVoices": 0,
+      "audioState": "not-started",
+      "checkedTime": 210,
+      "evidence": "bass",
+      "playing": false,
+      "recording": "samba_de_orfeu",
+      "rms": 0,
+      "tickHistory": [
+        {
+          "estimate": 689.7093807496362,
+          "time": 210,
+          "truth": 711.2143370326935,
+          "wall": 98308.30000000076
+        }
+      ],
+      "time": 210
+    },
+    "truth": "Bar 178",
+    "url": "http://127.0.0.1:8765/?song=samba_de_orfeu&evidence=bass",
+    "whole": true
+  },
+  "checked": [
+    "Samba source loaded",
+    "bass and trumpet selectors show independent traces",
+    "same timestamp retained between variants",
+    "full performance plot",
+    "no console errors"
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/04-all_the_things_you_are/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 419
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 185,
+  "reference_comparisons": 9545
+}

@@ -1,0 +1,673 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MIDI lead-sheet following: evaluation and findings</title>
+<style>body{font:16px/1.55 system-ui,sans-serif;color:#202c34;background:#fafbf9;max-width:1120px;margin:40px auto;padding:0 24px 70px}h1{font-size:32px;line-height:1.2}h2{margin-top:38px;font-size:23px}h3{font-size:18px}p,li{max-width:95ch}a{color:#175b70}table{border-collapse:collapse;width:100%;background:white;font-size:14px}th,td{text-align:left;padding:9px 11px;border-bottom:1px solid #d9e0e0}th{background:#edf2f2}td{font-variant-numeric:tabular-nums}code{font-size:.9em}.scroll{overflow-x:auto;margin:18px 0}.note{padding:15px 20px;border-left:4px solid #487a86;background:#edf4f4}pre{overflow:auto;background:#eef1ef;padding:18px;font-size:13px}.small{font-size:14px;color:#52616a}</style>
+<h1>MIDI lead-sheet following: evaluation and findings</h1>
+<p>Exploratory study, 6 October 2026. All 75 annotated preferred performances were evaluated: 49 async and 26 sync songs. Forty-two fixed settings were compared, followed by alternate-take, initial-tempo and random-seed checks.</p>
+<p class="note"><strong>Main result:</strong> using bass/root evidence and changing the temporal tracker improves the original baseline. The fine-tempo beam reaches 91.41% exact-bar accuracy on async; the particle setting reaches 72.96% on sync at seed 0. These are different settings. The async catalog-tempo clock already reaches 99.87%, so the async result does not demonstrate a better follower than that control.</p>
+<nav><a href="#metrics">Metric definitions</a> · <a href="#results">Results</a> · <a href="#robustness">Robustness</a> · <a href="#tunes">Tune properties</a> · <a href="#records">Full records</a></nav>
+
+<h2 id="metrics">What is being measured?</h2>
+<p>The tracker receives MIDI events in time order, an untimed unfolded chord plan, meter, the correct initial position/start time, and an approximate catalog tempo. Later reference timestamps are used only to score its outputs. Every 0.2 seconds, its estimated position is compared with the annotated performance.</p>
+<ol>
+<li><strong>Exact-bar accuracy:</strong> the percentage of evaluated 200-ms frames assigned to the correct occurrence of a bar in the unfolded plan. Bar 5 in chorus 2 is different from bar 5 in chorus 3. A 90% score means 90% of sampled time is in the correct bar; it does not mean 90% of bars are followed perfectly throughout.</li>
+<li><strong>Within-two-beat rate:</strong> the percentage of those same frames with absolute position error at most two quarter-note beats. An estimate of beat 42.5 when the reference is 44 has error 1.5 and passes; an estimate of 41 has error 3 and fails. This is a tolerance-based position measure, not beat-onset detection F-measure.</li>
+<li><strong>Mean absolute position error:</strong> average distance between estimated and reference positions, in quarter-note beats. Every frame contributes, including catastrophic errors. Smaller is better.</li>
+<li><strong>Median absolute position error:</strong> the middle frame error within one performance. This describes a typical frame but can hide large failures; it is always reported with the mean. Summary tables average each song's median, rather than computing one pooled median.</li>
+</ol>
+<p>For a simple error sequence of 0, 1, 2 and 9 beats, the within-two-beat rate is 75%, mean error is 3 beats, and median error is 1.5 beats. Exact-bar accuracy requires the actual bar labels and cannot be recovered from these four error magnitudes alone. Near a boundary, a small error can cross into the wrong bar; within a long bar, a larger error can still remain in the correct bar.</p>
+<p><strong>Reference limitation:</strong> the dataset supplies bar boundaries. Fractional beat position is linearly interpolated between those boundaries; individual beat onsets are not independently annotated. Exact-bar accuracy uses the bar labels directly. The beat-error measures therefore use an approximate reference for timing within a bar.</p>
+<p><strong>Aggregation:</strong> calculate each metric per song, then average songs equally within async and sync separately. Long songs do not dominate the corpus summary. Silence remains part of the position evaluation; the tracker must keep time when no useful pitch evidence arrives.</p>
+<h3>Chord recognition is a separate evaluation</h3>
+<p>The original benchmark also checks chord labels every 0.1 seconds. The primary label is root plus base quality: major, minor, diminished, augmented or the annotated suspension. It ignores sevenths, extensions, alteration flags and slash bass. For example, C7 and Cmaj7 both reduce to C major, while Cm7 reduces to C minor. A separate seventh-level analysis retains seventh type.</p>
+<p>Candidate chord labels are restricted to those in the supplied chart. This measures chart-conditioned harmonic recognition, not unrestricted chord transcription. The saved chord metrics include exact root/quality accuracy, root-only accuracy, balanced accuracy (equal weight per reference chord label), coverage, tie rate, and fractional tie credit. Missing evidence counts as incorrect on valid chord frames; annotated no-chord regions and annotation gaps are excluded from chord accuracy. Ties use a fixed ordering after any algorithm-specific tie rule; fractional accuracy awards 1/k when the correct chord is among k tied predictions.</p>
+<p>The new improvement study optimizes and evaluates position following. It does not claim that its 91.41% or 72.96% scores are chord-label accuracy. Batch runtime is recorded for reproducibility; it is not measured live MIDI latency.</p>
+
+<h2 id="results">Which changes helped?</h2>
+<p>The original common grid integrates tempo predictions with pooled harmonic scores. The stronger harmonic representation uses the identified bass track and assigns template weight 2 to the chord root, 1 to other base chord tones and 0 to other pitches. The beam retains several likely position/tempo paths; the particle filter retains continuous position/tempo samples and updates their weights from harmonic compatibility. Both are online, non-neural prototypes.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Protocol</th>
+      <th>Songs</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>Mean error (beats)</th>
+      <th>Mean of song medians (beats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Original pooled-harmony grid</td>
+      <td>async</td>
+      <td>49</td>
+      <td>51.88%</td>
+      <td>57.69%</td>
+      <td>8.615</td>
+      <td>6.655</td>
+    </tr>
+    <tr>
+      <td>Original pooled-harmony grid</td>
+      <td>sync</td>
+      <td>26</td>
+      <td>54.11%</td>
+      <td>60.41%</td>
+      <td>15.594</td>
+      <td>12.055</td>
+    </tr>
+    <tr>
+      <td>Bass/root-weighted grid</td>
+      <td>async</td>
+      <td>49</td>
+      <td>61.95%</td>
+      <td>67.14%</td>
+      <td>4.312</td>
+      <td>1.785</td>
+    </tr>
+    <tr>
+      <td>Bass/root-weighted grid</td>
+      <td>sync</td>
+      <td>26</td>
+      <td>65.05%</td>
+      <td>70.44%</td>
+      <td>4.572</td>
+      <td>1.703</td>
+    </tr>
+    <tr>
+      <td>Slow-diffusion particles (p02, seed 0)</td>
+      <td>async</td>
+      <td>49</td>
+      <td>66.60%</td>
+      <td>72.37%</td>
+      <td>8.325</td>
+      <td>1.457</td>
+    </tr>
+    <tr>
+      <td>Slow-diffusion particles (p02, seed 0)</td>
+      <td>sync</td>
+      <td>26</td>
+      <td>72.96%</td>
+      <td>79.38%</td>
+      <td>3.578</td>
+      <td>2.148</td>
+    </tr>
+    <tr>
+      <td>Fine-tempo sequence beam (s06)</td>
+      <td>async</td>
+      <td>49</td>
+      <td>91.41%</td>
+      <td>92.58%</td>
+      <td>0.529</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td>Fine-tempo sequence beam (s06)</td>
+      <td>sync</td>
+      <td>26</td>
+      <td>63.16%</td>
+      <td>72.40%</td>
+      <td>13.678</td>
+      <td>12.915</td>
+    </tr>
+  </tbody>
+</table></div>
+<h3>Controls</h3>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Protocol</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>Mean error (beats)</th>
+      <th>Mean of song medians (beats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Catalog-tempo clock</td>
+      <td>async</td>
+      <td>99.87%</td>
+      <td>100.00%</td>
+      <td>0.001</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Catalog-tempo clock</td>
+      <td>sync</td>
+      <td>7.72%</td>
+      <td>8.54%</td>
+      <td>52.722</td>
+      <td>51.649</td>
+    </tr>
+    <tr>
+      <td>Grid without harmony</td>
+      <td>async</td>
+      <td>91.16%</td>
+      <td>99.54%</td>
+      <td>0.350</td>
+      <td>0.334</td>
+    </tr>
+    <tr>
+      <td>Grid without harmony</td>
+      <td>sync</td>
+      <td>7.45%</td>
+      <td>7.95%</td>
+      <td>52.763</td>
+      <td>51.723</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>On async, the fine-tempo beam improves all 49 songs relative to the original pooled-harmony grid; 37/49 exceed 90% bar accuracy. On sync, the seed-0 particle configuration improves 24/26 songs over that grid and 23/26 over the bass/root-weighted grid. The tested onset-phase heuristic and simple confidence gate did not produce the leading results.</p>
+<p>The control without harmony uses the original grid's dynamics. The final beam and particle settings do not yet have matched full-corpus no-harmony ablations, so their gains do not isolate the causal contribution of harmonic evidence from the choice of temporal model.</p>
+<h3>Internal selection check</h3>
+<p>For each target song, the setting can be selected using the other songs' mean scores. Selecting separately by known protocol chooses s06 for async and p02 for sync; selecting one setting across both protocols chooses s06. No per-song oracle selects the best result from that song's labels. However, later candidate designs were informed by this inspected corpus: this internal leave-one-song-out check is not an untouched external test or a trained adaptive selector.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Protocol</th>
+      <th>Songs</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>Mean error (beats)</th>
+      <th>Mean of song medians (beats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Internal LOO: one setting across protocols</td>
+      <td>async</td>
+      <td>49</td>
+      <td>91.41%</td>
+      <td>92.58%</td>
+      <td>0.529</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td>Internal LOO: one setting across protocols</td>
+      <td>sync</td>
+      <td>26</td>
+      <td>63.16%</td>
+      <td>72.40%</td>
+      <td>13.678</td>
+      <td>12.915</td>
+    </tr>
+    <tr>
+      <td>Internal LOO: setting selected by protocol</td>
+      <td>async</td>
+      <td>49</td>
+      <td>91.41%</td>
+      <td>92.58%</td>
+      <td>0.529</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td>Internal LOO: setting selected by protocol</td>
+      <td>sync</td>
+      <td>26</td>
+      <td>72.96%</td>
+      <td>79.38%</td>
+      <td>3.578</td>
+      <td>2.148</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2 id="robustness">Alternate takes, tempo errors and random seeds</h2>
+<p>Alternate-take evaluation covers 49 async songs only. Matching annotations were unavailable for sync alternate takes. The original pooled-harmony baseline obtains 47.19% bar accuracy and 8.395 beats mean error on this same alternate cohort.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Protocol</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>Mean error (beats)</th>
+      <th>Mean of song medians (beats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slow-diffusion particles (p02, seed 0)</td>
+      <td>async</td>
+      <td>53.12%</td>
+      <td>57.42%</td>
+      <td>48.164</td>
+      <td>12.873</td>
+    </tr>
+    <tr>
+      <td>Fine-tempo sequence beam (s06)</td>
+      <td>async</td>
+      <td>84.33%</td>
+      <td>85.62%</td>
+      <td>5.284</td>
+      <td>4.514</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>The beam retains 84.33% on alternate async takes. The particle result has catastrophic outliers: its bar accuracy is higher than the original baseline, but its mean error rises to 48.16 beats. Reporting bar accuracy alone would hide this problem.</p>
+<p>Initial-tempo stress changes only the supplied starting BPM by −10% or +10%; the MIDI and reference stay unchanged. It tests initialization error, not a new artificially time-warped performance.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Protocol</th>
+      <th>Initial tempo factor</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>Mean error (beats)</th>
+      <th>Mean of song medians (beats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p02_particles_slow_t090</td>
+      <td>async</td>
+      <td>0.9</td>
+      <td>67.59%</td>
+      <td>73.21%</td>
+      <td>5.075</td>
+      <td>1.315</td>
+    </tr>
+    <tr>
+      <td>p02_particles_slow_t090</td>
+      <td>sync</td>
+      <td>0.9</td>
+      <td>72.02%</td>
+      <td>77.82%</td>
+      <td>6.282</td>
+      <td>4.230</td>
+    </tr>
+    <tr>
+      <td>p02_particles_slow_t110</td>
+      <td>async</td>
+      <td>1.1</td>
+      <td>68.00%</td>
+      <td>73.60%</td>
+      <td>16.373</td>
+      <td>2.334</td>
+    </tr>
+    <tr>
+      <td>p02_particles_slow_t110</td>
+      <td>sync</td>
+      <td>1.1</td>
+      <td>73.19%</td>
+      <td>79.24%</td>
+      <td>5.247</td>
+      <td>3.539</td>
+    </tr>
+    <tr>
+      <td>s06_beam_fine_tempo_t090</td>
+      <td>async</td>
+      <td>0.9</td>
+      <td>52.21%</td>
+      <td>58.98%</td>
+      <td>5.315</td>
+      <td>3.141</td>
+    </tr>
+    <tr>
+      <td>s06_beam_fine_tempo_t090</td>
+      <td>sync</td>
+      <td>0.9</td>
+      <td>52.41%</td>
+      <td>58.78%</td>
+      <td>36.137</td>
+      <td>31.385</td>
+    </tr>
+    <tr>
+      <td>s06_beam_fine_tempo_t110</td>
+      <td>async</td>
+      <td>1.1</td>
+      <td>51.22%</td>
+      <td>57.26%</td>
+      <td>6.895</td>
+      <td>4.200</td>
+    </tr>
+    <tr>
+      <td>s06_beam_fine_tempo_t110</td>
+      <td>sync</td>
+      <td>1.1</td>
+      <td>66.31%</td>
+      <td>75.35%</td>
+      <td>4.444</td>
+      <td>2.384</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>The async beam falls from 91.41% at nominal tempo to about 51–52% under the perturbed initial tempo. The sync particle setting stays around 72–73%. These results argue against calling the beam universally robust.</p>
+<h3>Particle repeatability</h3>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Protocol</th>
+      <th>Seed</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>Mean error (beats)</th>
+      <th>Mean of song medians (beats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>async</td>
+      <td>0</td>
+      <td>66.60%</td>
+      <td>72.37%</td>
+      <td>8.325</td>
+      <td>1.457</td>
+    </tr>
+    <tr>
+      <td>sync</td>
+      <td>0</td>
+      <td>72.96%</td>
+      <td>79.38%</td>
+      <td>3.578</td>
+      <td>2.148</td>
+    </tr>
+    <tr>
+      <td>async</td>
+      <td>1</td>
+      <td>68.31%</td>
+      <td>73.76%</td>
+      <td>7.669</td>
+      <td>1.125</td>
+    </tr>
+    <tr>
+      <td>sync</td>
+      <td>1</td>
+      <td>72.47%</td>
+      <td>78.64%</td>
+      <td>5.859</td>
+      <td>4.412</td>
+    </tr>
+    <tr>
+      <td>async</td>
+      <td>2</td>
+      <td>67.34%</td>
+      <td>72.93%</td>
+      <td>7.792</td>
+      <td>1.208</td>
+    </tr>
+    <tr>
+      <td>sync</td>
+      <td>2</td>
+      <td>72.90%</td>
+      <td>79.02%</td>
+      <td>5.079</td>
+      <td>3.610</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Across the three seeds, sync bar accuracy averages 72.78% and ranges from 72.47% to 72.96%. Mean beat error varies from 3.58 to 5.86; stable bar averages do not imply identical failure severity.</p>
+<h2 id="tunes">What do the more accurately followed tunes have in common?</h2>
+<p>For the sync particle setting, agreement between the exported bass pitches and annotated chord roots is associated with better bar accuracy. The fraction of non-silent frames containing a bass root has Spearman correlation 0.593 with accuracy. The highest five songs have median root-onset share 41.1%, compared with 28.3% for the lowest five. Their base chord-tone shares are 67.4% and 56.8%, respectively.</p>
+<p>These are descriptive, reference-dependent measurements made after tracking; the follower never receives them. They depend on transcription quality and annotation alignment. They do not establish causation, a genre rule, or a feature available to an online weighting model. Sparse bass can work well on async because the supplied fixed clock is already accurate; the same interpretation does not transfer to sync.</p>
+<h3>async · s06_beam_fine_tempo</h3>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>group</th>
+      <th>title</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>highest_5</td>
+      <td>Autumn Leaves</td>
+      <td>100.00%</td>
+      <td>100.00%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Isn't It Romantic?</td>
+      <td>100.00%</td>
+      <td>100.00%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Lazy Bird</td>
+      <td>100.00%</td>
+      <td>100.00%</td>
+      <td>bebop</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Meditation (Meditação)</td>
+      <td>100.00%</td>
+      <td>100.00%</td>
+      <td>bossa nova</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Peri's Scope</td>
+      <td>100.00%</td>
+      <td>100.00%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>Stompin' at the Savoy</td>
+      <td>39.25%</td>
+      <td>33.39%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>I Wish You Love</td>
+      <td>74.00%</td>
+      <td>79.93%</td>
+      <td>ballad</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>Take the "A" Train</td>
+      <td>74.13%</td>
+      <td>74.13%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>All of Me</td>
+      <td>74.85%</td>
+      <td>74.85%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>When You Wish Upon a Star</td>
+      <td>75.29%</td>
+      <td>78.87%</td>
+      <td>ballad</td>
+    </tr>
+  </tbody>
+</table></div>
+<h3>sync · p02_particles_slow</h3>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>group</th>
+      <th>title</th>
+      <th>Time in correct bar</th>
+      <th>Within 2 beats</th>
+      <th>genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>highest_5</td>
+      <td>Groovin' High</td>
+      <td>93.96%</td>
+      <td>100.00%</td>
+      <td>bebop</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Ceora</td>
+      <td>92.10%</td>
+      <td>99.01%</td>
+      <td>bossa nova</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Black Orpheus (Manhã de Carnaval)</td>
+      <td>91.64%</td>
+      <td>98.94%</td>
+      <td>bossa nova</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Triste</td>
+      <td>91.63%</td>
+      <td>98.50%</td>
+      <td>bossa nova</td>
+    </tr>
+    <tr>
+      <td>highest_5</td>
+      <td>Sway (Quien Sera)</td>
+      <td>91.00%</td>
+      <td>99.75%</td>
+      <td>latin</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>Samba de Orfeu</td>
+      <td>10.93%</td>
+      <td>13.61%</td>
+      <td>samba</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>Bye Bye Blackbird</td>
+      <td>20.20%</td>
+      <td>20.36%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>Don't Fence Me In</td>
+      <td>41.29%</td>
+      <td>44.47%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>Bernie's Tune</td>
+      <td>46.22%</td>
+      <td>49.45%</td>
+      <td>swing</td>
+    </tr>
+    <tr>
+      <td>lowest_5</td>
+      <td>La Vie En Rose (Take Me To Your Heart Again)</td>
+      <td>52.70%</td>
+      <td>55.79%</td>
+      <td>ballad</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Several async songs tie at 100%; the five shown are a deterministic subset of tied outcomes. The full per-song tables preserve every song. Sync failures such as Samba de Orfeu persist despite a small catalog-tempo mismatch, so initial tempo alone does not explain the failures.</p>
+<p>During sync solo-role sections, particle bar accuracy is 83.3% for trumpet, 79.8% for piano, 63.4% for bass and 52.3% for drums. The piano label describes the annotated solo role; no piano MIDI was supplied to the tracker. The role subsets contain different songs and inherit earlier tracking drift, so this is not a controlled comparison of roles.</p>
+<h2>What the study establishes, and what remains open</h2>
+<p>The experiments identify workable, better-performing baseline configurations and useful failure cases. They do not yet establish an adaptive evidence-weighting model, unrestricted repeat/jump handling, unknown-start alignment, or a real-time end-to-end accompaniment system. Yamaha- and Pardo-inspired components are adaptations within common experimental followers, not reproductions of the complete published systems.</p>
+<p>The inputs are automatic transcriptions of bass and horns, with drum MIDI used only in designated timing variants. They are not clean piano performances. Bass track identity is supplied by metadata. The reference is an unfolded performance plan with a synchronized known start. Independent verification of the audio/MIDI/annotation time origin remains outstanding, so the empirical scores are provisional. Local mixture duration differences alone cannot establish an offset.</p>
+<p>A useful next controlled study would verify this alignment, add matched no-harmony controls for the final temporal models, and freeze settings before testing new compositions. Only then should an adaptive weighting experiment test whether causal measures of ambiguity or recent consistency predict when harmony helps correct tempo-driven drift.</p>
+<h2 id="records">Experiment ledger and reproducibility</h2>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Run</th>
+      <th>Performances</th>
+      <th>Settings</th>
+      <th>Evaluations</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01_diagnostics</td>
+      <td>75</td>
+      <td>15</td>
+      <td>1125</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>02_rhythm_sequence</td>
+      <td>75</td>
+      <td>16</td>
+      <td>1200</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>03_bass_root_alternate</td>
+      <td>49</td>
+      <td>1</td>
+      <td>49</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>04_bass_root_tempo_stress</td>
+      <td>75</td>
+      <td>2</td>
+      <td>150</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>05_continuous_tempo</td>
+      <td>75</td>
+      <td>11</td>
+      <td>825</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>06_finalists_alternate</td>
+      <td>49</td>
+      <td>2</td>
+      <td>98</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>07_finalists_tempo_stress</td>
+      <td>75</td>
+      <td>4</td>
+      <td>300</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>08_particles_seed1</td>
+      <td>75</td>
+      <td>1</td>
+      <td>75</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>09_particles_seed2</td>
+      <td>75</td>
+      <td>1</td>
+      <td>75</td>
+      <td>Complete</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Validation passed: 3,897 prediction traces recomputed against saved metrics; 75 exact baseline reproductions; 462 input files unchanged; 98 absent-drum negative controls; causal-prefix, silence, overflow, tempo and random-seed checks. These checks validate implementation consistency, not independent annotation alignment or live latency.</p>
+<ul>
+<li><a href="comparison/report.html">All 42 settings, aggregate results and internal selection</a></li>
+<li><a href="tune_analysis_final_particles/analysis.md">Particle tune analysis</a> · <a href="tune_analysis_final_beam/analysis.md">Beam tune analysis</a></li>
+<li><a href="findings.json">Machine-readable findings</a> · <a href="validation.json">Validation results</a> · <a href="completion_audit.json">Completion audit</a></li>
+<li><a href="study_plan.json">Study plan</a> · <a href="wave03_rationale.json">Final-wave rationale</a> · <a href="environment.json">Runtime environment</a> · <a href="data_fingerprint.json">Input hashes</a></li>
+<li><a href="secondary_validation.md">Independent secondary-results review</a></li>
+</ul>
+<p>Each run folder contains <code>run.json</code> (settings saved before execution), <code>events.jsonl</code>, <code>summary.json</code>, <code>metrics.csv</code>, prediction traces, and source snapshots matching the execution hashes. Early smoke runs are explicitly incomplete development checks and are excluded from the main evaluation. Original MIDI, annotations, proposal text and baseline outputs were preserved.</p>
+<p>To run a new comparison from the workspace root, use the Python interpreter recorded in <code>environment.json</code> and a new output directory:</p>
+<pre>python3 'Research Proposal/experiments/ensemble_benchmark/improvement_study/run_study.py'   --wave continuous_tempo   --methods s06_beam_fine_tempo,p02_particles_slow   --output /tmp/follower-finalists-new-run
+
+# Optional alternate takes: --takes alternate
+# Initial-tempo stress: --tempo-factors 0.9,1.1
+# Particle replication: --methods p02_particles_slow --particle-seed 1</pre>
+<p class="small">Metric implementation: <code>../run_benchmark.py:position_metrics</code>; annotation targets: <code>../common.py:load_performance</code>. The chord and position metrics are different outputs and should not be conflated.</p>
+</html>

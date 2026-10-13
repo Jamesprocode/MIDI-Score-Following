@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/42-take_the_a_train/preferred",
+  "lead_instruments": [
+    "saxophone_tenor"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 249
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 127,
+  "reference_comparisons": 3632
+}

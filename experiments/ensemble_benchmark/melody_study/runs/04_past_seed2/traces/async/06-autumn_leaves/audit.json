@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/06-autumn_leaves/preferred",
+  "lead_instruments": [
+    "saxophone_tenor",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 248,
+    "trumpet": 281
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 217,
+  "reference_comparisons": 5447
+}

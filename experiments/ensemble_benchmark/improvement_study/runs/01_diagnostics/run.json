@@ -1,0 +1,315 @@
+{
+  "started_at": "2026-10-06T12:11:26.436654+00:00",
+  "wave": "diagnostics",
+  "settings": [
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {},
+      "method": "g00_reproduce",
+      "reason": "Exact reproduction control for the prior Maezawa-style primary result"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g01_bar_decision",
+      "reason": "Maximize posterior mass per bar rather than a single half-beat bin"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "emission_power_per_second": 0.25
+      },
+      "method": "g02_weak_harmony",
+      "reason": "Reduce harm from unreliable harmonic updates"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "emission_power_per_second": 0.25,
+        "output_rule": "bar"
+      },
+      "method": "g03_weak_bar",
+      "reason": "Combine weaker observations with a bar decision"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_bass",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g04_bass_active",
+      "reason": "Remove improvised horn pitches from harmonic observations"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_balanced",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g05_balanced_active",
+      "reason": "Prevent dense instrument transcriptions from dominating"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g06_bass_root",
+      "reason": "Give bass-root correspondence additional weight"
+    },
+    {
+      "engine": "grid",
+      "feature": "onset_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g07_onsets",
+      "reason": "One-second onset context with posterior bar decision"
+    },
+    {
+      "engine": "grid",
+      "feature": "onset_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "harmonic_delay_seconds": 0.5
+      },
+      "method": "g08_onset_delay",
+      "reason": "Compare a trailing window with past candidate harmony while reporting current position"
+    },
+    {
+      "engine": "grid",
+      "feature": "onset_bass",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "harmonic_delay_seconds": 0.5
+      },
+      "method": "g09_bass_onset_delay",
+      "reason": "Combine bass-only evidence with trailing-window age correction"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "fraction4",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g10_raw_contrast",
+      "reason": "Preserve absolute match contrast rather than standardizing every frame"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "entropy",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g11_confidence_gate",
+      "reason": "Temper observations by information in their unstandardized scores"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3
+      },
+      "method": "g12_broad_prior",
+      "reason": "Allow catalog-tempo mismatch with broader tempo support and initial uncertainty"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "bins_per_beat": 4
+      },
+      "method": "g13_finer_grid",
+      "reason": "Reduce position rounding diffusion with quarter-beat bins"
+    },
+    {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "seventh",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g14_seventh",
+      "reason": "Retain seventh quality while still ignoring higher extensions"
+    }
+  ],
+  "scope": "preferred",
+  "limit": 0,
+  "performance_ids": [
+    "async/00-a_night_in_tunisia/preferred",
+    "async/01-a_sunday_kind_of_love/preferred",
+    "async/02-alice_in_wonderland/preferred",
+    "async/03-all_of_me/preferred",
+    "async/04-all_the_things_you_are/preferred",
+    "async/05-au_privave/preferred",
+    "async/06-autumn_leaves/preferred",
+    "async/07-blue_bossa/preferred",
+    "async/08-blue_skies/preferred",
+    "async/09-caravan/preferred",
+    "async/10-desafinado/preferred",
+    "async/12-for_sentimental_reasons/preferred",
+    "async/13-four/preferred",
+    "async/14-freddie_freeloader/preferred",
+    "async/15-frenesi/preferred",
+    "async/16-how_high_the_moon/preferred",
+    "async/17-i_could_write_a_book/preferred",
+    "async/18-i_wish_you_love/preferred",
+    "async/19-if_i_were_a_bell/preferred",
+    "async/20-impressions/preferred",
+    "async/21-isnt_it_romantic/preferred",
+    "async/22-lazy_bird/preferred",
+    "async/23-like_someone_in_love/preferred",
+    "async/24-long_ago/preferred",
+    "async/25-lullaby_of_birdland/preferred",
+    "async/26-mas_que_nada/preferred",
+    "async/27-meditation/preferred",
+    "async/28-moonglow/preferred",
+    "async/29-my_favorite_things/preferred",
+    "async/30-nicas_dream/preferred",
+    "async/31-o_pato/preferred",
+    "async/32-ornithology/preferred",
+    "async/33-peris_scope/preferred",
+    "async/34-quiet_nights_of_quiet_stars/preferred",
+    "async/35-recordame/preferred",
+    "async/36-road_song/preferred",
+    "async/37-song_for_my_father/preferred",
+    "async/38-spain/preferred",
+    "async/39-st_thomas/preferred",
+    "async/40-stompin_at_the_savoy/preferred",
+    "async/41-take_five/preferred",
+    "async/42-take_the_a_train/preferred",
+    "async/43-the_girl_from_ipanema/preferred",
+    "async/44-the_great_pumpkin_waltz/preferred",
+    "async/45-tour_de_force/preferred",
+    "async/46-wait_till_you_see_her/preferred",
+    "async/47-wave/preferred",
+    "async/48-when_you_wish_upon_a_star/preferred",
+    "async/49-woodchoppers_ball/preferred",
+    "sync/50-almost_like_being_in_love/preferred",
+    "sync/51-amazing_grace/preferred",
+    "sync/52-bernies_tune/preferred",
+    "sync/53-black_orpheus/preferred",
+    "sync/54-boplicity/preferred",
+    "sync/55-bye_bye_blackbird/preferred",
+    "sync/56-ceora/preferred",
+    "sync/57-chega_de_saudade/preferred",
+    "sync/58-dont_fence_me_in/preferred",
+    "sync/59-groovin_high/preferred",
+    "sync/60-in_a_sentimental_mood/preferred",
+    "sync/61-invitation/preferred",
+    "sync/62-it_dont_mean_a_thing/preferred",
+    "sync/63-la_vie_en_rose/preferred",
+    "sync/64-love/preferred",
+    "sync/65-misty/preferred",
+    "sync/66-nardis/preferred",
+    "sync/67-on_green_dolphin_street/preferred",
+    "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "sync/69-one_note_samba/preferred",
+    "sync/70-samba_de_orfeu/preferred",
+    "sync/71-some_day_my_prince_will_come/preferred",
+    "sync/72-sway/preferred",
+    "sync/73-triste/preferred",
+    "sync/74-waltz_for_debby/preferred",
+    "sync/75-when_the_saints_go_marching_in/preferred"
+  ],
+  "workers": 3,
+  "source_hashes": {
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/run_study.py": "f0221914e5b0d6c464aaa382d9f5147893b0654217ed87939ebe589ec7db173e",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/adaptive_grid.py": "d9179f1dd88736ab49952a6765ead0f78758ab6d0cb741c8535e391b94b4bf22",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/common.py": "96283e225fd03e724e1c434a7a0be8a3ed22057e0b1fb556bcd4f0de62e06c03",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/run_benchmark.py": "e85f57fb64a879908dcc8c4142e9773e2ec1ed3cfa15d5c59e5f4e050936ef60",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/position_filter.py": "3b74e51a66fb71f7a28f9a4347aa3bdd85df31d640abc054abe6e19a0ad267a9",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/harmony_pilot/run_pilot.py": "10815a5f0f9ec921c63000758b889860b7761a424bc42c66e95a8c2cd9947d35",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/harmony_pilot/yamaha_matcher.py": "abe9ba03b926472fe8469441d2faac7982d677a446bf32f49c7545837cf30e4a"
+  },
+  "manifest_sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+  "selection": "Exploratory candidate comparison; no per-song oracle settings at inference. Later setting selection excludes the evaluated song.",
+  "initialization": "Known musical start and position, catalog BPM; later reference times only for metrics",
+  "metrics": "Same 200ms exact unfolded-bar, within2beats, all-frame mean/median beat error as preserved baseline",
+  "reference": "Beat targets interpolated inside annotated bars; AMT timestamp origin not independently verified",
+  "runtime": "Batch causal simulation; measured wall times are not live input/output latency"
+}

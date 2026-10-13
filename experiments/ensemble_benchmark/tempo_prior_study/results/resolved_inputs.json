@@ -1,0 +1,1133 @@
+[
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "song_id": 50,
+    "song": "50-almost_like_being_in_love",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/50-almost_like_being_in_love.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/50-almost_like_being_in_love/preferred/bass.transcribed.derived.mid",
+        "bytes": 2225,
+        "sha256": "ff9a44b9eb6e33b5a484821e4a73665437cad7275b4363a2125f0f0bc1473d3c",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/50-almost_like_being_in_love/preferred/drums.transcribed.derived.mid",
+        "bytes": 10689,
+        "sha256": "66aa0d49f1c46b45f6d2e326eae0b071255249acab96bc5c92f18fa83c498c80",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/50-almost_like_being_in_love/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2288,
+        "sha256": "d36694acb6bc40494dc4d7213ba96b12fc2c850634e3eeed881bc8e09891d9c6",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 175.0,
+    "key_signature": "Eb Major",
+    "duration_seconds": 242.124,
+    "evaluation_start_seconds": 1.217,
+    "evaluation_end_seconds": 242.124,
+    "title": "Almost Like Being in Love (from Brigadoon)"
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "song_id": 51,
+    "song": "51-amazing_grace",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/51-amazing_grace.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/51-amazing_grace/preferred/bass.transcribed.derived.mid",
+        "bytes": 1825,
+        "sha256": "c3f33ec0478ecc21d1f25de0b43c2d2b14c20a91294df4b72550049355cbcce5",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/51-amazing_grace/preferred/drums.transcribed.derived.mid",
+        "bytes": 5040,
+        "sha256": "b82b34dfffc9bfe6f0dcbf46ce47c585701f4841832774cf365939812b082180",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/51-amazing_grace/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 1055,
+        "sha256": "e9ca74b74f2c2c49243deb7ef85646cdf88356a22f3646eec502e9409c72e5c7",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 155.0,
+    "key_signature": "F Major",
+    "duration_seconds": 107.835,
+    "evaluation_start_seconds": 1.076,
+    "evaluation_end_seconds": 107.835,
+    "title": "Amazing Grace"
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "song_id": 52,
+    "song": "52-bernies_tune",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/52-bernies_tune.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/52-bernies_tune/preferred/bass.transcribed.derived.mid",
+        "bytes": 2898,
+        "sha256": "430bff352d3c08441dc32e4e5aad4ecd2daff611cbc7edfcb1ef5f315abd9107",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/52-bernies_tune/preferred/drums.transcribed.derived.mid",
+        "bytes": 10204,
+        "sha256": "53517e431e6ad845fac5bc825382db4dcf20835cd29d433ded8cb15face39153",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/52-bernies_tune/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 15289,
+        "sha256": "caf108733a889beaaf42a3d17780b4486af1e5dd91c79158ec742f766e1accee",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 200.0,
+    "key_signature": "D minor",
+    "duration_seconds": 218.376,
+    "evaluation_start_seconds": 1.193,
+    "evaluation_end_seconds": 218.376,
+    "title": "Bernie's Tune"
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "song_id": 53,
+    "song": "53-black_orpheus",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/53-black_orpheus.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/53-black_orpheus/preferred/bass.transcribed.derived.mid",
+        "bytes": 5297,
+        "sha256": "20c1ed57b9b52a891e616fd174ba572187c4fe29976a74c466c9d708a14c1c8a",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/53-black_orpheus/preferred/drums.transcribed.derived.mid",
+        "bytes": 14265,
+        "sha256": "d2fa940b9a922dad49df52a77767535ed72615302c3830d0acf92706cce314d5",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/53-black_orpheus/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 3925,
+        "sha256": "a63543e08fbdd89fdc05ea251b6b5364c7119f483edd104a97f70611b4d54940",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/53-black_orpheus/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 3689,
+        "sha256": "e649cb52b6ac57bfa6a8155affa5c149e260d67afe6bc0f68c4e01e92ad9e140",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 170.0,
+    "key_signature": "F minor",
+    "duration_seconds": 322.088,
+    "evaluation_start_seconds": 1.608,
+    "evaluation_end_seconds": 322.088,
+    "title": "Black Orpheus (Manh\u00e3 de Carnaval)"
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "song_id": 54,
+    "song": "54-boplicity",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/54-boplicity.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/54-boplicity/preferred/bass.transcribed.derived.mid",
+        "bytes": 5851,
+        "sha256": "393c8cce2b7a8539d0c37204a0c1708486a242df9adee30eb7b65713a8162f0e",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/54-boplicity/preferred/drums.transcribed.derived.mid",
+        "bytes": 14476,
+        "sha256": "768dc82f5a5fd38347e973f5fae0160a2403e8c24b52c1bda830fbc6bceaa297",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/54-boplicity/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 4698,
+        "sha256": "93fdcc241ee4fb1b0ee054e32159cdc4b5b4761aff104b957e6ece2a8014b74a",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/54-boplicity/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 3482,
+        "sha256": "61491dcfc3ef819b558e1f643e2c35f85ba810448a7f34e33b692441d4cc8a96",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 135.0,
+    "key_signature": "D minor",
+    "duration_seconds": 402.305,
+    "evaluation_start_seconds": 1.794,
+    "evaluation_end_seconds": 402.305,
+    "title": "Boplicity (Be Bop Lives)"
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "song_id": 55,
+    "song": "55-bye_bye_blackbird",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/55-bye_bye_blackbird.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/55-bye_bye_blackbird/preferred/bass.transcribed.derived.mid",
+        "bytes": 4976,
+        "sha256": "418cec6dc15415126086b237463da65caee82cfc08ae97ce61211ea50c70d5e5",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/55-bye_bye_blackbird/preferred/drums.transcribed.derived.mid",
+        "bytes": 12719,
+        "sha256": "8e50496384993acabd086c00db036ada2d7e24130b40be9dfcf9dcd00d3e2a45",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/55-bye_bye_blackbird/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2190,
+        "sha256": "f0ff5b7ba6b2f819bfe726a0ed64f09beebc63d293c0d2f3b981b752eaffe095",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 120.0,
+    "key_signature": "F Major",
+    "duration_seconds": 367.219,
+    "evaluation_start_seconds": 1.923,
+    "evaluation_end_seconds": 367.219,
+    "title": "Bye Bye Blackbird"
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "song_id": 56,
+    "song": "56-ceora",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/56-ceora.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/56-ceora/preferred/bass.transcribed.derived.mid",
+        "bytes": 5513,
+        "sha256": "7cbb4202153c01b2a9d62e3d63b4d95f957177c060b69f464a6eeb7c874465f0",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/56-ceora/preferred/drums.transcribed.derived.mid",
+        "bytes": 16371,
+        "sha256": "adafb6a321f6fe3a5293d7ec90c4a4d6e1a05c2f4333e27c5b218539096df4c0",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/56-ceora/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 3477,
+        "sha256": "3bb734001d38a90d38d443aea34e3b81fe9cac2d0e3313b3afcad368e36a417e",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/56-ceora/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 5040,
+        "sha256": "374d613c935deff37103a842f95bc0687ed8ca35ad7f1edf883b3bc55153bdc8",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 130.0,
+    "key_signature": "Ab Major",
+    "duration_seconds": 404.216,
+    "evaluation_start_seconds": 1.789,
+    "evaluation_end_seconds": 404.216,
+    "title": "Ceora"
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "song_id": 57,
+    "song": "57-chega_de_saudade",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/57-chega_de_saudade.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/57-chega_de_saudade/preferred/bass.transcribed.derived.mid",
+        "bytes": 8879,
+        "sha256": "0c7daf8389a1e7c26b26830ef836baefd5099fc01a47e1bb543eb7405a1d05b4",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/57-chega_de_saudade/preferred/drums.transcribed.derived.mid",
+        "bytes": 23037,
+        "sha256": "428ffb130c66ddbef7e221682399825d470e19ab05c1ab54f9a9969889b5ff24",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/57-chega_de_saudade/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 4919,
+        "sha256": "b6d040e12d124d914eda38911d38bd9261ce2beb655276f45c075541834f2b82",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/57-chega_de_saudade/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 48393,
+        "sha256": "916d37248d136bcdab087a88dc40bebdfd5f255a3a7c127faeec88d688376c45",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 145.0,
+    "key_signature": "D minor",
+    "duration_seconds": 594.951,
+    "evaluation_start_seconds": 1.314,
+    "evaluation_end_seconds": 594.951,
+    "title": "Chega de Saudade (No More Blues)"
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "song_id": 58,
+    "song": "58-dont_fence_me_in",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/58-dont_fence_me_in.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/58-dont_fence_me_in/preferred/bass.transcribed.derived.mid",
+        "bytes": 5826,
+        "sha256": "22f3d07796eacf382d12e22b01158540f0b87b60da32e5fe7ba34e5fd2f017b8",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/58-dont_fence_me_in/preferred/drums.transcribed.derived.mid",
+        "bytes": 13661,
+        "sha256": "a109131e62ed69c6069220af1ed523d2483c00703e71b713054037926bf8bd64",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/58-dont_fence_me_in/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 945,
+        "sha256": "b8c651786c46d53c7853d92308176842da49521c1221714247a3b504d542790d",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/58-dont_fence_me_in/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 3245,
+        "sha256": "c9a365d232b91d59229b69c778b58a81c58c2b30f9c3d524b2a43b8328d9bf48",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 130.0,
+    "key_signature": "F Major",
+    "duration_seconds": 334.164,
+    "evaluation_start_seconds": 1.38,
+    "evaluation_end_seconds": 334.164,
+    "title": "Don't Fence Me In"
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "song_id": 59,
+    "song": "59-groovin_high",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/59-groovin_high.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/59-groovin_high/preferred/bass.transcribed.derived.mid",
+        "bytes": 5036,
+        "sha256": "c79822662178bf0a9ac5dd19b9927a26ed20c012d15ebf7444ac5351a9b0840d",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/59-groovin_high/preferred/drums.transcribed.derived.mid",
+        "bytes": 9773,
+        "sha256": "09b45febf087193ac1e908cd6fa6fb55ee51e9e5ff7f1a006cda84a291b0487f",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/59-groovin_high/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 1967,
+        "sha256": "765090efb394597c9d4c95def15b122958dd1da18d61eab1bd0e9bcaba450f3f",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/59-groovin_high/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2629,
+        "sha256": "401eea92e12278889348034537f8395a314889a00c525a240b3359c4f89398dc",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 185.0,
+    "key_signature": "Eb Major",
+    "duration_seconds": 255.9195,
+    "evaluation_start_seconds": 1.183833,
+    "evaluation_end_seconds": 255.9195,
+    "title": "Groovin' High"
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "song_id": 60,
+    "song": "60-in_a_sentimental_mood",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/60-in_a_sentimental_mood.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/60-in_a_sentimental_mood/preferred/bass.transcribed.derived.mid",
+        "bytes": 6431,
+        "sha256": "657bb54881ace504aee6be4b88d31274a0995b27e7f6a85c2f69ec62339fa509",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/60-in_a_sentimental_mood/preferred/drums.transcribed.derived.mid",
+        "bytes": 15883,
+        "sha256": "a9c349934bb90fbdb315509e7155e61d8f357d2db1c2b2db21dec58e41339f1c",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/60-in_a_sentimental_mood/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 3007,
+        "sha256": "54c7f7767a12bc92702d838c859509b97ce73a4fce18780bfe9f34cb0ea97f52",
+        "instrument": "saxophone_alto"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 75.0,
+    "key_signature": "C minor",
+    "duration_seconds": 688.426,
+    "evaluation_start_seconds": 3.445,
+    "evaluation_end_seconds": 688.426,
+    "title": "In a Sentimental Mood"
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "song_id": 61,
+    "song": "61-invitation",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/61-invitation.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/61-invitation/preferred/bass.transcribed.derived.mid",
+        "bytes": 5601,
+        "sha256": "ad787a80b29422c465c478689e6d99be02c7ad773e79519f484ed4e5425d44fa",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/61-invitation/preferred/drums.transcribed.derived.mid",
+        "bytes": 13928,
+        "sha256": "625f03a344be560201ee6a0eabf1df5bb1ceb08ba6ec256de21979bf48690756",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/61-invitation/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 3928,
+        "sha256": "1267e8ff4d07f6ea3da91b1b9285803d11ef3cb5e4090d03bcb24ff23098e160",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/61-invitation/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2992,
+        "sha256": "eb2814c907fefa5b3f1c738425667e4f644519861bfefcc00f7cc9df7f165521",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 250.0,
+    "key_signature": "C minor",
+    "duration_seconds": 275.189,
+    "evaluation_start_seconds": 0.907,
+    "evaluation_end_seconds": 275.189,
+    "title": "Invitation"
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "song_id": 62,
+    "song": "62-it_dont_mean_a_thing",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/62-it_dont_mean_a_thing.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/62-it_dont_mean_a_thing/preferred/bass.transcribed.derived.mid",
+        "bytes": 4894,
+        "sha256": "ea1464236611f8fd963789a32e64b5af764f4ce077845d59b44d7f1506ea8725",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/62-it_dont_mean_a_thing/preferred/drums.transcribed.derived.mid",
+        "bytes": 11795,
+        "sha256": "a7571fa222f752e3528c72df8941e48a76efac376d28592e5481e751e74b5f56",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/62-it_dont_mean_a_thing/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 2214,
+        "sha256": "68133417b3333fe176d9c3335fa48a5dbd0e8f5bf7deb6d316083622f204a243",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/62-it_dont_mean_a_thing/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2523,
+        "sha256": "7ecbe140c5136f26827d682383c50fbc3db13255ee73bacf1a334ec50572413d",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 210.0,
+    "key_signature": "G minor",
+    "duration_seconds": 253.016,
+    "evaluation_start_seconds": 1.145,
+    "evaluation_end_seconds": 253.016,
+    "title": "It Don't Mean a Thing (If It Ain't Got That Swing)"
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "song_id": 63,
+    "song": "63-la_vie_en_rose",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/63-la_vie_en_rose.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/63-la_vie_en_rose/preferred/bass.transcribed.derived.mid",
+        "bytes": 3686,
+        "sha256": "dea1a62294035e3c517c822dd1479c91e5a3a7bb44c83eede8e81588f8506289",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/63-la_vie_en_rose/preferred/drums.transcribed.derived.mid",
+        "bytes": 8573,
+        "sha256": "10e2e357f40d0c0074cc2d2fe67cfa83da7cc1174e6253827d1dc576cab82964",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/63-la_vie_en_rose/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 2257,
+        "sha256": "309c70b1380e972c0ab315f021159e1bac2999338fdb4180737775066c62f7e8",
+        "instrument": "saxophone_alto"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 110.0,
+    "key_signature": "C Major",
+    "duration_seconds": 287.442,
+    "evaluation_start_seconds": 2.461,
+    "evaluation_end_seconds": 287.442,
+    "title": "La Vie En Rose (Take Me To Your Heart Again)"
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "song_id": 64,
+    "song": "64-love",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/64-love.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/64-love/preferred/bass.transcribed.derived.mid",
+        "bytes": 5425,
+        "sha256": "7a05c060d1128af61067964fffb742e7195ff63d4d62ce76d41d39c5113dc29d",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/64-love/preferred/drums.transcribed.derived.mid",
+        "bytes": 11740,
+        "sha256": "5f251adf95813269275e1622a0c8fa7cd953fcfa5c4bc806eca626441a83a18a",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/64-love/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 3670,
+        "sha256": "899b2f033e0b6e736a89e830e8846279561c469f4a530173a8c71dc804c244a1",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/64-love/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2141,
+        "sha256": "38d2abf9eb41e17aab42c0cf20639dbabfc3341f2b6a1a8553cff52f30a72914",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 155.0,
+    "key_signature": "G Major",
+    "duration_seconds": 329.485,
+    "evaluation_start_seconds": 1.411,
+    "evaluation_end_seconds": 329.485,
+    "title": "L-O-V-E"
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "song_id": 65,
+    "song": "65-misty",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/65-misty.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/65-misty/preferred/bass.transcribed.derived.mid",
+        "bytes": 7454,
+        "sha256": "2d676f04b20929bc9dcb7fa3a26db01fad4ecc644af9e8b730219f56c4207f41",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/65-misty/preferred/drums.transcribed.derived.mid",
+        "bytes": 18172,
+        "sha256": "9be0a5b68c2a735b67c61c6ef12f106d6f788f900bee43888f1856a49da90eb1",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/65-misty/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 2844,
+        "sha256": "ed46d354ca89b89d186fb9095f0e844ae7b6fa4919da851a61ea7557ce864502",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/65-misty/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2908,
+        "sha256": "0037fa9575e5d44ea901112a3f75a57b28f84f6b60bacf898bef18baf6e1bfdd",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 75.0,
+    "key_signature": "F Major",
+    "duration_seconds": 804.542,
+    "evaluation_start_seconds": 3.436,
+    "evaluation_end_seconds": 804.542,
+    "title": "Misty"
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "song_id": 66,
+    "song": "66-nardis",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/66-nardis.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/66-nardis/preferred/bass.transcribed.derived.mid",
+        "bytes": 4552,
+        "sha256": "591b4065fd67345de916824fae99a6619b7dc5d3b7544a43a599907c17e0be64",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/66-nardis/preferred/drums.transcribed.derived.mid",
+        "bytes": 12146,
+        "sha256": "af5885385b94156536071905a39a3a1fd67d2471488b43826db3549420f1cd7c",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/66-nardis/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 16176,
+        "sha256": "0677453e7e42ef536a9ede394e80bdf60263e8ace343e5faeaf156fe7fb12de4",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 150.0,
+    "key_signature": "E minor",
+    "duration_seconds": 328.615,
+    "evaluation_start_seconds": 1.758,
+    "evaluation_end_seconds": 328.615,
+    "title": "Nardis"
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "song_id": 67,
+    "song": "67-on_green_dolphin_street",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/67-on_green_dolphin_street.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/67-on_green_dolphin_street/preferred/bass.transcribed.derived.mid",
+        "bytes": 3571,
+        "sha256": "4082ef31d2fc81ba462c657b8bfcbc2498d0cf107d57cbad3217fad30c16f12f",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/67-on_green_dolphin_street/preferred/drums.transcribed.derived.mid",
+        "bytes": 10108,
+        "sha256": "87d36d2b434410d3315604faee1a2ae66581fc9aa3431063f11b82ecc9cb7450",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/67-on_green_dolphin_street/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 1617,
+        "sha256": "bc9213a3e25b5e4b5fc1601f444989a7ed44b0c52874322f25d016bbe34b2003",
+        "instrument": "saxophone_alto"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 165.0,
+    "key_signature": "C Major",
+    "duration_seconds": 246.486,
+    "evaluation_start_seconds": 1.397,
+    "evaluation_end_seconds": 246.486,
+    "title": "On Green Dolphin Street"
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "song_id": 68,
+    "song": "68-on_the_sunny_side_of_the_street",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/68-on_the_sunny_side_of_the_street.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/68-on_the_sunny_side_of_the_street/preferred/bass.transcribed.derived.mid",
+        "bytes": 5917,
+        "sha256": "1bdfcaec615c411bead09efa42b814cf3402f60d105cf2de572619384e879b82",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/68-on_the_sunny_side_of_the_street/preferred/drums.transcribed.derived.mid",
+        "bytes": 14312,
+        "sha256": "45e00c91a5dea78f6927718b0fa804b365f2c47e169d6f712ead072c685eb99f",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/68-on_the_sunny_side_of_the_street/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 3349,
+        "sha256": "9b988da45252cd3cca824f31580e922c1cfb0ac548203b60d155677788da700b",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/68-on_the_sunny_side_of_the_street/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 3911,
+        "sha256": "283e7e994c64139e79574ae729da63409059a815ecb0f00a41f58a2e890c5a7d",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 105.0,
+    "key_signature": "C Major",
+    "duration_seconds": 434.305,
+    "evaluation_start_seconds": 2.266,
+    "evaluation_end_seconds": 434.305,
+    "title": "On the Sunny Side of the Street"
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "song_id": 69,
+    "song": "69-one_note_samba",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/69-one_note_samba.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/69-one_note_samba/preferred/bass.transcribed.derived.mid",
+        "bytes": 5656,
+        "sha256": "558b8b5f1a1a0aa1544829cd11abdde8db7b5f25f8d1e495337823e778084765",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/69-one_note_samba/preferred/drums.transcribed.derived.mid",
+        "bytes": 13350,
+        "sha256": "139fbf96805b17bda6aae4868a0643333db3bcba1e6def26b37e28f9b682eb1e",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/69-one_note_samba/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 1905,
+        "sha256": "9ab5f63f7cfdf5dc687b380c0c80eb7472555732250d720758674aaea82a180a",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/69-one_note_samba/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 3458,
+        "sha256": "69f2b641142cd1676304f0bd9c9b2e3247016ee76b4884a673693da28e5cf5f3",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 165.0,
+    "key_signature": "Bb Major",
+    "duration_seconds": 302.59,
+    "evaluation_start_seconds": 1.171,
+    "evaluation_end_seconds": 302.59,
+    "title": "One Note Samba (Samba de Uma Nota S\u00f3)"
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "song_id": 70,
+    "song": "70-samba_de_orfeu",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/70-samba_de_orfeu.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/70-samba_de_orfeu/preferred/bass.transcribed.derived.mid",
+        "bytes": 7749,
+        "sha256": "cba7de78ad68e86a2ee8fb5ffd58485bb67b1642b179776f2a18200f8a07c3f6",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/70-samba_de_orfeu/preferred/drums.transcribed.derived.mid",
+        "bytes": 19423,
+        "sha256": "14f83e2520f720c13b5f8a72835bb684c89fee7fa4366620a4a9d95017fecb2a",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/70-samba_de_orfeu/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 3407,
+        "sha256": "cc229b56e3cf37e6b7c02ba4d2e5bb5e20b54ddd49418d0137ac931d1794684a",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 200.0,
+    "key_signature": "C Major",
+    "duration_seconds": 411.070958,
+    "evaluation_start_seconds": 1.134292,
+    "evaluation_end_seconds": 411.070958,
+    "title": "Samba de Orfeu"
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "song_id": 71,
+    "song": "71-some_day_my_prince_will_come",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/71-some_day_my_prince_will_come.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/71-some_day_my_prince_will_come/preferred/bass.transcribed.derived.mid",
+        "bytes": 2910,
+        "sha256": "c5625f4d5418edbf66f9d4e031fed8f283a78822fc5b355535a20931eac9eb17",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/71-some_day_my_prince_will_come/preferred/drums.transcribed.derived.mid",
+        "bytes": 8154,
+        "sha256": "5d6cdf56de84297a666ac16b985dd5ccd151641f0901aca49ffe972446eed9f4",
+        "instrument": "drums"
+      },
+      {
+        "name": "saxophone_alto.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/71-some_day_my_prince_will_come/preferred/saxophone_alto.transcribed.derived.mid",
+        "bytes": 2088,
+        "sha256": "878b783d4115d652fa8eb9a510441cdf9521562915d2985caf2de9bd60d2365a",
+        "instrument": "saxophone_alto"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/71-some_day_my_prince_will_come/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 871,
+        "sha256": "65524cadeb5cbb244cbf296514d78893a743a727f5d03f8a06fe06c63d4dac97",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "3/4",
+    "bpm": 155.0,
+    "key_signature": "Bb Major",
+    "duration_seconds": 210.653271,
+    "evaluation_start_seconds": 0.915104,
+    "evaluation_end_seconds": 210.653271,
+    "title": "Some Day My Prince Will Come"
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "song_id": 72,
+    "song": "72-sway",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/72-sway.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/72-sway/preferred/bass.transcribed.derived.mid",
+        "bytes": 5030,
+        "sha256": "7c1ba26a9871a03f84c77b27d7322698d2c11b8f2a4133315798d495d289f331",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/72-sway/preferred/drums.transcribed.derived.mid",
+        "bytes": 13282,
+        "sha256": "d4c9c564c56be236418145a35283841a8baad03fb3333632de5c373328180cdb",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/72-sway/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 3083,
+        "sha256": "c84e5f1fa8aef309ac39ef358db6a7e0ac57be7d1e69d9fa69bd21526ad1c6b7",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 125.0,
+    "key_signature": "B minor",
+    "duration_seconds": 324.105167,
+    "evaluation_start_seconds": 1.842667,
+    "evaluation_end_seconds": 324.105167,
+    "title": "Sway (Quien Sera)"
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "song_id": 73,
+    "song": "73-triste",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/73-triste.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/73-triste/preferred/bass.transcribed.derived.mid",
+        "bytes": 4791,
+        "sha256": "1756a78f5332ced829de528ecce14ec348d300975b0db12cafa2dca0ee8662ae",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/73-triste/preferred/drums.transcribed.derived.mid",
+        "bytes": 12970,
+        "sha256": "93cef5d9f5b69c5e0097c69e76ea5feb7ec0853478edf11578810d5d76c8ff51",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/73-triste/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2353,
+        "sha256": "f0ecd6400061fe121385c3670ba4d73ad35d9a2c358905ba186f7e83c1ee28d3",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 160.0,
+    "key_signature": "Bb Major",
+    "duration_seconds": 362.766583,
+    "evaluation_start_seconds": 1.829083,
+    "evaluation_end_seconds": 362.766583,
+    "title": "Triste"
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "song_id": 74,
+    "song": "74-waltz_for_debby",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/74-waltz_for_debby.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/74-waltz_for_debby/preferred/bass.transcribed.derived.mid",
+        "bytes": 6426,
+        "sha256": "9c4606348999973b7130f021bcc67a3a61039a8bed4aaebd1a2b961551b4b8ff",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/74-waltz_for_debby/preferred/drums.transcribed.derived.mid",
+        "bytes": 14318,
+        "sha256": "51b2d7a66d73b4742a39733bbe5eb13fb3e4cec6e8b39e4f84afbcea2b360728",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/74-waltz_for_debby/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 18636,
+        "sha256": "0af23d9073bb8c375210a25209991b484d7893acb2126d86ed3826539a5e77ab",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "3/4",
+    "bpm": 205.0,
+    "key_signature": "F Major",
+    "duration_seconds": 442.872,
+    "evaluation_start_seconds": 0.917,
+    "evaluation_end_seconds": 442.872,
+    "title": "Waltz for Debby"
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "song_id": 75,
+    "song": "75-when_the_saints_go_marching_in",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/75-when_the_saints_go_marching_in.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/75-when_the_saints_go_marching_in/preferred/bass.transcribed.derived.mid",
+        "bytes": 4278,
+        "sha256": "0271ee1c639ceaea1036e26a30b5ac79cc70b2f9591d15e326ad71f4d88e1a06",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/75-when_the_saints_go_marching_in/preferred/drums.transcribed.derived.mid",
+        "bytes": 10060,
+        "sha256": "854195fff54620634d4da466b52478a5977299f6f9ba6b91405d0f951190cdac",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/75-when_the_saints_go_marching_in/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 1831,
+        "sha256": "b89de80ef2be165e6bb107e74f94743c7bdf09c7f0e8574d9e26257058bb2547",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 210.0,
+    "key_signature": "F Major",
+    "duration_seconds": 192.696292,
+    "evaluation_start_seconds": 1.026958,
+    "evaluation_end_seconds": 192.696292,
+    "title": "When the Saints Go Marching In"
+  }
+]

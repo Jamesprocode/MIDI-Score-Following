@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/28-moonglow/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 359
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 153,
+  "reference_comparisons": 6031
+}

@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/14-freddie_freeloader/preferred",
+  "lead_instruments": [
+    "saxophone_tenor"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 158
+  },
+  "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__14-freddie_freeloader.json",
+  "reference_note_count": 30,
+  "prefix_verified": true,
+  "neutral_reproduction": true,
+  "query_updates": 30,
+  "reference_comparisons": 630
+}

@@ -1,0 +1,60 @@
+{
+  "greenHornAt120": {
+    "detail": "Chart 21 · beat 3.24 · 172.9 BPM",
+    "estimate": "Bar 85",
+    "metrics": "Horns only · 17.0% correct bar · 32.41 beats mean error · evidence present at 41.9% of checks",
+    "mode": "horn",
+    "playback": {
+      "activeVoices": 0,
+      "audioState": "not-started",
+      "checkedTime": 120,
+      "evidence": "horn",
+      "playing": false,
+      "recording": "green_dolphin",
+      "rms": 0,
+      "tickHistory": [
+        {
+          "estimate": 338.2443024815337,
+          "time": 120,
+          "truth": 368.758942457232,
+          "wall": 22555.300000000745
+        }
+      ],
+      "time": 120
+    },
+    "truth": "Bar 93"
+  },
+  "greenBassAt120": {
+    "estimate": "Bar 93",
+    "metrics": "Bass only · 90.5% correct bar · 0.47 beats mean error · evidence present at 81.6% of checks",
+    "mode": "bass",
+    "playback": {
+      "activeVoices": 0,
+      "audioState": "not-started",
+      "checkedTime": 120,
+      "evidence": "bass",
+      "playing": false,
+      "recording": "green_dolphin",
+      "rms": 0,
+      "tickHistory": [
+        {
+          "estimate": 368.85824433971726,
+          "time": 120,
+          "truth": 368.758942457232,
+          "wall": 32124.699999999255
+        }
+      ],
+      "time": 120
+    },
+    "truth": "Bar 93"
+  },
+  "checked": [
+    "all four recording/input combinations loaded",
+    "same-time input switching",
+    "switching during playback retains audio and position",
+    "200ms sample updates",
+    "selected input and all-frame metrics displayed",
+    "no console errors"
+  ],
+  "consoleErrors": []
+}

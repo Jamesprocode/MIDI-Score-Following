@@ -1,0 +1,224 @@
+{
+  "song": "57-chega_de_saudade",
+  "metadata_bpm": 145.0,
+  "title": "Chega de Saudade (No More Blues)",
+  "bars": 467,
+  "instruments": [
+    "bass",
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "duration_seconds": 593.4000000000005,
+  "chord_metrics": {
+    "frames": 5936,
+    "coverage": 0.980121293800539,
+    "chord_accuracy": 0.08793800539083559,
+    "fractional_accuracy": 0.08737361446590775,
+    "balanced_accuracy": 0.05744475386182042,
+    "root_accuracy": 0.21327493261455527,
+    "tie_rate": 0.6949123410106566,
+    "n_chord_labels": 23,
+    "chart_majority_accuracy": 0.15616576819407008
+  },
+  "correct_chord_among_best_available": 0.2611683848797251,
+  "uniquely_correct_chord_available": 0.03333333333333333,
+  "bar_bpm_percentiles": [
+    183.06636155606705,
+    188.5310290652009,
+    194.64720194647137
+  ],
+  "time_outside_tempo_range": 0.5266172506738545,
+  "variants": {
+    "A_gaussian": {
+      "frames": 2968,
+      "bar_accuracy": 0.158355795148248,
+      "within2beat_accuracy": 0.1795822102425876,
+      "mean_abs_beats": 156.36687866117757,
+      "median_abs_beats": 135.0143579088343,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 149.60000000000014,
+          "correct_bar": 0.633423180592992,
+          "median_signed_beats": -0.913210609292531,
+          "median_estimated_bpm": 177.625
+        },
+        {
+          "start": 149.80000000000013,
+          "end": 298.0000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": -101.53021978022042,
+          "median_estimated_bpm": 134.125
+        },
+        {
+          "start": 298.2000000000003,
+          "end": 446.4000000000004,
+          "correct_bar": 0.0,
+          "median_signed_beats": -156.1616216088563,
+          "median_estimated_bpm": 155.875
+        },
+        {
+          "start": 446.6000000000004,
+          "end": 594.8000000000005,
+          "correct_bar": 0.0,
+          "median_signed_beats": -371.9354843630831,
+          "median_estimated_bpm": 123.25
+        }
+      ],
+      "final_signed_error": -416.1319317489349
+    },
+    "B_equal_initial": {
+      "frames": 2968,
+      "bar_accuracy": 0.16778975741239893,
+      "within2beat_accuracy": 0.19103773584905662,
+      "mean_abs_beats": 156.2925897949378,
+      "median_abs_beats": 135.0143579088343,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 149.60000000000014,
+          "correct_bar": 0.6711590296495957,
+          "median_signed_beats": -0.6578300487863373,
+          "median_estimated_bpm": 177.625
+        },
+        {
+          "start": 149.80000000000013,
+          "end": 298.0000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": -101.53021978022042,
+          "median_estimated_bpm": 134.125
+        },
+        {
+          "start": 298.2000000000003,
+          "end": 446.4000000000004,
+          "correct_bar": 0.0,
+          "median_signed_beats": -156.1616216088563,
+          "median_estimated_bpm": 155.875
+        },
+        {
+          "start": 446.6000000000004,
+          "end": 594.8000000000005,
+          "correct_bar": 0.0,
+          "median_signed_beats": -371.9354843630831,
+          "median_estimated_bpm": 123.25
+        }
+      ],
+      "final_signed_error": -416.1319317489349
+    },
+    "C_equal_dynamics": {
+      "frames": 2968,
+      "bar_accuracy": 0.18935309973045822,
+      "within2beat_accuracy": 0.2139487870619946,
+      "mean_abs_beats": 165.10552192530687,
+      "median_abs_beats": 132.68103448275963,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 149.60000000000014,
+          "correct_bar": 0.706199460916442,
+          "median_signed_beats": -0.4907172139201492,
+          "median_estimated_bpm": 188.5
+        },
+        {
+          "start": 149.80000000000013,
+          "end": 298.0000000000003,
+          "correct_bar": 0.025606469002695417,
+          "median_signed_beats": -112.73035203535972,
+          "median_estimated_bpm": 101.5
+        },
+        {
+          "start": 298.2000000000003,
+          "end": 446.4000000000004,
+          "correct_bar": 0.025606469002695417,
+          "median_signed_beats": -149.69061150163157,
+          "median_estimated_bpm": 155.875
+        },
+        {
+          "start": 446.6000000000004,
+          "end": 594.8000000000005,
+          "correct_bar": 0.0,
+          "median_signed_beats": -374.43231335781684,
+          "median_estimated_bpm": 101.5
+        }
+      ],
+      "final_signed_error": -416.1319317489349
+    },
+    "D_equal_both": {
+      "frames": 2968,
+      "bar_accuracy": 0.1957547169811321,
+      "within2beat_accuracy": 0.22169811320754718,
+      "mean_abs_beats": 165.06576030640048,
+      "median_abs_beats": 132.68103448275963,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 149.60000000000014,
+          "correct_bar": 0.7318059299191375,
+          "median_signed_beats": -0.3941038285316196,
+          "median_estimated_bpm": 188.5
+        },
+        {
+          "start": 149.80000000000013,
+          "end": 298.0000000000003,
+          "correct_bar": 0.025606469002695417,
+          "median_signed_beats": -112.73035203535972,
+          "median_estimated_bpm": 101.5
+        },
+        {
+          "start": 298.2000000000003,
+          "end": 446.4000000000004,
+          "correct_bar": 0.025606469002695417,
+          "median_signed_beats": -149.69061150163157,
+          "median_estimated_bpm": 155.875
+        },
+        {
+          "start": 446.6000000000004,
+          "end": 594.8000000000005,
+          "correct_bar": 0.0,
+          "median_signed_beats": -374.43231335781684,
+          "median_estimated_bpm": 101.5
+        }
+      ],
+      "final_signed_error": -416.1319317489349
+    },
+    "no_harmony": {
+      "frames": 2968,
+      "bar_accuracy": 0.006064690026954178,
+      "within2beat_accuracy": 0.005390835579514825,
+      "mean_abs_beats": 211.72893061120016,
+      "median_abs_beats": 209.3770928462718,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 149.60000000000014,
+          "correct_bar": 0.02425876010781671,
+          "median_signed_beats": -51.002293577981845,
+          "median_estimated_bpm": 145.0
+        },
+        {
+          "start": 149.80000000000013,
+          "end": 298.0000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": -157.53021978022042,
+          "median_estimated_bpm": 145.0
+        },
+        {
+          "start": 298.2000000000003,
+          "end": 446.4000000000004,
+          "correct_bar": 0.0,
+          "median_signed_beats": -261.2657977883107,
+          "median_estimated_bpm": 145.0
+        },
+        {
+          "start": 446.6000000000004,
+          "end": 594.8000000000005,
+          "correct_bar": 0.0,
+          "median_signed_beats": -375.70501183899114,
+          "median_estimated_bpm": 145.0
+        }
+      ],
+      "final_signed_error": -433.1319317489349
+    }
+  },
+  "inference_uses_reference_tempo": false
+}

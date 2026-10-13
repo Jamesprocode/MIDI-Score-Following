@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/47-wave/preferred",
+  "lead_instruments": [
+    "saxophone_tenor",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 499,
+    "trumpet": 457
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 563,
+  "reference_comparisons": 41806
+}

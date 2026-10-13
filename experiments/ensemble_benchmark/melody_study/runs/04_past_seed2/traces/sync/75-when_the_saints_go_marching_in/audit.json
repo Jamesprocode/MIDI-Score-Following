@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 249
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 105,
+  "reference_comparisons": 2942
+}

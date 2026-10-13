@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/33-peris_scope/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 253
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 118,
+  "reference_comparisons": 4272
+}

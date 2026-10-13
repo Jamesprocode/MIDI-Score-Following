@@ -1,0 +1,4453 @@
+{
+  "source_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+  "source_sha256": "60a7e2b6486959d8fe967959228c9f6bde9819498df8a1dabf3b39451bcf966d",
+  "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+  "source_dataset_rows": 293,
+  "catalog_manifest_sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+  "script_sha256": "96ad85bffb7e71c7f89c5c866bd02b72f3c6b10a0ad1413abede3e4276c2df97",
+  "music21_version": "9.9.1",
+  "title_matched_songs": 12,
+  "title_matched_rows": 14,
+  "usable_songs": 6,
+  "status_counts": {
+    "no_complete_matching_length_span": 2,
+    "insufficient_chord_coverage": 1,
+    "unverified_repeat_expansion": 1,
+    "usable": 6,
+    "poor_score_chord_agreement": 2
+  },
+  "minimum_exact_base_chord_agreement": 0.85,
+  "minimum_coverage": 0.99,
+  "query_data_used": false,
+  "annotation_timestamp_fields_used": false,
+  "limitations": [
+    "Written editions can differ in melody and substitutions.",
+    "A title match is not an accepted reference.",
+    "Chord agreement does not prove note-level equivalence.",
+    "No rhythmic swing transformation or ornament correction applied.",
+    "Only explicit XML transposition is applied before score-only alignment.",
+    "Ties merged; grace notes and pickup attacks before the mapped first full head omitted from aligned notes.",
+    "Only contiguous full-head spans are accepted; incompatible or ambiguous forms are rejected."
+  ],
+  "songs": [
+    {
+      "song": "00-a_night_in_tunisia",
+      "protocol": "async",
+      "title": "A Night in Tunisia",
+      "source_title": [
+        "A Night In Tunisia"
+      ],
+      "source_row_id": "22842",
+      "matched_row_ids": [
+        "22842"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__00-a_night_in_tunisia__row22842.musicxml",
+      "xml_sha256": "65936a5b7056a78d7cb0123301034ba28aba76beb86b7cfbb67b252e1fc6d95b",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__00-a_night_in_tunisia.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/00-a_night_in_tunisia.json",
+      "annotation_sha256": "cf8e6555430c5b545c46cd77f8ce6e43bac04a589ee26be0c93ebc5647ced240",
+      "status": "no_complete_matching_length_span",
+      "diagnostics": {
+        "candidate_count": 0,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 32.0,
+          "end_q": 216.0,
+          "length_beats": 184.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 4.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 4.0,
+              "end": 8.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 8.0,
+              "end": 12.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 12.0,
+              "end": 16.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 16.0,
+              "end": 20.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 20.0,
+              "end": 24.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 24.0,
+              "end": 26.0,
+              "root": 4,
+              "quality": "dim"
+            },
+            {
+              "start": 26.0,
+              "end": 28.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 28.0,
+              "end": 32.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 32.0,
+              "end": 36.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 36.0,
+              "end": 40.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 40.0,
+              "end": 44.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 44.0,
+              "end": 48.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 48.0,
+              "end": 52.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 52.0,
+              "end": 56.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 56.0,
+              "end": 58.0,
+              "root": 4,
+              "quality": "dim"
+            },
+            {
+              "start": 58.0,
+              "end": 60.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 60.0,
+              "end": 64.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 64.0,
+              "end": 68.0,
+              "root": 9,
+              "quality": "dim"
+            },
+            {
+              "start": 68.0,
+              "end": 72.0,
+              "root": 2,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 74.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 74.0,
+              "end": 76.0,
+              "root": 2,
+              "quality": "maj"
+            },
+            {
+              "start": 76.0,
+              "end": 78.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 78.0,
+              "end": 80.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 84.0,
+              "root": 7,
+              "quality": "dim"
+            },
+            {
+              "start": 84.0,
+              "end": 88.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 92.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 92.0,
+              "end": 94.0,
+              "root": 4,
+              "quality": "dim"
+            },
+            {
+              "start": 94.0,
+              "end": 96.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 100.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 100.0,
+              "end": 104.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 104.0,
+              "end": 108.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 108.0,
+              "end": 112.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 112.0,
+              "end": 116.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 116.0,
+              "end": 120.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 120.0,
+              "end": 122.0,
+              "root": 4,
+              "quality": "dim"
+            },
+            {
+              "start": 122.0,
+              "end": 124.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 124.0,
+              "end": 128.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 128.0,
+              "end": 136.0,
+              "root": 4,
+              "quality": "dim"
+            },
+            {
+              "start": 136.0,
+              "end": 144.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 144.0,
+              "end": 152.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 152.0,
+              "end": 160.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 160.0,
+              "end": 164.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 164.0,
+              "end": 168.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 168.0,
+              "end": 176.0,
+              "root": 6,
+              "quality": "maj"
+            },
+            {
+              "start": 176.0,
+              "end": 184.0,
+              "root": 5,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes."
+      },
+      "event_sha256": "dc3ab49e33d07d08291832540e4b38cc8c642cc42eeac2f2d81669969d85d672",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 127,
+      "source_chord_count": 35
+    },
+    {
+      "song": "08-blue_skies",
+      "protocol": "async",
+      "title": "Blue Skies",
+      "source_title": [
+        "Blue Skies"
+      ],
+      "source_row_id": "23764",
+      "matched_row_ids": [
+        "23764",
+        "23768",
+        "23797"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__08-blue_skies__row23764.musicxml",
+      "xml_sha256": "62744baed5fe34f09073e733a0bab442c1fa168fdfb537fbe9e3ee61b25acf00",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__08-blue_skies.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/08-blue_skies.json",
+      "annotation_sha256": "315989f9794e62db26b0e93894343c6df1a7efd7fd14f94c1f7d4470bb8c511f",
+      "status": "insufficient_chord_coverage",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 32.0,
+          "end_q": 160.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 4.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 4.0,
+              "end": 8.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 8.0,
+              "end": 12.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 12.0,
+              "end": 16.0,
+              "root": 6,
+              "quality": "dim"
+            },
+            {
+              "start": 16.0,
+              "end": 18.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 18.0,
+              "end": 20.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 20.0,
+              "end": 22.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 22.0,
+              "end": 24.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 24.0,
+              "end": 28.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 28.0,
+              "end": 30.0,
+              "root": 11,
+              "quality": "dim"
+            },
+            {
+              "start": 30.0,
+              "end": 32.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 32.0,
+              "end": 36.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 36.0,
+              "end": 40.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 40.0,
+              "end": 44.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 44.0,
+              "end": 48.0,
+              "root": 6,
+              "quality": "dim"
+            },
+            {
+              "start": 48.0,
+              "end": 50.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 50.0,
+              "end": 52.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 52.0,
+              "end": 54.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 54.0,
+              "end": 56.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 56.0,
+              "end": 60.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 60.0,
+              "end": 62.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 62.0,
+              "end": 64.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 64.0,
+              "end": 68.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 68.0,
+              "end": 70.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 70.0,
+              "end": 72.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 74.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 74.0,
+              "end": 76.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 76.0,
+              "end": 78.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 78.0,
+              "end": 84.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 84.0,
+              "end": 86.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 86.0,
+              "end": 88.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 90.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 90.0,
+              "end": 92.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 92.0,
+              "end": 94.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 94.0,
+              "end": 95.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 95.0,
+              "end": 96.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 100.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 100.0,
+              "end": 104.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 104.0,
+              "end": 108.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 108.0,
+              "end": 112.0,
+              "root": 6,
+              "quality": "dim"
+            },
+            {
+              "start": 112.0,
+              "end": 114.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 114.0,
+              "end": 116.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 116.0,
+              "end": 118.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 118.0,
+              "end": 120.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 120.0,
+              "end": 124.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 124.0,
+              "end": 126.0,
+              "root": 11,
+              "quality": "dim"
+            },
+            {
+              "start": 126.0,
+              "end": 128.0,
+              "root": 4,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.5625,
+            "root_agreement": 0.63671875
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.046875,
+            "root_agreement": 0.09375
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.0390625,
+            "root_agreement": 0.0390625
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.03125,
+            "root_agreement": 0.046875
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.015625,
+            "root_agreement": 0.015625
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.015625,
+            "root_agreement": 0.078125
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.015625
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0234375
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.03125
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.98046875,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes."
+      },
+      "event_sha256": "1c3079bea6355bef72f28048e3a483fa2af7820d6184cefc6ba81a53f7667237",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 80,
+      "source_chord_count": 64
+    },
+    {
+      "song": "09-caravan",
+      "protocol": "async",
+      "title": "Caravan",
+      "source_title": [
+        "Caravan"
+      ],
+      "source_row_id": "22822",
+      "matched_row_ids": [
+        "22822"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__09-caravan__row22822.musicxml",
+      "xml_sha256": "cda7425a4cffb2201fa1df53a8b53da0da35c5c5efdf4ab13164e8c420b2b26a",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__09-caravan.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/09-caravan.json",
+      "annotation_sha256": "53d3a47174d8e6bd3ba11fac7a7cf46b8ee16d4790764b490310c53a6fe66423",
+      "status": "no_complete_matching_length_span",
+      "diagnostics": {
+        "candidate_count": 0,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 64.0,
+          "end_q": 320.0,
+          "length_beats": 256.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 4.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 4.0,
+              "end": 8.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 8.0,
+              "end": 20.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 20.0,
+              "end": 24.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 24.0,
+              "end": 36.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 36.0,
+              "end": 40.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 40.0,
+              "end": 48.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 48.0,
+              "end": 64.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 64.0,
+              "end": 68.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 68.0,
+              "end": 72.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 84.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 84.0,
+              "end": 88.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 100.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 100.0,
+              "end": 104.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 104.0,
+              "end": 112.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 112.0,
+              "end": 128.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 128.0,
+              "end": 144.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 144.0,
+              "end": 160.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 160.0,
+              "end": 176.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 176.0,
+              "end": 184.0,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 184.0,
+              "end": 192.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 192.0,
+              "end": 196.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 196.0,
+              "end": 200.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 200.0,
+              "end": 212.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 212.0,
+              "end": 216.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 216.0,
+              "end": 228.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 228.0,
+              "end": 232.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 232.0,
+              "end": 240.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 240.0,
+              "end": 256.0,
+              "root": 5,
+              "quality": "min"
+            }
+          ]
+        },
+        "best_candidates": [],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes."
+      },
+      "event_sha256": "f17a6897f417932571bd51668e96cc25aa1b77035d454ecfad54655ce23ed788",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 25,
+      "source_chord_count": 25
+    },
+    {
+      "song": "13-four",
+      "protocol": "async",
+      "title": "Four",
+      "source_title": [
+        "Four"
+      ],
+      "source_row_id": "171002",
+      "matched_row_ids": [
+        "171002"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__13-four__row171002.musicxml",
+      "xml_sha256": "77d5624e8c7da3d2fd93c1d57ce7cfaa16f3cde9548ce8f66583d0f2c5ff4a56",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__13-four.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/13-four.json",
+      "annotation_sha256": "e3da5b54f783d854d1cfd08149f412498b8ab3b73d0a55ca53f74e5e26a12425",
+      "status": "unverified_repeat_expansion",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 8.0,
+          "end_q": 136.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 8.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 8.0,
+              "end": 12.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 12.0,
+              "end": 16.0,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 16.0,
+              "end": 24.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 24.0,
+              "end": 28.0,
+              "root": 8,
+              "quality": "min"
+            },
+            {
+              "start": 28.0,
+              "end": 32.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 32.0,
+              "end": 36.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 36.0,
+              "end": 38.0,
+              "root": 6,
+              "quality": "min"
+            },
+            {
+              "start": 38.0,
+              "end": 40.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 40.0,
+              "end": 44.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 44.0,
+              "end": 48.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 48.0,
+              "end": 52.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 52.0,
+              "end": 54.0,
+              "root": 6,
+              "quality": "min"
+            },
+            {
+              "start": 54.0,
+              "end": 56.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 56.0,
+              "end": 60.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 60.0,
+              "end": 64.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 64.0,
+              "end": 72.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 76.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 76.0,
+              "end": 80.0,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 88.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 88.0,
+              "end": 92.0,
+              "root": 8,
+              "quality": "min"
+            },
+            {
+              "start": 92.0,
+              "end": 96.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 100.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 100.0,
+              "end": 102.0,
+              "root": 6,
+              "quality": "min"
+            },
+            {
+              "start": 102.0,
+              "end": 104.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 104.0,
+              "end": 108.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 108.0,
+              "end": 112.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 112.0,
+              "end": 114.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 114.0,
+              "end": 116.0,
+              "root": 6,
+              "quality": "min"
+            },
+            {
+              "start": 116.0,
+              "end": 118.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 118.0,
+              "end": 120.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 120.0,
+              "end": 124.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 124.0,
+              "end": 126.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 126.0,
+              "end": 128.0,
+              "root": 10,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.48046875,
+            "root_agreement": 0.48046875
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.03515625,
+            "root_agreement": 0.03515625
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.03125,
+            "root_agreement": 0.078125
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.03125,
+            "root_agreement": 0.046875
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.015625,
+            "root_agreement": 0.046875
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.01171875,
+            "root_agreement": 0.04296875
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.03125
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0625
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.078125
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.03125
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.06640625
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes."
+      },
+      "event_sha256": "b3ebba562b7fafc7e94d5c7a2bd8b47badea29ee51424d34ae0b8bb0516e8dc8",
+      "repeat_status": "unexpanded",
+      "repeat_error": "cannot expand Stream: badly formed repeats or repeat expressions",
+      "source_note_count": 123,
+      "source_chord_count": 39
+    },
+    {
+      "song": "14-freddie_freeloader",
+      "protocol": "async",
+      "title": "Freddie Freeloader",
+      "source_title": [
+        "Freddie Freeloader"
+      ],
+      "source_row_id": "170983",
+      "matched_row_ids": [
+        "170983"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__14-freddie_freeloader__row170983.musicxml",
+      "xml_sha256": "4cf5533070aa9c249d84b4e5ac7207ac263d43953b66ae8be3a60eb65b4da8bb",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__14-freddie_freeloader.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/14-freddie_freeloader.json",
+      "annotation_sha256": "d5d8410bb5e6050db1fe5c1b256cb975e9f45c5bf925e15de6c4cb88274970ac",
+      "status": "usable",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 0.0,
+          "end_q": 96.0,
+          "length_beats": 96.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 16.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 16.0,
+              "end": 24.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 24.0,
+              "end": 32.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 32.0,
+              "end": 36.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 36.0,
+              "end": 40.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 40.0,
+              "end": 48.0,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 48.0,
+              "end": 64.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 64.0,
+              "end": 72.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 80.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 84.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 84.0,
+              "end": 88.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 96.0,
+              "root": 10,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 1.0,
+            "root_agreement": 1.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 96.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 96.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes.",
+        "tied_best_candidates": 1,
+        "distinct_tied_note_mappings": 1,
+        "selected": {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 2,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 1.0,
+          "root_agreement": 1.0
+        },
+        "pickup_policy": "Exclude notes starting before selected full head; retain them in original XML/raw events."
+      },
+      "event_sha256": "3a8c4d8b6b4358aef7fe66361ee617dd72e980cc031c29cba0ce2ff9b8309083",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 30,
+      "source_chord_count": 12,
+      "aligned_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__14-freddie_freeloader.json",
+      "aligned_sha256": "bf9ad959b1224bbe42b86cfc7e11c1b4ecca2c778c8cdee8baf0b8c535b1a6f7",
+      "aligned_note_count": 30
+    },
+    {
+      "song": "20-impressions",
+      "protocol": "async",
+      "title": "Impressions",
+      "source_title": [
+        "Impressions"
+      ],
+      "source_row_id": "170985",
+      "matched_row_ids": [
+        "170985"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__20-impressions__row170985.musicxml",
+      "xml_sha256": "96b8e773670d0e16a31c2a1e94ee705e7a72d8da33a71f5fde58cf5247ab9689",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__20-impressions.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/20-impressions.json",
+      "annotation_sha256": "08f501d407dc7aaa798870a776a6d6d4d03b1b63b2fc2a1828540bfd40fbc54e",
+      "status": "usable",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 0.0,
+          "end_q": 128.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 32.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 32.0,
+              "end": 64.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 64.0,
+              "end": 96.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 96.0,
+              "end": 128.0,
+              "root": 2,
+              "quality": "min"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 1.0,
+            "root_agreement": 1.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes.",
+        "tied_best_candidates": 1,
+        "distinct_tied_note_mappings": 1,
+        "selected": {
+          "source_start_beats": 0.0,
+          "source_end_beats": 128.0,
+          "pitch_shift_mod12": 0,
+          "pitched_target_beats": 128.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 1.0,
+          "root_agreement": 1.0
+        },
+        "pickup_policy": "Exclude notes starting before selected full head; retain them in original XML/raw events."
+      },
+      "event_sha256": "dcc6bb57c7750bc0393e32ab29e8cc644b900970d467a343fc84e1aa0712ccb0",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 67,
+      "source_chord_count": 3,
+      "aligned_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__20-impressions.json",
+      "aligned_sha256": "cf8b42ee3b8a4f0c03925440049aeec688c3c64bd40e517fa0f99c211d12369c",
+      "aligned_note_count": 67
+    },
+    {
+      "song": "39-st_thomas",
+      "protocol": "async",
+      "title": "St. Thomas",
+      "source_title": [
+        "St. Thomas"
+      ],
+      "source_row_id": "171013",
+      "matched_row_ids": [
+        "171013"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__39-st_thomas__row171013.musicxml",
+      "xml_sha256": "a80ddee5e117f3a2b237e38e1720fca13feb1ec6622280c112e4cfde97840940",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__39-st_thomas.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/39-st_thomas.json",
+      "annotation_sha256": "a48cd4c5a09cfb5dc767db50c1625b2440c128ea0e8bed614b53e048d333968e",
+      "status": "usable",
+      "diagnostics": {
+        "candidate_count": 396,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 64.0,
+          "end_q": 192.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 4.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 4.0,
+              "end": 6.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 6.0,
+              "end": 8.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 8.0,
+              "end": 10.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 10.0,
+              "end": 11.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 11.0,
+              "end": 16.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 16.0,
+              "end": 20.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 20.0,
+              "end": 22.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 22.0,
+              "end": 24.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 24.0,
+              "end": 26.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 26.0,
+              "end": 27.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 27.0,
+              "end": 32.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 32.0,
+              "end": 34.0,
+              "root": 4,
+              "quality": "dim"
+            },
+            {
+              "start": 34.0,
+              "end": 35.5,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 35.5,
+              "end": 40.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 40.0,
+              "end": 42.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 42.0,
+              "end": 43.5,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 43.5,
+              "end": 48.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 48.0,
+              "end": 50.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 50.0,
+              "end": 52.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 52.0,
+              "end": 53.5,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 53.5,
+              "end": 56.0,
+              "root": 6,
+              "quality": "dim"
+            },
+            {
+              "start": 56.0,
+              "end": 58.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 58.0,
+              "end": 59.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 59.0,
+              "end": 64.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 64.0,
+              "end": 68.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 68.0,
+              "end": 70.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 70.0,
+              "end": 72.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 74.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 74.0,
+              "end": 75.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 75.0,
+              "end": 80.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 84.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 84.0,
+              "end": 86.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 86.0,
+              "end": 88.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 90.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 90.0,
+              "end": 91.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 91.0,
+              "end": 96.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 98.0,
+              "root": 4,
+              "quality": "dim"
+            },
+            {
+              "start": 98.0,
+              "end": 99.5,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 99.5,
+              "end": 104.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 104.0,
+              "end": 106.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 106.0,
+              "end": 107.5,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 107.5,
+              "end": 112.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 112.0,
+              "end": 114.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 114.0,
+              "end": 116.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 116.0,
+              "end": 117.5,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 117.5,
+              "end": 120.0,
+              "root": 6,
+              "quality": "dim"
+            },
+            {
+              "start": 120.0,
+              "end": 122.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 122.0,
+              "end": 123.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 123.0,
+              "end": 128.0,
+              "root": 0,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.9453125,
+            "root_agreement": 0.9453125
+          },
+          {
+            "source_start_beats": 64.0,
+            "source_end_beats": 192.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.8671875,
+            "root_agreement": 0.8828125
+          },
+          {
+            "source_start_beats": 128.0,
+            "source_end_beats": 256.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.7890625,
+            "root_agreement": 0.8203125
+          },
+          {
+            "source_start_beats": 16.0,
+            "source_end_beats": 144.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.4921875,
+            "root_agreement": 0.4921875
+          },
+          {
+            "source_start_beats": 32.0,
+            "source_end_beats": 160.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.48046875,
+            "root_agreement": 0.48046875
+          },
+          {
+            "source_start_beats": 48.0,
+            "source_end_beats": 176.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.48046875,
+            "root_agreement": 0.48046875
+          },
+          {
+            "source_start_beats": 96.0,
+            "source_end_beats": 224.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.46875,
+            "root_agreement": 0.46875
+          },
+          {
+            "source_start_beats": 112.0,
+            "source_end_beats": 240.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.453125,
+            "root_agreement": 0.453125
+          },
+          {
+            "source_start_beats": 80.0,
+            "source_end_beats": 208.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.44921875,
+            "root_agreement": 0.44921875
+          },
+          {
+            "source_start_beats": 4.0,
+            "source_end_beats": 132.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.25,
+            "root_agreement": 0.25
+          },
+          {
+            "source_start_beats": 52.0,
+            "source_end_beats": 180.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.2421875,
+            "root_agreement": 0.2578125
+          },
+          {
+            "source_start_beats": 116.0,
+            "source_end_beats": 244.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.2421875,
+            "root_agreement": 0.2421875
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes.",
+        "tied_best_candidates": 1,
+        "distinct_tied_note_mappings": 1,
+        "selected": {
+          "source_start_beats": 0.0,
+          "source_end_beats": 128.0,
+          "pitch_shift_mod12": 0,
+          "pitched_target_beats": 128.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.9453125,
+          "root_agreement": 0.9453125
+        },
+        "pickup_policy": "Exclude notes starting before selected full head; retain them in original XML/raw events."
+      },
+      "event_sha256": "6afec38b738bacec938d29fc25c933776b3cc294a9ea43a7987be08db6e288b3",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 76,
+      "source_chord_count": 88,
+      "aligned_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__39-st_thomas.json",
+      "aligned_sha256": "4d915be1b26c2f9b59d9a68cfbdffbb981e5e17a7407ec5b4cd3a5e56f380c84",
+      "aligned_note_count": 76
+    },
+    {
+      "song": "41-take_five",
+      "protocol": "async",
+      "title": "Take Five",
+      "source_title": [
+        "Take Five"
+      ],
+      "source_row_id": "171007",
+      "matched_row_ids": [
+        "171007"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__41-take_five__row171007.musicxml",
+      "xml_sha256": "4917a375e109f6f960464ba839d64fa03e8132e67aa18c925abce2f4c859682b",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__41-take_five.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/41-take_five.json",
+      "annotation_sha256": "03d22f6cbe7fb5756bcb7aa09ebd23767026a3a7ed6a1ea06ced3e646646df7d",
+      "status": "usable",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 40.0,
+          "end_q": 160.0,
+          "length_beats": 120.0,
+          "beats_per_bar": 5.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 3.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 3.0,
+              "end": 5.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 5.0,
+              "end": 8.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 8.0,
+              "end": 10.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 10.0,
+              "end": 13.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 13.0,
+              "end": 15.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 15.0,
+              "end": 18.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 18.0,
+              "end": 20.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 20.0,
+              "end": 23.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 23.0,
+              "end": 25.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 25.0,
+              "end": 28.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 28.0,
+              "end": 30.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 30.0,
+              "end": 33.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 33.0,
+              "end": 35.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 35.0,
+              "end": 38.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 38.0,
+              "end": 40.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 40.0,
+              "end": 45.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 45.0,
+              "end": 50.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 50.0,
+              "end": 55.0,
+              "root": 8,
+              "quality": "min"
+            },
+            {
+              "start": 55.0,
+              "end": 60.0,
+              "root": 6,
+              "quality": "maj"
+            },
+            {
+              "start": 60.0,
+              "end": 65.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 65.0,
+              "end": 70.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 70.0,
+              "end": 75.0,
+              "root": 8,
+              "quality": "min"
+            },
+            {
+              "start": 75.0,
+              "end": 78.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 78.0,
+              "end": 80.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 80.0,
+              "end": 83.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 83.0,
+              "end": 85.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 85.0,
+              "end": 88.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 88.0,
+              "end": 90.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 90.0,
+              "end": 93.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 93.0,
+              "end": 95.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 95.0,
+              "end": 98.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 98.0,
+              "end": 100.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 100.0,
+              "end": 103.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 103.0,
+              "end": 105.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 105.0,
+              "end": 108.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 108.0,
+              "end": 110.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 110.0,
+              "end": 113.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 113.0,
+              "end": 115.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 115.0,
+              "end": 118.0,
+              "root": 3,
+              "quality": "min"
+            },
+            {
+              "start": 118.0,
+              "end": 120.0,
+              "root": 10,
+              "quality": "min"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.8666666666666667,
+            "root_agreement": 0.8833333333333333
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.05,
+            "root_agreement": 0.08333333333333333
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.03333333333333333
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 122.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 120.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes.",
+        "tied_best_candidates": 1,
+        "distinct_tied_note_mappings": 1,
+        "selected": {
+          "source_start_beats": 2.0,
+          "source_end_beats": 122.0,
+          "pitch_shift_mod12": 0,
+          "pitched_target_beats": 120.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.8666666666666667,
+          "root_agreement": 0.8833333333333333
+        },
+        "pickup_policy": "Exclude notes starting before selected full head; retain them in original XML/raw events."
+      },
+      "event_sha256": "905bd2555f352b92615f84436cc134908ac43dcd1f92c23d50efeff3d9a49804",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 154,
+      "source_chord_count": 46,
+      "aligned_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__41-take_five.json",
+      "aligned_sha256": "515dba950329c654b859cbb6bc2d9ef72cb7130fe3b5afd3279b2445e30478ef",
+      "aligned_note_count": 150
+    },
+    {
+      "song": "54-boplicity",
+      "protocol": "sync",
+      "title": "Boplicity (Be Bop Lives)",
+      "source_title": [
+        "Boplicity"
+      ],
+      "source_row_id": "170979",
+      "matched_row_ids": [
+        "170979"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/sync__54-boplicity__row170979.musicxml",
+      "xml_sha256": "329d28b6afde0c5d7b3e4a587390573e396bf023b6c66fe7be20f877b2b29427",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/sync__54-boplicity.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/sync/54-boplicity.json",
+      "annotation_sha256": "3d6aa7f6b61c00266e183e2027e4c7c39b8dd9b5d8981f7e010d6a4a78459404",
+      "status": "poor_score_chord_agreement",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 0.0,
+          "end_q": 128.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 2.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 2.0,
+              "end": 4.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 4.0,
+              "end": 6.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 6.0,
+              "end": 8.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 8.0,
+              "end": 12.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 12.0,
+              "end": 14.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 14.0,
+              "end": 16.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 16.0,
+              "end": 20.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 20.0,
+              "end": 24.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 24.0,
+              "end": 26.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 26.0,
+              "end": 28.0,
+              "root": 0,
+              "quality": "sus4"
+            },
+            {
+              "start": 28.0,
+              "end": 32.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 32.0,
+              "end": 34.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 34.0,
+              "end": 36.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 36.0,
+              "end": 38.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 38.0,
+              "end": 40.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 40.0,
+              "end": 44.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 44.0,
+              "end": 46.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 46.0,
+              "end": 48.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 48.0,
+              "end": 52.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 52.0,
+              "end": 56.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 56.0,
+              "end": 58.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 58.0,
+              "end": 60.0,
+              "root": 0,
+              "quality": "sus4"
+            },
+            {
+              "start": 60.0,
+              "end": 64.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 64.0,
+              "end": 66.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 66.0,
+              "end": 68.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 68.0,
+              "end": 70.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 70.0,
+              "end": 72.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 80.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 82.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 82.0,
+              "end": 84.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 84.0,
+              "end": 86.0,
+              "root": 10,
+              "quality": "min"
+            },
+            {
+              "start": 86.0,
+              "end": 88.0,
+              "root": 9,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 90.0,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 90.0,
+              "end": 92.0,
+              "root": 8,
+              "quality": "min"
+            },
+            {
+              "start": 92.0,
+              "end": 94.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 94.0,
+              "end": 96.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 98.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 98.0,
+              "end": 100.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 100.0,
+              "end": 102.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 102.0,
+              "end": 104.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 104.0,
+              "end": 108.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 108.0,
+              "end": 110.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 110.0,
+              "end": 112.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 112.0,
+              "end": 116.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 116.0,
+              "end": 120.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 120.0,
+              "end": 122.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 122.0,
+              "end": 124.0,
+              "root": 0,
+              "quality": "sus4"
+            },
+            {
+              "start": 124.0,
+              "end": 128.0,
+              "root": 5,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.76953125,
+            "root_agreement": 0.76953125
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.015625,
+            "root_agreement": 0.015625
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.046875
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.09375
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.015625
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.05859375
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes."
+      },
+      "event_sha256": "695bbd9bad6eedc9f3aff41602d59407d9f7508f53a431d75cf46621949f379e",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 184,
+      "source_chord_count": 52
+    },
+    {
+      "song": "60-in_a_sentimental_mood",
+      "protocol": "sync",
+      "title": "In a Sentimental Mood",
+      "source_title": [
+        "In a Sentimental Mood"
+      ],
+      "source_row_id": "171036",
+      "matched_row_ids": [
+        "171036"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/sync__60-in_a_sentimental_mood__row171036.musicxml",
+      "xml_sha256": "6952bb85f200ec05b72069dbef917e2c372d1dbae7a61bf05f34a8a3f35ecb9c",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/sync__60-in_a_sentimental_mood.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/sync/60-in_a_sentimental_mood.json",
+      "annotation_sha256": "46427383789ed66436f20a6b80e093fe8539bf04c04f10717343f822a99a18ea",
+      "status": "usable",
+      "diagnostics": {
+        "candidate_count": 24,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 16.0,
+          "end_q": 144.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 2.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 2.0,
+              "end": 4.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 4.0,
+              "end": 6.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 6.0,
+              "end": 8.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 8.0,
+              "end": 10.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 10.0,
+              "end": 12.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 12.0,
+              "end": 14.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 14.0,
+              "end": 15.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 15.0,
+              "end": 16.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 16.0,
+              "end": 20.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 20.0,
+              "end": 24.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 24.0,
+              "end": 26.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 26.0,
+              "end": 28.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 28.0,
+              "end": 32.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 32.0,
+              "end": 34.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 34.0,
+              "end": 36.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 36.0,
+              "end": 38.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 38.0,
+              "end": 40.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 40.0,
+              "end": 42.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 42.0,
+              "end": 44.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 44.0,
+              "end": 46.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 46.0,
+              "end": 47.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 47.0,
+              "end": 48.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 48.0,
+              "end": 52.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 52.0,
+              "end": 56.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 56.0,
+              "end": 58.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 58.0,
+              "end": 60.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 60.0,
+              "end": 62.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 62.0,
+              "end": 63.0,
+              "root": 1,
+              "quality": "min"
+            },
+            {
+              "start": 63.0,
+              "end": 64.0,
+              "root": 6,
+              "quality": "maj"
+            },
+            {
+              "start": 64.0,
+              "end": 66.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 66.0,
+              "end": 68.0,
+              "root": 8,
+              "quality": "min"
+            },
+            {
+              "start": 68.0,
+              "end": 70.0,
+              "root": 1,
+              "quality": "min"
+            },
+            {
+              "start": 70.0,
+              "end": 72.0,
+              "root": 6,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 74.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 74.0,
+              "end": 76.0,
+              "root": 8,
+              "quality": "maj"
+            },
+            {
+              "start": 76.0,
+              "end": 78.0,
+              "root": 1,
+              "quality": "maj"
+            },
+            {
+              "start": 78.0,
+              "end": 80.0,
+              "root": 6,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 82.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 82.0,
+              "end": 84.0,
+              "root": 8,
+              "quality": "min"
+            },
+            {
+              "start": 84.0,
+              "end": 86.0,
+              "root": 1,
+              "quality": "min"
+            },
+            {
+              "start": 86.0,
+              "end": 88.0,
+              "root": 6,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 92.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 92.0,
+              "end": 96.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 98.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 98.0,
+              "end": 100.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 100.0,
+              "end": 102.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 102.0,
+              "end": 104.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 104.0,
+              "end": 106.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 106.0,
+              "end": 108.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 108.0,
+              "end": 110.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 110.0,
+              "end": 111.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 111.0,
+              "end": 112.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 112.0,
+              "end": 116.0,
+              "root": 0,
+              "quality": "min"
+            },
+            {
+              "start": 116.0,
+              "end": 120.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 120.0,
+              "end": 122.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 122.0,
+              "end": 124.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 124.0,
+              "end": 128.0,
+              "root": 3,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 4.0,
+            "source_end_beats": 132.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.92578125,
+            "root_agreement": 0.92578125
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.96875,
+            "exact_base_chord_agreement": 0.1640625,
+            "root_agreement": 0.2578125
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.96875,
+            "exact_base_chord_agreement": 0.125,
+            "root_agreement": 0.21484375
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.96875,
+            "exact_base_chord_agreement": 0.1015625,
+            "root_agreement": 0.1015625
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.96875,
+            "exact_base_chord_agreement": 0.046875,
+            "root_agreement": 0.046875
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.96875,
+            "exact_base_chord_agreement": 0.046875,
+            "root_agreement": 0.140625
+          },
+          {
+            "source_start_beats": 4.0,
+            "source_end_beats": 132.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.03125,
+            "root_agreement": 0.03125
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.96875,
+            "exact_base_chord_agreement": 0.03125,
+            "root_agreement": 0.1484375
+          },
+          {
+            "source_start_beats": 0.0,
+            "source_end_beats": 128.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 0.96875,
+            "exact_base_chord_agreement": 0.0234375,
+            "root_agreement": 0.0234375
+          },
+          {
+            "source_start_beats": 4.0,
+            "source_end_beats": 132.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.01171875,
+            "root_agreement": 0.01171875
+          },
+          {
+            "source_start_beats": 4.0,
+            "source_end_beats": 132.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0078125,
+            "root_agreement": 0.0078125
+          },
+          {
+            "source_start_beats": 4.0,
+            "source_end_beats": 132.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0234375
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes.",
+        "tied_best_candidates": 1,
+        "distinct_tied_note_mappings": 1,
+        "selected": {
+          "source_start_beats": 4.0,
+          "source_end_beats": 132.0,
+          "pitch_shift_mod12": 10,
+          "pitched_target_beats": 128.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.92578125,
+          "root_agreement": 0.92578125
+        },
+        "pickup_policy": "Exclude notes starting before selected full head; retain them in original XML/raw events."
+      },
+      "event_sha256": "df3f1a1d277d311f580bcd9a6f550979399050d4f6ffb0c364814191b609ca30",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 123,
+      "source_chord_count": 50,
+      "aligned_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/sync__60-in_a_sentimental_mood.json",
+      "aligned_sha256": "a259aea2f3ff95bc5803faffec9aba3fe141eafa2163ad4d05b7eff80c1014cc",
+      "aligned_note_count": 117
+    },
+    {
+      "song": "62-it_dont_mean_a_thing",
+      "protocol": "sync",
+      "title": "It Don't Mean a Thing (If It Ain't Got That Swing)",
+      "source_title": [
+        "It Don't Mean a Thing"
+      ],
+      "source_row_id": "22828",
+      "matched_row_ids": [
+        "22828"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/sync__62-it_dont_mean_a_thing__row22828.musicxml",
+      "xml_sha256": "0a6144f79477844c3336bc7c9c7ad3a8b39de04be07e2e3337543ee2e7630eb7",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/sync__62-it_dont_mean_a_thing.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/sync/62-it_dont_mean_a_thing.json",
+      "annotation_sha256": "c3b5482c867048bbad5c441f3a4f9813e06ff1606ef54a7006c4e08f0a03bf08",
+      "status": "poor_score_chord_agreement",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 8.0,
+          "end_q": 136.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 2.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 2.0,
+              "end": 4.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 4.0,
+              "end": 6.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 6.0,
+              "end": 8.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 8.0,
+              "end": 10.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 10.0,
+              "end": 12.0,
+              "root": 2,
+              "quality": "maj"
+            },
+            {
+              "start": 12.0,
+              "end": 16.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 16.0,
+              "end": 20.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 20.0,
+              "end": 24.0,
+              "root": 5,
+              "quality": "sus4"
+            },
+            {
+              "start": 24.0,
+              "end": 28.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 28.0,
+              "end": 32.0,
+              "root": 2,
+              "quality": "maj"
+            },
+            {
+              "start": 32.0,
+              "end": 34.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 34.0,
+              "end": 36.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 36.0,
+              "end": 38.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 38.0,
+              "end": 40.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 40.0,
+              "end": 42.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 42.0,
+              "end": 44.0,
+              "root": 2,
+              "quality": "maj"
+            },
+            {
+              "start": 44.0,
+              "end": 48.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 48.0,
+              "end": 52.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 52.0,
+              "end": 56.0,
+              "root": 5,
+              "quality": "sus4"
+            },
+            {
+              "start": 56.0,
+              "end": 60.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 60.0,
+              "end": 64.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 64.0,
+              "end": 68.0,
+              "root": 5,
+              "quality": "min"
+            },
+            {
+              "start": 68.0,
+              "end": 72.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 80.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 84.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 84.0,
+              "end": 88.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 92.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 92.0,
+              "end": 96.0,
+              "root": 2,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 98.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 98.0,
+              "end": 100.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 100.0,
+              "end": 102.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 102.0,
+              "end": 104.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 104.0,
+              "end": 106.0,
+              "root": 3,
+              "quality": "maj"
+            },
+            {
+              "start": 106.0,
+              "end": 108.0,
+              "root": 2,
+              "quality": "maj"
+            },
+            {
+              "start": 108.0,
+              "end": 112.0,
+              "root": 7,
+              "quality": "min"
+            },
+            {
+              "start": 112.0,
+              "end": 116.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 116.0,
+              "end": 120.0,
+              "root": 5,
+              "quality": "sus4"
+            },
+            {
+              "start": 120.0,
+              "end": 127.0,
+              "root": 10,
+              "quality": "maj"
+            },
+            {
+              "start": 127.0,
+              "end": 128.0,
+              "root": 2,
+              "quality": "maj"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.828125,
+            "root_agreement": 0.90625
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0234375,
+            "root_agreement": 0.0234375
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.015625,
+            "root_agreement": 0.015625
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0234375
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.03125
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 1.0,
+            "source_end_beats": 129.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes."
+      },
+      "event_sha256": "8426ba06e564a78aa800c9ac2d79e70d09226ee06645f40260c9d2e25ad18e1f",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 102,
+      "source_chord_count": 29
+    },
+    {
+      "song": "66-nardis",
+      "protocol": "sync",
+      "title": "Nardis",
+      "source_title": [
+        "Nardis"
+      ],
+      "source_row_id": "170994",
+      "matched_row_ids": [
+        "170994"
+      ],
+      "row_selection": "lowest numeric matched row ID; never selected by performance results",
+      "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+      "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+      "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/sync__66-nardis__row170994.musicxml",
+      "xml_sha256": "9747eb229aeb2fe8dbb5c076af57083b93a44172622801db5dbfcc4fc5aa0f55",
+      "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/sync__66-nardis.json",
+      "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/sync/66-nardis.json",
+      "annotation_sha256": "626941d4466e0ea15021eeaf382620dfcd8a038b4ac76ec3ce98f98d7a89aaa4",
+      "status": "usable",
+      "diagnostics": {
+        "candidate_count": 12,
+        "minimum_exact_agreement": 0.85,
+        "minimum_coverage": 0.99,
+        "chart": {
+          "start_q": 0.0,
+          "end_q": 128.0,
+          "length_beats": 128.0,
+          "beats_per_bar": 4.0,
+          "chords": [
+            {
+              "start": 0.0,
+              "end": 4.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 4.0,
+              "end": 6.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 6.0,
+              "end": 8.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 8.0,
+              "end": 12.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 12.0,
+              "end": 16.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 16.0,
+              "end": 20.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 20.0,
+              "end": 24.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 24.0,
+              "end": 27.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 27.0,
+              "end": 32.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 32.0,
+              "end": 36.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 36.0,
+              "end": 38.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 38.0,
+              "end": 40.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 40.0,
+              "end": 44.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 44.0,
+              "end": 48.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 48.0,
+              "end": 52.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 52.0,
+              "end": 56.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 56.0,
+              "end": 59.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 59.0,
+              "end": 64.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 64.0,
+              "end": 67.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 67.0,
+              "end": 72.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 72.0,
+              "end": 75.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 75.0,
+              "end": 80.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 80.0,
+              "end": 84.0,
+              "root": 2,
+              "quality": "min"
+            },
+            {
+              "start": 84.0,
+              "end": 88.0,
+              "root": 7,
+              "quality": "maj"
+            },
+            {
+              "start": 88.0,
+              "end": 91.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 91.0,
+              "end": 96.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 96.0,
+              "end": 100.0,
+              "root": 4,
+              "quality": "min"
+            },
+            {
+              "start": 100.0,
+              "end": 102.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 102.0,
+              "end": 104.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 104.0,
+              "end": 108.0,
+              "root": 11,
+              "quality": "maj"
+            },
+            {
+              "start": 108.0,
+              "end": 112.0,
+              "root": 0,
+              "quality": "maj"
+            },
+            {
+              "start": 112.0,
+              "end": 116.0,
+              "root": 9,
+              "quality": "min"
+            },
+            {
+              "start": 116.0,
+              "end": 120.0,
+              "root": 5,
+              "quality": "maj"
+            },
+            {
+              "start": 120.0,
+              "end": 123.0,
+              "root": 4,
+              "quality": "maj"
+            },
+            {
+              "start": 123.0,
+              "end": 128.0,
+              "root": 4,
+              "quality": "min"
+            }
+          ]
+        },
+        "best_candidates": [
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 0,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.90625,
+            "root_agreement": 0.9296875
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 11,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.046875,
+            "root_agreement": 0.046875
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 5,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0078125,
+            "root_agreement": 0.0078125
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 1,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 2,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 3,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 4,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 6,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 7,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 8,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.015625
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 9,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          },
+          {
+            "source_start_beats": 2.0,
+            "source_end_beats": 130.0,
+            "pitch_shift_mod12": 10,
+            "pitched_target_beats": 128.0,
+            "coverage": 1.0,
+            "exact_base_chord_agreement": 0.0,
+            "root_agreement": 0.0
+          }
+        ],
+        "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes.",
+        "tied_best_candidates": 1,
+        "distinct_tied_note_mappings": 1,
+        "selected": {
+          "source_start_beats": 2.0,
+          "source_end_beats": 130.0,
+          "pitch_shift_mod12": 0,
+          "pitched_target_beats": 128.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.90625,
+          "root_agreement": 0.9296875
+        },
+        "pickup_policy": "Exclude notes starting before selected full head; retain them in original XML/raw events."
+      },
+      "event_sha256": "532c97f981db8d4baf3c5a9047f86ac9584dbf42d61b10d83f809e0b02659686",
+      "repeat_status": "expanded",
+      "repeat_error": null,
+      "source_note_count": 71,
+      "source_chord_count": 31,
+      "aligned_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/sync__66-nardis.json",
+      "aligned_sha256": "72a3bc0286b82614f23f225bbaf2e453a808d7b2cc29725ab0195e9ac939901a",
+      "aligned_note_count": 70
+    }
+  ],
+  "registration_qa": {
+    "checks": [
+      {
+        "song": "14-freddie_freeloader",
+        "note_count": 30,
+        "unique_onsets": 30,
+        "strictly_increasing_onsets": true,
+        "constant_score_to_q_offset_beats": 0.0,
+        "aligned_sha256_verified": true
+      },
+      {
+        "song": "20-impressions",
+        "note_count": 67,
+        "unique_onsets": 67,
+        "strictly_increasing_onsets": true,
+        "constant_score_to_q_offset_beats": 0.0,
+        "aligned_sha256_verified": true
+      },
+      {
+        "song": "39-st_thomas",
+        "note_count": 76,
+        "unique_onsets": 76,
+        "strictly_increasing_onsets": true,
+        "constant_score_to_q_offset_beats": 64.0,
+        "aligned_sha256_verified": true
+      },
+      {
+        "song": "41-take_five",
+        "note_count": 150,
+        "unique_onsets": 150,
+        "strictly_increasing_onsets": true,
+        "constant_score_to_q_offset_beats": 38.0,
+        "aligned_sha256_verified": true
+      },
+      {
+        "song": "60-in_a_sentimental_mood",
+        "note_count": 117,
+        "unique_onsets": 117,
+        "strictly_increasing_onsets": true,
+        "constant_score_to_q_offset_beats": 12.0,
+        "aligned_sha256_verified": true
+      },
+      {
+        "song": "66-nardis",
+        "note_count": 70,
+        "unique_onsets": 70,
+        "strictly_increasing_onsets": true,
+        "constant_score_to_q_offset_beats": -2.0,
+        "aligned_sha256_verified": true
+      }
+    ],
+    "synthetic_parser_checks": [
+      "explicit instrument transposition",
+      "backup/two-voice timing",
+      "tie merging",
+      "repeat expansion",
+      "harmony offsets",
+      "duration-weighted root/base agreement"
+    ],
+    "rhythmic_warping": false,
+    "meter_policy": "Match quarter-note beats per bar. St Thomas written2/2 and target4/4 both contain4quarter beats; grouping is not asserted identical.",
+    "visual_source_checks": [
+      {
+        "row_id": "170983",
+        "title": "Freddie Freeloader",
+        "checked": "Handwritten lead sheet shows Bb7, two-flat key signature,4/4 and repeat/alternate endings; chart-level visual check, not exhaustive note audit."
+      },
+      {
+        "row_id": "171007",
+        "title": "Take Five",
+        "checked": "Handwritten lead sheet shows Eb-minor harmony, six-flat signature and5/4; chart-level visual check, not exhaustive note audit."
+      }
+    ],
+    "notes_json_frozen": true
+  }
+}

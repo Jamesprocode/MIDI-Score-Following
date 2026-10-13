@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/66-nardis/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 2636
+  },
+  "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/sync__66-nardis.json",
+  "reference_note_count": 70,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 123,
+  "reference_comparisons": 4797
+}

@@ -1,0 +1,17 @@
+{
+  "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 298,
+    "trumpet": 346
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 315,
+  "reference_comparisons": 13534
+}

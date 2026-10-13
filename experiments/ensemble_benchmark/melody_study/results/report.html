@@ -1,0 +1,614 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Melodic matching pilot</title><style>body{font:16px/1.55 system-ui,sans-serif;max-width:1180px;margin:36px auto;padding:0 24px 60px;background:#fbfcfa;color:#22323a}h1{font-size:32px}h2{margin-top:36px;font-size:23px}h3{font-size:18px}a{color:#176477}p,li{max-width:100ch}table{border-collapse:collapse;font-size:14px;background:white;width:100%}td,th{padding:9px 12px;border-bottom:1px solid #dce4e2;text-align:left;font-variant-numeric:tabular-nums}th{background:#edf3f1}.scroll{overflow:auto;margin:18px 0}.note{background:#eef5f3;padding:16px 20px;border-left:4px solid #43796d}pre{background:#edf1f0;padding:18px;overflow:auto}code{font-size:.9em}</style>
+<h1>Melodic matching pilot</h1><p>6 October 2026 · five matchers · two reference conditions · three particle-filter seeds.</p>
+<p class="note"><strong>Finding:</strong> written melody helps on the six-song subset, while earlier-phrase memory adds only small and inconsistent gains across all 75 songs. With a common evidence strength of 1, written-melody DTW raises mean bar accuracy from 69.17% to 77.98%; the order-free histogram reaches 77.94%. This does not establish a unique advantage for recognizing note order or licks.</p>
+<p>The best earlier-memory results at strength 1 are 68.26% versus 67.42% for async (pitch-class edit distance), and 73.06% versus 72.78% for sync (interval edit distance). These small exploratory gains need further validation. With stronger influence, the written histogram and pitch-class edit methods both reach about 78.9%, while stronger earlier-memory matching can hurt.</p>
+<h2>What was compared?</h2><ul>
+<li><strong>Pitch-class histogram:</strong> compare the pitch content of nine notes while ignoring order. This is the control for whether sequence information adds value.</li>
+<li><strong>Pitch-class edit distance:</strong> compare the ordered notes, allowing insertions, deletions and substitutions. Octave differences are ignored.</li>
+<li><strong>Interval edit distance:</strong> compare successive pitch movements. A transposed phrase can still match.</li>
+<li><strong>Interval/rhythm DTW:</strong> allow flexible alignment between pitch movements and relative inter-onset timing.</li>
+<li><strong>Short n-grams:</strong> compare repeated four-note units represented by pitch intervals and relative rhythm.</li>
+</ul><p>These are simplified implementations of established algorithm families. They are not exact reproductions of the cited papers. Nine-note windows contain only notes already received, and use completed onset intervals rather than future note durations. Written and performed rhythms can differ through swing and ornamentation; no swing correction was fitted.</p>
+<p>For the primary comparison each melodic matcher uses the same evidence strength of 1. Strength 3 is a sensitivity check. All variants use the same p02 particle settings, bass-harmony feature and starting information. The table means average songs equally within protocol, then average seeds 0, 1 and 2. This isolates adding melodic observations to one particle backbone; it is not a new comparison against the previous async beam (91.4%) or the correctly initialized fixed clock (99.9%).</p>
+<h2>Earlier-performance phrase memory: all 75 songs</h2>
+<p>The system records earlier non-solo horn phrases and associates them with the independent harmonic follower's past position estimates. A query never matches itself or an overlapping window: reference material must end at least two nominal beats before the query begins. Repeated chart measures support all corresponding occurrences, leaving chorus identity to the temporal tracker.</p>
+<h3>async (49 songs)</h3>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Correct bar</th>
+      <th>Bar gain (pp)</th>
+      <th>Lowest seed</th>
+      <th>Highest seed</th>
+      <th>Mean error (beats)</th>
+      <th>Melody evidence available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bass harmony only</td>
+      <td>67.42%</td>
+      <td>+0.00</td>
+      <td>66.60%</td>
+      <td>68.31%</td>
+      <td>7.929</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>Interval + rhythm DTW + harmony, strength 1</td>
+      <td>66.86%</td>
+      <td>-0.56</td>
+      <td>66.48%</td>
+      <td>67.43%</td>
+      <td>10.549</td>
+      <td>17.08%</td>
+    </tr>
+    <tr>
+      <td>Pitch-interval edit distance + harmony, strength 1</td>
+      <td>67.76%</td>
+      <td>+0.34</td>
+      <td>67.03%</td>
+      <td>69.08%</td>
+      <td>7.258</td>
+      <td>5.40%</td>
+    </tr>
+    <tr>
+      <td>Short interval/rhythm n-grams + harmony, strength 1</td>
+      <td>67.73%</td>
+      <td>+0.31</td>
+      <td>66.72%</td>
+      <td>68.79%</td>
+      <td>7.766</td>
+      <td>0.91%</td>
+    </tr>
+    <tr>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 1</td>
+      <td>66.44%</td>
+      <td>-0.97</td>
+      <td>65.82%</td>
+      <td>67.41%</td>
+      <td>12.158</td>
+      <td>16.46%</td>
+    </tr>
+    <tr>
+      <td>Pitch-class edit distance + harmony, strength 1</td>
+      <td>68.26%</td>
+      <td>+0.85</td>
+      <td>66.94%</td>
+      <td>69.36%</td>
+      <td>6.867</td>
+      <td>10.61%</td>
+    </tr>
+  </tbody>
+</table></div>
+<h3>sync (26 songs)</h3>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Correct bar</th>
+      <th>Bar gain (pp)</th>
+      <th>Lowest seed</th>
+      <th>Highest seed</th>
+      <th>Mean error (beats)</th>
+      <th>Melody evidence available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bass harmony only</td>
+      <td>72.78%</td>
+      <td>+0.00</td>
+      <td>72.47%</td>
+      <td>72.96%</td>
+      <td>4.839</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>Interval + rhythm DTW + harmony, strength 1</td>
+      <td>71.80%</td>
+      <td>-0.98</td>
+      <td>70.28%</td>
+      <td>72.63%</td>
+      <td>5.131</td>
+      <td>21.90%</td>
+    </tr>
+    <tr>
+      <td>Pitch-interval edit distance + harmony, strength 1</td>
+      <td>73.06%</td>
+      <td>+0.28</td>
+      <td>72.52%</td>
+      <td>73.40%</td>
+      <td>4.968</td>
+      <td>5.96%</td>
+    </tr>
+    <tr>
+      <td>Short interval/rhythm n-grams + harmony, strength 1</td>
+      <td>72.87%</td>
+      <td>+0.09</td>
+      <td>72.61%</td>
+      <td>73.10%</td>
+      <td>4.835</td>
+      <td>0.72%</td>
+    </tr>
+    <tr>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 1</td>
+      <td>72.43%</td>
+      <td>-0.35</td>
+      <td>71.96%</td>
+      <td>72.86%</td>
+      <td>4.690</td>
+      <td>21.06%</td>
+    </tr>
+    <tr>
+      <td>Pitch-class edit distance + harmony, strength 1</td>
+      <td>72.73%</td>
+      <td>-0.05</td>
+      <td>72.23%</td>
+      <td>72.99%</td>
+      <td>5.555</td>
+      <td>11.75%</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>The earlier-memory gains are small and depend on method, strength and protocol. The reference positions can inherit mistakes from the harmonic anchor. A repeated phrase can also fit several chart locations. This experiment does not establish a robust standalone lick tracker.</p>
+<h2>Written melody: compare the same six songs</h2>
+<p>Written references were extracted from the existing local <a href="https://huggingface.co/datasets/PRAIG/JAZZMUS">JAZZMUS dataset</a>. Twelve titles overlap; six pass the declared chart checks: Freddie Freeloader, Impressions, St. Thomas, Take Five, In a Sentimental Mood and Nardis. Key and position are aligned using untimed chord sequences only, with no performance notes or timestamps.</p>
+<p>The tables below compare both reference types on exactly these six songs (four async, two sync). These means are not directly comparable with the full 75-song means. Different chart editions may still differ in melody even when their chord sequences agree.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Reference</th>
+      <th>Method</th>
+      <th>Correct bar</th>
+      <th>Within 2 beats</th>
+      <th>Mean error (beats)</th>
+      <th>Melody evidence available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>past</td>
+      <td>Bass harmony only</td>
+      <td>69.17%</td>
+      <td>74.39%</td>
+      <td>8.442</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>Interval + rhythm DTW + harmony, strength 1</td>
+      <td>70.58%</td>
+      <td>75.67%</td>
+      <td>22.875</td>
+      <td>14.23%</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>Pitch-interval edit distance + harmony, strength 1</td>
+      <td>72.23%</td>
+      <td>77.28%</td>
+      <td>8.986</td>
+      <td>4.27%</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>Short interval/rhythm n-grams + harmony, strength 1</td>
+      <td>69.10%</td>
+      <td>74.39%</td>
+      <td>8.476</td>
+      <td>1.59%</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 1</td>
+      <td>71.69%</td>
+      <td>76.97%</td>
+      <td>12.971</td>
+      <td>14.09%</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>Pitch-class edit distance + harmony, strength 1</td>
+      <td>71.94%</td>
+      <td>77.13%</td>
+      <td>11.660</td>
+      <td>7.69%</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>Bass harmony only</td>
+      <td>69.17%</td>
+      <td>74.39%</td>
+      <td>8.442</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>Interval + rhythm DTW + harmony, strength 1</td>
+      <td>77.98%</td>
+      <td>83.85%</td>
+      <td>1.125</td>
+      <td>15.67%</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>Pitch-interval edit distance + harmony, strength 1</td>
+      <td>76.25%</td>
+      <td>82.02%</td>
+      <td>1.289</td>
+      <td>5.62%</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>Short interval/rhythm n-grams + harmony, strength 1</td>
+      <td>69.23%</td>
+      <td>74.49%</td>
+      <td>8.433</td>
+      <td>1.09%</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 1</td>
+      <td>77.94%</td>
+      <td>83.94%</td>
+      <td>1.136</td>
+      <td>14.92%</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>Pitch-class edit distance + harmony, strength 1</td>
+      <td>77.10%</td>
+      <td>82.87%</td>
+      <td>1.206</td>
+      <td>8.90%</td>
+    </tr>
+  </tbody>
+</table></div>
+<h3>Where does written melody help?</h3>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Evaluated section</th>
+      <th>Method</th>
+      <th>Correct bar</th>
+      <th>Mean error (beats)</th>
+      <th>Melody evidence available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>head_in</td>
+      <td>Bass harmony only</td>
+      <td>79.45%</td>
+      <td>1.280</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>head_out</td>
+      <td>Bass harmony only</td>
+      <td>63.27%</td>
+      <td>38.611</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>solo</td>
+      <td>Bass harmony only</td>
+      <td>68.69%</td>
+      <td>3.758</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>head_in</td>
+      <td>Interval + rhythm DTW + harmony, strength 1</td>
+      <td>89.06%</td>
+      <td>0.748</td>
+      <td>47.68%</td>
+    </tr>
+    <tr>
+      <td>head_out</td>
+      <td>Interval + rhythm DTW + harmony, strength 1</td>
+      <td>87.11%</td>
+      <td>0.670</td>
+      <td>43.57%</td>
+    </tr>
+    <tr>
+      <td>solo</td>
+      <td>Interval + rhythm DTW + harmony, strength 1</td>
+      <td>74.37%</td>
+      <td>1.223</td>
+      <td>3.74%</td>
+    </tr>
+    <tr>
+      <td>head_in</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 1</td>
+      <td>88.36%</td>
+      <td>0.750</td>
+      <td>49.13%</td>
+    </tr>
+    <tr>
+      <td>head_out</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 1</td>
+      <td>85.54%</td>
+      <td>0.764</td>
+      <td>42.24%</td>
+    </tr>
+    <tr>
+      <td>solo</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 1</td>
+      <td>74.72%</td>
+      <td>1.220</td>
+      <td>2.77%</td>
+    </tr>
+    <tr>
+      <td>head_in</td>
+      <td>Pitch-class edit distance + harmony, strength 1</td>
+      <td>89.18%</td>
+      <td>0.754</td>
+      <td>33.42%</td>
+    </tr>
+    <tr>
+      <td>head_out</td>
+      <td>Pitch-class edit distance + harmony, strength 1</td>
+      <td>84.69%</td>
+      <td>0.949</td>
+      <td>27.80%</td>
+    </tr>
+    <tr>
+      <td>solo</td>
+      <td>Pitch-class edit distance + harmony, strength 1</td>
+      <td>73.54%</td>
+      <td>1.282</td>
+      <td>0.23%</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Head-in/head-out/solo labels are used only to analyze outputs. Better solo-section accuracy can reflect an improved position inherited from the preceding head; it does not prove the written melody directly matches an improvised solo. An order-free pitch histogram is competitive here, so these results do not establish that note ordering or a lick-specific representation provides a unique benefit.</p>
+<h2>Stronger melodic influence</h2><p>The following sensitivity uses strength 3. No per-song best method is selected. A ranking change or a larger mean error is evidence of a tradeoff, not a reason to hide that result.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Reference</th>
+      <th>Protocol</th>
+      <th>Method</th>
+      <th>Correct bar</th>
+      <th>Bar gain (pp)</th>
+      <th>Mean error (beats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>past</td>
+      <td>async</td>
+      <td>Interval + rhythm DTW + harmony, strength 3</td>
+      <td>65.01%</td>
+      <td>-2.40</td>
+      <td>12.570</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>async</td>
+      <td>Pitch-interval edit distance + harmony, strength 3</td>
+      <td>66.87%</td>
+      <td>-0.55</td>
+      <td>6.562</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>async</td>
+      <td>Short interval/rhythm n-grams + harmony, strength 3</td>
+      <td>67.57%</td>
+      <td>+0.16</td>
+      <td>7.671</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>async</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 3</td>
+      <td>59.97%</td>
+      <td>-7.45</td>
+      <td>28.959</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>async</td>
+      <td>Pitch-class edit distance + harmony, strength 3</td>
+      <td>66.48%</td>
+      <td>-0.94</td>
+      <td>7.396</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>sync</td>
+      <td>Interval + rhythm DTW + harmony, strength 3</td>
+      <td>72.75%</td>
+      <td>-0.03</td>
+      <td>4.673</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>sync</td>
+      <td>Pitch-interval edit distance + harmony, strength 3</td>
+      <td>73.23%</td>
+      <td>+0.45</td>
+      <td>4.975</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>sync</td>
+      <td>Short interval/rhythm n-grams + harmony, strength 3</td>
+      <td>72.78%</td>
+      <td>+0.00</td>
+      <td>4.853</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>sync</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 3</td>
+      <td>72.74%</td>
+      <td>-0.04</td>
+      <td>5.178</td>
+    </tr>
+    <tr>
+      <td>past</td>
+      <td>sync</td>
+      <td>Pitch-class edit distance + harmony, strength 3</td>
+      <td>72.70%</td>
+      <td>-0.08</td>
+      <td>5.554</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>async</td>
+      <td>Interval + rhythm DTW + harmony, strength 3</td>
+      <td>75.40%</td>
+      <td>+13.55</td>
+      <td>1.337</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>async</td>
+      <td>Pitch-interval edit distance + harmony, strength 3</td>
+      <td>75.07%</td>
+      <td>+13.22</td>
+      <td>1.395</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>async</td>
+      <td>Short interval/rhythm n-grams + harmony, strength 3</td>
+      <td>62.32%</td>
+      <td>+0.47</td>
+      <td>12.271</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>async</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 3</td>
+      <td>75.54%</td>
+      <td>+13.69</td>
+      <td>1.326</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>async</td>
+      <td>Pitch-class edit distance + harmony, strength 3</td>
+      <td>76.46%</td>
+      <td>+14.62</td>
+      <td>1.281</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>sync</td>
+      <td>Interval + rhythm DTW + harmony, strength 3</td>
+      <td>84.43%</td>
+      <td>+0.61</td>
+      <td>0.675</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>sync</td>
+      <td>Pitch-interval edit distance + harmony, strength 3</td>
+      <td>83.87%</td>
+      <td>+0.05</td>
+      <td>0.713</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>sync</td>
+      <td>Short interval/rhythm n-grams + harmony, strength 3</td>
+      <td>83.82%</td>
+      <td>+0.00</td>
+      <td>0.715</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>sync</td>
+      <td>Pitch-class histogram (ignores order) + harmony, strength 3</td>
+      <td>85.74%</td>
+      <td>+1.93</td>
+      <td>0.626</td>
+    </tr>
+    <tr>
+      <td>written</td>
+      <td>sync</td>
+      <td>Pitch-class edit distance + harmony, strength 3</td>
+      <td>83.84%</td>
+      <td>+0.02</td>
+      <td>0.706</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Input selection and claim boundaries</h2><ul>
+<li>The local band MIDI contains bass and horn transcriptions; piano MIDI is absent. Bass remains the fixed harmonic input. Catalog lead-horn tracks provide melodic queries.</li>
+<li>Planned solo roles come from the untimed performance plan. A horn is excluded when the independent harmonic follower estimates that its planned solo is happening. The actual timed solo annotation is never used for live selection. Incorrect position estimates can therefore cause incorrect masking.</li>
+<li>Memory-based melodic-update-only ablations still use a harmonic follower for memory anchors and role selection. They are not independent melody-only cold-start followers. Written-query role gating also uses that fixed anchor.</li>
+<li>Each window has nine notes, a maximum span of 32 nominal beats and maximum internal gap of eight. Evidence expires two nominal beats after the latest onset. This is variable-duration context with no future lookahead.</li>
+<li>Similarity scores are uncalibrated. A positive location reward is issued above 0.75; with at least eight references, the median reference score can raise the threshold. Up to eight distinct locations receive Gaussian support with 0.75-beat width. Common numerical thresholds do not guarantee equal false-match rates across algorithms.</li>
+<li>Interval methods allow transposition but do not jointly infer transposed harmonic contexts. Harmonic compatibility is handled by the separate bass branch.</li>
+<li>The dataset has no verified lick-occurrence labels. We measure position-following outcomes and evidence availability, not lick-detection precision or recall. Evidence availability does not mean the match is correct.</li>
+<li>Known starting position/time and approximate tempo are supplied. The async fixed clock remains a strong control. No new claim is made about unseen-song generalization, unknown starts, unplanned jumps or live end-to-end latency.</li>
+<li>Independent MIDI/audio/annotation time-origin verification remains outstanding. Automatic transcription errors and written-edition differences can affect these provisional results.</li>
+</ul>
+<h2>Metrics</h2><p>Every 200 ms, compare predicted and annotated unfolded bar occurrence. Correct-bar percentage measures time in the correct bar, not the percentage of perfectly followed whole bars. Within-two-beat rate and all-frame mean/median absolute beat errors accompany it. Fractional reference beats are interpolated inside annotated bars; they are not separately annotated beat onsets. No large errors are discarded.</p>
+<h2>Reproduce and inspect</h2>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Run</th>
+      <th>Performances</th>
+      <th>Tracking runs</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01_past_all</td>
+      <td>75</td>
+      <td>1275</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>02_written</td>
+      <td>6</td>
+      <td>102</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>03_past_seed1</td>
+      <td>75</td>
+      <td>1275</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>04_past_seed2</td>
+      <td>75</td>
+      <td>1275</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>05_written_seed1</td>
+      <td>6</td>
+      <td>102</td>
+      <td>Complete</td>
+    </tr>
+    <tr>
+      <td>06_written_seed2</td>
+      <td>6</td>
+      <td>102</td>
+      <td>Complete</td>
+    </tr>
+  </tbody>
+</table>
+<p>Every run preserves pre-execution configuration/source hashes, exact source snapshots, input hashes, per-song metrics, prediction traces, event logs and completion status. Smoke runs remain separately identified. Existing datasets, baseline studies and proposal text were not changed.</p><ul>
+<li><a href="summary.json">Summary JSON</a> · <a href="aggregate_three_seeds.csv">All three-seed aggregates</a> · <a href="per_seed_aggregate.csv">Per-seed results</a> · <a href="matched_six_songs.csv">Matched six-song comparison</a></li>
+<li><a href="../validation.json">Validation</a> · <a href="../analysis/analysis.md">Detailed seed-0 analysis</a> · <a href="../analysis/seed_analysis.json">Three-seed paired analysis</a></li>
+<li><a href="../references/written/README.md">Written-reference audit and rejected matches</a> · <a href="../references/written/manifest.json">Source provenance</a></li>
+<li><a href="../references.json">Algorithm literature and implementation boundaries</a> · <a href="../../improvement_study/report.html">Previous harmonic/temporal study</a></li>
+</ul><p>From the workspace root, using the bundled Python environment with NumPy:</p>
+<pre>python3 'Research Proposal/experiments/ensemble_benchmark/melody_study/run_study.py' --reference past --output /tmp/melody-past-new-run --workers 3
+python3 'Research Proposal/experiments/ensemble_benchmark/melody_study/run_study.py' --reference written --output /tmp/melody-written-new-run --workers 3
+# Add --seed 1 or --seed 2 for the repeat checks.</pre>
+</html>

@@ -1,0 +1,9 @@
+- First baseline step: Maezawa-inspired chord templates plus a probabilistic timing model; full neural beat/downbeat tracking is still to be implemented.
+- Focus this analysis on 26 live-band performances. Keep MIDI inputs and tracker settings identical across comparisons.
+- Harmony adds useful information: average correct-bar accuracy is 54.11%, versus 7.45% for the same filter without harmony and 7.72% for the constant clock.
+- Strong case — Groovin’ High: 86.81% correct bars, 0.66-beat mean error; follows despite metadata 185 BPM versus approximately 210 BPM performance.
+- Weak case — Samba de Orfeu: 12.88% correct bars, 44.04-beat mean error; bass-only piano-solo evidence is highly ambiguous, followed by almost no pitched evidence during the drum solo. Harmony can worsen the error.
+- Equal initial tempo probabilities barely change the average: 54.11%→53.98%. Samba’s later failure is unchanged after 76 seconds.
+- Removing the ongoing tempo preference as well gives 52.32%; this also changes the tempo-transition behavior.
+- Next: test the newly available native piano MIDI separately, then examine when to limit harmonic corrections during sparse or ambiguous passages. These results motivate that question; they do not prove learned weighting is required.
+- Evaluation uses annotated bar timing and a known unfolded plan/start; this is exploratory causal replay, not a complete real-time accompaniment evaluation.

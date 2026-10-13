@@ -1,0 +1,5822 @@
+[
+  {
+    "protocol": "async",
+    "song": "00-a_night_in_tunisia",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/00-a_night_in_tunisia/alternate/bass.transcribed.derived.mid",
+      "async/songs/00-a_night_in_tunisia/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/00-a_night_in_tunisia/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      315.4891542604167,
+      316.76272515833335
+    ],
+    "first_note_on_min_max_s": [
+      1.362856575,
+      12.1499949375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "00-a_night_in_tunisia",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/00-a_night_in_tunisia/preferred/bass.transcribed.derived.mid",
+      "async/songs/00-a_night_in_tunisia/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/00-a_night_in_tunisia/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      315.51986853333335,
+      316.09986829166667
+    ],
+    "first_note_on_min_max_s": [
+      1.3871422791666665,
+      12.1499949375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "01-a_sunday_kind_of_love",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/01-a_sunday_kind_of_love/alternate/bass.transcribed.derived.mid",
+      "async/songs/01-a_sunday_kind_of_love/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/01-a_sunday_kind_of_love/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      711.29,
+      720.2633333333333
+    ],
+    "first_note_on_min_max_s": [
+      0.7133333333333334,
+      4.588333333333333
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "01-a_sunday_kind_of_love",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/01-a_sunday_kind_of_love/preferred/bass.transcribed.derived.mid",
+      "async/songs/01-a_sunday_kind_of_love/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/01-a_sunday_kind_of_love/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      717.58,
+      720.02
+    ],
+    "first_note_on_min_max_s": [
+      0.75,
+      3.2366666666666664
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "02-alice_in_wonderland",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/02-alice_in_wonderland/alternate/bass.transcribed.derived.mid",
+      "async/songs/02-alice_in_wonderland/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/02-alice_in_wonderland/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      505.3875,
+      508.1375
+    ],
+    "first_note_on_min_max_s": [
+      1.1375,
+      4.56953125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "02-alice_in_wonderland",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/02-alice_in_wonderland/extras/saxophone_alto-260728_1613.transcribed.derived.mid",
+      "async/songs/02-alice_in_wonderland/extras/saxophone_alto-260728_1617.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      505.58046875,
+      505.91953125
+    ],
+    "first_note_on_min_max_s": [
+      2.23984375,
+      2.26953125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "02-alice_in_wonderland",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/02-alice_in_wonderland/preferred/bass.transcribed.derived.mid",
+      "async/songs/02-alice_in_wonderland/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/02-alice_in_wonderland/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      491.0875,
+      505.58046875
+    ],
+    "first_note_on_min_max_s": [
+      0.8875,
+      10.21015625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "03-all_of_me",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/03-all_of_me/alternate/bass.transcribed.derived.mid",
+      "async/songs/03-all_of_me/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/03-all_of_me/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      333.31233334375,
+      335.249832375
+    ],
+    "first_note_on_min_max_s": [
+      12.01249399375,
+      12.630140743750001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "03-all_of_me",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/03-all_of_me/extras/saxophone_alto-260731_1512.transcribed.derived.mid",
+      "async/songs/03-all_of_me/extras/saxophone_alto-260731_1520.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      335.53733223125,
+      335.66233216874997
+    ],
+    "first_note_on_min_max_s": [
+      12.649993675000001,
+      12.69999365
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "03-all_of_me",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/03-all_of_me/preferred/bass.transcribed.derived.mid",
+      "async/songs/03-all_of_me/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/03-all_of_me/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      334.43733278125,
+      335.67997921875
+    ],
+    "first_note_on_min_max_s": [
+      12.6396995625,
+      18.33013789375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "04-all_the_things_you_are",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/04-all_the_things_you_are/alternate/bass.transcribed.derived.mid",
+      "async/songs/04-all_the_things_you_are/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/04-all_the_things_you_are/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      416.4375,
+      422.0375
+    ],
+    "first_note_on_min_max_s": [
+      4.3125,
+      15.18
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "04-all_the_things_you_are",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/04-all_the_things_you_are/extras/saxophone_alto-260728_1641.transcribed.derived.mid",
+      "async/songs/04-all_the_things_you_are/extras/saxophone_alto-260728_1645.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      411.32,
+      415.41
+    ],
+    "first_note_on_min_max_s": [
+      14.36,
+      17.13
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "04-all_the_things_you_are",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/04-all_the_things_you_are/preferred/bass.transcribed.derived.mid",
+      "async/songs/04-all_the_things_you_are/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/04-all_the_things_you_are/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      396.4875,
+      416.38
+    ],
+    "first_note_on_min_max_s": [
+      1.5625,
+      16.3
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "05-au_privave",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/05-au_privave/alternate/bass.transcribed.derived.mid",
+      "async/songs/05-au_privave/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/05-au_privave/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      231.899903375,
+      234.31275951249998
+    ],
+    "first_note_on_min_max_s": [
+      1.36071371875,
+      2.3621418729166668
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "05-au_privave",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/05-au_privave/preferred/bass.transcribed.derived.mid",
+      "async/songs/05-au_privave/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/05-au_privave/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      230.5370468,
+      233.68775977291668
+    ],
+    "first_note_on_min_max_s": [
+      1.33928515625,
+      11.9699950125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "06-autumn_leaves",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/06-autumn_leaves/alternate/bass.transcribed.derived.mid",
+      "async/songs/06-autumn_leaves/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/06-autumn_leaves/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      283.18707521875,
+      285.56207165625
+    ],
+    "first_note_on_min_max_s": [
+      0.439473025,
+      3.3874949187500003
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "06-autumn_leaves",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/06-autumn_leaves/extras/saxophone_alto-260721_2037.transcribed.derived.mid",
+      "async/songs/06-autumn_leaves/extras/saxophone_alto-260721_2045.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      284.43707334375,
+      284.61207308125
+    ],
+    "first_note_on_min_max_s": [
+      0.46249930625,
+      0.5894728
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "06-autumn_leaves",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/06-autumn_leaves/preferred/bass.transcribed.derived.mid",
+      "async/songs/06-autumn_leaves/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/06-autumn_leaves/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      271.68709246875,
+      286.76206985625
+    ],
+    "first_note_on_min_max_s": [
+      0.18026288750000002,
+      40.41243938125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "07-blue_bossa",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/07-blue_bossa/alternate/bass.transcribed.derived.mid",
+      "async/songs/07-blue_bossa/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/07-blue_bossa/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      362.1375,
+      362.7875
+    ],
+    "first_note_on_min_max_s": [
+      3.0125,
+      13.1
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "07-blue_bossa",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/07-blue_bossa/preferred/bass.transcribed.derived.mid",
+      "async/songs/07-blue_bossa/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/07-blue_bossa/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      358.53046875,
+      361.36953125
+    ],
+    "first_note_on_min_max_s": [
+      2.28984375,
+      13.1
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "08-blue_skies",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/08-blue_skies/alternate/bass.transcribed.derived.mid",
+      "async/songs/08-blue_skies/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/08-blue_skies/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      364.78,
+      372.15
+    ],
+    "first_note_on_min_max_s": [
+      14.32,
+      70.8
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "08-blue_skies",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/08-blue_skies/extras/saxophone_alto-260728_1701.transcribed.derived.mid",
+      "async/songs/08-blue_skies/extras/saxophone_alto-260728_1704.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      371.0,
+      371.02
+    ],
+    "first_note_on_min_max_s": [
+      14.32,
+      14.36
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "08-blue_skies",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/08-blue_skies/preferred/bass.transcribed.derived.mid",
+      "async/songs/08-blue_skies/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/08-blue_skies/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      362.0875,
+      372.56
+    ],
+    "first_note_on_min_max_s": [
+      7.1875,
+      17.55
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "09-caravan",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/09-caravan/alternate/bass.transcribed.derived.mid",
+      "async/songs/09-caravan/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/09-caravan/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      411.56949583749997,
+      413.2620867375
+    ],
+    "first_note_on_min_max_s": [
+      7.7198996875,
+      15.080077512499999
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "09-caravan",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/09-caravan/extras/saxophone_alto-260731_1912.transcribed.derived.mid",
+      "async/songs/09-caravan/extras/saxophone_alto-260731_1931.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      410.94958905,
+      415.2370847625
+    ],
+    "first_note_on_min_max_s": [
+      15.14998485,
+      15.160170025000001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "09-caravan",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/09-caravan/preferred/bass.transcribed.derived.mid",
+      "async/songs/09-caravan/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/09-caravan/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      412.4296801625,
+      413.1870868125
+    ],
+    "first_note_on_min_max_s": [
+      3.7374962625,
+      15.089799724999999
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "10-desafinado",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/10-desafinado/alternate/bass.transcribed.derived.mid",
+      "async/songs/10-desafinado/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/10-desafinado/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      786.5627343937499,
+      792.99980175
+    ],
+    "first_note_on_min_max_s": [
+      5.1499987125,
+      6.59999835
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "10-desafinado",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/10-desafinado/extras/saxophone_alto-260728_1723.transcribed.derived.mid",
+      "async/songs/10-desafinado/extras/saxophone_alto-260728_1729.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      791.21962978125,
+      792.1498019625
+    ],
+    "first_note_on_min_max_s": [
+      8.210342775,
+      9.480170043749998
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "10-desafinado",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/10-desafinado/preferred/bass.transcribed.derived.mid",
+      "async/songs/10-desafinado/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/10-desafinado/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      788.81273383125,
+      792.3498019125
+    ],
+    "first_note_on_min_max_s": [
+      1.6499995875,
+      7.6499980875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "12-for_sentimental_reasons",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/12-for_sentimental_reasons/alternate/bass.transcribed.derived.mid",
+      "async/songs/12-for_sentimental_reasons/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/12-for_sentimental_reasons/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      673.4390625,
+      676.9
+    ],
+    "first_note_on_min_max_s": [
+      2.0796875,
+      10.7296875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "12-for_sentimental_reasons",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/12-for_sentimental_reasons/extras/saxophone_alto-260725_1756.transcribed.derived.mid",
+      "async/songs/12-for_sentimental_reasons/extras/saxophone_alto-260725_1812.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      675.0296875,
+      675.7125
+    ],
+    "first_note_on_min_max_s": [
+      1.6,
+      1.75
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "12-for_sentimental_reasons",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/12-for_sentimental_reasons/preferred/bass.transcribed.derived.mid",
+      "async/songs/12-for_sentimental_reasons/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/12-for_sentimental_reasons/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      676.9625,
+      678.5625
+    ],
+    "first_note_on_min_max_s": [
+      1.7875,
+      10.8
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "13-four",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/13-four/alternate/bass.transcribed.derived.mid",
+      "async/songs/13-four/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/13-four/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      291.869302725,
+      292.1997078
+    ],
+    "first_note_on_min_max_s": [
+      3.419591175,
+      7.410127725
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "13-four",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/13-four/preferred/bass.transcribed.derived.mid",
+      "async/songs/13-four/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/13-four/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      291.889572975,
+      292.14970785
+    ],
+    "first_note_on_min_max_s": [
+      3.389861475,
+      7.3898574749999995
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "14-freddie_freeloader",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/14-freddie_freeloader/alternate/bass.transcribed.derived.mid",
+      "async/songs/14-freddie_freeloader/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/14-freddie_freeloader/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      297.61266535000004,
+      300.24969975
+    ],
+    "first_note_on_min_max_s": [
+      1.480554075,
+      21.712015325
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "14-freddie_freeloader",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/14-freddie_freeloader/extras/saxophone_alto-260727_2038.transcribed.derived.mid",
+      "async/songs/14-freddie_freeloader/extras/saxophone_alto-260727_2038_saxophone_alto.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      300.01914442500004,
+      300.259884925
+    ],
+    "first_note_on_min_max_s": [
+      1.7194427250000002,
+      1.789813025
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "14-freddie_freeloader",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/14-freddie_freeloader/preferred/bass.transcribed.derived.mid",
+      "async/songs/14-freddie_freeloader/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/14-freddie_freeloader/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      299.761737275,
+      301.33673569999996
+    ],
+    "first_note_on_min_max_s": [
+      1.710183475,
+      15.587947375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "15-frenesi",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/15-frenesi/alternate/bass.transcribed.derived.mid",
+      "async/songs/15-frenesi/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/15-frenesi/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      376.2119749125,
+      378.21973303125
+    ],
+    "first_note_on_min_max_s": [
+      6.81982588125,
+      18.8396504625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "15-frenesi",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/15-frenesi/extras/saxophone_alto-260725_1641.transcribed.derived.mid",
+      "async/songs/15-frenesi/extras/saxophone_alto-260725_1656.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      377.6499055875,
+      377.86973311875
+    ],
+    "first_note_on_min_max_s": [
+      6.81982588125,
+      8.28017034375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "15-frenesi",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/15-frenesi/preferred/bass.transcribed.derived.mid",
+      "async/songs/15-frenesi/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/15-frenesi/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      375.7395612375,
+      380.08007739375
+    ],
+    "first_note_on_min_max_s": [
+      3.299999175,
+      38.2896456
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "16-how_high_the_moon",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/16-how_high_the_moon/alternate/bass.transcribed.derived.mid",
+      "async/songs/16-how_high_the_moon/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/16-how_high_the_moon/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      272.32,
+      272.6875
+    ],
+    "first_note_on_min_max_s": [
+      3.3375,
+      11.87
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "16-how_high_the_moon",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/16-how_high_the_moon/preferred/bass.transcribed.derived.mid",
+      "async/songs/16-how_high_the_moon/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/16-how_high_the_moon/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      272.62,
+      274.0625
+    ],
+    "first_note_on_min_max_s": [
+      5.3,
+      8.3625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "17-i_could_write_a_book",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/17-i_could_write_a_book/alternate/bass.transcribed.derived.mid",
+      "async/songs/17-i_could_write_a_book/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/17-i_could_write_a_book/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      448.613,
+      451.58
+    ],
+    "first_note_on_min_max_s": [
+      4.287,
+      29.48
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "17-i_could_write_a_book",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/17-i_could_write_a_book/preferred/bass.transcribed.derived.mid",
+      "async/songs/17-i_could_write_a_book/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/17-i_could_write_a_book/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      449.512,
+      451.662
+    ],
+    "first_note_on_min_max_s": [
+      7.688,
+      21.92
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "18-i_wish_you_love",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/18-i_wish_you_love/alternate/bass.transcribed.derived.mid",
+      "async/songs/18-i_wish_you_love/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/18-i_wish_you_love/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      506.1869938125,
+      509.9869900125
+    ],
+    "first_note_on_min_max_s": [
+      3.6897690375,
+      24.2374757625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "18-i_wish_you_love",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/18-i_wish_you_love/extras/saxophone_alto-260725_2048.transcribed.derived.mid",
+      "async/songs/18-i_wish_you_love/extras/saxophone_alto-260725_2106.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      500.0188181625,
+      500.14949985000004
+    ],
+    "first_note_on_min_max_s": [
+      5.4397672875,
+      5.4806763375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "18-i_wish_you_love",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/18-i_wish_you_love/preferred/bass.transcribed.derived.mid",
+      "async/songs/18-i_wish_you_love/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/18-i_wish_you_love/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      505.09949489999997,
+      510.5619894375
+    ],
+    "first_note_on_min_max_s": [
+      4.4602228125,
+      13.3124866875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "19-if_i_were_a_bell",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/19-if_i_were_a_bell/alternate/bass.transcribed.derived.mid",
+      "async/songs/19-if_i_were_a_bell/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/19-if_i_were_a_bell/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      291.88903585,
+      296.58705511874996
+    ],
+    "first_note_on_min_max_s": [
+      10.63748404375,
+      14.71247793125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "19-if_i_were_a_bell",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/19-if_i_were_a_bell/extras/saxophone_alto-260731_1332.transcribed.derived.mid",
+      "async/songs/19-if_i_were_a_bell/extras/saxophone_alto-260731_1337.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      291.88903585,
+      291.88903585
+    ],
+    "first_note_on_min_max_s": [
+      10.339458175,
+      10.360510775
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "19-if_i_were_a_bell",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/19-if_i_were_a_bell/preferred/bass.transcribed.derived.mid",
+      "async/songs/19-if_i_were_a_bell/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/19-if_i_were_a_bell/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      291.94956207499996,
+      294.91205763125004
+    ],
+    "first_note_on_min_max_s": [
+      10.6302472125,
+      14.71050425
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "20-impressions",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/20-impressions/alternate/bass.transcribed.derived.mid",
+      "async/songs/20-impressions/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/20-impressions/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      215.2105,
+      216.42
+    ],
+    "first_note_on_min_max_s": [
+      0.9105,
+      29.5375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "20-impressions",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/20-impressions/preferred/bass.transcribed.derived.mid",
+      "async/songs/20-impressions/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/20-impressions/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      206.3375,
+      216.57
+    ],
+    "first_note_on_min_max_s": [
+      0.9605,
+      31.5125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "21-isnt_it_romantic",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/21-isnt_it_romantic/alternate/bass.transcribed.derived.mid",
+      "async/songs/21-isnt_it_romantic/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/21-isnt_it_romantic/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      390.6371093625,
+      392.59960739999997
+    ],
+    "first_note_on_min_max_s": [
+      7.64999235,
+      13.8696289875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "21-isnt_it_romantic",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/21-isnt_it_romantic/preferred/bass.transcribed.derived.mid",
+      "async/songs/21-isnt_it_romantic/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/21-isnt_it_romantic/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      388.5871114125,
+      392.59960739999997
+    ],
+    "first_note_on_min_max_s": [
+      7.6303495125000005,
+      13.8999861
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "22-lazy_bird",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/22-lazy_bird/alternate/bass.transcribed.derived.mid",
+      "async/songs/22-lazy_bird/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/22-lazy_bird/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      242.91979166666667,
+      245.2625
+    ],
+    "first_note_on_min_max_s": [
+      8.95,
+      15.889583333333334
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "22-lazy_bird",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/22-lazy_bird/preferred/bass.transcribed.derived.mid",
+      "async/songs/22-lazy_bird/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/22-lazy_bird/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      240.7375,
+      244.7625
+    ],
+    "first_note_on_min_max_s": [
+      8.4625,
+      15.310416666666667
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "23-like_someone_in_love",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/23-like_someone_in_love/alternate/bass.transcribed.derived.mid",
+      "async/songs/23-like_someone_in_love/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/23-like_someone_in_love/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      484.5803136375,
+      486.6107479125
+    ],
+    "first_note_on_min_max_s": [
+      9.78804103125,
+      26.389123837499998
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "23-like_someone_in_love",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/23-like_someone_in_love/preferred/bass.transcribed.derived.mid",
+      "async/songs/23-like_someone_in_love/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/23-like_someone_in_love/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      486.13031325,
+      486.41183491875
+    ],
+    "first_note_on_min_max_s": [
+      2.33912985,
+      26.388036881250002
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "24-long_ago",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/24-long_ago/alternate/bass.transcribed.derived.mid",
+      "async/songs/24-long_ago/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/24-long_ago/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      326.27998391874996,
+      326.61968963125
+    ],
+    "first_note_on_min_max_s": [
+      1.16249941875,
+      14.749992625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "24-long_ago",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/24-long_ago/extras/saxophone_alto-260730_1616.transcribed.derived.mid",
+      "async/songs/24-long_ago/extras/saxophone_alto-260730_1621.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      326.06968990625,
+      330.22998194375003
+    ],
+    "first_note_on_min_max_s": [
+      12.649993675000001,
+      15.6602862875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "24-long_ago",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/24-long_ago/preferred/bass.transcribed.derived.mid",
+      "async/songs/24-long_ago/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/24-long_ago/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      326.1395428125,
+      328.18954178750005
+    ],
+    "first_note_on_min_max_s": [
+      1.18749940625,
+      13.339699212500001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "25-lullaby_of_birdland",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/25-lullaby_of_birdland/alternate/bass.transcribed.derived.mid",
+      "async/songs/25-lullaby_of_birdland/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/25-lullaby_of_birdland/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      331.81936514999995,
+      331.84966814999996
+    ],
+    "first_note_on_min_max_s": [
+      4.287116924999999,
+      9.637111574999999
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "25-lullaby_of_birdland",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/25-lullaby_of_birdland/preferred/bass.transcribed.derived.mid",
+      "async/songs/25-lullaby_of_birdland/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/25-lullaby_of_birdland/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      331.84966814999996,
+      332.64966735
+    ],
+    "first_note_on_min_max_s": [
+      3.58029945,
+      9.639384300000001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "26-mas_que_nada",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/26-mas_que_nada/alternate/bass.transcribed.derived.mid",
+      "async/songs/26-mas_que_nada/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/26-mas_que_nada/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      379.0621209375,
+      380.21003645625
+    ],
+    "first_note_on_min_max_s": [
+      6.6374933625,
+      28.6374713625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "26-mas_que_nada",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/26-mas_que_nada/extras/saxophone_alto-260731_2017.transcribed.derived.mid",
+      "async/songs/26-mas_que_nada/extras/saxophone_alto-260731_2020.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      380.08920324375,
+      381.58711841250005
+    ],
+    "first_note_on_min_max_s": [
+      7.6298534812500005,
+      7.87985323125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "26-mas_que_nada",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/26-mas_que_nada/preferred/bass.transcribed.derived.mid",
+      "async/songs/26-mas_que_nada/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/26-mas_que_nada/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      379.7621202375,
+      381.7121182875
+    ],
+    "first_note_on_min_max_s": [
+      6.6374933625,
+      7.01040965625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "27-meditation",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/27-meditation/alternate/bass.transcribed.derived.mid",
+      "async/songs/27-meditation/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/27-meditation/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      742.4867575125,
+      745.7290619624999
+    ],
+    "first_note_on_min_max_s": [
+      23.999976,
+      119.5623804375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "27-meditation",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/27-meditation/preferred/bass.transcribed.derived.mid",
+      "async/songs/27-meditation/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/27-meditation/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      745.5194467875,
+      746.8117531875
+    ],
+    "first_note_on_min_max_s": [
+      23.9393991375,
+      77.5124224875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "28-moonglow",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/28-moonglow/alternate/bass.transcribed.derived.mid",
+      "async/songs/28-moonglow/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/28-moonglow/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      499.4370005625,
+      500.30972696249995
+    ],
+    "first_note_on_min_max_s": [
+      11.8693063125,
+      49.6374503625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "28-moonglow",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/28-moonglow/preferred/bass.transcribed.derived.mid",
+      "async/songs/28-moonglow/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/28-moonglow/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      499.4370005625,
+      500.8392718875
+    ],
+    "first_note_on_min_max_s": [
+      4.8124951875,
+      14.680667137499999
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "29-my_favorite_things",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/29-my_favorite_things/alternate/bass.transcribed.derived.mid",
+      "async/songs/29-my_favorite_things/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/29-my_favorite_things/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      564.1115571,
+      569.44943055
+    ],
+    "first_note_on_min_max_s": [
+      4.7393892,
+      22.1605839
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "29-my_favorite_things",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/29-my_favorite_things/preferred/bass.transcribed.derived.mid",
+      "async/songs/29-my_favorite_things/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/29-my_favorite_things/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      565.57973745,
+      571.3873073999999
+    ],
+    "first_note_on_min_max_s": [
+      17.4696795,
+      22.54997745
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "30-nicas_dream",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/30-nicas_dream/alternate/bass.transcribed.derived.mid",
+      "async/songs/30-nicas_dream/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/30-nicas_dream/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      455.0697916666667,
+      456.7625
+    ],
+    "first_note_on_min_max_s": [
+      0.95,
+      7.830208333333333
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "30-nicas_dream",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/30-nicas_dream/extras/saxophone_alto-260729_1245.transcribed.derived.mid",
+      "async/songs/30-nicas_dream/extras/saxophone_alto-260729_1250.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      455.0802083333333,
+      455.23020833333334
+    ],
+    "first_note_on_min_max_s": [
+      8.080208333333333,
+      8.1
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "30-nicas_dream",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/30-nicas_dream/preferred/bass.transcribed.derived.mid",
+      "async/songs/30-nicas_dream/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/30-nicas_dream/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      455.2125,
+      456.8697916666667
+    ],
+    "first_note_on_min_max_s": [
+      0.9125,
+      12.1875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "31-o_pato",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/31-o_pato/alternate/bass.transcribed.derived.mid",
+      "async/songs/31-o_pato/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/31-o_pato/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      382.59984058333333,
+      383.3391259895833
+    ],
+    "first_note_on_min_max_s": [
+      0.7878568145833333,
+      25.387132279166664
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "31-o_pato",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/31-o_pato/extras/saxophone_alto-260729_1312.transcribed.derived.mid",
+      "async/songs/31-o_pato/extras/saxophone_alto-260729_1315.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      380.1798415916666,
+      385.71198214375
+    ],
+    "first_note_on_min_max_s": [
+      4.160712552083334,
+      5.749997604166667
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "31-o_pato",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/31-o_pato/preferred/bass.transcribed.derived.mid",
+      "async/songs/31-o_pato/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/31-o_pato/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      382.6998405416667,
+      382.979840425
+    ],
+    "first_note_on_min_max_s": [
+      0.8392853645833334,
+      4.3499981875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "32-ornithology",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/32-ornithology/alternate/bass.transcribed.derived.mid",
+      "async/songs/32-ornithology/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/32-ornithology/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      256.0122439875,
+      261.94973805
+    ],
+    "first_note_on_min_max_s": [
+      1.7874982124999999,
+      5.760708525
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "32-ornithology",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/32-ornithology/extras/saxophone_alto-260729_1327.transcribed.derived.mid",
+      "async/songs/32-ornithology/extras/saxophone_alto-260729_1333.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      255.24974475,
+      262.4872375125
+    ],
+    "first_note_on_min_max_s": [
+      5.4196374375,
+      6.8696359875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "32-ornithology",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/32-ornithology/preferred/bass.transcribed.derived.mid",
+      "async/songs/32-ornithology/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/32-ornithology/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      256.1301010125,
+      259.9300972125
+    ],
+    "first_note_on_min_max_s": [
+      5.5898753625,
+      6.0374939625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "33-peris_scope",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/33-peris_scope/alternate/bass.transcribed.derived.mid",
+      "async/songs/33-peris_scope/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/33-peris_scope/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      222.2622777375,
+      225.7872742125
+    ],
+    "first_note_on_min_max_s": [
+      1.2624987375,
+      4.2999957
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "33-peris_scope",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/33-peris_scope/preferred/bass.transcribed.derived.mid",
+      "async/songs/33-peris_scope/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/33-peris_scope/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      215.13728486250002,
+      224.5872754125
+    ],
+    "first_note_on_min_max_s": [
+      1.2874987125,
+      15.3374846625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "34-quiet_nights_of_quiet_stars",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/34-quiet_nights_of_quiet_stars/alternate/bass.transcribed.derived.mid",
+      "async/songs/34-quiet_nights_of_quiet_stars/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/34-quiet_nights_of_quiet_stars/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      476.56,
+      484.363
+    ],
+    "first_note_on_min_max_s": [
+      2.413,
+      109.42
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "34-quiet_nights_of_quiet_stars",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/34-quiet_nights_of_quiet_stars/preferred/bass.transcribed.derived.mid",
+      "async/songs/34-quiet_nights_of_quiet_stars/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/34-quiet_nights_of_quiet_stars/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      481.512,
+      485.09
+    ],
+    "first_note_on_min_max_s": [
+      2.17,
+      47.487
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "35-recordame",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/35-recordame/alternate/bass.transcribed.derived.mid",
+      "async/songs/35-recordame/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/35-recordame/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      295.1877341479167,
+      309.83701375833334
+    ],
+    "first_note_on_min_max_s": [
+      0.46214266458333336,
+      17.812849720833334
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "35-recordame",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/35-recordame/preferred/bass.transcribed.derived.mid",
+      "async/songs/35-recordame/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/35-recordame/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      306.38772948125,
+      308.81272847083335
+    ],
+    "first_note_on_min_max_s": [
+      0.46214266458333336,
+      9.362853241666667
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "36-road_song",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/36-road_song/alternate/bass.transcribed.derived.mid",
+      "async/songs/36-road_song/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/36-road_song/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      387.699903075,
+      388.9378338
+    ],
+    "first_note_on_min_max_s": [
+      5.739653737499999,
+      8.08017039375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "36-road_song",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/36-road_song/preferred/bass.transcribed.derived.mid",
+      "async/songs/36-road_song/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/36-road_song/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      386.01973108125003,
+      387.81973063125
+    ],
+    "first_note_on_min_max_s": [
+      5.01292978125,
+      8.08017039375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "37-song_for_my_father",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/37-song_for_my_father/alternate/bass.transcribed.derived.mid",
+      "async/songs/37-song_for_my_father/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/37-song_for_my_father/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      332.913,
+      335.18
+    ],
+    "first_note_on_min_max_s": [
+      6.612,
+      8.89
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "37-song_for_my_father",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/37-song_for_my_father/extras/saxophone_alto-260730_1706.transcribed.derived.mid",
+      "async/songs/37-song_for_my_father/extras/saxophone_alto-260730_1725.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      331.39,
+      335.08
+    ],
+    "first_note_on_min_max_s": [
+      8.88,
+      8.89
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "37-song_for_my_father",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/37-song_for_my_father/preferred/bass.transcribed.derived.mid",
+      "async/songs/37-song_for_my_father/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/37-song_for_my_father/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      333.837,
+      335.988
+    ],
+    "first_note_on_min_max_s": [
+      5.67,
+      8.9
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "38-spain",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/38-spain/alternate/bass.transcribed.derived.mid",
+      "async/songs/38-spain/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/38-spain/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      320.7996792,
+      322.0871779125
+    ],
+    "first_note_on_min_max_s": [
+      2.7374972625000003,
+      6.160179025000001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "38-spain",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/38-spain/extras/saxophone_alto-260731_2034.transcribed.derived.mid",
+      "async/songs/38-spain/extras/saxophone_alto-260731_2039.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      305.2603428875,
+      320.1195872875
+    ],
+    "first_note_on_min_max_s": [
+      5.5199018875000005,
+      5.569901837500001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "38-spain",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/38-spain/preferred/bass.transcribed.derived.mid",
+      "async/songs/38-spain/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/38-spain/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      310.9621890375,
+      321.8996781
+    ],
+    "first_note_on_min_max_s": [
+      2.6874973125,
+      6.0106421375000005
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "39-st_thomas",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/39-st_thomas/alternate/bass.transcribed.derived.mid",
+      "async/songs/39-st_thomas/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/39-st_thomas/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      281.3387432375,
+      281.76191262916666
+    ],
+    "first_note_on_min_max_s": [
+      20.169448324999998,
+      21.06273817916667
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "39-st_thomas",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/39-st_thomas/preferred/bass.transcribed.derived.mid",
+      "async/songs/39-st_thomas/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/39-st_thomas/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      281.0795977166666,
+      281.4869135
+    ],
+    "first_note_on_min_max_s": [
+      12.862154391666667,
+      20.199936033333334
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "40-stompin_at_the_savoy",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/40-stompin_at_the_savoy/alternate/bass.transcribed.derived.mid",
+      "async/songs/40-stompin_at_the_savoy/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/40-stompin_at_the_savoy/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      352.31219860000004,
+      353.8621955
+    ],
+    "first_note_on_min_max_s": [
+      6.949986099999999,
+      80.8627415
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "40-stompin_at_the_savoy",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/40-stompin_at_the_savoy/preferred/bass.transcribed.derived.mid",
+      "async/songs/40-stompin_at_the_savoy/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/40-stompin_at_the_savoy/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      350.6992986,
+      353.78719565
+    ],
+    "first_note_on_min_max_s": [
+      3.1628969,
+      7.920145450000001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "41-take_five",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/41-take_five/alternate/bass.transcribed.derived.mid",
+      "async/songs/41-take_five/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/41-take_five/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      298.71970358125003,
+      316.02998904375
+    ],
+    "first_note_on_min_max_s": [
+      4.61249769375,
+      30.06983790625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "41-take_five",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/41-take_five/extras/saxophone_alto-260731_2052.transcribed.derived.mid",
+      "async/songs/41-take_five/extras/saxophone_alto-260731_2055.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      311.5998442,
+      316.4601358875
+    ],
+    "first_note_on_min_max_s": [
+      15.530139293749999,
+      18.6602847875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "41-take_five",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/41-take_five/preferred/bass.transcribed.derived.mid",
+      "async/songs/41-take_five/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/41-take_five/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      298.66014478750003,
+      322.26233886874996
+    ],
+    "first_note_on_min_max_s": [
+      1.78014616875,
+      30.03013204375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "42-take_the_a_train",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/42-take_the_a_train/alternate/bass.transcribed.derived.mid",
+      "async/songs/42-take_the_a_train/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/42-take_the_a_train/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      305.730249825,
+      315.56982331875
+    ],
+    "first_note_on_min_max_s": [
+      6.62013226875,
+      16.6624833375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "42-take_the_a_train",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/42-take_the_a_train/extras/saxophone_alto-260731_1426.transcribed.derived.mid",
+      "async/songs/42-take_the_a_train/extras/saxophone_alto-260731_1437.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      316.91912752499996,
+      317.14968285000003
+    ],
+    "first_note_on_min_max_s": [
+      6.67013221875,
+      6.679854431250001
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "42-take_the_a_train",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/42-take_the_a_train/preferred/bass.transcribed.derived.mid",
+      "async/songs/42-take_the_a_train/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/42-take_the_a_train/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      314.26218573750003,
+      318.3871816125
+    ],
+    "first_note_on_min_max_s": [
+      6.62985448125,
+      80.7374192625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "43-the_girl_from_ipanema",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/43-the_girl_from_ipanema/alternate/bass.transcribed.derived.mid",
+      "async/songs/43-the_girl_from_ipanema/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/43-the_girl_from_ipanema/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      532.7196595875,
+      535.24946475
+    ],
+    "first_note_on_min_max_s": [
+      1.8124981875,
+      19.5394035375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "43-the_girl_from_ipanema",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/43-the_girl_from_ipanema/extras/saxophone_alto-260729_1448.transcribed.derived.mid",
+      "async/songs/43-the_girl_from_ipanema/extras/saxophone_alto-260729_1452.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      519.99948,
+      530.5292771625001
+    ],
+    "first_note_on_min_max_s": [
+      16.5894064875,
+      18.74998125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "43-the_girl_from_ipanema",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/43-the_girl_from_ipanema/preferred/bass.transcribed.derived.mid",
+      "async/songs/43-the_girl_from_ipanema/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/43-the_girl_from_ipanema/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      532.6600442625,
+      535.4119645874999
+    ],
+    "first_note_on_min_max_s": [
+      1.5298061625000001,
+      19.6201726875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "44-the_great_pumpkin_waltz",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/44-the_great_pumpkin_waltz/alternate/bass.transcribed.derived.mid",
+      "async/songs/44-the_great_pumpkin_waltz/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/44-the_great_pumpkin_waltz/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      397.54960245,
+      397.5996024
+    ],
+    "first_note_on_min_max_s": [
+      1.04999895,
+      2.28030075
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "44-the_great_pumpkin_waltz",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/44-the_great_pumpkin_waltz/preferred/bass.transcribed.derived.mid",
+      "async/songs/44-the_great_pumpkin_waltz/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/44-the_great_pumpkin_waltz/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      397.48899645,
+      400.13747865
+    ],
+    "first_note_on_min_max_s": [
+      1.0121202,
+      1.0696959
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "45-tour_de_force",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/45-tour_de_force/alternate/bass.transcribed.derived.mid",
+      "async/songs/45-tour_de_force/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/45-tour_de_force/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      363.43,
+      364.5375
+    ],
+    "first_note_on_min_max_s": [
+      1.5625,
+      7.87
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "45-tour_de_force",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/45-tour_de_force/preferred/bass.transcribed.derived.mid",
+      "async/songs/45-tour_de_force/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/45-tour_de_force/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      363.42,
+      364.1875
+    ],
+    "first_note_on_min_max_s": [
+      3.5875,
+      6.2625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "46-wait_till_you_see_her",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/46-wait_till_you_see_her/alternate/bass.transcribed.derived.mid",
+      "async/songs/46-wait_till_you_see_her/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/46-wait_till_you_see_her/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      356.48008329375,
+      360.01284103125
+    ],
+    "first_note_on_min_max_s": [
+      3.7879300875,
+      60.8396399625
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "46-wait_till_you_see_her",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/46-wait_till_you_see_her/extras/saxophone_alto-260727_2006.transcribed.derived.mid",
+      "async/songs/46-wait_till_you_see_her/extras/saxophone_alto-260727_2010.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      360.11973755624996,
+      361.637840625
+    ],
+    "first_note_on_min_max_s": [
+      11.13016963125,
+      11.1499972125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "46-wait_till_you_see_her",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/46-wait_till_you_see_her/preferred/bass.transcribed.derived.mid",
+      "async/songs/46-wait_till_you_see_her/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/46-wait_till_you_see_her/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      356.137842,
+      360.01284103125
+    ],
+    "first_note_on_min_max_s": [
+      2.48706834375,
+      18.96982284375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "47-wave",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/47-wave/alternate/bass.transcribed.derived.mid",
+      "async/songs/47-wave/alternate/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/47-wave/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      517.61969818125,
+      527.4627991687499
+    ],
+    "first_note_on_min_max_s": [
+      4.569826443749999,
+      7.79999805
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "47-wave",
+    "take": "extras",
+    "midi_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "async/songs/47-wave/extras/saxophone_alto-260729_1511.transcribed.derived.mid",
+      "async/songs/47-wave/extras/saxophone_alto-260729_1516.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "saxophone_alto",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      530.0895226499999,
+      530.2602122625
+    ],
+    "first_note_on_min_max_s": [
+      7.9301704312500005,
+      10.010342325
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "47-wave",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/47-wave/preferred/bass.transcribed.derived.mid",
+      "async/songs/47-wave/preferred/saxophone_tenor.transcribed.derived.mid",
+      "async/songs/47-wave/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_tenor",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      516.4498708875,
+      527.4627991687499
+    ],
+    "first_note_on_min_max_s": [
+      4.569826443749999,
+      7.61982568125
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "48-when_you_wish_upon_a_star",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/48-when_you_wish_upon_a_star/alternate/bass.transcribed.derived.mid",
+      "async/songs/48-when_you_wish_upon_a_star/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/48-when_you_wish_upon_a_star/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      414.5370854625,
+      415.3601615625
+    ],
+    "first_note_on_min_max_s": [
+      1.7624982375,
+      4.4201878875
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "48-when_you_wish_upon_a_star",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/48-when_you_wish_upon_a_star/preferred/bass.transcribed.derived.mid",
+      "async/songs/48-when_you_wish_upon_a_star/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/48-when_you_wish_upon_a_star/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      414.71208528750003,
+      415.0793926125
+    ],
+    "first_note_on_min_max_s": [
+      1.7999981999999999,
+      3.64999635
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "49-woodchoppers_ball",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/49-woodchoppers_ball/alternate/bass.transcribed.derived.mid",
+      "async/songs/49-woodchoppers_ball/alternate/saxophone_alto.transcribed.derived.mid",
+      "async/songs/49-woodchoppers_ball/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      240.4395856625,
+      241.1395853125
+    ],
+    "first_note_on_min_max_s": [
+      0.9897053874999999,
+      18.31249084375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "async",
+    "song": "49-woodchoppers_ball",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "async/songs/49-woodchoppers_ball/preferred/bass.transcribed.derived.mid",
+      "async/songs/49-woodchoppers_ball/preferred/saxophone_alto.transcribed.derived.mid",
+      "async/songs/49-woodchoppers_ball/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      240.06973290625,
+      240.38002686875
+    ],
+    "first_note_on_min_max_s": [
+      1.03014654375,
+      1.81249909375
+    ],
+    "audio_files": 0,
+    "audio_samples_distinct": [],
+    "audio_duration_min_max_s": null
+  },
+  {
+    "protocol": "sync",
+    "song": "50-almost_like_being_in_love",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/50-almost_like_being_in_love/alternate/bass.transcribed.derived.mid",
+      "sync/songs/50-almost_like_being_in_love/alternate/drums.transcribed.derived.mid",
+      "sync/songs/50-almost_like_being_in_love/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      263.7298901125,
+      266.5377460854167
+    ],
+    "first_note_on_min_max_s": [
+      0.36214270625,
+      1.4621422479166666
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      12925312
+    ],
+    "audio_duration_min_max_s": [
+      269.27733333333333,
+      269.27733333333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "50-almost_like_being_in_love",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/50-almost_like_being_in_love/preferred/bass.transcribed.derived.mid",
+      "sync/songs/50-almost_like_being_in_love/preferred/drums.transcribed.derived.mid",
+      "sync/songs/50-almost_like_being_in_love/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      241.96061346875,
+      242.53704180000003
+    ],
+    "first_note_on_min_max_s": [
+      0.4299998208333334,
+      1.1878566479166668
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      11782880
+    ],
+    "audio_duration_min_max_s": [
+      245.47666666666666,
+      245.47666666666666
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "51-amazing_grace",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/51-amazing_grace/alternate/bass.transcribed.derived.mid",
+      "sync/songs/51-amazing_grace/alternate/drums.transcribed.derived.mid",
+      "sync/songs/51-amazing_grace/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      119.13766495,
+      122.41265840000001
+    ],
+    "first_note_on_min_max_s": [
+      0.31048325,
+      6.4870838
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      5968698
+    ],
+    "audio_duration_min_max_s": [
+      124.347875,
+      124.347875
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "51-amazing_grace",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/51-amazing_grace/preferred/bass.transcribed.derived.mid",
+      "sync/songs/51-amazing_grace/preferred/drums.transcribed.derived.mid",
+      "sync/songs/51-amazing_grace/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      106.999786,
+      109.93768335
+    ],
+    "first_note_on_min_max_s": [
+      0.28951555,
+      6.48950315
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      5359038
+    ],
+    "audio_duration_min_max_s": [
+      111.646625,
+      111.646625
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "52-bernies_tune",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/52-bernies_tune/alternate/bass.transcribed.derived.mid",
+      "sync/songs/52-bernies_tune/alternate/drums.transcribed.derived.mid",
+      "sync/songs/52-bernies_tune/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      234.539375,
+      235.6125
+    ],
+    "first_note_on_min_max_s": [
+      1.660625,
+      21.010625
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      11670464
+    ],
+    "audio_duration_min_max_s": [
+      243.13466666666667,
+      243.13466666666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "52-bernies_tune",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/52-bernies_tune/preferred/bass.transcribed.derived.mid",
+      "sync/songs/52-bernies_tune/preferred/drums.transcribed.derived.mid",
+      "sync/songs/52-bernies_tune/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      218.38,
+      220.02
+    ],
+    "first_note_on_min_max_s": [
+      0.889375,
+      1.45
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      10863862
+    ],
+    "audio_duration_min_max_s": [
+      226.33045833333333,
+      226.33045833333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "53-black_orpheus",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/53-black_orpheus/alternate/bass.transcribed.derived.mid",
+      "sync/songs/53-black_orpheus/alternate/drums.transcribed.derived.mid",
+      "sync/songs/53-black_orpheus/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/53-black_orpheus/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      317.18954728750003,
+      322.96233851875
+    ],
+    "first_note_on_min_max_s": [
+      1.36249931875,
+      20.0396958625
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      15610322,
+      15756754
+    ],
+    "audio_duration_min_max_s": [
+      325.21504166666665,
+      328.26570833333335
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "53-black_orpheus",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/53-black_orpheus/preferred/bass.transcribed.derived.mid",
+      "sync/songs/53-black_orpheus/preferred/drums.transcribed.derived.mid",
+      "sync/songs/53-black_orpheus/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/53-black_orpheus/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      320.249839875,
+      330.9998345
+    ],
+    "first_note_on_min_max_s": [
+      1.6124991937500002,
+      11.41984723125
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      15710690,
+      15898082
+    ],
+    "audio_duration_min_max_s": [
+      327.30604166666666,
+      331.21004166666665
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "54-boplicity",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/54-boplicity/alternate/bass.transcribed.derived.mid",
+      "sync/songs/54-boplicity/alternate/drums.transcribed.derived.mid",
+      "sync/songs/54-boplicity/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/54-boplicity/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      394.639420175,
+      401.73756122500004
+    ],
+    "first_note_on_min_max_s": [
+      0.889813925,
+      3.630551925
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      19715880,
+      19857704
+    ],
+    "audio_duration_min_max_s": [
+      410.7475,
+      413.70216666666664
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "54-boplicity",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/54-boplicity/preferred/bass.transcribed.derived.mid",
+      "sync/songs/54-boplicity/preferred/drums.transcribed.derived.mid",
+      "sync/songs/54-boplicity/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/54-boplicity/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      401.41904302499995,
+      407.309777875
+    ],
+    "first_note_on_min_max_s": [
+      0.219444225,
+      14.319430125
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      19676400,
+      19830000
+    ],
+    "audio_duration_min_max_s": [
+      409.925,
+      413.125
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "55-bye_bye_blackbird",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/55-bye_bye_blackbird/alternate/bass.transcribed.derived.mid",
+      "sync/songs/55-bye_bye_blackbird/alternate/drums.transcribed.derived.mid",
+      "sync/songs/55-bye_bye_blackbird/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      375.1104166666667,
+      379.5375
+    ],
+    "first_note_on_min_max_s": [
+      17.460416666666667,
+      18.45
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      18259649
+    ],
+    "audio_duration_min_max_s": [
+      380.4093541666667,
+      380.4093541666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "55-bye_bye_blackbird",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/55-bye_bye_blackbird/preferred/bass.transcribed.derived.mid",
+      "sync/songs/55-bye_bye_blackbird/preferred/drums.transcribed.derived.mid",
+      "sync/songs/55-bye_bye_blackbird/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      365.3895833333333,
+      371.5125
+    ],
+    "first_note_on_min_max_s": [
+      16.86041666666667,
+      17.83020833333333
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      17975320
+    ],
+    "audio_duration_min_max_s": [
+      374.48583333333335,
+      374.48583333333335
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "56-ceora",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/56-ceora/alternate/bass.transcribed.derived.mid",
+      "sync/songs/56-ceora/alternate/drums.transcribed.derived.mid",
+      "sync/songs/56-ceora/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/56-ceora/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      404.8390182375,
+      410.96016596249996
+    ],
+    "first_note_on_min_max_s": [
+      0.4894225875,
+      10.949989050000001
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      19882834,
+      19997522
+    ],
+    "audio_duration_min_max_s": [
+      414.22570833333333,
+      416.6150416666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "56-ceora",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/56-ceora/preferred/bass.transcribed.derived.mid",
+      "sync/songs/56-ceora/preferred/drums.transcribed.derived.mid",
+      "sync/songs/56-ceora/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/56-ceora/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      403.1995968,
+      408.01978428750004
+    ],
+    "first_note_on_min_max_s": [
+      0.2701920375,
+      3.64999635
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      19738788,
+      19889828
+    ],
+    "audio_duration_min_max_s": [
+      411.22475,
+      414.3714166666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "57-chega_de_saudade",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/57-chega_de_saudade/alternate/bass.transcribed.derived.mid",
+      "sync/songs/57-chega_de_saudade/alternate/drums.transcribed.derived.mid",
+      "sync/songs/57-chega_de_saudade/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/57-chega_de_saudade/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      627.78001546875,
+      633.8696691187499
+    ],
+    "first_note_on_min_max_s": [
+      10.2396526125,
+      45.88016094375
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      30619996,
+      30729052
+    ],
+    "audio_duration_min_max_s": [
+      637.9165833333333,
+      640.1885833333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "57-chega_de_saudade",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/57-chega_de_saudade/preferred/bass.transcribed.derived.mid",
+      "sync/songs/57-chega_de_saudade/preferred/drums.transcribed.derived.mid",
+      "sync/songs/57-chega_de_saudade/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/57-chega_de_saudade/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      599.237781225,
+      603.0601940625
+    ],
+    "first_note_on_min_max_s": [
+      3.499999125,
+      13.099996725
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      29080686,
+      29210222
+    ],
+    "audio_duration_min_max_s": [
+      605.847625,
+      608.5462916666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "58-dont_fence_me_in",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/58-dont_fence_me_in/alternate/bass.transcribed.derived.mid",
+      "sync/songs/58-dont_fence_me_in/alternate/drums.transcribed.derived.mid",
+      "sync/songs/58-dont_fence_me_in/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/58-dont_fence_me_in/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      215.0997849,
+      350.6602262625
+    ],
+    "first_note_on_min_max_s": [
+      1.84999815,
+      68.97012333750001
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      16878920,
+      16999240
+    ],
+    "audio_duration_min_max_s": [
+      351.64416666666665,
+      354.1508333333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "58-dont_fence_me_in",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/58-dont_fence_me_in/preferred/bass.transcribed.derived.mid",
+      "sync/songs/58-dont_fence_me_in/preferred/drums.transcribed.derived.mid",
+      "sync/songs/58-dont_fence_me_in/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/58-dont_fence_me_in/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      95.8604810625,
+      340.46023646249995
+    ],
+    "first_note_on_min_max_s": [
+      1.3894216875,
+      55.1999448
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      16443408,
+      16571408
+    ],
+    "audio_duration_min_max_s": [
+      342.571,
+      345.23766666666666
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "59-groovin_high",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/59-groovin_high/alternate/bass.transcribed.derived.mid",
+      "sync/songs/59-groovin_high/alternate/drums.transcribed.derived.mid",
+      "sync/songs/59-groovin_high/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/59-groovin_high/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      168.786993375,
+      258.289606575
+    ],
+    "first_note_on_min_max_s": [
+      0.8601342750000001,
+      39.160095975000004
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      12545819,
+      12661019
+    ],
+    "audio_duration_min_max_s": [
+      261.3712291666667,
+      263.77122916666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "59-groovin_high",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/59-groovin_high/preferred/bass.transcribed.derived.mid",
+      "sync/songs/59-groovin_high/preferred/drums.transcribed.derived.mid",
+      "sync/songs/59-groovin_high/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/59-groovin_high/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      111.44988855,
+      255.2619069
+    ],
+    "first_note_on_min_max_s": [
+      0.29999970000000004,
+      21.219573375
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      12375024,
+      12447728
+    ],
+    "audio_duration_min_max_s": [
+      257.813,
+      259.3276666666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "60-in_a_sentimental_mood",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "sync/songs/60-in_a_sentimental_mood/alternate/bass.transcribed.derived.mid",
+      "sync/songs/60-in_a_sentimental_mood/alternate/drums.transcribed.derived.mid",
+      "sync/songs/60-in_a_sentimental_mood/alternate/saxophone_alto.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      692.49,
+      693.2
+    ],
+    "first_note_on_min_max_s": [
+      15.49,
+      18.186666666666667
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      33464376,
+      33632824
+    ],
+    "audio_duration_min_max_s": [
+      697.1745,
+      700.6838333333334
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "60-in_a_sentimental_mood",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "sync/songs/60-in_a_sentimental_mood/preferred/bass.transcribed.derived.mid",
+      "sync/songs/60-in_a_sentimental_mood/preferred/drums.transcribed.derived.mid",
+      "sync/songs/60-in_a_sentimental_mood/preferred/saxophone_alto.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      691.9616666666666,
+      694.98
+    ],
+    "first_note_on_min_max_s": [
+      15.24,
+      17.936666666666667
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      33452376,
+      33620824
+    ],
+    "audio_duration_min_max_s": [
+      696.9245,
+      700.4338333333334
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "61-invitation",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/61-invitation/alternate/bass.transcribed.derived.mid",
+      "sync/songs/61-invitation/alternate/drums.transcribed.derived.mid",
+      "sync/songs/61-invitation/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/61-invitation/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      267.5395,
+      282.7375
+    ],
+    "first_note_on_min_max_s": [
+      0.9605,
+      6.2
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      13637484,
+      13642561
+    ],
+    "audio_duration_min_max_s": [
+      284.11425,
+      284.2200208333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "61-invitation",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/61-invitation/preferred/bass.transcribed.derived.mid",
+      "sync/songs/61-invitation/preferred/drums.transcribed.derived.mid",
+      "sync/songs/61-invitation/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/61-invitation/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      272.6375,
+      281.3
+    ],
+    "first_note_on_min_max_s": [
+      0.2,
+      10.0
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      13574952,
+      13660456
+    ],
+    "audio_duration_min_max_s": [
+      282.8115,
+      284.5928333333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "62-it_dont_mean_a_thing",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/62-it_dont_mean_a_thing/alternate/bass.transcribed.derived.mid",
+      "sync/songs/62-it_dont_mean_a_thing/alternate/drums.transcribed.derived.mid",
+      "sync/songs/62-it_dont_mean_a_thing/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/62-it_dont_mean_a_thing/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      254.9301022125,
+      255.2801018625
+    ],
+    "first_note_on_min_max_s": [
+      0.8803562625,
+      5.0898758625
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      12344780,
+      12434892
+    ],
+    "audio_duration_min_max_s": [
+      257.18291666666664,
+      259.06025
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "62-it_dont_mean_a_thing",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/62-it_dont_mean_a_thing/preferred/bass.transcribed.derived.mid",
+      "sync/songs/62-it_dont_mean_a_thing/preferred/drums.transcribed.derived.mid",
+      "sync/songs/62-it_dont_mean_a_thing/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/62-it_dont_mean_a_thing/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      251.6997483,
+      255.0193878375
+    ],
+    "first_note_on_min_max_s": [
+      0.28035686249999997,
+      3.9374960625
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      12304400,
+      12568592
+    ],
+    "audio_duration_min_max_s": [
+      256.34166666666664,
+      261.84566666666666
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "63-la_vie_en_rose",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "sync/songs/63-la_vie_en_rose/alternate/bass.transcribed.derived.mid",
+      "sync/songs/63-la_vie_en_rose/alternate/drums.transcribed.derived.mid",
+      "sync/songs/63-la_vie_en_rose/alternate/saxophone_alto.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      286.7803950375,
+      290.24970975
+    ],
+    "first_note_on_min_max_s": [
+      3.9374960625,
+      12.0102152625
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      14167504,
+      14261200
+    ],
+    "audio_duration_min_max_s": [
+      295.15633333333335,
+      297.10833333333335
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "63-la_vie_en_rose",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "sync/songs/63-la_vie_en_rose/preferred/bass.transcribed.derived.mid",
+      "sync/songs/63-la_vie_en_rose/preferred/drums.transcribed.derived.mid",
+      "sync/songs/63-la_vie_en_rose/preferred/saxophone_alto.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      285.1190330625,
+      290.9122090875
+    ],
+    "first_note_on_min_max_s": [
+      2.2374977625000003,
+      11.999988
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      14076288,
+      14188416
+    ],
+    "audio_duration_min_max_s": [
+      293.256,
+      295.592
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "64-love",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/64-love/alternate/bass.transcribed.derived.mid",
+      "sync/songs/64-love/alternate/drums.transcribed.derived.mid",
+      "sync/songs/64-love/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/64-love/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      332.16949695,
+      338.5122262
+    ],
+    "first_note_on_min_max_s": [
+      0.42983784999999997,
+      7.2499855
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      16325532,
+      16459164
+    ],
+    "audio_duration_min_max_s": [
+      340.11525,
+      342.89925
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "64-love",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/64-love/preferred/bass.transcribed.derived.mid",
+      "sync/songs/64-love/preferred/drums.transcribed.derived.mid",
+      "sync/songs/64-love/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/64-love/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      330.81224160000005,
+      336.5493269
+    ],
+    "first_note_on_min_max_s": [
+      0.23951565,
+      7.210469450000001
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      16319456,
+      16572896
+    ],
+    "audio_duration_min_max_s": [
+      339.9886666666667,
+      345.26866666666666
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "65-misty",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/65-misty/alternate/bass.transcribed.derived.mid",
+      "sync/songs/65-misty/alternate/drums.transcribed.derived.mid",
+      "sync/songs/65-misty/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/65-misty/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      237.38666666666666,
+      798.99
+    ],
+    "first_note_on_min_max_s": [
+      3.73,
+      125.5
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      38492792,
+      38668408
+    ],
+    "audio_duration_min_max_s": [
+      801.9331666666667,
+      805.5918333333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "65-misty",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/65-misty/preferred/bass.transcribed.derived.mid",
+      "sync/songs/65-misty/preferred/drums.transcribed.derived.mid",
+      "sync/songs/65-misty/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/65-misty/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      304.3866666666667,
+      812.62
+    ],
+    "first_note_on_min_max_s": [
+      3.45,
+      126.21
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      39109488,
+      39272304
+    ],
+    "audio_duration_min_max_s": [
+      814.781,
+      818.173
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "66-nardis",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/66-nardis/alternate/bass.transcribed.derived.mid",
+      "sync/songs/66-nardis/alternate/drums.transcribed.derived.mid",
+      "sync/songs/66-nardis/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      322.07,
+      327.6125
+    ],
+    "first_note_on_min_max_s": [
+      0.47,
+      2.52
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      15781290
+    ],
+    "audio_duration_min_max_s": [
+      328.776875,
+      328.776875
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "66-nardis",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/66-nardis/preferred/bass.transcribed.derived.mid",
+      "sync/songs/66-nardis/preferred/drums.transcribed.derived.mid",
+      "sync/songs/66-nardis/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      329.92,
+      334.2875
+    ],
+    "first_note_on_min_max_s": [
+      0.4891666666666667,
+      2.5391666666666666
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      16190480
+    ],
+    "audio_duration_min_max_s": [
+      337.3016666666667,
+      337.3016666666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "67-on_green_dolphin_street",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "sync/songs/67-on_green_dolphin_street/alternate/bass.transcribed.derived.mid",
+      "sync/songs/67-on_green_dolphin_street/alternate/drums.transcribed.derived.mid",
+      "sync/songs/67-on_green_dolphin_street/alternate/saxophone_alto.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      265.8694311,
+      273.3391206
+    ],
+    "first_note_on_min_max_s": [
+      0.7393932,
+      2.74999725
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      13157266,
+      13249938
+    ],
+    "audio_duration_min_max_s": [
+      274.10970833333334,
+      276.040375
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "67-on_green_dolphin_street",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto"
+    ],
+    "midi_files": [
+      "sync/songs/67-on_green_dolphin_street/preferred/bass.transcribed.derived.mid",
+      "sync/songs/67-on_green_dolphin_street/preferred/drums.transcribed.derived.mid",
+      "sync/songs/67-on_green_dolphin_street/preferred/saxophone_alto.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      246.6118746,
+      255.06262372499998
+    ],
+    "first_note_on_min_max_s": [
+      0.8606052,
+      1.48030155
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      12420837,
+      12578533
+    ],
+    "audio_duration_min_max_s": [
+      258.7674375,
+      262.05277083333334
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "68-on_the_sunny_side_of_the_street",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/68-on_the_sunny_side_of_the_street/alternate/bass.transcribed.derived.mid",
+      "sync/songs/68-on_the_sunny_side_of_the_street/alternate/drums.transcribed.derived.mid",
+      "sync/songs/68-on_the_sunny_side_of_the_street/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/68-on_the_sunny_side_of_the_street/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      420.210294075,
+      426.71147805000004
+    ],
+    "first_note_on_min_max_s": [
+      0.29999970000000004,
+      3.5999963999999998
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      20611264,
+      20753600
+    ],
+    "audio_duration_min_max_s": [
+      429.40133333333335,
+      432.3666666666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "68-on_the_sunny_side_of_the_street",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/68-on_the_sunny_side_of_the_street/preferred/bass.transcribed.derived.mid",
+      "sync/songs/68-on_the_sunny_side_of_the_street/preferred/drums.transcribed.derived.mid",
+      "sync/songs/68-on_the_sunny_side_of_the_street/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/68-on_the_sunny_side_of_the_street/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      431.419806675,
+      436.669801425
+    ],
+    "first_note_on_min_max_s": [
+      1.4607128249999999,
+      4.3999956
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      21089882,
+      21218906
+    ],
+    "audio_duration_min_max_s": [
+      439.3725416666667,
+      442.06054166666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "69-one_note_samba",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/69-one_note_samba/alternate/bass.transcribed.derived.mid",
+      "sync/songs/69-one_note_samba/alternate/drums.transcribed.derived.mid",
+      "sync/songs/69-one_note_samba/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/69-one_note_samba/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      283.61032245,
+      284.2875945
+    ],
+    "first_note_on_min_max_s": [
+      0.4696965,
+      10.112868675000001
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      13712168,
+      13859112
+    ],
+    "audio_duration_min_max_s": [
+      285.67016666666666,
+      288.7315
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "69-one_note_samba",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/69-one_note_samba/preferred/bass.transcribed.derived.mid",
+      "sync/songs/69-one_note_samba/preferred/drums.transcribed.derived.mid",
+      "sync/songs/69-one_note_samba/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/69-one_note_samba/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      301.7300013,
+      302.03909189999996
+    ],
+    "first_note_on_min_max_s": [
+      1.2106048500000002,
+      15.110590949999999
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      14604164,
+      14819204
+    ],
+    "audio_duration_min_max_s": [
+      304.2534166666667,
+      308.73341666666664
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "70-samba_de_orfeu",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/70-samba_de_orfeu/alternate/bass.transcribed.derived.mid",
+      "sync/songs/70-samba_de_orfeu/alternate/drums.transcribed.derived.mid",
+      "sync/songs/70-samba_de_orfeu/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      368.9,
+      371.55
+    ],
+    "first_note_on_min_max_s": [
+      1.08,
+      18.1
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      17952580
+    ],
+    "audio_duration_min_max_s": [
+      374.01208333333335,
+      374.01208333333335
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "70-samba_de_orfeu",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/70-samba_de_orfeu/preferred/bass.transcribed.derived.mid",
+      "sync/songs/70-samba_de_orfeu/preferred/drums.transcribed.derived.mid",
+      "sync/songs/70-samba_de_orfeu/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      408.610625,
+      411.160625
+    ],
+    "first_note_on_min_max_s": [
+      1.13,
+      19.6375
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      20004246
+    ],
+    "audio_duration_min_max_s": [
+      416.755125,
+      416.755125
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "71-some_day_my_prince_will_come",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/71-some_day_my_prince_will_come/alternate/bass.transcribed.derived.mid",
+      "sync/songs/71-some_day_my_prince_will_come/alternate/drums.transcribed.derived.mid",
+      "sync/songs/71-some_day_my_prince_will_come/alternate/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/71-some_day_my_prince_will_come/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      211.21973885,
+      215.11166655000002
+    ],
+    "first_note_on_min_max_s": [
+      0.31048325,
+      18.8999622
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      10434949,
+      10589061
+    ],
+    "audio_duration_min_max_s": [
+      217.39477083333333,
+      220.6054375
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "71-some_day_my_prince_will_come",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/71-some_day_my_prince_will_come/preferred/bass.transcribed.derived.mid",
+      "sync/songs/71-some_day_my_prince_will_come/preferred/drums.transcribed.derived.mid",
+      "sync/songs/71-some_day_my_prince_will_come/preferred/saxophone_alto.transcribed.derived.mid",
+      "sync/songs/71-some_day_my_prince_will_come/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      212.33747855000001,
+      214.81005425
+    ],
+    "first_note_on_min_max_s": [
+      0.6201600500000001,
+      22.72979325
+    ],
+    "audio_files": 8,
+    "audio_samples_distinct": [
+      10384877,
+      10462701
+    ],
+    "audio_duration_min_max_s": [
+      216.35160416666668,
+      217.9729375
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "72-sway",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/72-sway/alternate/bass.transcribed.derived.mid",
+      "sync/songs/72-sway/alternate/drums.transcribed.derived.mid",
+      "sync/songs/72-sway/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      352.26,
+      352.99
+    ],
+    "first_note_on_min_max_s": [
+      0.9,
+      14.537
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      17125926,
+      17234982
+    ],
+    "audio_duration_min_max_s": [
+      356.790125,
+      359.062125
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "72-sway",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/72-sway/preferred/bass.transcribed.derived.mid",
+      "sync/songs/72-sway/preferred/drums.transcribed.derived.mid",
+      "sync/songs/72-sway/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      324.48,
+      325.688
+    ],
+    "first_note_on_min_max_s": [
+      8.313,
+      15.08
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      15846488,
+      15947352
+    ],
+    "audio_duration_min_max_s": [
+      330.1351666666667,
+      332.2365
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "73-triste",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/73-triste/alternate/bass.transcribed.derived.mid",
+      "sync/songs/73-triste/alternate/drums.transcribed.derived.mid",
+      "sync/songs/73-triste/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      368.0625,
+      378.31015625
+    ],
+    "first_note_on_min_max_s": [
+      1.13046875,
+      9.78046875
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      18281566,
+      18387038
+    ],
+    "audio_duration_min_max_s": [
+      380.8659583333333,
+      383.06329166666666
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "73-triste",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/73-triste/preferred/bass.transcribed.derived.mid",
+      "sync/songs/73-triste/preferred/drums.transcribed.derived.mid",
+      "sync/songs/73-triste/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      364.13046875,
+      368.6375
+    ],
+    "first_note_on_min_max_s": [
+      1.76015625,
+      9.83984375
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      17839076,
+      17933284
+    ],
+    "audio_duration_min_max_s": [
+      371.6474166666667,
+      373.6100833333333
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "74-waltz_for_debby",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/74-waltz_for_debby/alternate/bass.transcribed.derived.mid",
+      "sync/songs/74-waltz_for_debby/alternate/drums.transcribed.derived.mid",
+      "sync/songs/74-waltz_for_debby/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      430.00900415416663,
+      433.1486283583333
+    ],
+    "first_note_on_min_max_s": [
+      0.31036487083333336,
+      0.9378019083333333
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      20857114,
+      20959514
+    ],
+    "audio_duration_min_max_s": [
+      434.52320833333334,
+      436.65654166666667
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "74-waltz_for_debby",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/74-waltz_for_debby/preferred/bass.transcribed.derived.mid",
+      "sync/songs/74-waltz_for_debby/preferred/drums.transcribed.derived.mid",
+      "sync/songs/74-waltz_for_debby/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      446.5589517458333,
+      446.98638941666667
+    ],
+    "first_note_on_min_max_s": [
+      0.069511975,
+      1.1878011166666667
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      21573304,
+      21699768
+    ],
+    "audio_duration_min_max_s": [
+      449.4438333333333,
+      452.0785
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "75-when_the_saints_go_marching_in",
+    "take": "alternate",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/75-when_the_saints_go_marching_in/alternate/bass.transcribed.derived.mid",
+      "sync/songs/75-when_the_saints_go_marching_in/alternate/drums.transcribed.derived.mid",
+      "sync/songs/75-when_the_saints_go_marching_in/alternate/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      184.8123151875,
+      189.38731061250002
+    ],
+    "first_note_on_min_max_s": [
+      1.0303561125,
+      5.0196378375
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      9249602
+    ],
+    "audio_duration_min_max_s": [
+      192.70004166666666,
+      192.70004166666666
+    ]
+  },
+  {
+    "protocol": "sync",
+    "song": "75-when_the_saints_go_marching_in",
+    "take": "preferred",
+    "midi_instruments": [
+      "bass",
+      "drums",
+      "trumpet"
+    ],
+    "midi_files": [
+      "sync/songs/75-when_the_saints_go_marching_in/preferred/bass.transcribed.derived.mid",
+      "sync/songs/75-when_the_saints_go_marching_in/preferred/drums.transcribed.derived.mid",
+      "sync/songs/75-when_the_saints_go_marching_in/preferred/trumpet.transcribed.derived.mid"
+    ],
+    "pitched_instruments": [
+      "bass",
+      "trumpet"
+    ],
+    "tempo_maps_consistent": true,
+    "last_note_off_min_max_s": [
+      194.66230533750002,
+      198.5623014375
+    ],
+    "first_note_on_min_max_s": [
+      1.0303561125,
+      5.1124948875000005
+    ],
+    "audio_files": 7,
+    "audio_samples_distinct": [
+      9662766
+    ],
+    "audio_duration_min_max_s": [
+      201.307625,
+      201.307625
+    ]
+  }
+]

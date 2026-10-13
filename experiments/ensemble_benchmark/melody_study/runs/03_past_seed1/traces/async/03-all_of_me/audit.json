@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/03-all_of_me/preferred",
+  "lead_instruments": [
+    "saxophone_tenor",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 232,
+    "trumpet": 2796
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 327,
+  "reference_comparisons": 47755
+}

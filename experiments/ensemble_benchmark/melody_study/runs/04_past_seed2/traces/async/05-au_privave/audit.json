@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/05-au_privave/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 329,
+    "trumpet": 347
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 321,
+  "reference_comparisons": 12504
+}

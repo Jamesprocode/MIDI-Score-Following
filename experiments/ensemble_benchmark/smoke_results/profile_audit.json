@@ -1,0 +1,44 @@
+[
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/25-lullaby_of_birdland/preferred",
+  "lead_instruments": [
+    "saxophone_alto"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 379
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 221,
+  "reference_comparisons": 12773
+}

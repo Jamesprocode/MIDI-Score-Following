@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/19-if_i_were_a_bell/preferred",
+  "lead_instruments": [
+    "saxophone_tenor"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 296
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 162,
+  "reference_comparisons": 6995
+}

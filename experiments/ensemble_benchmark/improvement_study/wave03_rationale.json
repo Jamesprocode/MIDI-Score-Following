@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-06T14:21:08.861517+00:00",
+  "event": "third_wave_rationale",
+  "observations": [
+    "Sequence beam preserves async timing much better (root variant87.9%bar) but trails the grid on sync.",
+    "Ceora beam uses130/139.75 BPM with reference median136.5; Waltz uses189.625/205 with median198.2. Long dwell times suggest discretization and switching-cost limitations.",
+    "Root grid with broad tempo+rhythm reaches66.7%sync; missing no-rhythm broad-root control is added to isolate its cause."
+  ],
+  "scope": "One targeted final wave of11fixed settings over all75preferredsongs; no individual song parameters.",
+  "new_method": "Continuous bootstrap particle filtering to compare sum-product uncertainty against max-path beam and discretized position grid.",
+  "limitations": "Reference tempo examples explain observed failures only; they do not set inference parameters."
+}

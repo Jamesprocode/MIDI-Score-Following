@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/67-on_green_dolphin_street/preferred",
+  "lead_instruments": [
+    "saxophone_alto"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 215
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 77,
+  "reference_comparisons": 1671
+}

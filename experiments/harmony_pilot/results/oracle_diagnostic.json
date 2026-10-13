@@ -1,0 +1,9 @@
+{
+  "description": "label-informed selection of an already correct bass/horns/pooled decision; not a trained gate",
+  "preferred_macro_accuracy": 0.3465268333681933,
+  "by_song": {
+    "00-a_night_in_tunisia": 0.1454950652658389,
+    "07-blue_bossa": 0.400278940027894,
+    "14-freddie_freeloader": 0.493806494810847
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "59-groovin_high": {
+    "last_A_B_position_difference_seconds": 57.40000000000005,
+    "differing_output_fraction": 0.05886970172684458,
+    "longest_over4beat_period": [
+      151.40000000000015,
+      153.80000000000013
+    ],
+    "clock_mean_absolute_beats": 48.74082613015394
+  },
+  "70-samba_de_orfeu": {
+    "last_A_B_position_difference_seconds": 76.00000000000007,
+    "differing_output_fraction": 0.06634146341463415,
+    "longest_over4beat_period": [
+      106.0000000000001,
+      378.4000000000003
+    ],
+    "clock_mean_absolute_beats": 21.257643226489215,
+    "snapshot_120_seconds": {
+      "active_pitches": {
+        "bass": [
+          43
+        ],
+        "trumpet": [
+          67
+        ]
+      },
+      "annotated_chord": "D-7",
+      "raw_scores": {
+        "C:maj": 2.0,
+        "D:min": 0.0,
+        "Eb:maj": 2.0,
+        "E:min": 2.0,
+        "F:maj": 0.0,
+        "F:min": 0.0,
+        "G:maj": 2.0,
+        "G:min": 2.0,
+        "A:maj": 0.0,
+        "Bb:maj": 0.0
+      },
+      "estimated_beats": 396.0,
+      "reference_beats": 402.41879279312747
+    }
+  }
+}

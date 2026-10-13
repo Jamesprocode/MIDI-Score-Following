@@ -1,0 +1,360 @@
+{
+  "status": "passed",
+  "performanceId": "sync/67-on_green_dolphin_street/preferred",
+  "sourceMidiHashesMatchManifest": true,
+  "sourceFilesUnmodified": true,
+  "playbackNotesMatchBenchmarkReader": true,
+  "velocitiesPreserved": true,
+  "samplingIntervalSeconds": 0.2,
+  "sampleCount": 1226,
+  "firstSampleSeconds": 1.4000000000000001,
+  "lastSampleSeconds": 246.4000000000002,
+  "annotationMusicalStartSeconds": 1.397,
+  "annotationEndSeconds": 246.486,
+  "midiEndSeconds": 255.06262372499998,
+  "postAnnotationTailSeconds": 8.57662372499999,
+  "steady160BpmMatchesAllAnnotationBars": false,
+  "fixedCatalogTempoMatchesAnnotations": false,
+  "tempoSummary": {
+    "minimumBpm": 171.7967072297781,
+    "maximumBpm": 199.99999999999952,
+    "medianBpm": 188.97637795275597,
+    "overallBpm": 188.0133339317554,
+    "catalogBpm": 165.0,
+    "fixedCatalogClockMatches": false,
+    "description": "Tempo averaged within each annotated bar; not independently annotated beat-to-beat tempo."
+  },
+  "followerPrefixIdentical": true,
+  "featurePrefixIdenticalAfterRemovingFutureNotes": true,
+  "prefixLastSampleSeconds": 121.2000000000001,
+  "savedTracePath": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/improvement_study/runs/05_continuous_tempo/traces/sync/67-on_green_dolphin_street/preferred/p02_particles_slow.npz",
+  "savedTraceIdentical": {
+    "time": true,
+    "estimated_beats": true,
+    "estimated_bpm": true,
+    "reference_beats": true
+  },
+  "noteCounts": {
+    "bass": 496,
+    "drums": 1526,
+    "saxophone_alto": 215
+  },
+  "midiTrackDetails": {
+    "bass": {
+      "midiChannels": [
+        0
+      ],
+      "noteCountByMidiChannel": {
+        "0": 496
+      },
+      "programsByMidiChannel": {
+        "0": [
+          33
+        ]
+      },
+      "midiPitchCounts": {
+        "28": 1,
+        "29": 3,
+        "30": 3,
+        "31": 40,
+        "32": 6,
+        "33": 28,
+        "34": 7,
+        "35": 9,
+        "36": 75,
+        "37": 38,
+        "38": 51,
+        "39": 14,
+        "40": 22,
+        "41": 13,
+        "42": 9,
+        "43": 56,
+        "44": 25,
+        "45": 22,
+        "46": 18,
+        "47": 13,
+        "48": 36,
+        "49": 3,
+        "50": 3,
+        "52": 1
+      },
+      "isPercussion": false
+    },
+    "drums": {
+      "midiChannels": [
+        9
+      ],
+      "noteCountByMidiChannel": {
+        "9": 1526
+      },
+      "programsByMidiChannel": {
+        "9": [
+          0
+        ]
+      },
+      "midiPitchCounts": {
+        "36": 171,
+        "37": 23,
+        "38": 396,
+        "40": 109,
+        "41": 1,
+        "42": 508,
+        "44": 25,
+        "45": 33,
+        "46": 9,
+        "49": 3,
+        "51": 218,
+        "53": 3,
+        "54": 1,
+        "64": 2,
+        "82": 24
+      },
+      "isPercussion": true
+    },
+    "saxophone_alto": {
+      "midiChannels": [
+        0
+      ],
+      "noteCountByMidiChannel": {
+        "0": 215
+      },
+      "programsByMidiChannel": {
+        "0": [
+          65
+        ]
+      },
+      "midiPitchCounts": {
+        "55": 8,
+        "56": 1,
+        "57": 11,
+        "58": 9,
+        "59": 11,
+        "60": 12,
+        "61": 8,
+        "62": 14,
+        "64": 17,
+        "65": 15,
+        "67": 40,
+        "68": 12,
+        "69": 13,
+        "70": 24,
+        "71": 8,
+        "72": 7,
+        "73": 3,
+        "74": 1,
+        "76": 1
+      },
+      "isPercussion": false
+    }
+  },
+  "trackerConfig": {
+    "n_particles": 1024,
+    "seed": 0,
+    "tempo_ratio_bounds": [
+      0.5,
+      1.8
+    ],
+    "initial_tempo_ratio_std": 0.3,
+    "tempo_diffusion_per_sqrt_second": 0.003,
+    "max_prediction_step_seconds": 0.25,
+    "resample_ess_fraction": 0.5,
+    "emission_power_per_second": 1.0,
+    "probability_floor_mix": 0.02,
+    "output_rule": "bar",
+    "boundary_policy": "continuous_neutral_overflow"
+  },
+  "metrics": {
+    "frames": 1226,
+    "bar_accuracy": 0.9045676998368679,
+    "within2beat_accuracy": 0.9951060358890701,
+    "mean_abs_beats": 0.4736013286826903,
+    "median_abs_beats": 0.3364032264428545
+  },
+  "sources": {
+    "annotation": {
+      "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/67-on_green_dolphin_street.json",
+      "sha256": "cff2c151ee343f65dbac1525f6428bf18072aab1232631e4a2ae0281d87d6542"
+    },
+    "manifest": {
+      "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/manifest.json",
+      "sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5"
+    },
+    "midi": [
+      {
+        "instrument": "bass",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/67-on_green_dolphin_street/preferred/bass.transcribed.derived.mid",
+        "sha256": "4082ef31d2fc81ba462c657b8bfcbc2498d0cf107d57cbad3217fad30c16f12f"
+      },
+      {
+        "instrument": "drums",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/67-on_green_dolphin_street/preferred/drums.transcribed.derived.mid",
+        "sha256": "87d36d2b434410d3315604faee1a2ae66581fc9aa3431063f11b82ecc9cb7450"
+      },
+      {
+        "instrument": "saxophone_alto",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/67-on_green_dolphin_street/preferred/saxophone_alto.transcribed.derived.mid",
+        "sha256": "bc9213a3e25b5e4b5fc1601f444989a7ed44b0c52874322f25d016bbe34b2003"
+      }
+    ],
+    "implementation": [
+      {
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ground_truth_player/prepare_data.py",
+        "sha256": "c92debb84891f684f2d575b0fa1112eadcb452b81f259a40ccce96ddc5f56bbf"
+      },
+      {
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/improvement_study/run_study.py",
+        "sha256": "226ee62d1d4a3f834aa81be8f5c06e5d806289562d5d7d91a6e516ab6181c15d"
+      },
+      {
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/improvement_study/particle_follower.py",
+        "sha256": "e90b1c2807bf63603141163378093df1304620078e94dd89fcf60d8a25883c00"
+      },
+      {
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/common.py",
+        "sha256": "96283e225fd03e724e1c434a7a0be8a3ed22057e0b1fb556bcd4f0de62e06c03"
+      },
+      {
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/run_benchmark.py",
+        "sha256": "e85f57fb64a879908dcc8c4142e9773e2ec1ed3cfa15d5c59e5f4e050936ef60"
+      },
+      {
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/harmony_pilot/yamaha_matcher.py",
+        "sha256": "abe9ba03b926472fe8469441d2faac7982d677a446bf32f49c7545837cf30e4a"
+      },
+      {
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/harmony_pilot/run_pilot.py",
+        "sha256": "10815a5f0f9ec921c63000758b889860b7761a424bc42c66e95a8c2cd9947d35"
+      }
+    ]
+  },
+  "followers": {
+    "bass": {
+      "instruments": [
+        "bass"
+      ],
+      "excludedInstruments": [
+        "drums",
+        "saxophone_alto"
+      ],
+      "prefixInferenceIdentical": true,
+      "featuresUnaffectedByFutureNotes": true,
+      "featuresUnaffectedByExcludedTrackRemovalOrMutation": true,
+      "prefixLastSampleSeconds": 121.2000000000001,
+      "evidenceCoverage": 0.8156606851549756,
+      "availableFrames": 1000,
+      "totalFrames": 1226,
+      "trackerConfig": {
+        "n_particles": 1024,
+        "seed": 0,
+        "tempo_ratio_bounds": [
+          0.5,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "tempo_diffusion_per_sqrt_second": 0.003,
+        "max_prediction_step_seconds": 0.25,
+        "resample_ess_fraction": 0.5,
+        "emission_power_per_second": 1.0,
+        "probability_floor_mix": 0.02,
+        "output_rule": "bar",
+        "boundary_policy": "continuous_neutral_overflow"
+      },
+      "metrics": {
+        "frames": 1226,
+        "bar_accuracy": 0.9045676998368679,
+        "within2beat_accuracy": 0.9951060358890701,
+        "mean_abs_beats": 0.4736013286826903,
+        "median_abs_beats": 0.3364032264428545
+      }
+    },
+    "horn": {
+      "instruments": [
+        "saxophone_alto"
+      ],
+      "excludedInstruments": [
+        "bass",
+        "drums"
+      ],
+      "prefixInferenceIdentical": true,
+      "featuresUnaffectedByFutureNotes": true,
+      "featuresUnaffectedByExcludedTrackRemovalOrMutation": true,
+      "prefixLastSampleSeconds": 121.2000000000001,
+      "evidenceCoverage": 0.4192495921696574,
+      "availableFrames": 514,
+      "totalFrames": 1226,
+      "trackerConfig": {
+        "n_particles": 1024,
+        "seed": 0,
+        "tempo_ratio_bounds": [
+          0.5,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "tempo_diffusion_per_sqrt_second": 0.003,
+        "max_prediction_step_seconds": 0.25,
+        "resample_ess_fraction": 0.5,
+        "emission_power_per_second": 1.0,
+        "probability_floor_mix": 0.02,
+        "output_rule": "bar",
+        "boundary_policy": "continuous_neutral_overflow"
+      },
+      "metrics": {
+        "frames": 1226,
+        "bar_accuracy": 0.17047308319738988,
+        "within2beat_accuracy": 0.1802610114192496,
+        "mean_abs_beats": 32.41414278050172,
+        "median_abs_beats": 30.86607865795358
+      }
+    },
+    "both": {
+      "instruments": [
+        "bass",
+        "saxophone_alto"
+      ],
+      "excludedInstruments": [
+        "drums"
+      ],
+      "prefixInferenceIdentical": true,
+      "featuresUnaffectedByFutureNotes": true,
+      "featuresUnaffectedByExcludedTrackRemovalOrMutation": true,
+      "prefixLastSampleSeconds": 121.2000000000001,
+      "evidenceCoverage": 0.83278955954323,
+      "availableFrames": 1021,
+      "totalFrames": 1226,
+      "trackerConfig": {
+        "n_particles": 1024,
+        "seed": 0,
+        "tempo_ratio_bounds": [
+          0.5,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "tempo_diffusion_per_sqrt_second": 0.003,
+        "max_prediction_step_seconds": 0.25,
+        "resample_ess_fraction": 0.5,
+        "emission_power_per_second": 1.0,
+        "probability_floor_mix": 0.02,
+        "output_rule": "bar",
+        "boundary_policy": "continuous_neutral_overflow"
+      },
+      "metrics": {
+        "frames": 1226,
+        "bar_accuracy": 0.9086460032626428,
+        "within2beat_accuracy": 0.9934747145187602,
+        "mean_abs_beats": 0.4826855459713206,
+        "median_abs_beats": 0.4005069466465301
+      },
+      "featuresMatchBassHornBinaryUnionAndConcatenatedNotes": true
+    }
+  },
+  "legacyBassSamplesUnchanged": true,
+  "existingFollowerTracesUnchanged": true,
+  "identicalFollowerSettingsAcrossInputs": true,
+  "limitations": [
+    "Transcribed MIDI is not verified against performed notes.",
+    "This is a precomputed causal replay, not measured live end-to-end latency.",
+    "Reference tempo is derived from annotated bar durations, not independent beat annotations.",
+    "Piano MIDI is absent from the selected derived-MIDI tracks.",
+    "Official chart measure numbers repeat; chronological annotation bar numbers identify occurrences."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/74-waltz_for_debby/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 2991
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 244,
+  "reference_comparisons": 43528
+}

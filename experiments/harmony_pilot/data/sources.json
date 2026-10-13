@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "retrieved_at_utc": "2026-10-05 23:18:49 UTC",
+  "repository": "pnlong/jazzsamba-demo",
+  "ref": "main",
+  "protocol": "async",
+  "take": "preferred",
+  "annotation_content": "Exact UTF-8 JSON from the official demo export; not reserialized or modified.",
+  "catalog_source": {
+    "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/catalog.json",
+    "git_blob_sha": "9e59299a5fe5229a721aa7792678bb4b2e93369c"
+  },
+  "sources": [
+    {
+      "song": "07-blue_bossa",
+      "path": "data/annotations/07-blue_bossa.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/07-blue_bossa.json",
+      "git_blob_sha": "9e325026950483261e819f6f743fe098d5173fc7",
+      "encoding": "utf-8",
+      "catalog_metadata": {
+        "song_id": 7,
+        "title": "Blue Bossa",
+        "time_signature": "4/4",
+        "bpm": "160.0",
+        "key_signature": "C minor",
+        "form": "ABAB",
+        "is_swung": "False",
+        "synchronous": false
+      }
+    },
+    {
+      "song": "00-a_night_in_tunisia",
+      "path": "data/annotations/00-a_night_in_tunisia.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/00-a_night_in_tunisia.json",
+      "git_blob_sha": "3e31139548618323f2ad7a504e092e3bbbad6598",
+      "encoding": "utf-8",
+      "catalog_metadata": {
+        "song_id": 0,
+        "title": "A Night in Tunisia",
+        "time_signature": "4/4",
+        "bpm": "175.0",
+        "key_signature": "D minor",
+        "form": "AABAC",
+        "is_swung": "False",
+        "synchronous": false
+      }
+    },
+    {
+      "song": "14-freddie_freeloader",
+      "path": "data/annotations/14-freddie_freeloader.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/14-freddie_freeloader.json",
+      "git_blob_sha": "334bc3517be547203301e3caf97d759ef1eca389",
+      "encoding": "utf-8",
+      "catalog_metadata": {
+        "song_id": 14,
+        "title": "Freddie Freeloader",
+        "time_signature": "4/4",
+        "bpm": "135.0",
+        "key_signature": "Bb Major",
+        "form": "ABAC",
+        "is_swung": "True",
+        "synchronous": false
+      }
+    }
+  ],
+  "validation": [
+    {
+      "song": "07-blue_bossa",
+      "barRows": 240,
+      "unfoldedMusicalBars": 239,
+      "chordRows": 210,
+      "sections": 30,
+      "meter": "4/4",
+      "bpm": "160.0",
+      "durationSeconds": 360,
+      "chordSpellings": [
+        "A7#9",
+        "Ab7",
+        "Bb7",
+        "C-",
+        "D-7b5",
+        "DbM7",
+        "Eb-7",
+        "F-7",
+        "G7#5",
+        "G7#5#9"
+      ],
+      "intervalChecks": {
+        "bars": {
+          "start": 0,
+          "end": 360,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        },
+        "chords": {
+          "start": 1.5,
+          "end": 360,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        },
+        "sections": {
+          "start": 1.5,
+          "end": 360,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        }
+      },
+      "chordTimeMappingMismatches": [],
+      "missingTables": [],
+      "noChordRows": 0,
+      "notesTablePresent": false
+    },
+    {
+      "song": "00-a_night_in_tunisia",
+      "barRows": 230,
+      "unfoldedMusicalBars": 229,
+      "chordRows": 258,
+      "sections": 28,
+      "meter": "4/4",
+      "bpm": "175.0",
+      "durationSeconds": 315.429,
+      "chordSpellings": [
+        "A-7b5",
+        "A7b5",
+        "C7",
+        "C7b9",
+        "D-",
+        "D7b9",
+        "E-7b5",
+        "Eb7",
+        "Eb7#11",
+        "F6",
+        "FM7",
+        "G-(M7)",
+        "G-6",
+        "G-7",
+        "G-7b5",
+        "G7#11",
+        "Gb7#9"
+      ],
+      "intervalChecks": {
+        "bars": {
+          "start": 0,
+          "end": 315.429,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        },
+        "chords": {
+          "start": 1.371,
+          "end": 315.429,
+          "nonpositive": [
+            {
+              "row": 257,
+              "chord": "D-",
+              "start_bar": "230",
+              "start_fraction": "0.0",
+              "end_bar": "230",
+              "end_fraction": "0.0",
+              "start_time": "315.429",
+              "end_time": "315.429",
+              "is_no_chord": "False",
+              "root": "D",
+              "bass": "NA",
+              "is_slash": "False",
+              "bass_interval_from_root": "NA",
+              "triad": "min",
+              "seventh": "none",
+              "has_6": "False",
+              "has_9": "False",
+              "has_11": "False",
+              "has_13": "False",
+              "has_add9": "False",
+              "alt_b5": "False",
+              "alt_sharp5": "False",
+              "alt_b9": "False",
+              "alt_sharp9": "False",
+              "alt_sharp11": "False",
+              "alt_b11": "False",
+              "is_sus2": "False",
+              "is_sus4": "False",
+              "root_interval": "0",
+              "bass_interval": "NA"
+            }
+          ],
+          "gaps": [],
+          "overlaps": []
+        },
+        "sections": {
+          "start": 1.371,
+          "end": 315.429,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        }
+      },
+      "chordTimeMappingMismatches": [],
+      "missingTables": [],
+      "noChordRows": 0,
+      "notesTablePresent": false
+    },
+    {
+      "song": "14-freddie_freeloader",
+      "barRows": 169,
+      "unfoldedMusicalBars": 168,
+      "chordRows": 84,
+      "sections": 28,
+      "meter": "4/4",
+      "bpm": "135.0",
+      "durationSeconds": 300.444,
+      "chordSpellings": [
+        "Ab7",
+        "Bb7",
+        "Eb7",
+        "F7"
+      ],
+      "intervalChecks": {
+        "bars": {
+          "start": 0,
+          "end": 300.444,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        },
+        "chords": {
+          "start": 1.778,
+          "end": 300.444,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        },
+        "sections": {
+          "start": 1.778,
+          "end": 300.444,
+          "nonpositive": [],
+          "gaps": [],
+          "overlaps": []
+        }
+      },
+      "chordTimeMappingMismatches": [],
+      "missingTables": [],
+      "noChordRows": 0,
+      "notesTablePresent": false
+    }
+  ],
+  "notes": [
+    "Annotation scalars are primarily strings: parse numeric values explicitly and do not use string truthiness for boolean flags.",
+    "bar is a chronological occurrence index; measure is a reusable chart measure number. bar=0, measure=0 is leading padding in all three files.",
+    "Chords and sections begin after padding; no interior gaps or overlaps were detected.",
+    "A Night in Tunisia contains a terminal zero-duration D- chord; preserve source, exclude from interval scoring.",
+    "Beat subdivisions are derived from the bar grid; no independently annotated beat table is supplied by these demo JSON files.",
+    "No notes table is present in these exported JSON files.",
+    "The annotations contain target timing; do not feed ground-truth position or current timed chord into the predictor during evaluation."
+  ]
+}

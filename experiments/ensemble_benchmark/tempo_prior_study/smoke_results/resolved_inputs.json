@@ -1,0 +1,42 @@
+[
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "song_id": 50,
+    "song": "50-almost_like_being_in_love",
+    "protocol": "sync",
+    "take": "preferred",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/annotations/sync/50-almost_like_being_in_love.json",
+    "annotation_take": "preferred",
+    "annotation_basis": "Official preferred-take demo export",
+    "midi_files": [
+      {
+        "name": "bass.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/50-almost_like_being_in_love/preferred/bass.transcribed.derived.mid",
+        "bytes": 2225,
+        "sha256": "ff9a44b9eb6e33b5a484821e4a73665437cad7275b4363a2125f0f0bc1473d3c",
+        "instrument": "bass"
+      },
+      {
+        "name": "drums.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/50-almost_like_being_in_love/preferred/drums.transcribed.derived.mid",
+        "bytes": 10689,
+        "sha256": "66aa0d49f1c46b45f6d2e326eae0b071255249acab96bc5c92f18fa83c498c80",
+        "instrument": "drums"
+      },
+      {
+        "name": "trumpet.transcribed.derived.mid",
+        "path": "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/SAMBA dataset/sync_midi/songs/50-almost_like_being_in_love/preferred/trumpet.transcribed.derived.mid",
+        "bytes": 2288,
+        "sha256": "d36694acb6bc40494dc4d7213ba96b12fc2c850634e3eeed881bc8e09891d9c6",
+        "instrument": "trumpet"
+      }
+    ],
+    "time_signature": "4/4",
+    "bpm": 175.0,
+    "key_signature": "Eb Major",
+    "duration_seconds": 242.124,
+    "evaluation_start_seconds": 1.217,
+    "evaluation_end_seconds": 242.124,
+    "title": "Almost Like Being in Love (from Brigadoon)"
+  }
+]

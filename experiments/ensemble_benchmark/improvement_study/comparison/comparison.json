@@ -1,0 +1,977 @@
+{
+  "runs": [
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/01_diagnostics",
+      "summary": {
+        "status": "finished",
+        "complete": true,
+        "scope_finished": true,
+        "metric_rows": 1125,
+        "expected_rows": 1125,
+        "performances": 75,
+        "settings": 15,
+        "source_changes": [],
+        "seconds": 156.99510062500485,
+        "error": null
+      }
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/02_rhythm_sequence",
+      "summary": {
+        "status": "finished",
+        "complete": true,
+        "scope_finished": true,
+        "metric_rows": 1200,
+        "expected_rows": 1200,
+        "performances": 75,
+        "settings": 16,
+        "source_changes": [],
+        "seconds": 249.0805236659944,
+        "error": null
+      }
+    },
+    {
+      "run": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/runs/05_continuous_tempo",
+      "summary": {
+        "status": "finished",
+        "complete": true,
+        "scope_finished": true,
+        "metric_rows": 825,
+        "expected_rows": 825,
+        "performances": 75,
+        "settings": 11,
+        "source_changes": [],
+        "seconds": 112.37190954199468,
+        "error": null
+      }
+    }
+  ],
+  "candidate_settings": {
+    "g00_reproduce": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {},
+      "method": "g00_reproduce",
+      "reason": "Exact reproduction control for the prior Maezawa-style primary result"
+    },
+    "g01_bar_decision": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g01_bar_decision",
+      "reason": "Maximize posterior mass per bar rather than a single half-beat bin"
+    },
+    "g02_weak_harmony": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "emission_power_per_second": 0.25
+      },
+      "method": "g02_weak_harmony",
+      "reason": "Reduce harm from unreliable harmonic updates"
+    },
+    "g03_weak_bar": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "emission_power_per_second": 0.25,
+        "output_rule": "bar"
+      },
+      "method": "g03_weak_bar",
+      "reason": "Combine weaker observations with a bar decision"
+    },
+    "g04_bass_active": {
+      "engine": "grid",
+      "feature": "active_bass",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g04_bass_active",
+      "reason": "Remove improvised horn pitches from harmonic observations"
+    },
+    "g05_balanced_active": {
+      "engine": "grid",
+      "feature": "active_balanced",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g05_balanced_active",
+      "reason": "Prevent dense instrument transcriptions from dominating"
+    },
+    "g06_bass_root": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g06_bass_root",
+      "reason": "Give bass-root correspondence additional weight"
+    },
+    "g07_onsets": {
+      "engine": "grid",
+      "feature": "onset_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g07_onsets",
+      "reason": "One-second onset context with posterior bar decision"
+    },
+    "g08_onset_delay": {
+      "engine": "grid",
+      "feature": "onset_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "harmonic_delay_seconds": 0.5
+      },
+      "method": "g08_onset_delay",
+      "reason": "Compare a trailing window with past candidate harmony while reporting current position"
+    },
+    "g09_bass_onset_delay": {
+      "engine": "grid",
+      "feature": "onset_bass",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "harmonic_delay_seconds": 0.5
+      },
+      "method": "g09_bass_onset_delay",
+      "reason": "Combine bass-only evidence with trailing-window age correction"
+    },
+    "g10_raw_contrast": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "fraction4",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g10_raw_contrast",
+      "reason": "Preserve absolute match contrast rather than standardizing every frame"
+    },
+    "g11_confidence_gate": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "entropy",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g11_confidence_gate",
+      "reason": "Temper observations by information in their unstandardized scores"
+    },
+    "g12_broad_prior": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3
+      },
+      "method": "g12_broad_prior",
+      "reason": "Allow catalog-tempo mismatch with broader tempo support and initial uncertainty"
+    },
+    "g13_finer_grid": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar",
+        "bins_per_beat": 4
+      },
+      "method": "g13_finer_grid",
+      "reason": "Reduce position rounding diffusion with quarter-beat bins"
+    },
+    "g14_seventh": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "seventh",
+      "tempo_factor": 1.0,
+      "config": {
+        "output_rule": "bar"
+      },
+      "method": "g14_seventh",
+      "reason": "Retain seventh quality while still ignoring higher extensions"
+    },
+    "r00_rhythm_only": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "emission_power_per_second": 0.0,
+        "rhythm_strength": 3.0
+      },
+      "method": "r00_rhythm_only",
+      "reason": "Causal MIDI-onset timing without harmonic observations"
+    },
+    "r01_joint": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "rhythm_strength": 3.0
+      },
+      "method": "r01_joint",
+      "reason": "Combine continuous harmonic and onset-phase evidence"
+    },
+    "r02_joint_weak_harmony": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "emission_power_per_second": 0.25,
+        "rhythm_strength": 3.0
+      },
+      "method": "r02_joint_weak_harmony",
+      "reason": "Rely more on onset timing when harmonic evidence is weak"
+    },
+    "r03_joint_gate": {
+      "engine": "grid",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "entropy",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "rhythm_strength": 3.0
+      },
+      "method": "r03_joint_gate",
+      "reason": "Context-dependent harmony strength from match entropy with rhythm evidence"
+    },
+    "r04_joint_bass": {
+      "engine": "grid",
+      "feature": "active_bass",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "rhythm_strength": 3.0
+      },
+      "method": "r04_joint_bass",
+      "reason": "Use bass for harmony and weighted ensemble onsets for timing"
+    },
+    "r05_joint_delayed": {
+      "engine": "grid",
+      "feature": "onset_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "harmonic_delay_seconds": 0.5,
+        "rhythm_strength": 3.0
+      },
+      "method": "r05_joint_delayed",
+      "reason": "Use delayed harmonic context with onset timing"
+    },
+    "r06_joint_bass_root": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "rhythm_strength": 3.0
+      },
+      "method": "r06_joint_bass_root",
+      "reason": "Add onset timing to the strongest first-wave harmonic representation"
+    },
+    "r07_joint_bass_root_broad": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "rhythm_strength": 3.0
+      },
+      "method": "r07_joint_bass_root_broad",
+      "reason": "Expand tempo support while retaining the original narrow initial prior"
+    },
+    "r08_joint_drums": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "with_drums",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "rhythm_strength": 3.0
+      },
+      "method": "r08_joint_drums",
+      "reason": "Add available drum MIDI only to timing evidence, keeping harmony unchanged"
+    },
+    "r09_joint_drums_broad": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "with_drums",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "rhythm_strength": 3.0
+      },
+      "method": "r09_joint_drums_broad",
+      "reason": "Drum timing with broader tempo support"
+    },
+    "r10_joint_window_tempered": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": true,
+      "config": {
+        "output_rule": "bar",
+        "rhythm_strength": 1.0
+      },
+      "method": "r10_joint_window_tempered",
+      "reason": "Reduce repeated-window timing evidence to one unit per nominal eight-beat context"
+    },
+    "s00_beam": {
+      "engine": "beam",
+      "feature": "active_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {},
+      "method": "s00_beam",
+      "reason": "Continuous-position online Viterbi beam removes grid-rounding diffusion"
+    },
+    "s01_beam_bass": {
+      "engine": "beam",
+      "feature": "active_bass",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {},
+      "method": "s01_beam_bass",
+      "reason": "Beam sequence following with bass-only harmony"
+    },
+    "s02_beam_onsets": {
+      "engine": "beam",
+      "feature": "onset_pooled",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {},
+      "method": "s02_beam_onsets",
+      "reason": "Beam sequence following with recent onset harmony"
+    },
+    "s03_beam_bass_root": {
+      "engine": "beam",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {},
+      "method": "s03_beam_bass_root",
+      "reason": "Sequence beam with bass-root-weighted harmonic observations"
+    },
+    "s04_beam_bass_root_broad": {
+      "engine": "beam",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3
+      },
+      "method": "s04_beam_bass_root_broad",
+      "reason": "Sequence beam with root evidence and broader initial tempo uncertainty"
+    },
+    "g15_root_broad": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ]
+      },
+      "method": "g15_root_broad",
+      "reason": "Isolate broader tempo support without adding the rhythm heuristic"
+    },
+    "g16_root_fine_position": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "bins_per_beat": 4
+      },
+      "method": "g16_root_fine_position",
+      "reason": "Reduce stochastic position diffusion for the strongest harmonic feature"
+    },
+    "g17_root_broad_fine": {
+      "engine": "grid",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "output_rule": "bar",
+        "tempo_ratios": [
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
+        ],
+        "bins_per_beat": 4
+      },
+      "method": "g17_root_broad_fine",
+      "reason": "Broader tempo support and quarter-beat position grid"
+    },
+    "s05_beam_width": {
+      "engine": "beam",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "beam_width": 512
+      },
+      "method": "s05_beam_width",
+      "reason": "Control for pruning capacity independently of tempo resolution"
+    },
+    "s06_beam_fine_tempo": {
+      "engine": "beam",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "beam_width": 512,
+        "tempo_ratios": [
+          0.7,
+          0.725,
+          0.75,
+          0.775,
+          0.8,
+          0.825,
+          0.85,
+          0.875,
+          0.9,
+          0.925,
+          0.95,
+          0.975,
+          1.0,
+          1.025,
+          1.05,
+          1.075,
+          1.1,
+          1.125,
+          1.15,
+          1.175,
+          1.2,
+          1.225,
+          1.25,
+          1.275,
+          1.3
+        ]
+      },
+      "method": "s06_beam_fine_tempo",
+      "reason": "Represent intermediate performed tempi with 2.5percent rather than 7.5percent spacing"
+    },
+    "s07_beam_fine_mobile": {
+      "engine": "beam",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "beam_width": 512,
+        "tempo_ratios": [
+          0.7,
+          0.725,
+          0.75,
+          0.775,
+          0.8,
+          0.825,
+          0.85,
+          0.875,
+          0.9,
+          0.925,
+          0.95,
+          0.975,
+          1.0,
+          1.025,
+          1.05,
+          1.075,
+          1.1,
+          1.125,
+          1.15,
+          1.175,
+          1.2,
+          1.225,
+          1.25,
+          1.275,
+          1.3
+        ],
+        "tempo_neighbor_rate_per_second": 0.45
+      },
+      "method": "s07_beam_fine_mobile",
+      "reason": "Increase adjacent tempo transition rate9fold for3fold smaller tempo steps"
+    },
+    "s08_beam_fine_broad": {
+      "engine": "beam",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "beam_width": 512,
+        "tempo_ratios": [
+          0.5,
+          0.525,
+          0.55,
+          0.575,
+          0.6,
+          0.625,
+          0.65,
+          0.675,
+          0.7,
+          0.725,
+          0.75,
+          0.775,
+          0.8,
+          0.825,
+          0.85,
+          0.875,
+          0.9,
+          0.925,
+          0.95,
+          0.975,
+          1.0,
+          1.025,
+          1.05,
+          1.075,
+          1.1,
+          1.125,
+          1.15,
+          1.175,
+          1.2,
+          1.225,
+          1.25,
+          1.275,
+          1.3,
+          1.325,
+          1.35,
+          1.375,
+          1.4,
+          1.425,
+          1.45,
+          1.475,
+          1.5,
+          1.525,
+          1.55,
+          1.575,
+          1.6,
+          1.625,
+          1.65,
+          1.675,
+          1.7,
+          1.725,
+          1.75,
+          1.775,
+          1.8
+        ],
+        "initial_tempo_ratio_std": 0.3,
+        "tempo_neighbor_rate_per_second": 0.45
+      },
+      "method": "s08_beam_fine_broad",
+      "reason": "Fine mobile tempo hypotheses also cover large catalog-tempo mismatch"
+    },
+    "p00_particles": {
+      "engine": "particle",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {},
+      "method": "p00_particles",
+      "reason": "Continuous sum-product inference avoids both position rounding and max-path selection"
+    },
+    "p01_particles_broad": {
+      "engine": "particle",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "initial_tempo_ratio_std": 0.3
+      },
+      "method": "p01_particles_broad",
+      "reason": "Broaden the initial sampled tempo distribution"
+    },
+    "p02_particles_slow": {
+      "engine": "particle",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "initial_tempo_ratio_std": 0.3,
+        "tempo_diffusion_per_sqrt_second": 0.003
+      },
+      "method": "p02_particles_slow",
+      "reason": "Constrain tempo diffusion while keeping broad initial uncertainty"
+    },
+    "p03_particles_dense": {
+      "engine": "particle",
+      "feature": "active_bass_root",
+      "scaling": "zscore",
+      "reliability": "none",
+      "scheme": "triad",
+      "tempo_factor": 1.0,
+      "rhythm_input": "pitched",
+      "rhythm_window_normalized": false,
+      "config": {
+        "n_particles": 4096,
+        "initial_tempo_ratio_std": 0.3
+      },
+      "method": "p03_particles_dense",
+      "reason": "Test sensitivity to the number of continuous hypotheses"
+    }
+  },
+  "songs": 75,
+  "candidate_count": 42,
+  "selection": "Leave-one-song-out setting selection, never oracle per-song choice",
+  "interpretation": "Exploratory internal validation; corpus has already been inspected; no external test or significance claim",
+  "bootstrap": "2000 paired song bootstrap draws within protocol, fixed RNG81231, percentile95% interval; exploratory selection uncertainty not accounted for"
+}

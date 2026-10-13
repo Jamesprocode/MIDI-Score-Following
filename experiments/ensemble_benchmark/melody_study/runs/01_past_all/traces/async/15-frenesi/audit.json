@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/15-frenesi/preferred",
+  "lead_instruments": [
+    "saxophone_tenor"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 419
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 246,
+  "reference_comparisons": 17117
+}

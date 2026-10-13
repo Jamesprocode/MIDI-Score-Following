@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-06T16:05:54.981510+00:00",
+  "reference": "past",
+  "performances": 2,
+  "eligible_performances": 75,
+  "is_smoke": true,
+  "expected_methods": 17,
+  "seed": 0,
+  "particle_config": {
+    "initial_tempo_ratio_std": 0.3,
+    "tempo_diffusion_per_sqrt_second": 0.003
+  },
+  "phrase_parameters": {
+    "window_notes": 9,
+    "maximum_span_nominal_beats": 32.0,
+    "maximum_internal_gap_nominal_beats": 8.0,
+    "freshness_nominal_beats": 2.0,
+    "self_match_separation_nominal_beats": 2.0,
+    "minimum_similarity": 0.75,
+    "median_background_min_references": 8,
+    "max_distinct_reference_hits": 8,
+    "position_sigma_beats": 0.75,
+    "reference_stride": 2,
+    "query_roles": "catalog lead horns; exclude planned soloist at anchor-estimated position",
+    "reference_roles": "same causal role mask as query for past memory",
+    "anchor": "independent p02 harmonic-only causal estimates; zero-order prediction to note time"
+  },
+  "melody_strengths": [
+    1.0,
+    3.0
+  ],
+  "matchers": [
+    "pc_cosine",
+    "pc_edit",
+    "interval_edit",
+    "interval_dtw",
+    "interval_ngrams"
+  ],
+  "sources": {
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/run_study.py": "e51912af1aefe6dc7617576c1a8b5486350206af83e797e982a8a7b7b6f540f3",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/pipeline.py": "946498e176e5bdb6e8f63d7b2c3b515a55ae513986c2b2b20cbde38393293eba",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/matchers.py": "97c1f27a01a0fe4c1e0698688d811f2f88aea8fe066fb19c18e821f5e349e376",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/follower.py": "e9f3eab47d3eab5ac956821f4ebf37e9915c6fa8890a07ce5ec4768b1fe8d9a0",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/particle_follower.py": "e90b1c2807bf63603141163378093df1304620078e94dd89fcf60d8a25883c00",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/run_benchmark.py": "e85f57fb64a879908dcc8c4142e9773e2ec1ed3cfa15d5c59e5f4e050936ef60",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/common.py": "96283e225fd03e724e1c434a7a0be8a3ed22057e0b1fb556bcd4f0de62e06c03",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/harmony_pilot/run_pilot.py": "10815a5f0f9ec921c63000758b889860b7761a424bc42c66e95a8c2cd9947d35",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/harmony_pilot/yamaha_matcher.py": "abe9ba03b926472fe8469441d2faac7982d677a446bf32f49c7545837cf30e4a"
+  },
+  "input_hashes": {
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/preferred/bass.transcribed.derived.mid": "4ec82aeb1b26c8c9c20c44f11497008d62fcc1e3cba012cdf466a27fbbc20abe",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/preferred/saxophone_alto.transcribed.derived.mid": "f036ff07439e3e36a213c2d13c1bf76e77e45ed91104e6d9d4f0536a979d5958",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/async/songs/00-a_night_in_tunisia/preferred/trumpet.transcribed.derived.mid": "8dd25bcb5cbcab33a4cd5f14db4d927287f4b6ab9eed0ca7f09529a0ab2dfba5",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/00-a_night_in_tunisia.json": "cf8e6555430c5b545c46cd77f8ce6e43bac04a589ee26be0c93ebc5647ced240",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/sync/50-almost_like_being_in_love.json": "f97ecd7a540d65a92c33892c5632e07a58379121ac91faafe7ef700a22ac36b3",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/catalog.json": "396eb762880a4081255600e30b88cdb6d05430c4044123663e81a9e2b700dd27",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/manifest.json": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/sync/songs/50-almost_like_being_in_love/preferred/bass.transcribed.derived.mid": "ff9a44b9eb6e33b5a484821e4a73665437cad7275b4363a2125f0f0bc1473d3c",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/sync/songs/50-almost_like_being_in_love/preferred/drums.transcribed.derived.mid": "66aa0d49f1c46b45f6d2e326eae0b071255249acab96bc5c92f18fa83c498c80",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/sync/songs/50-almost_like_being_in_love/preferred/trumpet.transcribed.derived.mid": "d36694acb6bc40494dc4d7213ba96b12fc2c850634e3eeed881bc8e09891d9c6"
+  },
+  "performance_ids": [
+    "async/00-a_night_in_tunisia/preferred",
+    "sync/50-almost_like_being_in_love/preferred"
+  ],
+  "inference_boundary": "No timed annotations; reference memory uses past harmonic-anchor estimates. Planned solo roles are filtered using the anchor estimate, never actual section timestamps.",
+  "melodic_only_boundary": "Melodic updates only: the past-memory coordinate anchors and role masks still depend on the independent harmonic follower.",
+  "score_scaling": "Uncalibrated [0,1] similarity; reward above .75, or max(.75, reference median) with at least8 references, normalized by remaining range. Up to8 distinct recurring locations; Gaussian sigma .75beat. Positive relative potential, uncovered positions neutral.",
+  "metrics": "Same 200ms frame position metrics as prior study; head/solo scopes are evaluation-only. Equal song macro within protocol."
+}

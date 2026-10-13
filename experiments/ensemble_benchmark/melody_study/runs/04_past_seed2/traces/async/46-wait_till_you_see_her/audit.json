@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/46-wait_till_you_see_her/preferred",
+  "lead_instruments": [
+    "saxophone_tenor"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 239
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 124,
+  "reference_comparisons": 3879
+}

@@ -1,0 +1,223 @@
+{
+  "song": "66-nardis",
+  "metadata_bpm": 150.0,
+  "title": "Nardis",
+  "bars": 200,
+  "instruments": [
+    "bass",
+    "trumpet"
+  ],
+  "duration_seconds": 326.8000000000003,
+  "chord_metrics": {
+    "frames": 3269,
+    "coverage": 0.9978586723768736,
+    "chord_accuracy": 0.13796267971856838,
+    "fractional_accuracy": 0.18159477923931885,
+    "balanced_accuracy": 0.18750203542626268,
+    "root_accuracy": 0.23829917405934536,
+    "tie_rate": 0.5996321275291232,
+    "n_chord_labels": 8,
+    "chart_majority_accuracy": 0.2514530437442643
+  },
+  "correct_chord_among_best_available": 0.43512851897184823,
+  "uniquely_correct_chord_available": 0.0587515299877601,
+  "bar_bpm_percentiles": [
+    141.50943396226432,
+    146.60965180207694,
+    152.09125475285143
+  ],
+  "time_outside_tempo_range": 0.0,
+  "variants": {
+    "A_gaussian": {
+      "frames": 1635,
+      "bar_accuracy": 0.4972477064220184,
+      "within2beat_accuracy": 0.5614678899082569,
+      "mean_abs_beats": 17.683964864301743,
+      "median_abs_beats": 1.4328537170264255,
+      "quarters": [
+        {
+          "start": 1.8,
+          "end": 83.40000000000008,
+          "correct_bar": 0.7530562347188264,
+          "median_signed_beats": -0.09283196239725555,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 83.60000000000008,
+          "end": 165.20000000000016,
+          "correct_bar": 0.7726161369193154,
+          "median_signed_beats": 0.5290482076635499,
+          "median_estimated_bpm": 150.0
+        },
+        {
+          "start": 165.40000000000015,
+          "end": 247.00000000000023,
+          "correct_bar": 0.4621026894865526,
+          "median_signed_beats": -0.07517155333783876,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 247.20000000000022,
+          "end": 328.6000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": -59.06805432772228,
+          "median_estimated_bpm": 116.25
+        }
+      ],
+      "final_signed_error": 111.53631961259009
+    },
+    "B_equal_initial": {
+      "frames": 1635,
+      "bar_accuracy": 0.4856269113149847,
+      "within2beat_accuracy": 0.5565749235474006,
+      "mean_abs_beats": 17.749767178165992,
+      "median_abs_beats": 1.4723618090447985,
+      "quarters": [
+        {
+          "start": 1.8,
+          "end": 83.40000000000008,
+          "correct_bar": 0.706601466992665,
+          "median_signed_beats": -0.10640189685838664,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 83.60000000000008,
+          "end": 165.20000000000016,
+          "correct_bar": 0.7726161369193154,
+          "median_signed_beats": 0.5290482076635499,
+          "median_estimated_bpm": 150.0
+        },
+        {
+          "start": 165.40000000000015,
+          "end": 247.00000000000023,
+          "correct_bar": 0.4621026894865526,
+          "median_signed_beats": -0.07517155333783876,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 247.20000000000022,
+          "end": 328.6000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": -59.06805432772228,
+          "median_estimated_bpm": 116.25
+        }
+      ],
+      "final_signed_error": 111.53631961259009
+    },
+    "C_equal_dynamics": {
+      "frames": 1635,
+      "bar_accuracy": 0.48990825688073397,
+      "within2beat_accuracy": 0.5571865443425077,
+      "mean_abs_beats": 18.611595743589437,
+      "median_abs_beats": 1.4331698344569759,
+      "quarters": [
+        {
+          "start": 1.8,
+          "end": 83.40000000000008,
+          "correct_bar": 0.7652811735941321,
+          "median_signed_beats": -0.12539783577339314,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 83.60000000000008,
+          "end": 165.20000000000016,
+          "correct_bar": 0.7799511002444988,
+          "median_signed_beats": 0.49876923076891444,
+          "median_estimated_bpm": 150.0
+        },
+        {
+          "start": 165.40000000000015,
+          "end": 247.00000000000023,
+          "correct_bar": 0.4132029339853301,
+          "median_signed_beats": -0.08640049906472314,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 247.20000000000022,
+          "end": 328.6000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": -59.89328412415631,
+          "median_estimated_bpm": 105.0
+        }
+      ],
+      "final_signed_error": 128.5363196125901
+    },
+    "D_equal_both": {
+      "frames": 1635,
+      "bar_accuracy": 0.4776758409785933,
+      "within2beat_accuracy": 0.5535168195718655,
+      "mean_abs_beats": 18.669871661133975,
+      "median_abs_beats": 1.4748743718588457,
+      "quarters": [
+        {
+          "start": 1.8,
+          "end": 83.40000000000008,
+          "correct_bar": 0.7163814180929096,
+          "median_signed_beats": -0.11616804583068097,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 83.60000000000008,
+          "end": 165.20000000000016,
+          "correct_bar": 0.7799511002444988,
+          "median_signed_beats": 0.49876923076891444,
+          "median_estimated_bpm": 150.0
+        },
+        {
+          "start": 165.40000000000015,
+          "end": 247.00000000000023,
+          "correct_bar": 0.4132029339853301,
+          "median_signed_beats": -0.08640049906472314,
+          "median_estimated_bpm": 138.75
+        },
+        {
+          "start": 247.20000000000022,
+          "end": 328.6000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": -59.89328412415631,
+          "median_estimated_bpm": 105.0
+        }
+      ],
+      "final_signed_error": 128.5363196125901
+    },
+    "no_harmony": {
+      "frames": 1635,
+      "bar_accuracy": 0.0654434250764526,
+      "within2beat_accuracy": 0.0782874617737003,
+      "mean_abs_beats": 11.881470984308862,
+      "median_abs_beats": 14.338152105593394,
+      "quarters": [
+        {
+          "start": 1.8,
+          "end": 83.40000000000008,
+          "correct_bar": 0.2616136919315403,
+          "median_signed_beats": 4.304245283018773,
+          "median_estimated_bpm": 150.0
+        },
+        {
+          "start": 83.60000000000008,
+          "end": 165.20000000000016,
+          "correct_bar": 0.0,
+          "median_signed_beats": 11.800480769230546,
+          "median_estimated_bpm": 150.0
+        },
+        {
+          "start": 165.40000000000015,
+          "end": 247.00000000000023,
+          "correct_bar": 0.0,
+          "median_signed_beats": 15.879396984924028,
+          "median_estimated_bpm": 150.0
+        },
+        {
+          "start": 247.20000000000022,
+          "end": 328.6000000000003,
+          "correct_bar": 0.0,
+          "median_signed_beats": 15.203316953316346,
+          "median_estimated_bpm": 150.0
+        }
+      ],
+      "final_signed_error": 17.03631961259009
+    }
+  },
+  "inference_uses_reference_tempo": false
+}

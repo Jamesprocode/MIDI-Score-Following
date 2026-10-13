@@ -1,0 +1,285 @@
+{
+  "protocol": "sync",
+  "take": "preferred",
+  "scheme": "triad",
+  "input": "original pooled bass and horns",
+  "excluded_protocol": "async",
+  "piano_included": false,
+  "update_seconds": 0.2,
+  "snapshot_history_seconds": 0.0,
+  "filter": {
+    "bins_per_beat": 2,
+    "tempo_ratios": [
+      0.7,
+      0.775,
+      0.85,
+      0.925,
+      1.0,
+      1.075,
+      1.15,
+      1.225,
+      1.3
+    ],
+    "initial_tempo_ratio_std": 0.1,
+    "tempo_neighbor_rate_per_second": 0.05,
+    "emission_power_per_second": 1.0,
+    "probability_floor_mix": 0.02,
+    "boundary_policy": "causal_neutral_overflow"
+  },
+  "variants": {
+    "A_gaussian": [
+      false,
+      false
+    ],
+    "B_equal_initial": [
+      true,
+      false
+    ],
+    "C_equal_dynamics": [
+      false,
+      true
+    ],
+    "D_equal_both": [
+      true,
+      true
+    ],
+    "no_harmony": [
+      false,
+      false
+    ]
+  },
+  "case_selection": "Best/worst original bar accuracy, selected before new results",
+  "cases": [
+    "59-groovin_high",
+    "70-samba_de_orfeu"
+  ],
+  "input_fingerprint": {
+    "sync/50-almost_like_being_in_love/preferred": {
+      "annotation": "f97ecd7a540d65a92c33892c5632e07a58379121ac91faafe7ef700a22ac36b3",
+      "midi": {
+        "bass.transcribed.derived.mid": "ff9a44b9eb6e33b5a484821e4a73665437cad7275b4363a2125f0f0bc1473d3c",
+        "drums.transcribed.derived.mid": "66aa0d49f1c46b45f6d2e326eae0b071255249acab96bc5c92f18fa83c498c80",
+        "trumpet.transcribed.derived.mid": "d36694acb6bc40494dc4d7213ba96b12fc2c850634e3eeed881bc8e09891d9c6"
+      }
+    },
+    "sync/51-amazing_grace/preferred": {
+      "annotation": "694ff2dd4f57ba497d6942d854c5ac4da67c4270d5c6c7d87213728a0a1c59df",
+      "midi": {
+        "bass.transcribed.derived.mid": "c3f33ec0478ecc21d1f25de0b43c2d2b14c20a91294df4b72550049355cbcce5",
+        "drums.transcribed.derived.mid": "b82b34dfffc9bfe6f0dcbf46ce47c585701f4841832774cf365939812b082180",
+        "trumpet.transcribed.derived.mid": "e9ca74b74f2c2c49243deb7ef85646cdf88356a22f3646eec502e9409c72e5c7"
+      }
+    },
+    "sync/52-bernies_tune/preferred": {
+      "annotation": "29d181a5944f4497f304600e5526283652c94df22417eb79588c9f81399e62a6",
+      "midi": {
+        "bass.transcribed.derived.mid": "430bff352d3c08441dc32e4e5aad4ecd2daff611cbc7edfcb1ef5f315abd9107",
+        "drums.transcribed.derived.mid": "53517e431e6ad845fac5bc825382db4dcf20835cd29d433ded8cb15face39153",
+        "trumpet.transcribed.derived.mid": "caf108733a889beaaf42a3d17780b4486af1e5dd91c79158ec742f766e1accee"
+      }
+    },
+    "sync/53-black_orpheus/preferred": {
+      "annotation": "4c34d3528f8c89b831dc520f97ff3803db77cb3b86956d9656cd625d24a72c40",
+      "midi": {
+        "bass.transcribed.derived.mid": "20c1ed57b9b52a891e616fd174ba572187c4fe29976a74c466c9d708a14c1c8a",
+        "drums.transcribed.derived.mid": "d2fa940b9a922dad49df52a77767535ed72615302c3830d0acf92706cce314d5",
+        "saxophone_alto.transcribed.derived.mid": "a63543e08fbdd89fdc05ea251b6b5364c7119f483edd104a97f70611b4d54940",
+        "trumpet.transcribed.derived.mid": "e649cb52b6ac57bfa6a8155affa5c149e260d67afe6bc0f68c4e01e92ad9e140"
+      }
+    },
+    "sync/54-boplicity/preferred": {
+      "annotation": "3d6aa7f6b61c00266e183e2027e4c7c39b8dd9b5d8981f7e010d6a4a78459404",
+      "midi": {
+        "bass.transcribed.derived.mid": "393c8cce2b7a8539d0c37204a0c1708486a242df9adee30eb7b65713a8162f0e",
+        "drums.transcribed.derived.mid": "768dc82f5a5fd38347e973f5fae0160a2403e8c24b52c1bda830fbc6bceaa297",
+        "saxophone_alto.transcribed.derived.mid": "93fdcc241ee4fb1b0ee054e32159cdc4b5b4761aff104b957e6ece2a8014b74a",
+        "trumpet.transcribed.derived.mid": "61491dcfc3ef819b558e1f643e2c35f85ba810448a7f34e33b692441d4cc8a96"
+      }
+    },
+    "sync/55-bye_bye_blackbird/preferred": {
+      "annotation": "efb82174d3616b3a7f30b476ab4ca659fce076a15911f617d43ddb8b35e1aad6",
+      "midi": {
+        "bass.transcribed.derived.mid": "418cec6dc15415126086b237463da65caee82cfc08ae97ce61211ea50c70d5e5",
+        "drums.transcribed.derived.mid": "8e50496384993acabd086c00db036ada2d7e24130b40be9dfcf9dcd00d3e2a45",
+        "trumpet.transcribed.derived.mid": "f0ff5b7ba6b2f819bfe726a0ed64f09beebc63d293c0d2f3b981b752eaffe095"
+      }
+    },
+    "sync/56-ceora/preferred": {
+      "annotation": "b46c8ed7ecea29d03c118dbaf5501fab16f43173c0d7a8dc6daba21b966c2ccd",
+      "midi": {
+        "bass.transcribed.derived.mid": "7cbb4202153c01b2a9d62e3d63b4d95f957177c060b69f464a6eeb7c874465f0",
+        "drums.transcribed.derived.mid": "adafb6a321f6fe3a5293d7ec90c4a4d6e1a05c2f4333e27c5b218539096df4c0",
+        "saxophone_alto.transcribed.derived.mid": "3bb734001d38a90d38d443aea34e3b81fe9cac2d0e3313b3afcad368e36a417e",
+        "trumpet.transcribed.derived.mid": "374d613c935deff37103a842f95bc0687ed8ca35ad7f1edf883b3bc55153bdc8"
+      }
+    },
+    "sync/57-chega_de_saudade/preferred": {
+      "annotation": "1eda03051a6744c72c5f920a5552e90e8dd8e6e4042d9b8a41295ab527535ef7",
+      "midi": {
+        "bass.transcribed.derived.mid": "0c7daf8389a1e7c26b26830ef836baefd5099fc01a47e1bb543eb7405a1d05b4",
+        "drums.transcribed.derived.mid": "428ffb130c66ddbef7e221682399825d470e19ab05c1ab54f9a9969889b5ff24",
+        "saxophone_alto.transcribed.derived.mid": "b6d040e12d124d914eda38911d38bd9261ce2beb655276f45c075541834f2b82",
+        "trumpet.transcribed.derived.mid": "916d37248d136bcdab087a88dc40bebdfd5f255a3a7c127faeec88d688376c45"
+      }
+    },
+    "sync/58-dont_fence_me_in/preferred": {
+      "annotation": "ad454017eda37508dcee1e60ea23dff861ca52a44b8b3fe80283cbe9d1b8bffa",
+      "midi": {
+        "bass.transcribed.derived.mid": "22f3d07796eacf382d12e22b01158540f0b87b60da32e5fe7ba34e5fd2f017b8",
+        "drums.transcribed.derived.mid": "a109131e62ed69c6069220af1ed523d2483c00703e71b713054037926bf8bd64",
+        "saxophone_alto.transcribed.derived.mid": "b8c651786c46d53c7853d92308176842da49521c1221714247a3b504d542790d",
+        "trumpet.transcribed.derived.mid": "c9a365d232b91d59229b69c778b58a81c58c2b30f9c3d524b2a43b8328d9bf48"
+      }
+    },
+    "sync/59-groovin_high/preferred": {
+      "annotation": "ce47a39351887256565fa64c0479dbdc74f74c54bf80a07526092d338d122ddf",
+      "midi": {
+        "bass.transcribed.derived.mid": "c79822662178bf0a9ac5dd19b9927a26ed20c012d15ebf7444ac5351a9b0840d",
+        "drums.transcribed.derived.mid": "09b45febf087193ac1e908cd6fa6fb55ee51e9e5ff7f1a006cda84a291b0487f",
+        "saxophone_alto.transcribed.derived.mid": "765090efb394597c9d4c95def15b122958dd1da18d61eab1bd0e9bcaba450f3f",
+        "trumpet.transcribed.derived.mid": "401eea92e12278889348034537f8395a314889a00c525a240b3359c4f89398dc"
+      }
+    },
+    "sync/60-in_a_sentimental_mood/preferred": {
+      "annotation": "46427383789ed66436f20a6b80e093fe8539bf04c04f10717343f822a99a18ea",
+      "midi": {
+        "bass.transcribed.derived.mid": "657bb54881ace504aee6be4b88d31274a0995b27e7f6a85c2f69ec62339fa509",
+        "drums.transcribed.derived.mid": "a9c349934bb90fbdb315509e7155e61d8f357d2db1c2b2db21dec58e41339f1c",
+        "saxophone_alto.transcribed.derived.mid": "54c7f7767a12bc92702d838c859509b97ce73a4fce18780bfe9f34cb0ea97f52"
+      }
+    },
+    "sync/61-invitation/preferred": {
+      "annotation": "0f8cb6113598d71c12acdbdc5a2b8b447239ce7cfe4ad35bebbf47222427bc2e",
+      "midi": {
+        "bass.transcribed.derived.mid": "ad787a80b29422c465c478689e6d99be02c7ad773e79519f484ed4e5425d44fa",
+        "drums.transcribed.derived.mid": "625f03a344be560201ee6a0eabf1df5bb1ceb08ba6ec256de21979bf48690756",
+        "saxophone_alto.transcribed.derived.mid": "1267e8ff4d07f6ea3da91b1b9285803d11ef3cb5e4090d03bcb24ff23098e160",
+        "trumpet.transcribed.derived.mid": "eb2814c907fefa5b3f1c738425667e4f644519861bfefcc00f7cc9df7f165521"
+      }
+    },
+    "sync/62-it_dont_mean_a_thing/preferred": {
+      "annotation": "c3b5482c867048bbad5c441f3a4f9813e06ff1606ef54a7006c4e08f0a03bf08",
+      "midi": {
+        "bass.transcribed.derived.mid": "ea1464236611f8fd963789a32e64b5af764f4ce077845d59b44d7f1506ea8725",
+        "drums.transcribed.derived.mid": "a7571fa222f752e3528c72df8941e48a76efac376d28592e5481e751e74b5f56",
+        "saxophone_alto.transcribed.derived.mid": "68133417b3333fe176d9c3335fa48a5dbd0e8f5bf7deb6d316083622f204a243",
+        "trumpet.transcribed.derived.mid": "7ecbe140c5136f26827d682383c50fbc3db13255ee73bacf1a334ec50572413d"
+      }
+    },
+    "sync/63-la_vie_en_rose/preferred": {
+      "annotation": "5dbf6f90f23f880820887dbb7bed01bcb939c6cc7816219cfe432f0dba075ed3",
+      "midi": {
+        "bass.transcribed.derived.mid": "dea1a62294035e3c517c822dd1479c91e5a3a7bb44c83eede8e81588f8506289",
+        "drums.transcribed.derived.mid": "10e2e357f40d0c0074cc2d2fe67cfa83da7cc1174e6253827d1dc576cab82964",
+        "saxophone_alto.transcribed.derived.mid": "309c70b1380e972c0ab315f021159e1bac2999338fdb4180737775066c62f7e8"
+      }
+    },
+    "sync/64-love/preferred": {
+      "annotation": "150307be1b8e2a5b256f13853bbe1cb1fbe226653134d2589a4339dbf3475edb",
+      "midi": {
+        "bass.transcribed.derived.mid": "7a05c060d1128af61067964fffb742e7195ff63d4d62ce76d41d39c5113dc29d",
+        "drums.transcribed.derived.mid": "5f251adf95813269275e1622a0c8fa7cd953fcfa5c4bc806eca626441a83a18a",
+        "saxophone_alto.transcribed.derived.mid": "899b2f033e0b6e736a89e830e8846279561c469f4a530173a8c71dc804c244a1",
+        "trumpet.transcribed.derived.mid": "38d2abf9eb41e17aab42c0cf20639dbabfc3341f2b6a1a8553cff52f30a72914"
+      }
+    },
+    "sync/65-misty/preferred": {
+      "annotation": "eace17a8121e47c569689f84289304b3a9a5998a06bb3139d465e31a5d3683ec",
+      "midi": {
+        "bass.transcribed.derived.mid": "2d676f04b20929bc9dcb7fa3a26db01fad4ecc644af9e8b730219f56c4207f41",
+        "drums.transcribed.derived.mid": "9be0a5b68c2a735b67c61c6ef12f106d6f788f900bee43888f1856a49da90eb1",
+        "saxophone_alto.transcribed.derived.mid": "ed46d354ca89b89d186fb9095f0e844ae7b6fa4919da851a61ea7557ce864502",
+        "trumpet.transcribed.derived.mid": "0037fa9575e5d44ea901112a3f75a57b28f84f6b60bacf898bef18baf6e1bfdd"
+      }
+    },
+    "sync/66-nardis/preferred": {
+      "annotation": "626941d4466e0ea15021eeaf382620dfcd8a038b4ac76ec3ce98f98d7a89aaa4",
+      "midi": {
+        "bass.transcribed.derived.mid": "591b4065fd67345de916824fae99a6619b7dc5d3b7544a43a599907c17e0be64",
+        "drums.transcribed.derived.mid": "af5885385b94156536071905a39a3a1fd67d2471488b43826db3549420f1cd7c",
+        "trumpet.transcribed.derived.mid": "0677453e7e42ef536a9ede394e80bdf60263e8ace343e5faeaf156fe7fb12de4"
+      }
+    },
+    "sync/67-on_green_dolphin_street/preferred": {
+      "annotation": "cff2c151ee343f65dbac1525f6428bf18072aab1232631e4a2ae0281d87d6542",
+      "midi": {
+        "bass.transcribed.derived.mid": "4082ef31d2fc81ba462c657b8bfcbc2498d0cf107d57cbad3217fad30c16f12f",
+        "drums.transcribed.derived.mid": "87d36d2b434410d3315604faee1a2ae66581fc9aa3431063f11b82ecc9cb7450",
+        "saxophone_alto.transcribed.derived.mid": "bc9213a3e25b5e4b5fc1601f444989a7ed44b0c52874322f25d016bbe34b2003"
+      }
+    },
+    "sync/68-on_the_sunny_side_of_the_street/preferred": {
+      "annotation": "5f250d4b94cd97e75c152db0c7e4783b9f0e286beede2e255c5d5c322308cfb7",
+      "midi": {
+        "bass.transcribed.derived.mid": "1bdfcaec615c411bead09efa42b814cf3402f60d105cf2de572619384e879b82",
+        "drums.transcribed.derived.mid": "45e00c91a5dea78f6927718b0fa804b365f2c47e169d6f712ead072c685eb99f",
+        "saxophone_alto.transcribed.derived.mid": "9b988da45252cd3cca824f31580e922c1cfb0ac548203b60d155677788da700b",
+        "trumpet.transcribed.derived.mid": "283e7e994c64139e79574ae729da63409059a815ecb0f00a41f58a2e890c5a7d"
+      }
+    },
+    "sync/69-one_note_samba/preferred": {
+      "annotation": "36f7fb0f687fdb9b2c38258b5e4d514730d4bec595b58fa3847b3e8a6c94d966",
+      "midi": {
+        "bass.transcribed.derived.mid": "558b8b5f1a1a0aa1544829cd11abdde8db7b5f25f8d1e495337823e778084765",
+        "drums.transcribed.derived.mid": "139fbf96805b17bda6aae4868a0643333db3bcba1e6def26b37e28f9b682eb1e",
+        "saxophone_alto.transcribed.derived.mid": "9ab5f63f7cfdf5dc687b380c0c80eb7472555732250d720758674aaea82a180a",
+        "trumpet.transcribed.derived.mid": "69f2b641142cd1676304f0bd9c9b2e3247016ee76b4884a673693da28e5cf5f3"
+      }
+    },
+    "sync/70-samba_de_orfeu/preferred": {
+      "annotation": "ffce050eb48fe0b3aa72fbafb7a0326a0ea4e291a126c37727628cbb4d2e06e1",
+      "midi": {
+        "bass.transcribed.derived.mid": "cba7de78ad68e86a2ee8fb5ffd58485bb67b1642b179776f2a18200f8a07c3f6",
+        "drums.transcribed.derived.mid": "14f83e2520f720c13b5f8a72835bb684c89fee7fa4366620a4a9d95017fecb2a",
+        "trumpet.transcribed.derived.mid": "cc229b56e3cf37e6b7c02ba4d2e5bb5e20b54ddd49418d0137ac931d1794684a"
+      }
+    },
+    "sync/71-some_day_my_prince_will_come/preferred": {
+      "annotation": "89dc1b61e5a4c87f9b17bc3bd1b9863c86b4ab3262cff5d932718bc9beaa8fe5",
+      "midi": {
+        "bass.transcribed.derived.mid": "c5625f4d5418edbf66f9d4e031fed8f283a78822fc5b355535a20931eac9eb17",
+        "drums.transcribed.derived.mid": "5d6cdf56de84297a666ac16b985dd5ccd151641f0901aca49ffe972446eed9f4",
+        "saxophone_alto.transcribed.derived.mid": "878b783d4115d652fa8eb9a510441cdf9521562915d2985caf2de9bd60d2365a",
+        "trumpet.transcribed.derived.mid": "65524cadeb5cbb244cbf296514d78893a743a727f5d03f8a06fe06c63d4dac97"
+      }
+    },
+    "sync/72-sway/preferred": {
+      "annotation": "454b21c68d210ccf33839e4d18604a2eff63b98a228c2f1b202794c9a75aa900",
+      "midi": {
+        "bass.transcribed.derived.mid": "7c1ba26a9871a03f84c77b27d7322698d2c11b8f2a4133315798d495d289f331",
+        "drums.transcribed.derived.mid": "d4c9c564c56be236418145a35283841a8baad03fb3333632de5c373328180cdb",
+        "trumpet.transcribed.derived.mid": "c84e5f1fa8aef309ac39ef358db6a7e0ac57be7d1e69d9fa69bd21526ad1c6b7"
+      }
+    },
+    "sync/73-triste/preferred": {
+      "annotation": "caa403a8b6120f77aa3573823ddef4b29b6d0e35a356675f41b6158378193420",
+      "midi": {
+        "bass.transcribed.derived.mid": "1756a78f5332ced829de528ecce14ec348d300975b0db12cafa2dca0ee8662ae",
+        "drums.transcribed.derived.mid": "93cef5d9f5b69c5e0097c69e76ea5feb7ec0853478edf11578810d5d76c8ff51",
+        "trumpet.transcribed.derived.mid": "f0ecd6400061fe121385c3670ba4d73ad35d9a2c358905ba186f7e83c1ee28d3"
+      }
+    },
+    "sync/74-waltz_for_debby/preferred": {
+      "annotation": "e538cf759b1175d72b3ce2882818ee85308380a5cb3d3c9120f420a4938e6ca8",
+      "midi": {
+        "bass.transcribed.derived.mid": "9c4606348999973b7130f021bcc67a3a61039a8bed4aaebd1a2b961551b4b8ff",
+        "drums.transcribed.derived.mid": "51b2d7a66d73b4742a39733bbe5eb13fb3e4cec6e8b39e4f84afbcea2b360728",
+        "trumpet.transcribed.derived.mid": "0af23d9073bb8c375210a25209991b484d7893acb2126d86ed3826539a5e77ab"
+      }
+    },
+    "sync/75-when_the_saints_go_marching_in/preferred": {
+      "annotation": "eef2a7426ca7e24a5c125b9d38b2e96cc920761dcdb7c4ed6c1cc7226c52b2be",
+      "midi": {
+        "bass.transcribed.derived.mid": "0271ee1c639ceaea1036e26a30b5ac79cc70b2f9591d15e326ad71f4d88e1a06",
+        "drums.transcribed.derived.mid": "854195fff54620634d4da466b52478a5977299f6f9ba6b91405d0f951190cdac",
+        "trumpet.transcribed.derived.mid": "b89de80ef2be165e6bb107e74f94743c7bdf09c7f0e8574d9e26257058bb2547"
+      }
+    }
+  },
+  "protected_before": {
+    "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/position_filter.py": "3b74e51a66fb71f7a28f9a4347aa3bdd85df31d640abc054abe6e19a0ad267a9",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/data/manifest.json": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/jazz chart score following/experiments/ensemble_benchmark/results/position_metrics.csv": "0ee359c69a115cfcec277b4ef2bbc67aacbee4ba3ebad8a29915780e6e80b7db"
+  },
+  "created_utc": "2026-10-08T05:51:31.406816+00:00"
+}

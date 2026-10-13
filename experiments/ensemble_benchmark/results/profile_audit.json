@@ -1,0 +1,5256 @@
+[
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/38-spain/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": [
+      "Gb:aug"
+    ]
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": [
+      "Gb:aug"
+    ]
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": [
+      "E:power"
+    ]
+  },
+  {
+    "performance_id": "async/45-tour_de_force/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": [
+      "E:power"
+    ]
+  },
+  {
+    "performance_id": "async/45-tour_de_force/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "almostlikebeinginlovefrombrigadoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "almostlikebeinginlovefrombrigadoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "almostlikebeinginlovefrombrigadoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "almostlikebeinginlovefrombrigadoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "almostlikebeinginlovefrombrigadoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "almostlikebeinginlovefrombrigadoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "amazinggrace",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "amazinggrace",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "amazinggrace",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "amazinggrace",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "amazinggrace",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/51-amazing_grace/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "amazinggrace",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "berniestune",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "berniestune",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "berniestune",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "berniestune",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "berniestune",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/52-bernies_tune/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "berniestune",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "blackorpheusmanhdecarnaval",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "blackorpheusmanhdecarnaval",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "blackorpheusmanhdecarnaval",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "blackorpheusmanhdecarnaval",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "blackorpheusmanhdecarnaval",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/53-black_orpheus/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "blackorpheusmanhdecarnaval",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "boplicitybeboplives",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "boplicitybeboplives",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "boplicitybeboplives",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "boplicitybeboplives",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "boplicitybeboplives",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/54-boplicity/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "boplicitybeboplives",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "byebyeblackbird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "byebyeblackbird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "byebyeblackbird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "byebyeblackbird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "byebyeblackbird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/55-bye_bye_blackbird/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "byebyeblackbird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "ceora",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "ceora",
+    "unseen_qualities": [
+      "Eb:sus4"
+    ]
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "ceora",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "ceora",
+    "unseen_qualities": [
+      "Eb:sus4"
+    ]
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "ceora",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/56-ceora/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "ceora",
+    "unseen_qualities": [
+      "Eb:sus4"
+    ]
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "chegadesaudadenomoreblues",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "chegadesaudadenomoreblues",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "chegadesaudadenomoreblues",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "chegadesaudadenomoreblues",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "chegadesaudadenomoreblues",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/57-chega_de_saudade/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "chegadesaudadenomoreblues",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "dontfencemein",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "dontfencemein",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "dontfencemein",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "dontfencemein",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "dontfencemein",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/58-dont_fence_me_in/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "dontfencemein",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "groovinhigh",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "groovinhigh",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "groovinhigh",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "groovinhigh",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "groovinhigh",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/59-groovin_high/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "groovinhigh",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "inasentimentalmood",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "inasentimentalmood",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "inasentimentalmood",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "inasentimentalmood",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "inasentimentalmood",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "inasentimentalmood",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "invitation",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "invitation",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "invitation",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "invitation",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "invitation",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/61-invitation/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "invitation",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "itdontmeanathingifitaintgotthatswing",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "itdontmeanathingifitaintgotthatswing",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "itdontmeanathingifitaintgotthatswing",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "itdontmeanathingifitaintgotthatswing",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "itdontmeanathingifitaintgotthatswing",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/62-it_dont_mean_a_thing/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "itdontmeanathingifitaintgotthatswing",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "lavieenrosetakemetoyourheartagain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "lavieenrosetakemetoyourheartagain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "lavieenrosetakemetoyourheartagain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "lavieenrosetakemetoyourheartagain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "lavieenrosetakemetoyourheartagain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/63-la_vie_en_rose/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "lavieenrosetakemetoyourheartagain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "love",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "love",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "love",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "love",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "love",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/64-love/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "love",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "misty",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "misty",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "misty",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "misty",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "misty",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/65-misty/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "misty",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "nardis",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "nardis",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "nardis",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "nardis",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "nardis",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "nardis",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "ongreendolphinstreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "ongreendolphinstreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "ongreendolphinstreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "ongreendolphinstreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "ongreendolphinstreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/67-on_green_dolphin_street/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "ongreendolphinstreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "onthesunnysideofthestreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "onthesunnysideofthestreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "onthesunnysideofthestreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "onthesunnysideofthestreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "onthesunnysideofthestreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "onthesunnysideofthestreet",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "onenotesambasambadeumanotas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "onenotesambasambadeumanotas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "onenotesambasambadeumanotas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "onenotesambasambadeumanotas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "onenotesambasambadeumanotas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/69-one_note_samba/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "onenotesambasambadeumanotas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "sambadeorfeu",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "sambadeorfeu",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "sambadeorfeu",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "sambadeorfeu",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "sambadeorfeu",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/70-samba_de_orfeu/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "sambadeorfeu",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "somedaymyprincewillcome",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "somedaymyprincewillcome",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "somedaymyprincewillcome",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "somedaymyprincewillcome",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "somedaymyprincewillcome",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "somedaymyprincewillcome",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "swayquiensera",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "swayquiensera",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "swayquiensera",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "swayquiensera",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "swayquiensera",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/72-sway/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "swayquiensera",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "triste",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "triste",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "triste",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "triste",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "triste",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/73-triste/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "triste",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "waltzfordebby",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "waltzfordebby",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "waltzfordebby",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "waltzfordebby",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "waltzfordebby",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/74-waltz_for_debby/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "waltzfordebby",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "whenthesaintsgomarchingin",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "whenthesaintsgomarchingin",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "whenthesaintsgomarchingin",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "whenthesaintsgomarchingin",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "whenthesaintsgomarchingin",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "sync/75-when_the_saints_go_marching_in/preferred",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "whenthesaintsgomarchingin",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "anightintunisia",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/01-a_sunday_kind_of_love/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "asundaykindoflove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/02-alice_in_wonderland/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "aliceinwonderland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/03-all_of_me/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "allofme",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/04-all_the_things_you_are/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "allthethingsyouare",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/05-au_privave/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "auprivave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/06-autumn_leaves/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "autumnleaves",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/07-blue_bossa/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "bluebossa",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/08-blue_skies/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "blueskies",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/09-caravan/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "caravan",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/10-desafinado/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "desafinado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/12-for_sentimental_reasons/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "iloveyouforsentimentalreasons",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/13-four/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "four",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "freddiefreeloader",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/15-frenesi/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "frenes",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/16-how_high_the_moon/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "howhighthemoon",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/17-i_could_write_a_book/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "icouldwriteabook",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/18-i_wish_you_love/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "iwishyoulove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/19-if_i_were_a_bell/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "ifiwereabell",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/20-impressions/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "impressions",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/21-isnt_it_romantic/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "isntitromantic",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/22-lazy_bird/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "lazybird",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/23-like_someone_in_love/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "likesomeoneinlove",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/24-long_ago/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "longagoandfaraway",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/25-lullaby_of_birdland/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "lullabyofbirdland",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/26-mas_que_nada/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "masquenada",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/27-meditation/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "meditationmeditao",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/28-moonglow/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "moonglow",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/29-my_favorite_things/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "myfavoritethings",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/30-nicas_dream/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "nicasdream",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/31-o_pato/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "opatotheduck",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/32-ornithology/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "ornithology",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/33-peris_scope/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "perisscope",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/34-quiet_nights_of_quiet_stars/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "quietnightsofquietstarscorcovado",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/35-recordame/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "recordame",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/36-road_song/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "roadsong",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/37-song_for_my_father/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "songformyfather",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/38-spain/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/38-spain/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "spain",
+    "unseen_qualities": [
+      "B:sus2"
+    ]
+  },
+  {
+    "performance_id": "async/39-st_thomas/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/39-st_thomas/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "stthomas",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/40-stompin_at_the_savoy/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "stompinatthesavoy",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/41-take_five/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "takefive",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/42-take_the_a_train/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "taketheatrain",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/43-the_girl_from_ipanema/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "thegirlfromipanemagarotadeipanema",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": [
+      "Gb:aug"
+    ]
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": [
+      "Gb:aug"
+    ]
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/44-the_great_pumpkin_waltz/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "thegreatpumpkinwaltz",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": [
+      "E:power"
+    ]
+  },
+  {
+    "performance_id": "async/45-tour_de_force/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": [
+      "E:power"
+    ]
+  },
+  {
+    "performance_id": "async/45-tour_de_force/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/45-tour_de_force/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "tourdeforce",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/46-wait_till_you_see_her/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "waittillyouseeher",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/47-wave/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "wave",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/48-when_you_wish_upon_a_star/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "whenyouwishuponastar",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/alternate",
+    "scheme": "triad",
+    "input": "pooled",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/alternate",
+    "scheme": "seventh",
+    "input": "pooled",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/alternate",
+    "scheme": "triad",
+    "input": "bass",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/alternate",
+    "scheme": "seventh",
+    "input": "bass",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/alternate",
+    "scheme": "triad",
+    "input": "horns",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  },
+  {
+    "performance_id": "async/49-woodchoppers_ball/alternate",
+    "scheme": "seventh",
+    "input": "horns",
+    "excluded_composition": "woodchoppersball",
+    "unseen_qualities": []
+  }
+]

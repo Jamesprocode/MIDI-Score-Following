@@ -1,0 +1,34 @@
+[
+  {
+    "performance_id": "sync/50-almost_like_being_in_love/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 314
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": true,
+    "neutral_reproduction": true,
+    "query_updates": 169,
+    "reference_comparisons": 7968
+  },
+  {
+    "performance_id": "async/00-a_night_in_tunisia/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 396,
+      "trumpet": 385
+    },
+    "reference_file": null,
+    "reference_note_count": null,
+    "prefix_verified": true,
+    "neutral_reproduction": true,
+    "query_updates": 385,
+    "reference_comparisons": 20777
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "objective": "Try different methods to improve bar accuracy across the available dataset, identify characteristics of high-accuracy tunes, and document methods, failures, results, and limitations.",
+  "baseline": "../results: preserved 124-performance pilot, with preferred takes from 75 songs as the primary comparison",
+  "scope": {
+    "primary": "All 75 preferred performances; separate async and sync summaries, equal weighting of songs within protocol",
+    "secondary": "49 alternate async performances and controlled initial-tempo perturbations for frozen promising candidates",
+    "input": "Local automatic MIDI transcriptions of bass and horns; no piano MIDI; no future notes or performance annotations in inference",
+    "reference": "Known unfolded harmonic performance plan, known start, approximate catalog tempo"
+  },
+  "questions": [
+    "Does decoding bar posterior mass improve the bar decision compared with choosing the most likely position bin?",
+    "Can weaker or confidence-dependent harmonic updates preserve accurate timing while still correcting drift?",
+    "Do bass-only, instrument-balanced, or root-weighted harmonic observations help?",
+    "Does accounting for trailing-window age improve current position estimates?",
+    "Does causal MIDI-onset phase and periodicity add timing evidence that improves following?",
+    "Does continuous-position Viterbi beam tracking outperform the probability grid?",
+    "Which song, harmony, timing, role, and transcription properties are associated with success or failure within each recording protocol?"
+  ],
+  "protocol": [
+    "Each run saves all settings and source hashes before executing; successful, failed, and smoke runs are distinguished.",
+    "First reproduce the old Maezawa-style primary result exactly before interpreting changes.",
+    "Never select a method from the evaluated song's ground-truth labels at inference.",
+    "Report exploratory best settings separately from leave-one-song-out selection based on other compositions.",
+    "All candidate methods are non-neural and data-independent at inference except their given plan; no pretrained/SOTA claim is made.",
+    "Song-property analysis may use reference annotations, but those derived properties never enter the follower.",
+    "Because the existing corpus has already been inspected, internal selection is not a pristine external generalization test.",
+    "Report exact-bar accuracy, within-two-beat rate, and all-frame position errors together so gains in one metric cannot hide catastrophic errors.",
+    "Keep original datasets and baseline outputs unchanged; use independent run directories and save full prediction traces."
+  ],
+  "required_evidence_for_completion": [
+    "Completed all-song comparisons for multiple observation and temporal-tracking approaches",
+    "Verified causal behavior and baseline reproduction",
+    "Transparent selection and secondary robustness results for promising frozen settings",
+    "Per-song high/low performance analysis with confounding and data-quality limitations",
+    "Reproducible scripts, run logs, configuration/source provenance, per-song tables, and a readable findings report"
+  ]
+}

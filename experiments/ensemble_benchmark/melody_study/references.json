@@ -1,0 +1,53 @@
+{
+  "scope": "Non-neural melodic matching precedents. matchers.py implements declared simplified benchmark variants, not exact paper reproductions. Scores are not calibrated probabilities.",
+  "papers": [
+    {
+      "authors": "Marcel Mongeau and David Sankoff",
+      "year": 1990,
+      "title": "Comparison of Musical Sequences",
+      "venue": "Computers and the Humanities 24:161-175",
+      "primary_url": "https://assets.uniweb.app/dist/GwbHBtH6yheMKhSJJgFDoD/base.pdf",
+      "author_publication_page": "https://albuquerque.bioinformatics.uottawa.ca/Publications",
+      "relevant_sections": "Sections 3-6",
+      "precedent": "Musical edit operations including insertion, deletion, replacement, consolidation and fragmentation, using pitch and duration.",
+      "implementation_boundary": "pc_edit and interval_edit use ordinary unit-cost Levenshtein with fixed length normalization. They omit the paper's tonal/duration costs and fragmentation/consolidation; successive signed pitch intervals differ from the paper's tonic-relative pitch representation."
+    },
+    {
+      "authors": "A. Pikrakis et al.",
+      "year": 2012,
+      "title": "Tracking Melodic Patterns in Flamenco Singing by Analyzing Polyphonic Music Recordings",
+      "venue": "ISMIR 2012, 421-426",
+      "primary_url": "https://ismir2012.ismir.net/event/papers/421_ISMIR_2012.pdf",
+      "relevant_sections": "Section 4.2",
+      "precedent": "Dynamic programming for matching symbolic melodic patterns using pitch intervals and durations, with context-dependent time warping.",
+      "implementation_boundary": "interval_dtw uses conventional three-predecessor DTW, a fixed two-event band, bounded signed-interval/relative-IOI costs, and post-hoc mean-path normalization. It is not the paper's context-dependent DTW."
+    },
+    {
+      "authors": "Shyamala Doraisamy and Stefan Ruger",
+      "year": 2003,
+      "title": "Polyphonic Music Retrieval: The N-Gram Approach",
+      "venue": "ISMIR 2003 poster; related journal paper Robust Polyphonic Music Retrieval with N-grams, Journal of Intelligent Information Systems 21(1):53-70",
+      "primary_url": "https://ismir2003.ismir.net/posters/Doraisamy.pdf",
+      "journal_doi": "10.1023/A:1023553801115",
+      "precedent": "N-note tokens containing n-1 pitch intervals and n-2 onset ratios; polyphonic event extraction, quantization, and BM25/proximity retrieval.",
+      "implementation_boundary": "interval_ngrams uses monophonic four-note units, exact signed semitone intervals, quarter-log2 IOI-ratio bins, and normalized multiset Dice overlap. It does not reproduce the paper's encoding, polyphonic extraction, or retrieval weighting."
+    },
+    {
+      "authors": "Andreas Arzt, Sebastian Bock and Gerhard Widmer",
+      "year": 2012,
+      "title": "Fast Identification of Piece and Score Position via Symbolic Fingerprinting",
+      "venue": "ISMIR 2012, 433-438",
+      "primary_url": "https://www.cp.jku.at/research/papers/Arzt_etal_ISMIR_2012.pdf",
+      "relevant_sections": "Sections 2-3",
+      "precedent": "Three absolute-pitch events plus onset-time ratio form tempo-independent fingerprints, with tempo-adjusted position voting.",
+      "implementation_boundary": "Not implemented in this five-matcher comparison. Original keys contain absolute pitches and are not inherently transposition-invariant."
+    }
+  ],
+  "controls_and_normalization": {
+    "pc_cosine": "Generic order-free pitch-class histogram control; not attributed as a reproduction of one paper.",
+    "edit": "1 - unit edit distance / sequence length (9 pitch classes or 8 signed intervals).",
+    "dtw": "1 - minimum-sum path cost / that path's length; exact sum-cost ties choose shorter paths; not minimum-average-path DTW.",
+    "ngrams": "Multiset Dice intersection of six tokens per nine-note window.",
+    "causality": "All eight inter-onset intervals are complete. Caller must restrict queries and memory to observed onsets, exclude overlapping self-matches, and avoid reference-annotation position labels at inference."
+  }
+}

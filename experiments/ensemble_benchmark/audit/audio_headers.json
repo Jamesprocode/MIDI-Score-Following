@@ -1,0 +1,3122 @@
+[
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12925312,
+    "duration_s": 269.27733333333333
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12925312,
+    "duration_s": 269.27733333333333
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12925312,
+    "duration_s": 269.27733333333333
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 12925312,
+    "duration_s": 269.27733333333333
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12925312,
+    "duration_s": 269.27733333333333
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12925312,
+    "duration_s": 269.27733333333333
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12925312,
+    "duration_s": 269.27733333333333
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11782880,
+    "duration_s": 245.47666666666666
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11782880,
+    "duration_s": 245.47666666666666
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11782880,
+    "duration_s": 245.47666666666666
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 11782880,
+    "duration_s": 245.47666666666666
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11782880,
+    "duration_s": 245.47666666666666
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11782880,
+    "duration_s": 245.47666666666666
+  },
+  {
+    "path": "sync/songs/50-almost_like_being_in_love/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11782880,
+    "duration_s": 245.47666666666666
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5968698,
+    "duration_s": 124.347875
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5968698,
+    "duration_s": 124.347875
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5968698,
+    "duration_s": 124.347875
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 5968698,
+    "duration_s": 124.347875
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5968698,
+    "duration_s": 124.347875
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5968698,
+    "duration_s": 124.347875
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5968698,
+    "duration_s": 124.347875
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5359038,
+    "duration_s": 111.646625
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5359038,
+    "duration_s": 111.646625
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5359038,
+    "duration_s": 111.646625
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 5359038,
+    "duration_s": 111.646625
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5359038,
+    "duration_s": 111.646625
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5359038,
+    "duration_s": 111.646625
+  },
+  {
+    "path": "sync/songs/51-amazing_grace/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 5359038,
+    "duration_s": 111.646625
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11670464,
+    "duration_s": 243.13466666666667
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11670464,
+    "duration_s": 243.13466666666667
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11670464,
+    "duration_s": 243.13466666666667
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 11670464,
+    "duration_s": 243.13466666666667
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11670464,
+    "duration_s": 243.13466666666667
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11670464,
+    "duration_s": 243.13466666666667
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 11670464,
+    "duration_s": 243.13466666666667
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10863862,
+    "duration_s": 226.33045833333333
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10863862,
+    "duration_s": 226.33045833333333
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10863862,
+    "duration_s": 226.33045833333333
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 10863862,
+    "duration_s": 226.33045833333333
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10863862,
+    "duration_s": 226.33045833333333
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10863862,
+    "duration_s": 226.33045833333333
+  },
+  {
+    "path": "sync/songs/52-bernies_tune/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10863862,
+    "duration_s": 226.33045833333333
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15610322,
+    "duration_s": 325.21504166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15610322,
+    "duration_s": 325.21504166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15610322,
+    "duration_s": 325.21504166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 15756754,
+    "duration_s": 328.26570833333335
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15610322,
+    "duration_s": 325.21504166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15610322,
+    "duration_s": 325.21504166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15610322,
+    "duration_s": 325.21504166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15610322,
+    "duration_s": 325.21504166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15710690,
+    "duration_s": 327.30604166666666
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15710690,
+    "duration_s": 327.30604166666666
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15710690,
+    "duration_s": 327.30604166666666
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 15898082,
+    "duration_s": 331.21004166666665
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15710690,
+    "duration_s": 327.30604166666666
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15710690,
+    "duration_s": 327.30604166666666
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15710690,
+    "duration_s": 327.30604166666666
+  },
+  {
+    "path": "sync/songs/53-black_orpheus/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15710690,
+    "duration_s": 327.30604166666666
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19715880,
+    "duration_s": 410.7475
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19715880,
+    "duration_s": 410.7475
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19715880,
+    "duration_s": 410.7475
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 19857704,
+    "duration_s": 413.70216666666664
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19715880,
+    "duration_s": 410.7475
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19715880,
+    "duration_s": 410.7475
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19715880,
+    "duration_s": 410.7475
+  },
+  {
+    "path": "sync/songs/54-boplicity/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19715880,
+    "duration_s": 410.7475
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19676400,
+    "duration_s": 409.925
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19676400,
+    "duration_s": 409.925
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19676400,
+    "duration_s": 409.925
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 19830000,
+    "duration_s": 413.125
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19676400,
+    "duration_s": 409.925
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19676400,
+    "duration_s": 409.925
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19676400,
+    "duration_s": 409.925
+  },
+  {
+    "path": "sync/songs/54-boplicity/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19676400,
+    "duration_s": 409.925
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18259649,
+    "duration_s": 380.4093541666667
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18259649,
+    "duration_s": 380.4093541666667
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18259649,
+    "duration_s": 380.4093541666667
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 18259649,
+    "duration_s": 380.4093541666667
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18259649,
+    "duration_s": 380.4093541666667
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18259649,
+    "duration_s": 380.4093541666667
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18259649,
+    "duration_s": 380.4093541666667
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17975320,
+    "duration_s": 374.48583333333335
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17975320,
+    "duration_s": 374.48583333333335
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17975320,
+    "duration_s": 374.48583333333335
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 17975320,
+    "duration_s": 374.48583333333335
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17975320,
+    "duration_s": 374.48583333333335
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17975320,
+    "duration_s": 374.48583333333335
+  },
+  {
+    "path": "sync/songs/55-bye_bye_blackbird/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17975320,
+    "duration_s": 374.48583333333335
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19882834,
+    "duration_s": 414.22570833333333
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19882834,
+    "duration_s": 414.22570833333333
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19882834,
+    "duration_s": 414.22570833333333
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 19997522,
+    "duration_s": 416.6150416666667
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19882834,
+    "duration_s": 414.22570833333333
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19882834,
+    "duration_s": 414.22570833333333
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19882834,
+    "duration_s": 414.22570833333333
+  },
+  {
+    "path": "sync/songs/56-ceora/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19882834,
+    "duration_s": 414.22570833333333
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19738788,
+    "duration_s": 411.22475
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19738788,
+    "duration_s": 411.22475
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19738788,
+    "duration_s": 411.22475
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 19889828,
+    "duration_s": 414.3714166666667
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19738788,
+    "duration_s": 411.22475
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19738788,
+    "duration_s": 411.22475
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19738788,
+    "duration_s": 411.22475
+  },
+  {
+    "path": "sync/songs/56-ceora/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 19738788,
+    "duration_s": 411.22475
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 30619996,
+    "duration_s": 637.9165833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 30619996,
+    "duration_s": 637.9165833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 30619996,
+    "duration_s": 637.9165833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 30729052,
+    "duration_s": 640.1885833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 30619996,
+    "duration_s": 637.9165833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 30619996,
+    "duration_s": 637.9165833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 30619996,
+    "duration_s": 637.9165833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 30619996,
+    "duration_s": 637.9165833333333
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 29080686,
+    "duration_s": 605.847625
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 29080686,
+    "duration_s": 605.847625
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 29080686,
+    "duration_s": 605.847625
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 29210222,
+    "duration_s": 608.5462916666667
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 29080686,
+    "duration_s": 605.847625
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 29080686,
+    "duration_s": 605.847625
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 29080686,
+    "duration_s": 605.847625
+  },
+  {
+    "path": "sync/songs/57-chega_de_saudade/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 29080686,
+    "duration_s": 605.847625
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16878920,
+    "duration_s": 351.64416666666665
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16878920,
+    "duration_s": 351.64416666666665
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16878920,
+    "duration_s": 351.64416666666665
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 16999240,
+    "duration_s": 354.1508333333333
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16878920,
+    "duration_s": 351.64416666666665
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16878920,
+    "duration_s": 351.64416666666665
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16878920,
+    "duration_s": 351.64416666666665
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16878920,
+    "duration_s": 351.64416666666665
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16443408,
+    "duration_s": 342.571
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16443408,
+    "duration_s": 342.571
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16443408,
+    "duration_s": 342.571
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 16571408,
+    "duration_s": 345.23766666666666
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16443408,
+    "duration_s": 342.571
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16443408,
+    "duration_s": 342.571
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16443408,
+    "duration_s": 342.571
+  },
+  {
+    "path": "sync/songs/58-dont_fence_me_in/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16443408,
+    "duration_s": 342.571
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12545819,
+    "duration_s": 261.3712291666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12545819,
+    "duration_s": 261.3712291666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12545819,
+    "duration_s": 261.3712291666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 12661019,
+    "duration_s": 263.77122916666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12545819,
+    "duration_s": 261.3712291666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12545819,
+    "duration_s": 261.3712291666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12545819,
+    "duration_s": 261.3712291666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12545819,
+    "duration_s": 261.3712291666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12375024,
+    "duration_s": 257.813
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12375024,
+    "duration_s": 257.813
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12375024,
+    "duration_s": 257.813
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 12447728,
+    "duration_s": 259.3276666666667
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12375024,
+    "duration_s": 257.813
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12375024,
+    "duration_s": 257.813
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12375024,
+    "duration_s": 257.813
+  },
+  {
+    "path": "sync/songs/59-groovin_high/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12375024,
+    "duration_s": 257.813
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33464376,
+    "duration_s": 697.1745
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33464376,
+    "duration_s": 697.1745
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33464376,
+    "duration_s": 697.1745
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 33632824,
+    "duration_s": 700.6838333333334
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33464376,
+    "duration_s": 697.1745
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33464376,
+    "duration_s": 697.1745
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33464376,
+    "duration_s": 697.1745
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33452376,
+    "duration_s": 696.9245
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33452376,
+    "duration_s": 696.9245
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33452376,
+    "duration_s": 696.9245
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 33620824,
+    "duration_s": 700.4338333333334
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33452376,
+    "duration_s": 696.9245
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33452376,
+    "duration_s": 696.9245
+  },
+  {
+    "path": "sync/songs/60-in_a_sentimental_mood/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 33452376,
+    "duration_s": 696.9245
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13637484,
+    "duration_s": 284.11425
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13637484,
+    "duration_s": 284.11425
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13637484,
+    "duration_s": 284.11425
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 13642561,
+    "duration_s": 284.2200208333333
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13637484,
+    "duration_s": 284.11425
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13637484,
+    "duration_s": 284.11425
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13637484,
+    "duration_s": 284.11425
+  },
+  {
+    "path": "sync/songs/61-invitation/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13637484,
+    "duration_s": 284.11425
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13574952,
+    "duration_s": 282.8115
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13574952,
+    "duration_s": 282.8115
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13574952,
+    "duration_s": 282.8115
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 13660456,
+    "duration_s": 284.5928333333333
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13574952,
+    "duration_s": 282.8115
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13574952,
+    "duration_s": 282.8115
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13574952,
+    "duration_s": 282.8115
+  },
+  {
+    "path": "sync/songs/61-invitation/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13574952,
+    "duration_s": 282.8115
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12344780,
+    "duration_s": 257.18291666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12344780,
+    "duration_s": 257.18291666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12344780,
+    "duration_s": 257.18291666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 12434892,
+    "duration_s": 259.06025
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12344780,
+    "duration_s": 257.18291666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12344780,
+    "duration_s": 257.18291666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12344780,
+    "duration_s": 257.18291666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12344780,
+    "duration_s": 257.18291666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12304400,
+    "duration_s": 256.34166666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12304400,
+    "duration_s": 256.34166666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12304400,
+    "duration_s": 256.34166666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 12568592,
+    "duration_s": 261.84566666666666
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12304400,
+    "duration_s": 256.34166666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12304400,
+    "duration_s": 256.34166666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12304400,
+    "duration_s": 256.34166666666664
+  },
+  {
+    "path": "sync/songs/62-it_dont_mean_a_thing/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12304400,
+    "duration_s": 256.34166666666664
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14167504,
+    "duration_s": 295.15633333333335
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14167504,
+    "duration_s": 295.15633333333335
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14167504,
+    "duration_s": 295.15633333333335
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 14261200,
+    "duration_s": 297.10833333333335
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14167504,
+    "duration_s": 295.15633333333335
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14167504,
+    "duration_s": 295.15633333333335
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14167504,
+    "duration_s": 295.15633333333335
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14076288,
+    "duration_s": 293.256
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14076288,
+    "duration_s": 293.256
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14076288,
+    "duration_s": 293.256
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 14188416,
+    "duration_s": 295.592
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14076288,
+    "duration_s": 293.256
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14076288,
+    "duration_s": 293.256
+  },
+  {
+    "path": "sync/songs/63-la_vie_en_rose/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14076288,
+    "duration_s": 293.256
+  },
+  {
+    "path": "sync/songs/64-love/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16325532,
+    "duration_s": 340.11525
+  },
+  {
+    "path": "sync/songs/64-love/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16325532,
+    "duration_s": 340.11525
+  },
+  {
+    "path": "sync/songs/64-love/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16325532,
+    "duration_s": 340.11525
+  },
+  {
+    "path": "sync/songs/64-love/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 16459164,
+    "duration_s": 342.89925
+  },
+  {
+    "path": "sync/songs/64-love/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16325532,
+    "duration_s": 340.11525
+  },
+  {
+    "path": "sync/songs/64-love/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16325532,
+    "duration_s": 340.11525
+  },
+  {
+    "path": "sync/songs/64-love/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16325532,
+    "duration_s": 340.11525
+  },
+  {
+    "path": "sync/songs/64-love/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16325532,
+    "duration_s": 340.11525
+  },
+  {
+    "path": "sync/songs/64-love/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16319456,
+    "duration_s": 339.9886666666667
+  },
+  {
+    "path": "sync/songs/64-love/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16319456,
+    "duration_s": 339.9886666666667
+  },
+  {
+    "path": "sync/songs/64-love/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16319456,
+    "duration_s": 339.9886666666667
+  },
+  {
+    "path": "sync/songs/64-love/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 16572896,
+    "duration_s": 345.26866666666666
+  },
+  {
+    "path": "sync/songs/64-love/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16319456,
+    "duration_s": 339.9886666666667
+  },
+  {
+    "path": "sync/songs/64-love/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16319456,
+    "duration_s": 339.9886666666667
+  },
+  {
+    "path": "sync/songs/64-love/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16319456,
+    "duration_s": 339.9886666666667
+  },
+  {
+    "path": "sync/songs/64-love/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16319456,
+    "duration_s": 339.9886666666667
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 38492792,
+    "duration_s": 801.9331666666667
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 38492792,
+    "duration_s": 801.9331666666667
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 38492792,
+    "duration_s": 801.9331666666667
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 38668408,
+    "duration_s": 805.5918333333333
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 38492792,
+    "duration_s": 801.9331666666667
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 38492792,
+    "duration_s": 801.9331666666667
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 38492792,
+    "duration_s": 801.9331666666667
+  },
+  {
+    "path": "sync/songs/65-misty/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 38492792,
+    "duration_s": 801.9331666666667
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 39109488,
+    "duration_s": 814.781
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 39109488,
+    "duration_s": 814.781
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 39109488,
+    "duration_s": 814.781
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 39272304,
+    "duration_s": 818.173
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 39109488,
+    "duration_s": 814.781
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 39109488,
+    "duration_s": 814.781
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 39109488,
+    "duration_s": 814.781
+  },
+  {
+    "path": "sync/songs/65-misty/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 39109488,
+    "duration_s": 814.781
+  },
+  {
+    "path": "sync/songs/66-nardis/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15781290,
+    "duration_s": 328.776875
+  },
+  {
+    "path": "sync/songs/66-nardis/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15781290,
+    "duration_s": 328.776875
+  },
+  {
+    "path": "sync/songs/66-nardis/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15781290,
+    "duration_s": 328.776875
+  },
+  {
+    "path": "sync/songs/66-nardis/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 15781290,
+    "duration_s": 328.776875
+  },
+  {
+    "path": "sync/songs/66-nardis/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15781290,
+    "duration_s": 328.776875
+  },
+  {
+    "path": "sync/songs/66-nardis/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15781290,
+    "duration_s": 328.776875
+  },
+  {
+    "path": "sync/songs/66-nardis/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15781290,
+    "duration_s": 328.776875
+  },
+  {
+    "path": "sync/songs/66-nardis/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16190480,
+    "duration_s": 337.3016666666667
+  },
+  {
+    "path": "sync/songs/66-nardis/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16190480,
+    "duration_s": 337.3016666666667
+  },
+  {
+    "path": "sync/songs/66-nardis/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16190480,
+    "duration_s": 337.3016666666667
+  },
+  {
+    "path": "sync/songs/66-nardis/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 16190480,
+    "duration_s": 337.3016666666667
+  },
+  {
+    "path": "sync/songs/66-nardis/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16190480,
+    "duration_s": 337.3016666666667
+  },
+  {
+    "path": "sync/songs/66-nardis/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16190480,
+    "duration_s": 337.3016666666667
+  },
+  {
+    "path": "sync/songs/66-nardis/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 16190480,
+    "duration_s": 337.3016666666667
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13157266,
+    "duration_s": 274.10970833333334
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13157266,
+    "duration_s": 274.10970833333334
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13157266,
+    "duration_s": 274.10970833333334
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 13249938,
+    "duration_s": 276.040375
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13157266,
+    "duration_s": 274.10970833333334
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13157266,
+    "duration_s": 274.10970833333334
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13157266,
+    "duration_s": 274.10970833333334
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12420837,
+    "duration_s": 258.7674375
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12420837,
+    "duration_s": 258.7674375
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12420837,
+    "duration_s": 258.7674375
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 12578533,
+    "duration_s": 262.05277083333334
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12420837,
+    "duration_s": 258.7674375
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12420837,
+    "duration_s": 258.7674375
+  },
+  {
+    "path": "sync/songs/67-on_green_dolphin_street/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 12420837,
+    "duration_s": 258.7674375
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20611264,
+    "duration_s": 429.40133333333335
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20611264,
+    "duration_s": 429.40133333333335
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20611264,
+    "duration_s": 429.40133333333335
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 20753600,
+    "duration_s": 432.3666666666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20611264,
+    "duration_s": 429.40133333333335
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20611264,
+    "duration_s": 429.40133333333335
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20611264,
+    "duration_s": 429.40133333333335
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20611264,
+    "duration_s": 429.40133333333335
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21089882,
+    "duration_s": 439.3725416666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21089882,
+    "duration_s": 439.3725416666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21089882,
+    "duration_s": 439.3725416666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 21218906,
+    "duration_s": 442.06054166666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21089882,
+    "duration_s": 439.3725416666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21089882,
+    "duration_s": 439.3725416666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21089882,
+    "duration_s": 439.3725416666667
+  },
+  {
+    "path": "sync/songs/68-on_the_sunny_side_of_the_street/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21089882,
+    "duration_s": 439.3725416666667
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13712168,
+    "duration_s": 285.67016666666666
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13712168,
+    "duration_s": 285.67016666666666
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13712168,
+    "duration_s": 285.67016666666666
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 13859112,
+    "duration_s": 288.7315
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13712168,
+    "duration_s": 285.67016666666666
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13712168,
+    "duration_s": 285.67016666666666
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13712168,
+    "duration_s": 285.67016666666666
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 13712168,
+    "duration_s": 285.67016666666666
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14604164,
+    "duration_s": 304.2534166666667
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14604164,
+    "duration_s": 304.2534166666667
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14604164,
+    "duration_s": 304.2534166666667
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 14819204,
+    "duration_s": 308.73341666666664
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14604164,
+    "duration_s": 304.2534166666667
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14604164,
+    "duration_s": 304.2534166666667
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14604164,
+    "duration_s": 304.2534166666667
+  },
+  {
+    "path": "sync/songs/69-one_note_samba/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 14604164,
+    "duration_s": 304.2534166666667
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17952580,
+    "duration_s": 374.01208333333335
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17952580,
+    "duration_s": 374.01208333333335
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17952580,
+    "duration_s": 374.01208333333335
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 17952580,
+    "duration_s": 374.01208333333335
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17952580,
+    "duration_s": 374.01208333333335
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17952580,
+    "duration_s": 374.01208333333335
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17952580,
+    "duration_s": 374.01208333333335
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20004246,
+    "duration_s": 416.755125
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20004246,
+    "duration_s": 416.755125
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20004246,
+    "duration_s": 416.755125
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 20004246,
+    "duration_s": 416.755125
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20004246,
+    "duration_s": 416.755125
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20004246,
+    "duration_s": 416.755125
+  },
+  {
+    "path": "sync/songs/70-samba_de_orfeu/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20004246,
+    "duration_s": 416.755125
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10434949,
+    "duration_s": 217.39477083333333
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10434949,
+    "duration_s": 217.39477083333333
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10434949,
+    "duration_s": 217.39477083333333
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 10589061,
+    "duration_s": 220.6054375
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10434949,
+    "duration_s": 217.39477083333333
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10434949,
+    "duration_s": 217.39477083333333
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10434949,
+    "duration_s": 217.39477083333333
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10434949,
+    "duration_s": 217.39477083333333
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10384877,
+    "duration_s": 216.35160416666668
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10384877,
+    "duration_s": 216.35160416666668
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10384877,
+    "duration_s": 216.35160416666668
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 10462701,
+    "duration_s": 217.9729375
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10384877,
+    "duration_s": 216.35160416666668
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10384877,
+    "duration_s": 216.35160416666668
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/saxophone_alto.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10384877,
+    "duration_s": 216.35160416666668
+  },
+  {
+    "path": "sync/songs/71-some_day_my_prince_will_come/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 10384877,
+    "duration_s": 216.35160416666668
+  },
+  {
+    "path": "sync/songs/72-sway/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17125926,
+    "duration_s": 356.790125
+  },
+  {
+    "path": "sync/songs/72-sway/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17125926,
+    "duration_s": 356.790125
+  },
+  {
+    "path": "sync/songs/72-sway/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17125926,
+    "duration_s": 356.790125
+  },
+  {
+    "path": "sync/songs/72-sway/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 17234982,
+    "duration_s": 359.062125
+  },
+  {
+    "path": "sync/songs/72-sway/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17125926,
+    "duration_s": 356.790125
+  },
+  {
+    "path": "sync/songs/72-sway/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17125926,
+    "duration_s": 356.790125
+  },
+  {
+    "path": "sync/songs/72-sway/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17125926,
+    "duration_s": 356.790125
+  },
+  {
+    "path": "sync/songs/72-sway/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15846488,
+    "duration_s": 330.1351666666667
+  },
+  {
+    "path": "sync/songs/72-sway/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15846488,
+    "duration_s": 330.1351666666667
+  },
+  {
+    "path": "sync/songs/72-sway/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15846488,
+    "duration_s": 330.1351666666667
+  },
+  {
+    "path": "sync/songs/72-sway/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 15947352,
+    "duration_s": 332.2365
+  },
+  {
+    "path": "sync/songs/72-sway/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15846488,
+    "duration_s": 330.1351666666667
+  },
+  {
+    "path": "sync/songs/72-sway/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15846488,
+    "duration_s": 330.1351666666667
+  },
+  {
+    "path": "sync/songs/72-sway/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 15846488,
+    "duration_s": 330.1351666666667
+  },
+  {
+    "path": "sync/songs/73-triste/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18281566,
+    "duration_s": 380.8659583333333
+  },
+  {
+    "path": "sync/songs/73-triste/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18281566,
+    "duration_s": 380.8659583333333
+  },
+  {
+    "path": "sync/songs/73-triste/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18281566,
+    "duration_s": 380.8659583333333
+  },
+  {
+    "path": "sync/songs/73-triste/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 18387038,
+    "duration_s": 383.06329166666666
+  },
+  {
+    "path": "sync/songs/73-triste/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18281566,
+    "duration_s": 380.8659583333333
+  },
+  {
+    "path": "sync/songs/73-triste/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18281566,
+    "duration_s": 380.8659583333333
+  },
+  {
+    "path": "sync/songs/73-triste/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 18281566,
+    "duration_s": 380.8659583333333
+  },
+  {
+    "path": "sync/songs/73-triste/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17839076,
+    "duration_s": 371.6474166666667
+  },
+  {
+    "path": "sync/songs/73-triste/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17839076,
+    "duration_s": 371.6474166666667
+  },
+  {
+    "path": "sync/songs/73-triste/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17839076,
+    "duration_s": 371.6474166666667
+  },
+  {
+    "path": "sync/songs/73-triste/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 17933284,
+    "duration_s": 373.6100833333333
+  },
+  {
+    "path": "sync/songs/73-triste/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17839076,
+    "duration_s": 371.6474166666667
+  },
+  {
+    "path": "sync/songs/73-triste/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17839076,
+    "duration_s": 371.6474166666667
+  },
+  {
+    "path": "sync/songs/73-triste/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 17839076,
+    "duration_s": 371.6474166666667
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20857114,
+    "duration_s": 434.52320833333334
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20857114,
+    "duration_s": 434.52320833333334
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20857114,
+    "duration_s": 434.52320833333334
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 20959514,
+    "duration_s": 436.65654166666667
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20857114,
+    "duration_s": 434.52320833333334
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20857114,
+    "duration_s": 434.52320833333334
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 20857114,
+    "duration_s": 434.52320833333334
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21573304,
+    "duration_s": 449.4438333333333
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21573304,
+    "duration_s": 449.4438333333333
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21573304,
+    "duration_s": 449.4438333333333
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 21699768,
+    "duration_s": 452.0785
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21573304,
+    "duration_s": 449.4438333333333
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21573304,
+    "duration_s": 449.4438333333333
+  },
+  {
+    "path": "sync/songs/74-waltz_for_debby/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 21573304,
+    "duration_s": 449.4438333333333
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/alternate/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9249602,
+    "duration_s": 192.70004166666666
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/alternate/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9249602,
+    "duration_s": 192.70004166666666
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/alternate/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9249602,
+    "duration_s": 192.70004166666666
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/alternate/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 9249602,
+    "duration_s": 192.70004166666666
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/alternate/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9249602,
+    "duration_s": 192.70004166666666
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/alternate/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9249602,
+    "duration_s": 192.70004166666666
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/alternate/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9249602,
+    "duration_s": 192.70004166666666
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/preferred/drums_kick.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9662766,
+    "duration_s": 201.307625
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/preferred/drums_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9662766,
+    "duration_s": 201.307625
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/preferred/drums_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9662766,
+    "duration_s": 201.307625
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/preferred/mixture.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "samples": 9662766,
+    "duration_s": 201.307625
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/preferred/piano_left.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9662766,
+    "duration_s": 201.307625
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/preferred/piano_right.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9662766,
+    "duration_s": 201.307625
+  },
+  {
+    "path": "sync/songs/75-when_the_saints_go_marching_in/preferred/trumpet.debleeded.derived.flac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "samples": 9662766,
+    "duration_s": 201.307625
+  }
+]

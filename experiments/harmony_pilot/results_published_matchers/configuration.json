@@ -1,0 +1,132 @@
+{
+  "task": "harmonic scoring rule comparison; NOT the full Maezawa or Pardo score followers",
+  "training": "none",
+  "grid_seconds": 0.1,
+  "primary_pardo_window_seconds": 2,
+  "song_protocol": "async fixed-tempo overdubs",
+  "take_scope": "preferred primary; alternate exploratory",
+  "candidate_vocabulary": "each song's full set of written chord labels, shared across methods; no timed input labels",
+  "yamaha": {
+    "source": "Maezawa 2023 ISMIR LBD, Section 2.2, page 2",
+    "source_url": "https://ismir2023program.ismir.net/lbd_365.html",
+    "equation": "log p_h(x|s=i) up to an additive constant = x^T T_ci,ri + x^T m",
+    "implemented": "binary currently held MIDI21..108; chord template tiled over pitch octaves; absent melody m=0",
+    "underspecified": "published numerical templates and piano-roll value encoding unavailable",
+    "chosen_defaults": "binary active roll, binary explicit chord tones; separately labeled soft-template sensitivity",
+    "not_implemented": "trained TCN/downbeat network, HHSMM/tempo dynamics, melody, or accompaniment"
+  },
+  "pardo": {
+    "source": "Pardo and Birmingham 2002 Algorithms for Chordal Analysis, pp.28-31",
+    "source_url": "https://interactiveaudiolab.github.io/assets/papers/pardo-birmingham-cmj02.pdf",
+    "equation": "S=P-(M+N); note weight = number of note-event minimal segments spanned",
+    "implemented": "published score, minimal-segment weights, optional root-weight tie rule",
+    "adaptations": "causal sliding windows rather than complete segmentation; adds chord qualities absent from the native vocabulary while restricting candidates to this song's chart labels",
+    "not_implemented": "CHORD global segmentation/optimization or Pardo lead-sheet sequence follower"
+  },
+  "accuracy": {
+    "primary": "correct annotation among k tied top labels yields 1/k, otherwise 0; absent input yields 0",
+    "provenance": "Pardo2002 ambiguity-credit rule adapted from minimal segments to common 100-ms frames",
+    "secondary": "alphabetical-tie top1 reproduces previous-pilot convention; unique-correct and coverage also saved",
+    "aggregation": "equal mean across three songs, preferred and alternate separate"
+  },
+  "controls": "cosine vs dot on same active88 or minimal-segment representation to isolate scoring effects",
+  "alignment": "original MIDI zero origins, no fitted shifts; annotation/audio not independently reverified",
+  "regression_checks_passed": 18,
+  "elapsed_offline_seconds_not_streaming_latency": 1.5459853749998729,
+  "songs": [
+    {
+      "song": "00-a_night_in_tunisia",
+      "labels": [
+        "A-7b5",
+        "A7b5",
+        "C7",
+        "C7b9",
+        "D-",
+        "D7b9",
+        "E-7b5",
+        "Eb7",
+        "Eb7#11",
+        "F6",
+        "FM7",
+        "G-(M7)",
+        "G-6",
+        "G-7",
+        "G-7b5",
+        "G7#11",
+        "Gb7#9"
+      ],
+      "native_pardo72_supported_labels": [
+        "A-7b5",
+        "C7",
+        "D-",
+        "E-7b5",
+        "Eb7",
+        "G-7b5"
+      ],
+      "native_pardo72_unavailable_labels": [
+        "A7b5",
+        "C7b9",
+        "D7b9",
+        "Eb7#11",
+        "F6",
+        "FM7",
+        "G-(M7)",
+        "G-6",
+        "G-7",
+        "G7#11",
+        "Gb7#9"
+      ],
+      "native_pardo72_label_coverage": 0.7812798471824259,
+      "evaluated_frames_per_take": 3141
+    },
+    {
+      "song": "07-blue_bossa",
+      "labels": [
+        "A7#9",
+        "Ab7",
+        "Bb7",
+        "C-",
+        "D-7b5",
+        "DbM7",
+        "Eb-7",
+        "F-7",
+        "G7#5",
+        "G7#5#9"
+      ],
+      "native_pardo72_supported_labels": [
+        "Ab7",
+        "Bb7",
+        "C-",
+        "D-7b5"
+      ],
+      "native_pardo72_unavailable_labels": [
+        "A7#9",
+        "DbM7",
+        "Eb-7",
+        "F-7",
+        "G7#5",
+        "G7#5#9"
+      ],
+      "native_pardo72_label_coverage": 0.5877266387726638,
+      "evaluated_frames_per_take": 3585
+    },
+    {
+      "song": "14-freddie_freeloader",
+      "labels": [
+        "Ab7",
+        "Bb7",
+        "Eb7",
+        "F7"
+      ],
+      "native_pardo72_supported_labels": [
+        "Ab7",
+        "Bb7",
+        "Eb7",
+        "F7"
+      ],
+      "native_pardo72_unavailable_labels": [],
+      "native_pardo72_label_coverage": 1.0,
+      "evaluated_frames_per_take": 2987
+    }
+  ]
+}

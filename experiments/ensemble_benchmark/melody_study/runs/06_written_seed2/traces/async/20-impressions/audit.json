@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/20-impressions/preferred",
+  "lead_instruments": [
+    "saxophone_alto"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 210
+  },
+  "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__20-impressions.json",
+  "reference_note_count": 67,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 54,
+  "reference_comparisons": 3186
+}

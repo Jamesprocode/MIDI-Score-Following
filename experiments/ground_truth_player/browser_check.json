@@ -1,0 +1,74 @@
+{
+  "playbackProof": {
+    "activeVoices": 4,
+    "audioState": "running",
+    "checkedTime": 35.5,
+    "estimate": "Bar 23",
+    "lastChecks": [
+      {
+        "estimate": 87.09270003413604,
+        "time": 34.1,
+        "truth": 86.93333333333341,
+        "wall": 31788.099999999627
+      },
+      {
+        "estimate": 87.46287546798783,
+        "time": 34.3,
+        "truth": 87.46666666666674,
+        "wall": 31987.599999999627
+      },
+      {
+        "estimate": 88.53317230624256,
+        "time": 34.5,
+        "truth": 88.00000000000007,
+        "wall": 32187.89999999851
+      },
+      {
+        "estimate": 88.8705274261139,
+        "time": 34.7,
+        "truth": 88.53333333333342,
+        "wall": 32387.89999999851
+      },
+      {
+        "estimate": 89.37383991922636,
+        "time": 34.9,
+        "truth": 89.06666666666673,
+        "wall": 32588.199999999255
+      },
+      {
+        "estimate": 89.89633221738076,
+        "time": 35.1,
+        "truth": 89.60000000000008,
+        "wall": 32788.59999999963
+      },
+      {
+        "estimate": 90.42072313367709,
+        "time": 35.3,
+        "truth": 90.13333333333344,
+        "wall": 32987.89999999851
+      },
+      {
+        "estimate": 90.93403574795458,
+        "time": 35.5,
+        "truth": 90.66666666666674,
+        "wall": 33188.59999999963
+      }
+    ],
+    "playing": true,
+    "rms": 0.02967979844557225,
+    "scrollWidth": 861,
+    "time": 35.635999999999996,
+    "truth": "Bar 23",
+    "viewportWidth": 861
+  },
+  "checkedControls": [
+    "play",
+    "pause",
+    "seek",
+    "200ms step",
+    "section jump",
+    "whole performance view",
+    "annotation end"
+  ],
+  "notes": "MIDI synthesis produced nonzero analyser RMS; source position updates advanced in 0.2-second steps. Annotations ended shown at 360.5s; narrow and wider layouts had no horizontal overflow."
+}

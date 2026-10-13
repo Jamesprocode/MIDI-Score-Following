@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/35-recordame/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 381
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 201,
+  "reference_comparisons": 11279
+}

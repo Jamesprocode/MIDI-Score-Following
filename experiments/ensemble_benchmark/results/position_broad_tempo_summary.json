@@ -1,0 +1,21 @@
+{
+  "mode": "broad_tempo",
+  "status": "finished",
+  "complete": true,
+  "selected_scope_finished": true,
+  "started_at_utc": "2026-10-06T01:39:18.866384+00:00",
+  "updated_at_utc": "2026-10-06T01:40:18.655034+00:00",
+  "jobs_completed": 75,
+  "jobs_expected": 75,
+  "metric_rows": 525,
+  "expected_metric_rows": 525,
+  "performances_completed": 75,
+  "performances_selected": 75,
+  "full_eligible_performances": 75,
+  "runtime_seconds": 59.78817408299801,
+  "limit": 0,
+  "source_files_changed_during_run": [],
+  "protected_outputs_changed": [],
+  "error": null,
+  "checks": "Module checks passed; runtime output coverage checked"
+}

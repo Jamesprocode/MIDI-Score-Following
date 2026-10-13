@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/39-st_thomas/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 249,
+    "trumpet": 273
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 338,
+  "reference_comparisons": 16018
+}

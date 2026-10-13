@@ -1,0 +1,327 @@
+{
+  "scope": "Local dataset audit; no edits to source data or filtering applied. Does not establish transcription correctness or audio/annotation alignment.",
+  "total_midi_files": 524,
+  "total_local_song_directories": 75,
+  "core_song_take_groups": 150,
+  "pitched_core_files": 424,
+  "percussion_core_files": 52,
+  "extra_files": 48,
+  "errors": [],
+  "formats": {
+    "1": 524
+  },
+  "track_counts": {
+    "2": 524
+  },
+  "ppq": {
+    "480": 524
+  },
+  "tempo_event_counts": {
+    "1": 524
+  },
+  "unmatched_note_offs": 0,
+  "dangling_note_ons": 0,
+  "zero_duration_notes": 0,
+  "completed_notes": 347589,
+  "programs": {
+    "[(1, 0, 0, 33)]": 150,
+    "[(1, 0, 0, 65)]": 130,
+    "[(1, 0, 0, 56)]": 144,
+    "[(1, 0, 0, 66)]": 48,
+    "[(1, 0, 9, 0)]": 52
+  },
+  "midi_messages": {
+    "meta_81": 524,
+    "meta_88": 524,
+    "meta_47": 1048,
+    "meta_3": 524,
+    "12": 524,
+    "9": 695178
+  },
+  "channels_by_instrument": {
+    "bass": {
+      "[0]": 150
+    },
+    "drums": {
+      "[9]": 52
+    },
+    "saxophone_alto": {
+      "[0]": 130
+    },
+    "saxophone_tenor": {
+      "[0]": 48
+    },
+    "trumpet": {
+      "[0]": 144
+    }
+  },
+  "meters": {
+    "[4, 2, 24, 8]": 524
+  },
+  "velocities": {
+    "100": 347589
+  },
+  "method_independent_quality_flags": {
+    "definition": "Pitched files only: max polyphony >4, any note >10 seconds, or pitches outside MIDI21..108. Diagnostic flags, not automatic exclusions."
+  },
+  "async": {
+    "completed_notes": 151493,
+    "midi_file_duration_s_min_median_max": [
+      206.338,
+      363.8641666666667,
+      793.00066381875
+    ],
+    "longest_note_seconds": 328.12659495,
+    "notes_over_10s": 1152,
+    "notes_over_60s": 14,
+    "max_polyphony_over16_files": 19,
+    "notes_outside_88key": 107,
+    "tempo_bpm_range": [
+      75.0,
+      270.00027000027
+    ]
+  },
+  "sync": {
+    "completed_notes": 196096,
+    "midi_file_duration_s_min_median_max": [
+      95.86144259999999,
+      326.23866666666663,
+      812.6216666666667
+    ],
+    "longest_note_seconds": 365.0981845875,
+    "notes_over_10s": 1464,
+    "notes_over_60s": 45,
+    "max_polyphony_over16_files": 9,
+    "notes_outside_88key": 37,
+    "tempo_bpm_range": [
+      75.0,
+      250.0
+    ]
+  },
+  "quality_flagged_files": 71,
+  "quality_flagged_core_files": 63,
+  "quality_flagged_files_by_protocol": {
+    "async": 33,
+    "sync": 38
+  },
+  "quality_flagged_core_groups": 51,
+  "hash_duplicate_sets": [],
+  "group_instrument_sets": {
+    "async": {
+      "bass,saxophone_alto,trumpet": 50,
+      "bass,saxophone_tenor,trumpet": 48
+    },
+    "sync": {
+      "bass,drums,trumpet": 20,
+      "bass,drums,saxophone_alto,trumpet": 26,
+      "bass,drums,saxophone_alto": 6
+    }
+  },
+  "groups_with_inconsistent_tempo_maps": [],
+  "sync_audio_groups_with_different_sample_lengths": [
+    [
+      "53-black_orpheus",
+      "alternate"
+    ],
+    [
+      "53-black_orpheus",
+      "preferred"
+    ],
+    [
+      "54-boplicity",
+      "alternate"
+    ],
+    [
+      "54-boplicity",
+      "preferred"
+    ],
+    [
+      "56-ceora",
+      "alternate"
+    ],
+    [
+      "56-ceora",
+      "preferred"
+    ],
+    [
+      "57-chega_de_saudade",
+      "alternate"
+    ],
+    [
+      "57-chega_de_saudade",
+      "preferred"
+    ],
+    [
+      "58-dont_fence_me_in",
+      "alternate"
+    ],
+    [
+      "58-dont_fence_me_in",
+      "preferred"
+    ],
+    [
+      "59-groovin_high",
+      "alternate"
+    ],
+    [
+      "59-groovin_high",
+      "preferred"
+    ],
+    [
+      "60-in_a_sentimental_mood",
+      "alternate"
+    ],
+    [
+      "60-in_a_sentimental_mood",
+      "preferred"
+    ],
+    [
+      "61-invitation",
+      "alternate"
+    ],
+    [
+      "61-invitation",
+      "preferred"
+    ],
+    [
+      "62-it_dont_mean_a_thing",
+      "alternate"
+    ],
+    [
+      "62-it_dont_mean_a_thing",
+      "preferred"
+    ],
+    [
+      "63-la_vie_en_rose",
+      "alternate"
+    ],
+    [
+      "63-la_vie_en_rose",
+      "preferred"
+    ],
+    [
+      "64-love",
+      "alternate"
+    ],
+    [
+      "64-love",
+      "preferred"
+    ],
+    [
+      "65-misty",
+      "alternate"
+    ],
+    [
+      "65-misty",
+      "preferred"
+    ],
+    [
+      "67-on_green_dolphin_street",
+      "alternate"
+    ],
+    [
+      "67-on_green_dolphin_street",
+      "preferred"
+    ],
+    [
+      "68-on_the_sunny_side_of_the_street",
+      "alternate"
+    ],
+    [
+      "68-on_the_sunny_side_of_the_street",
+      "preferred"
+    ],
+    [
+      "69-one_note_samba",
+      "alternate"
+    ],
+    [
+      "69-one_note_samba",
+      "preferred"
+    ],
+    [
+      "71-some_day_my_prince_will_come",
+      "alternate"
+    ],
+    [
+      "71-some_day_my_prince_will_come",
+      "preferred"
+    ],
+    [
+      "72-sway",
+      "alternate"
+    ],
+    [
+      "72-sway",
+      "preferred"
+    ],
+    [
+      "73-triste",
+      "alternate"
+    ],
+    [
+      "73-triste",
+      "preferred"
+    ],
+    [
+      "74-waltz_for_debby",
+      "alternate"
+    ],
+    [
+      "74-waltz_for_debby",
+      "preferred"
+    ]
+  ],
+  "flac_metadata": {
+    "files": 390,
+    "sample_rates": {
+      "48000": 390
+    },
+    "channels": {
+      "1": 338,
+      "2": 52
+    },
+    "bits_per_sample": {
+      "16": 390
+    }
+  },
+  "sync_instrument_stems_with_different_sample_lengths": [],
+  "annotation_timing_rows": 75,
+  "catalog_midi_meter_mismatches": [
+    {
+      "protocol": "async",
+      "song": "02-alice_in_wonderland",
+      "catalog_meter": "3/4"
+    },
+    {
+      "protocol": "async",
+      "song": "29-my_favorite_things",
+      "catalog_meter": "3/4"
+    },
+    {
+      "protocol": "async",
+      "song": "41-take_five",
+      "catalog_meter": "5/4"
+    },
+    {
+      "protocol": "async",
+      "song": "44-the_great_pumpkin_waltz",
+      "catalog_meter": "3/4"
+    },
+    {
+      "protocol": "async",
+      "song": "46-wait_till_you_see_her",
+      "catalog_meter": "3/4"
+    },
+    {
+      "protocol": "sync",
+      "song": "71-some_day_my_prince_will_come",
+      "catalog_meter": "3/4"
+    },
+    {
+      "protocol": "sync",
+      "song": "74-waltz_for_debby",
+      "catalog_meter": "3/4"
+    }
+  ]
+}

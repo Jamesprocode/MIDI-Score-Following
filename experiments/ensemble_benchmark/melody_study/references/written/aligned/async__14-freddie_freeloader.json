@@ -1,0 +1,513 @@
+{
+  "song": "14-freddie_freeloader",
+  "protocol": "async",
+  "status": "usable",
+  "notes": [
+    {
+      "pitch": 67,
+      "onset_beats": 0.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 0.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "1",
+      "expanded_measure_index": 0
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 2.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 2.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "1",
+      "expanded_measure_index": 0
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 8.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 8.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "3",
+      "expanded_measure_index": 2
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 10.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 10.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "3",
+      "expanded_measure_index": 2
+    },
+    {
+      "pitch": 72,
+      "onset_beats": 16.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 16.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "5",
+      "expanded_measure_index": 4
+    },
+    {
+      "pitch": 70,
+      "onset_beats": 18.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 18.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "5",
+      "expanded_measure_index": 4
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 24.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 24.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "7",
+      "expanded_measure_index": 6
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 26.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 26.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "7",
+      "expanded_measure_index": 6
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 31.0,
+      "duration_beats": 1.0,
+      "score_onset_beats": 31.0,
+      "score_duration_beats": 1.0,
+      "score_measure": "8",
+      "expanded_measure_index": 7
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 32.0,
+      "duration_beats": 3.0,
+      "score_onset_beats": 32.0,
+      "score_duration_beats": 3.0,
+      "score_measure": "9",
+      "expanded_measure_index": 8
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 35.0,
+      "duration_beats": 1.0,
+      "score_onset_beats": 35.0,
+      "score_duration_beats": 1.0,
+      "score_measure": "9",
+      "expanded_measure_index": 8
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 36.0,
+      "duration_beats": 3.0,
+      "score_onset_beats": 36.0,
+      "score_duration_beats": 3.0,
+      "score_measure": "10",
+      "expanded_measure_index": 9
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 39.0,
+      "duration_beats": 0.5,
+      "score_onset_beats": 39.0,
+      "score_duration_beats": 0.5,
+      "score_measure": "10",
+      "expanded_measure_index": 9
+    },
+    {
+      "pitch": 66,
+      "onset_beats": 39.5,
+      "duration_beats": 4.5,
+      "score_onset_beats": 39.5,
+      "score_duration_beats": 4.5,
+      "score_measure": "10",
+      "expanded_measure_index": 9
+    },
+    {
+      "pitch": 66,
+      "onset_beats": 44.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 44.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "12",
+      "expanded_measure_index": 11
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 48.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 48.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "1",
+      "expanded_measure_index": 12
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 50.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 50.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "1",
+      "expanded_measure_index": 12
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 56.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 56.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "3",
+      "expanded_measure_index": 14
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 58.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 58.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "3",
+      "expanded_measure_index": 14
+    },
+    {
+      "pitch": 72,
+      "onset_beats": 64.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 64.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "5",
+      "expanded_measure_index": 16
+    },
+    {
+      "pitch": 70,
+      "onset_beats": 66.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 66.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "5",
+      "expanded_measure_index": 16
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 72.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 72.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "7",
+      "expanded_measure_index": 18
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 74.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 74.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "7",
+      "expanded_measure_index": 18
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 79.0,
+      "duration_beats": 1.0,
+      "score_onset_beats": 79.0,
+      "score_duration_beats": 1.0,
+      "score_measure": "8",
+      "expanded_measure_index": 19
+    },
+    {
+      "pitch": 69,
+      "onset_beats": 80.0,
+      "duration_beats": 3.0,
+      "score_onset_beats": 80.0,
+      "score_duration_beats": 3.0,
+      "score_measure": "13",
+      "expanded_measure_index": 20
+    },
+    {
+      "pitch": 68,
+      "onset_beats": 83.0,
+      "duration_beats": 1.0,
+      "score_onset_beats": 83.0,
+      "score_duration_beats": 1.0,
+      "score_measure": "13",
+      "expanded_measure_index": 20
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 84.0,
+      "duration_beats": 3.0,
+      "score_onset_beats": 84.0,
+      "score_duration_beats": 3.0,
+      "score_measure": "14",
+      "expanded_measure_index": 21
+    },
+    {
+      "pitch": 66,
+      "onset_beats": 87.0,
+      "duration_beats": 1.0,
+      "score_onset_beats": 87.0,
+      "score_duration_beats": 1.0,
+      "score_measure": "14",
+      "expanded_measure_index": 21
+    },
+    {
+      "pitch": 67,
+      "onset_beats": 88.0,
+      "duration_beats": 2.0,
+      "score_onset_beats": 88.0,
+      "score_duration_beats": 2.0,
+      "score_measure": "15",
+      "expanded_measure_index": 22
+    },
+    {
+      "pitch": 65,
+      "onset_beats": 90.0,
+      "duration_beats": 4.0,
+      "score_onset_beats": 90.0,
+      "score_duration_beats": 4.0,
+      "score_measure": "15",
+      "expanded_measure_index": 22
+    }
+  ],
+  "source": {
+    "song": "14-freddie_freeloader",
+    "protocol": "async",
+    "title": "Freddie Freeloader",
+    "source_title": [
+      "Freddie Freeloader"
+    ],
+    "source_row_id": "170983",
+    "matched_row_ids": [
+      "170983"
+    ],
+    "row_selection": "lowest numeric matched row ID; never selected by performance results",
+    "source_url": "https://huggingface.co/datasets/PRAIG/JAZZMUS/blob/main/data/train-00000-of-00001.parquet",
+    "source_local_path": "/Users/james/Documents/Workspace/OMR/JAZZMUS/data/train-00000-of-00001.original.parquet",
+    "xml_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/originals/async__14-freddie_freeloader__row170983.musicxml",
+    "xml_sha256": "4cf5533070aa9c249d84b4e5ac7207ac263d43953b66ae8be3a60eb65b4da8bb",
+    "event_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/events/async__14-freddie_freeloader.json",
+    "annotation_path": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/data/annotations/async/14-freddie_freeloader.json",
+    "annotation_sha256": "d5d8410bb5e6050db1fe5c1b256cb975e9f45c5bf925e15de6c4cb88274970ac",
+    "status": "usable",
+    "diagnostics": {
+      "candidate_count": 12,
+      "minimum_exact_agreement": 0.85,
+      "minimum_coverage": 0.99,
+      "chart": {
+        "start_q": 0.0,
+        "end_q": 96.0,
+        "length_beats": 96.0,
+        "beats_per_bar": 4.0,
+        "chords": [
+          {
+            "start": 0.0,
+            "end": 16.0,
+            "root": 10,
+            "quality": "maj"
+          },
+          {
+            "start": 16.0,
+            "end": 24.0,
+            "root": 3,
+            "quality": "maj"
+          },
+          {
+            "start": 24.0,
+            "end": 32.0,
+            "root": 10,
+            "quality": "maj"
+          },
+          {
+            "start": 32.0,
+            "end": 36.0,
+            "root": 5,
+            "quality": "maj"
+          },
+          {
+            "start": 36.0,
+            "end": 40.0,
+            "root": 3,
+            "quality": "maj"
+          },
+          {
+            "start": 40.0,
+            "end": 48.0,
+            "root": 8,
+            "quality": "maj"
+          },
+          {
+            "start": 48.0,
+            "end": 64.0,
+            "root": 10,
+            "quality": "maj"
+          },
+          {
+            "start": 64.0,
+            "end": 72.0,
+            "root": 3,
+            "quality": "maj"
+          },
+          {
+            "start": 72.0,
+            "end": 80.0,
+            "root": 10,
+            "quality": "maj"
+          },
+          {
+            "start": 80.0,
+            "end": 84.0,
+            "root": 5,
+            "quality": "maj"
+          },
+          {
+            "start": 84.0,
+            "end": 88.0,
+            "root": 3,
+            "quality": "maj"
+          },
+          {
+            "start": 88.0,
+            "end": 96.0,
+            "root": 10,
+            "quality": "maj"
+          }
+        ]
+      },
+      "best_candidates": [
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 2,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 1.0,
+          "root_agreement": 1.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 0,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 1,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 3,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 4,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 5,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 6,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 7,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 8,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 9,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 10,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        },
+        {
+          "source_start_beats": 0.0,
+          "source_end_beats": 96.0,
+          "pitch_shift_mod12": 11,
+          "pitched_target_beats": 96.0,
+          "coverage": 1.0,
+          "exact_base_chord_agreement": 0.0,
+          "root_agreement": 0.0
+        }
+      ],
+      "method": "Contiguous complete-measure span, matching full first-head length/meter; choose shift and span from exact duration-weighted base-chord agreement only. No nonlinear warping or performance notes.",
+      "tied_best_candidates": 1,
+      "distinct_tied_note_mappings": 1,
+      "selected": {
+        "source_start_beats": 0.0,
+        "source_end_beats": 96.0,
+        "pitch_shift_mod12": 2,
+        "pitched_target_beats": 96.0,
+        "coverage": 1.0,
+        "exact_base_chord_agreement": 1.0,
+        "root_agreement": 1.0
+      },
+      "pickup_policy": "Exclude notes starting before selected full head; retain them in original XML/raw events."
+    },
+    "event_sha256": "3a8c4d8b6b4358aef7fe66361ee617dd72e980cc031c29cba0ce2ff9b8309083",
+    "repeat_status": "expanded",
+    "repeat_error": null,
+    "source_note_count": 30,
+    "source_chord_count": 12
+  },
+  "coordinate_system": "Quarter-note beats q from first musical bar in the supplied untimed JazzSAMBA plan; notes occupy FIRST head-in only.",
+  "reference_type": "Independent written MusicXML from local JAZZMUS; not a transcription of the evaluated performance."
+}

@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/13-four/preferred",
+  "lead_instruments": [
+    "saxophone_alto"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 366
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 191,
+  "reference_comparisons": 10064
+}

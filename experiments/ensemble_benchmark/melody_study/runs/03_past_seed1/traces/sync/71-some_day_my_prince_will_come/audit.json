@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/71-some_day_my_prince_will_come/preferred",
+  "lead_instruments": [
+    "saxophone_alto"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 286
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 147,
+  "reference_comparisons": 5610
+}

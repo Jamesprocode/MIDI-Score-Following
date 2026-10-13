@@ -1,0 +1,19 @@
+{
+  "complete": false,
+  "performances": 1,
+  "chord_metric_rows": 136,
+  "position_metric_rows": 24,
+  "runtime_seconds": 4.573239666999143,
+  "methods": [
+    "cosine_onsets",
+    "cosine_duration",
+    "pardo",
+    "yamaha_active",
+    "empirical_profile"
+  ],
+  "schemas": [
+    "triad",
+    "seventh"
+  ],
+  "checks": "module analytical/causality checks passed; full output review separate"
+}

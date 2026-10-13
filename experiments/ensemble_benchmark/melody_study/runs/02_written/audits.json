@@ -1,0 +1,94 @@
+[
+  {
+    "performance_id": "async/20-impressions/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 210
+    },
+    "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__20-impressions.json",
+    "reference_note_count": 67,
+    "prefix_verified": true,
+    "neutral_reproduction": true,
+    "query_updates": 54,
+    "reference_comparisons": 3186
+  },
+  {
+    "performance_id": "async/14-freddie_freeloader/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 158
+    },
+    "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__14-freddie_freeloader.json",
+    "reference_note_count": 30,
+    "prefix_verified": true,
+    "neutral_reproduction": true,
+    "query_updates": 30,
+    "reference_comparisons": 630
+  },
+  {
+    "performance_id": "async/41-take_five/preferred",
+    "lead_instruments": [
+      "saxophone_tenor"
+    ],
+    "source_note_counts": {
+      "saxophone_tenor": 398
+    },
+    "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__41-take_five.json",
+    "reference_note_count": 150,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 242,
+    "reference_comparisons": 34364
+  },
+  {
+    "performance_id": "async/39-st_thomas/preferred",
+    "lead_instruments": [
+      "saxophone_alto",
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 249,
+      "trumpet": 273
+    },
+    "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/async__39-st_thomas.json",
+    "reference_note_count": 76,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 359,
+    "reference_comparisons": 24412
+  },
+  {
+    "performance_id": "sync/66-nardis/preferred",
+    "lead_instruments": [
+      "trumpet"
+    ],
+    "source_note_counts": {
+      "trumpet": 2636
+    },
+    "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/sync__66-nardis.json",
+    "reference_note_count": 70,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 123,
+    "reference_comparisons": 4797
+  },
+  {
+    "performance_id": "sync/60-in_a_sentimental_mood/preferred",
+    "lead_instruments": [
+      "saxophone_alto"
+    ],
+    "source_note_counts": {
+      "saxophone_alto": 424
+    },
+    "reference_file": "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/melody_study/references/written/aligned/sync__60-in_a_sentimental_mood.json",
+    "reference_note_count": 117,
+    "prefix_verified": false,
+    "neutral_reproduction": true,
+    "query_updates": 174,
+    "reference_comparisons": 18966
+  }
+]

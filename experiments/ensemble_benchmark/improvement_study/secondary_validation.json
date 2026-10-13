@@ -1,0 +1,1623 @@
+{
+  "generated_at_utc": "2026-10-06T14:35:22.898052+00:00",
+  "aggregation": "Equal-weight mean of per-performance metrics within protocol; one take per song in each cohort. median_abs_beats is the mean of per-song medians, not a pooled median.",
+  "verification": {
+    "completed_runs": 5,
+    "traces_recomputed": 698,
+    "trace_metric_absolute_tolerance": 1e-12,
+    "identical_source_hashes_across_runs": true,
+    "identical_manifest_hash_across_runs": true,
+    "all_source_snapshots_verified": true,
+    "all_selected_trace_metrics_verified": true,
+    "alternate_baseline_exact_cohort_and_frame_counts": true
+  },
+  "provenance": [
+    {
+      "run": "05_continuous_tempo",
+      "complete": true,
+      "metric_rows": 825,
+      "selected_metric_rows": 150,
+      "source_snapshots_verified": true,
+      "manifest_sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+      "metrics_sha256": "f1f47e78ed178d4851e0bc3628da9802e2a6addd0e9f46890feb0556985f832e"
+    },
+    {
+      "run": "06_finalists_alternate",
+      "complete": true,
+      "metric_rows": 98,
+      "selected_metric_rows": 98,
+      "source_snapshots_verified": true,
+      "manifest_sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+      "metrics_sha256": "d46508f3c6e91fd5fcc9ef761323eab489d56d8a4d88fc9b95021a9b7ca6be32"
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "complete": true,
+      "metric_rows": 300,
+      "selected_metric_rows": 300,
+      "source_snapshots_verified": true,
+      "manifest_sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+      "metrics_sha256": "8b68df7c557612d3e4b6ee61da6032abd4ececf4e7edae3782c1e36722cca58d"
+    },
+    {
+      "run": "08_particles_seed1",
+      "complete": true,
+      "metric_rows": 75,
+      "selected_metric_rows": 75,
+      "source_snapshots_verified": true,
+      "manifest_sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+      "metrics_sha256": "3e2e17f94aef81b00fc55869d36c27c67097375a14b020ea35eeaddc8774e5be"
+    },
+    {
+      "run": "09_particles_seed2",
+      "complete": true,
+      "metric_rows": 75,
+      "selected_metric_rows": 75,
+      "source_snapshots_verified": true,
+      "manifest_sha256": "90ee89c5a70e2e9dfa542ecbfcdf58d0ba54e942c471a1267c16ae330ea2d9b5",
+      "metrics_sha256": "79570ddbbb5af31d9f54cbf17f49b206a1436b80c6ed1fe47b991d482338464e"
+    }
+  ],
+  "macro_results": [
+    {
+      "run": "05_continuous_tempo",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.6660463037230221,
+      "within2beat_accuracy": 0.7236824090756779,
+      "mean_abs_beats": 8.325156747236795,
+      "median_abs_beats": 1.4570813426301643
+    },
+    {
+      "run": "05_continuous_tempo",
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.7295978844663402,
+      "within2beat_accuracy": 0.7938026578407963,
+      "mean_abs_beats": 3.5783652268054658,
+      "median_abs_beats": 2.14751907521566
+    },
+    {
+      "run": "05_continuous_tempo",
+      "method": "s06_beam_fine_tempo",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.9140750490709499,
+      "within2beat_accuracy": 0.9257757605711046,
+      "mean_abs_beats": 0.5290934353364315,
+      "median_abs_beats": 0.10126645738370238
+    },
+    {
+      "run": "05_continuous_tempo",
+      "method": "s06_beam_fine_tempo",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.631617344044118,
+      "within2beat_accuracy": 0.7239576639900815,
+      "mean_abs_beats": 13.67816593744639,
+      "median_abs_beats": 12.915381676512936
+    },
+    {
+      "run": "06_finalists_alternate",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.5311615785295929,
+      "within2beat_accuracy": 0.574230295230484,
+      "mean_abs_beats": 48.16423151017302,
+      "median_abs_beats": 12.872963338688457
+    },
+    {
+      "run": "06_finalists_alternate",
+      "method": "s06_beam_fine_tempo",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.8433314366868794,
+      "within2beat_accuracy": 0.8561904425129379,
+      "mean_abs_beats": 5.284060743149607,
+      "median_abs_beats": 4.514483312759305
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t090",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.6758708650830316,
+      "within2beat_accuracy": 0.7320880274397644,
+      "mean_abs_beats": 5.075330915753704,
+      "median_abs_beats": 1.315461591192734
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t090",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.7201531077855813,
+      "within2beat_accuracy": 0.7781611539295864,
+      "mean_abs_beats": 6.281739536939275,
+      "median_abs_beats": 4.230089347542591
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t110",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.6800320713101782,
+      "within2beat_accuracy": 0.7360167825779551,
+      "mean_abs_beats": 16.373024139927292,
+      "median_abs_beats": 2.334257826900847
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t110",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.7319057565300326,
+      "within2beat_accuracy": 0.7924265214162067,
+      "mean_abs_beats": 5.246991309993356,
+      "median_abs_beats": 3.539307577190959
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t090",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.5221444717561863,
+      "within2beat_accuracy": 0.5897584794222361,
+      "mean_abs_beats": 5.314589868983528,
+      "median_abs_beats": 3.140945455795569
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t090",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.5241007105475015,
+      "within2beat_accuracy": 0.5877953104962408,
+      "mean_abs_beats": 36.13673850028047,
+      "median_abs_beats": 31.38487447835725
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t110",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.5122062459768886,
+      "within2beat_accuracy": 0.5725735731687848,
+      "mean_abs_beats": 6.895145693777756,
+      "median_abs_beats": 4.199674384677981
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t110",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.6630568367489744,
+      "within2beat_accuracy": 0.7534626532683963,
+      "mean_abs_beats": 4.4442359246751,
+      "median_abs_beats": 2.383596017936667
+    },
+    {
+      "run": "08_particles_seed1",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.6830800332325699,
+      "within2beat_accuracy": 0.737601891874696,
+      "mean_abs_beats": 7.669427117883107,
+      "median_abs_beats": 1.1245855028021277
+    },
+    {
+      "run": "08_particles_seed1",
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.7247309149153349,
+      "within2beat_accuracy": 0.7863765169718813,
+      "mean_abs_beats": 5.858584383155256,
+      "median_abs_beats": 4.41184403765428
+    },
+    {
+      "run": "09_particles_seed2",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "performances": 49,
+      "bar_accuracy": 0.6733806042037594,
+      "within2beat_accuracy": 0.7293069976688155,
+      "mean_abs_beats": 7.7924585454420106,
+      "median_abs_beats": 1.2082054620980347
+    },
+    {
+      "run": "09_particles_seed2",
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "performances": 26,
+      "bar_accuracy": 0.7290280530066399,
+      "within2beat_accuracy": 0.790181439221144,
+      "mean_abs_beats": 5.078831956578217,
+      "median_abs_beats": 3.6100352758413594
+    }
+  ],
+  "particle_seed_summary": [
+    {
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "performances_per_seed": 49,
+      "bar_accuracy": {
+        "mean": 0.6741689803864505,
+        "min": 0.6660463037230221,
+        "max": 0.6830800332325699
+      },
+      "within2beat_accuracy": {
+        "mean": 0.7301970995397298,
+        "min": 0.7236824090756779,
+        "max": 0.737601891874696
+      },
+      "mean_abs_beats": {
+        "mean": 7.929014136853971,
+        "min": 7.669427117883107,
+        "max": 8.325156747236795
+      },
+      "median_abs_beats": {
+        "mean": 1.2632907691767754,
+        "min": 1.1245855028021277,
+        "max": 1.4570813426301643
+      }
+    },
+    {
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "performances_per_seed": 26,
+      "bar_accuracy": {
+        "mean": 0.7277856174627716,
+        "min": 0.7247309149153349,
+        "max": 0.7295978844663402
+      },
+      "within2beat_accuracy": {
+        "mean": 0.7901202046779404,
+        "min": 0.7863765169718813,
+        "max": 0.7938026578407963
+      },
+      "mean_abs_beats": {
+        "mean": 4.83859385551298,
+        "min": 3.5783652268054658,
+        "max": 5.858584383155256
+      },
+      "median_abs_beats": {
+        "mean": 3.389799462903767,
+        "min": 2.14751907521566,
+        "max": 4.41184403765428
+      }
+    }
+  ],
+  "particle_largest_per_song_seed_variation": [
+    {
+      "protocol": "async",
+      "song": "37-song_for_my_father",
+      "bar_accuracy_range": 0.3246517262265294,
+      "mean_error_range": 8.495326754886799,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.4076317383403998,
+          "within2beat_accuracy": 0.4494245911568746,
+          "mean_abs_beats": 9.999752137228437,
+          "median_abs_beats": 4.84364967490643
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.7050272562083586,
+          "within2beat_accuracy": 0.7710478497880072,
+          "mean_abs_beats": 2.4525121091283033,
+          "median_abs_beats": 0.5572585904051337
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.7322834645669292,
+          "within2beat_accuracy": 0.7958812840702605,
+          "mean_abs_beats": 1.5044253823416387,
+          "median_abs_beats": 0.5257561164992808
+        }
+      ]
+    },
+    {
+      "protocol": "async",
+      "song": "03-all_of_me",
+      "bar_accuracy_range": 0.1752701080432173,
+      "mean_error_range": 11.35912055280425,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.42316926770708285,
+          "within2beat_accuracy": 0.4657863145258103,
+          "mean_abs_beats": 23.360281338064137,
+          "median_abs_beats": 2.5251692083147077
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.33613445378151263,
+          "within2beat_accuracy": 0.3469387755102041,
+          "mean_abs_beats": 30.629228168373608,
+          "median_abs_beats": 4.748912936116966
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.24789915966386555,
+          "within2beat_accuracy": 0.25990396158463386,
+          "mean_abs_beats": 19.27010761556936,
+          "median_abs_beats": 5.799378810889323
+        }
+      ]
+    },
+    {
+      "protocol": "async",
+      "song": "18-i_wish_you_love",
+      "bar_accuracy_range": 0.1596207032793362,
+      "mean_error_range": 6.125214801224845,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.4883445278546029,
+          "within2beat_accuracy": 0.5088897668905571,
+          "mean_abs_beats": 7.726123394694808,
+          "median_abs_beats": 1.885114462465026
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.6479652311339391,
+          "within2beat_accuracy": 0.6993283287238246,
+          "mean_abs_beats": 1.6009085934699623,
+          "median_abs_beats": 0.946845011617711
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.6056894508099565,
+          "within2beat_accuracy": 0.6554721453970762,
+          "mean_abs_beats": 4.482612606437783,
+          "median_abs_beats": 1.0327491169359746
+        }
+      ]
+    },
+    {
+      "protocol": "async",
+      "song": "05-au_privave",
+      "bar_accuracy_range": 0.13028472821397763,
+      "mean_error_range": 49.69396883006998,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.4176013805004314,
+          "within2beat_accuracy": 0.5021570319240725,
+          "mean_abs_beats": 88.29491546636123,
+          "median_abs_beats": 1.983930796982463
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.5271786022433133,
+          "within2beat_accuracy": 0.6151855047454702,
+          "mean_abs_beats": 38.600946636291255,
+          "median_abs_beats": 1.4321813944264932
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.3968938740293356,
+          "within2beat_accuracy": 0.4969801553062985,
+          "mean_abs_beats": 76.44429473468526,
+          "median_abs_beats": 2.0167860679416094
+        }
+      ]
+    },
+    {
+      "protocol": "sync",
+      "song": "69-one_note_samba",
+      "bar_accuracy_range": 0.13005972130059718,
+      "mean_error_range": 3.4730040808310485,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.6974120769741208,
+          "within2beat_accuracy": 0.7883211678832117,
+          "mean_abs_beats": 1.9297217022360944,
+          "median_abs_beats": 0.5493496706686756
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.721300597213006,
+          "within2beat_accuracy": 0.8082282680822827,
+          "mean_abs_beats": 1.8283780624530173,
+          "median_abs_beats": 0.48088525133971416
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.5912408759124088,
+          "within2beat_accuracy": 0.6562707365627074,
+          "mean_abs_beats": 5.301382143284066,
+          "median_abs_beats": 0.6013353053696164
+        }
+      ]
+    },
+    {
+      "protocol": "async",
+      "song": "20-impressions",
+      "bar_accuracy_range": 0.12,
+      "mean_error_range": 1.940442978850152,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.17302325581395347,
+          "within2beat_accuracy": 0.14976744186046512,
+          "mean_abs_beats": 4.75011815014259,
+          "median_abs_beats": 3.9396326105016897
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.2874418604651163,
+          "within2beat_accuracy": 0.26232558139534884,
+          "mean_abs_beats": 4.717616522551872,
+          "median_abs_beats": 3.2927688934321395
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.16744186046511628,
+          "within2beat_accuracy": 0.15906976744186047,
+          "mean_abs_beats": 6.658059501402024,
+          "median_abs_beats": 4.371319418425685
+        }
+      ]
+    },
+    {
+      "protocol": "async",
+      "song": "09-caravan",
+      "bar_accuracy_range": 0.1080950072709646,
+      "mean_error_range": 0.4561019716080654,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.4343189529810955,
+          "within2beat_accuracy": 0.4478914202617547,
+          "mean_abs_beats": 10.427665863581074,
+          "median_abs_beats": 2.3919039662246178
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.42801745031507515,
+          "within2beat_accuracy": 0.4444983034415899,
+          "mean_abs_beats": 10.228543780828776,
+          "median_abs_beats": 2.3564262397924267
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.5361124575860398,
+          "within2beat_accuracy": 0.5651963160445953,
+          "mean_abs_beats": 9.971563891973009,
+          "median_abs_beats": 1.639807226105404
+        }
+      ]
+    },
+    {
+      "protocol": "sync",
+      "song": "70-samba_de_orfeu",
+      "bar_accuracy_range": 0.09219512195121951,
+      "mean_error_range": 27.707367464791382,
+      "seeds": [
+        {
+          "seed": 0,
+          "bar_accuracy": 0.10926829268292683,
+          "within2beat_accuracy": 0.13609756097560977,
+          "mean_abs_beats": 31.077382116294096,
+          "median_abs_beats": 23.08396336382191
+        },
+        {
+          "seed": 1,
+          "bar_accuracy": 0.04048780487804878,
+          "within2beat_accuracy": 0.04048780487804878,
+          "mean_abs_beats": 58.78474958108548,
+          "median_abs_beats": 49.47022542693429
+        },
+        {
+          "seed": 2,
+          "bar_accuracy": 0.1326829268292683,
+          "within2beat_accuracy": 0.1375609756097561,
+          "mean_abs_beats": 34.62984655736942,
+          "median_abs_beats": 30.248591920982392
+        }
+      ]
+    }
+  ],
+  "failure_diagnostics": [
+    {
+      "run": "05_continuous_tempo",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 6,
+      "lowest_bar_accuracy": [
+        {
+          "song": "20-impressions",
+          "bar_accuracy": 0.17302325581395347,
+          "within2beat_accuracy": 0.14976744186046512,
+          "mean_abs_beats": 4.75011815014259,
+          "median_abs_beats": 3.9396326105016897
+        },
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.1989828353464717,
+          "within2beat_accuracy": 0.21233312142403052,
+          "mean_abs_beats": 134.80357821883905,
+          "median_abs_beats": 17.795950752205414
+        },
+        {
+          "song": "37-song_for_my_father",
+          "bar_accuracy": 0.4076317383403998,
+          "within2beat_accuracy": 0.4494245911568746,
+          "mean_abs_beats": 9.999752137228437,
+          "median_abs_beats": 4.84364967490643
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.1989828353464717,
+          "within2beat_accuracy": 0.21233312142403052,
+          "mean_abs_beats": 134.80357821883905,
+          "median_abs_beats": 17.795950752205414
+        },
+        {
+          "song": "05-au_privave",
+          "bar_accuracy": 0.4176013805004314,
+          "within2beat_accuracy": 0.5021570319240725,
+          "mean_abs_beats": 88.29491546636123,
+          "median_abs_beats": 1.983930796982463
+        },
+        {
+          "song": "06-autumn_leaves",
+          "bar_accuracy": 0.46431095406360423,
+          "within2beat_accuracy": 0.4975265017667845,
+          "mean_abs_beats": 43.196676646712,
+          "median_abs_beats": 2.0277297560746206
+        }
+      ]
+    },
+    {
+      "run": "05_continuous_tempo",
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 2,
+      "lowest_bar_accuracy": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.10926829268292683,
+          "within2beat_accuracy": 0.13609756097560977,
+          "mean_abs_beats": 31.077382116294096,
+          "median_abs_beats": 23.08396336382191
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.2019704433497537,
+          "within2beat_accuracy": 0.20361247947454844,
+          "mean_abs_beats": 9.356538987169445,
+          "median_abs_beats": 8.948733024691819
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.4128605769230769,
+          "within2beat_accuracy": 0.44471153846153844,
+          "mean_abs_beats": 28.351098901929724,
+          "median_abs_beats": 11.872890763632178
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.10926829268292683,
+          "within2beat_accuracy": 0.13609756097560977,
+          "mean_abs_beats": 31.077382116294096,
+          "median_abs_beats": 23.08396336382191
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.4128605769230769,
+          "within2beat_accuracy": 0.44471153846153844,
+          "mean_abs_beats": 28.351098901929724,
+          "median_abs_beats": 11.872890763632178
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.2019704433497537,
+          "within2beat_accuracy": 0.20361247947454844,
+          "mean_abs_beats": 9.356538987169445,
+          "median_abs_beats": 8.948733024691819
+        }
+      ]
+    },
+    {
+      "run": "05_continuous_tempo",
+      "method": "s06_beam_fine_tempo",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 0,
+      "mean_error_above_10beats": 0,
+      "lowest_bar_accuracy": [
+        {
+          "song": "40-stompin_at_the_savoy",
+          "bar_accuracy": 0.3924914675767918,
+          "within2beat_accuracy": 0.33390216154721275,
+          "mean_abs_beats": 3.11680697011931,
+          "median_abs_beats": 2.59082483850084
+        },
+        {
+          "song": "18-i_wish_you_love",
+          "bar_accuracy": 0.7400237060450415,
+          "within2beat_accuracy": 0.7992888186487555,
+          "mean_abs_beats": 1.1996245021647591,
+          "median_abs_beats": 0.4038861060407726
+        },
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.7412587412587412,
+          "within2beat_accuracy": 0.7412587412587412,
+          "mean_abs_beats": 3.118849412357669,
+          "median_abs_beats": 0.0013000750212768253
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.7412587412587412,
+          "within2beat_accuracy": 0.7412587412587412,
+          "mean_abs_beats": 3.118849412357669,
+          "median_abs_beats": 0.0013000750212768253
+        },
+        {
+          "song": "40-stompin_at_the_savoy",
+          "bar_accuracy": 0.3924914675767918,
+          "within2beat_accuracy": 0.33390216154721275,
+          "mean_abs_beats": 3.11680697011931,
+          "median_abs_beats": 2.59082483850084
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.748499399759904,
+          "within2beat_accuracy": 0.748499399759904,
+          "mean_abs_beats": 2.0838201551757853,
+          "median_abs_beats": 0.0009971671466644239
+        }
+      ]
+    },
+    {
+      "run": "05_continuous_tempo",
+      "method": "s06_beam_fine_tempo",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 3,
+      "mean_error_above_10beats": 4,
+      "lowest_bar_accuracy": [
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.0078125,
+          "within2beat_accuracy": 0.008413461538461538,
+          "mean_abs_beats": 188.5308657350061,
+          "median_abs_beats": 207.88571643460784
+        },
+        {
+          "song": "51-amazing_grace",
+          "bar_accuracy": 0.018726591760299626,
+          "within2beat_accuracy": 0.018726591760299626,
+          "mean_abs_beats": 73.17014982529095,
+          "median_abs_beats": 70.11386558073633
+        },
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.06097560975609756,
+          "within2beat_accuracy": 0.06048780487804878,
+          "mean_abs_beats": 49.41232838050774,
+          "median_abs_beats": 35.4029677024522
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.0078125,
+          "within2beat_accuracy": 0.008413461538461538,
+          "mean_abs_beats": 188.5308657350061,
+          "median_abs_beats": 207.88571643460784
+        },
+        {
+          "song": "51-amazing_grace",
+          "bar_accuracy": 0.018726591760299626,
+          "within2beat_accuracy": 0.018726591760299626,
+          "mean_abs_beats": 73.17014982529095,
+          "median_abs_beats": 70.11386558073633
+        },
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.06097560975609756,
+          "within2beat_accuracy": 0.06048780487804878,
+          "mean_abs_beats": 49.41232838050774,
+          "median_abs_beats": 35.4029677024522
+        }
+      ]
+    },
+    {
+      "run": "06_finalists_alternate",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 11,
+      "mean_error_above_10beats": 16,
+      "lowest_bar_accuracy": [
+        {
+          "song": "16-how_high_the_moon",
+          "bar_accuracy": 0.012481644640234948,
+          "within2beat_accuracy": 0.011747430249632892,
+          "mean_abs_beats": 81.57088188631575,
+          "median_abs_beats": 67.24831693320624
+        },
+        {
+          "song": "30-nicas_dream",
+          "bar_accuracy": 0.014537444933920705,
+          "within2beat_accuracy": 0.018061674008810574,
+          "mean_abs_beats": 346.29973971556456,
+          "median_abs_beats": 176.1736428641631
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.02460984393757503,
+          "within2beat_accuracy": 0.02701080432172869,
+          "mean_abs_beats": 237.58640767422034,
+          "median_abs_beats": 72.6138613255792
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "30-nicas_dream",
+          "bar_accuracy": 0.014537444933920705,
+          "within2beat_accuracy": 0.018061674008810574,
+          "mean_abs_beats": 346.29973971556456,
+          "median_abs_beats": 176.1736428641631
+        },
+        {
+          "song": "09-caravan",
+          "bar_accuracy": 0.12312166747455162,
+          "within2beat_accuracy": 0.11342704798836646,
+          "mean_abs_beats": 255.46920743153964,
+          "median_abs_beats": 44.664081579066874
+        },
+        {
+          "song": "31-o_pato",
+          "bar_accuracy": 0.1211326691137913,
+          "within2beat_accuracy": 0.14001048767697954,
+          "mean_abs_beats": 246.3054829500025,
+          "median_abs_beats": 63.8715971424005
+        }
+      ]
+    },
+    {
+      "run": "06_finalists_alternate",
+      "method": "s06_beam_fine_tempo",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 4,
+      "lowest_bar_accuracy": [
+        {
+          "song": "30-nicas_dream",
+          "bar_accuracy": 0.020704845814977973,
+          "within2beat_accuracy": 0.019823788546255508,
+          "mean_abs_beats": 108.7207048458161,
+          "median_abs_beats": 113.27000000001595
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.18847539015606243,
+          "within2beat_accuracy": 0.18487394957983194,
+          "mean_abs_beats": 69.60786317849548,
+          "median_abs_beats": 72.21952977793816
+        },
+        {
+          "song": "13-four",
+          "bar_accuracy": 0.2567102546455609,
+          "within2beat_accuracy": 0.25739848589125947,
+          "mean_abs_beats": 12.013337406845622,
+          "median_abs_beats": 11.747960432735226
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "30-nicas_dream",
+          "bar_accuracy": 0.020704845814977973,
+          "within2beat_accuracy": 0.019823788546255508,
+          "mean_abs_beats": 108.7207048458161,
+          "median_abs_beats": 113.27000000001595
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.18847539015606243,
+          "within2beat_accuracy": 0.18487394957983194,
+          "mean_abs_beats": 69.60786317849548,
+          "median_abs_beats": 72.21952977793816
+        },
+        {
+          "song": "16-how_high_the_moon",
+          "bar_accuracy": 0.40748898678414097,
+          "within2beat_accuracy": 0.41629955947136565,
+          "mean_abs_beats": 21.294432207540908,
+          "median_abs_beats": 18.57499999999962
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t090",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 1,
+      "mean_error_above_10beats": 7,
+      "lowest_bar_accuracy": [
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.16274634456452639,
+          "within2beat_accuracy": 0.1691036236490782,
+          "mean_abs_beats": 72.62618160520087,
+          "median_abs_beats": 16.686667086381064
+        },
+        {
+          "song": "20-impressions",
+          "bar_accuracy": 0.27162790697674416,
+          "within2beat_accuracy": 0.2744186046511628,
+          "mean_abs_beats": 4.33408886415291,
+          "median_abs_beats": 3.513463810307371
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.3739495798319328,
+          "within2beat_accuracy": 0.40396158463385357,
+          "mean_abs_beats": 16.18338060281636,
+          "median_abs_beats": 3.9589330473962328
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.16274634456452639,
+          "within2beat_accuracy": 0.1691036236490782,
+          "mean_abs_beats": 72.62618160520087,
+          "median_abs_beats": 16.686667086381064
+        },
+        {
+          "song": "06-autumn_leaves",
+          "bar_accuracy": 0.41625441696113075,
+          "within2beat_accuracy": 0.4402826855123675,
+          "mean_abs_beats": 28.162685900008267,
+          "median_abs_beats": 2.3389414231249077
+        },
+        {
+          "song": "08-blue_skies",
+          "bar_accuracy": 0.6228448275862069,
+          "within2beat_accuracy": 0.6670258620689655,
+          "mean_abs_beats": 18.440740468226007,
+          "median_abs_beats": 0.9040142167547742
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t090",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 3,
+      "lowest_bar_accuracy": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.007804878048780488,
+          "within2beat_accuracy": 0.008292682926829269,
+          "mean_abs_beats": 68.85720998122781,
+          "median_abs_beats": 49.90921438965938
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.10727969348659004,
+          "within2beat_accuracy": 0.11220580186097427,
+          "mean_abs_beats": 38.60300686399997,
+          "median_abs_beats": 35.854568119648775
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.4092548076923077,
+          "within2beat_accuracy": 0.4387019230769231,
+          "mean_abs_beats": 28.143315456238625,
+          "median_abs_beats": 13.132120634647542
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.007804878048780488,
+          "within2beat_accuracy": 0.008292682926829269,
+          "mean_abs_beats": 68.85720998122781,
+          "median_abs_beats": 49.90921438965938
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.10727969348659004,
+          "within2beat_accuracy": 0.11220580186097427,
+          "mean_abs_beats": 38.60300686399997,
+          "median_abs_beats": 35.854568119648775
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.4092548076923077,
+          "within2beat_accuracy": 0.4387019230769231,
+          "mean_abs_beats": 28.143315456238625,
+          "median_abs_beats": 13.132120634647542
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t110",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 0,
+      "mean_error_above_10beats": 7,
+      "lowest_bar_accuracy": [
+        {
+          "song": "20-impressions",
+          "bar_accuracy": 0.29209302325581393,
+          "within2beat_accuracy": 0.28186046511627905,
+          "mean_abs_beats": 4.174445447687706,
+          "median_abs_beats": 3.348770420520168
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.297719087635054,
+          "within2beat_accuracy": 0.2995198079231693,
+          "mean_abs_beats": 216.92015885037426,
+          "median_abs_beats": 60.740812504396985
+        },
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.3000635727908455,
+          "within2beat_accuracy": 0.30959949141767323,
+          "mean_abs_beats": 157.26362608249934,
+          "median_abs_beats": 7.998123357046609
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.297719087635054,
+          "within2beat_accuracy": 0.2995198079231693,
+          "mean_abs_beats": 216.92015885037426,
+          "median_abs_beats": 60.740812504396985
+        },
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.3000635727908455,
+          "within2beat_accuracy": 0.30959949141767323,
+          "mean_abs_beats": 157.26362608249934,
+          "median_abs_beats": 7.998123357046609
+        },
+        {
+          "song": "05-au_privave",
+          "bar_accuracy": 0.43226919758412424,
+          "within2beat_accuracy": 0.4926660914581536,
+          "mean_abs_beats": 129.4923651104756,
+          "median_abs_beats": 2.0660101296788866
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "p02_particles_slow_t110",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 3,
+      "lowest_bar_accuracy": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.12439024390243902,
+          "within2beat_accuracy": 0.13707317073170733,
+          "mean_abs_beats": 30.636134851719522,
+          "median_abs_beats": 23.157453079833488
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.12534209085933223,
+          "within2beat_accuracy": 0.1330049261083744,
+          "mean_abs_beats": 53.24639721015212,
+          "median_abs_beats": 46.24224490925275
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.42127403846153844,
+          "within2beat_accuracy": 0.45072115384615385,
+          "mean_abs_beats": 28.237873723565915,
+          "median_abs_beats": 11.433491884152728
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.12534209085933223,
+          "within2beat_accuracy": 0.1330049261083744,
+          "mean_abs_beats": 53.24639721015212,
+          "median_abs_beats": 46.24224490925275
+        },
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.12439024390243902,
+          "within2beat_accuracy": 0.13707317073170733,
+          "mean_abs_beats": 30.636134851719522,
+          "median_abs_beats": 23.157453079833488
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.42127403846153844,
+          "within2beat_accuracy": 0.45072115384615385,
+          "mean_abs_beats": 28.237873723565915,
+          "median_abs_beats": 11.433491884152728
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t090",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 7,
+      "mean_error_above_10beats": 6,
+      "lowest_bar_accuracy": [
+        {
+          "song": "20-impressions",
+          "bar_accuracy": 0.024186046511627906,
+          "within2beat_accuracy": 0.022325581395348838,
+          "mean_abs_beats": 7.106036434109986,
+          "median_abs_beats": 7.1791666666644005
+        },
+        {
+          "song": "05-au_privave",
+          "bar_accuracy": 0.028472821397756688,
+          "within2beat_accuracy": 0.030198446937014668,
+          "mean_abs_beats": 41.290307555279476,
+          "median_abs_beats": 41.38397236698199
+        },
+        {
+          "song": "06-autumn_leaves",
+          "bar_accuracy": 0.033215547703180213,
+          "within2beat_accuracy": 0.022614840989399292,
+          "mean_abs_beats": 35.67033115430751,
+          "median_abs_beats": 10.71577723673802
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "05-au_privave",
+          "bar_accuracy": 0.028472821397756688,
+          "within2beat_accuracy": 0.030198446937014668,
+          "mean_abs_beats": 41.290307555279476,
+          "median_abs_beats": 41.38397236698199
+        },
+        {
+          "song": "06-autumn_leaves",
+          "bar_accuracy": 0.033215547703180213,
+          "within2beat_accuracy": 0.022614840989399292,
+          "mean_abs_beats": 35.67033115430751,
+          "median_abs_beats": 10.71577723673802
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.08403361344537816,
+          "within2beat_accuracy": 0.0858343337334934,
+          "mean_abs_beats": 24.486354999152354,
+          "median_abs_beats": 8.78394328613524
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t090",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 7,
+      "mean_error_above_10beats": 7,
+      "lowest_bar_accuracy": [
+        {
+          "song": "57-chega_de_saudade",
+          "bar_accuracy": 0.004380053908355795,
+          "within2beat_accuracy": 0.004043126684636119,
+          "mean_abs_beats": 193.2435371315789,
+          "median_abs_beats": 168.9862050436751
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.006009615384615385,
+          "within2beat_accuracy": 0.006610576923076923,
+          "mean_abs_beats": 189.08430290948291,
+          "median_abs_beats": 206.68466286536952
+        },
+        {
+          "song": "69-one_note_samba",
+          "bar_accuracy": 0.008626410086264101,
+          "within2beat_accuracy": 0.006635700066357001,
+          "mean_abs_beats": 238.05664795353448,
+          "median_abs_beats": 226.29033048523422
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "69-one_note_samba",
+          "bar_accuracy": 0.008626410086264101,
+          "within2beat_accuracy": 0.006635700066357001,
+          "mean_abs_beats": 238.05664795353448,
+          "median_abs_beats": 226.29033048523422
+        },
+        {
+          "song": "57-chega_de_saudade",
+          "bar_accuracy": 0.004380053908355795,
+          "within2beat_accuracy": 0.004043126684636119,
+          "mean_abs_beats": 193.2435371315789,
+          "median_abs_beats": 168.9862050436751
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.006009615384615385,
+          "within2beat_accuracy": 0.006610576923076923,
+          "mean_abs_beats": 189.08430290948291,
+          "median_abs_beats": 206.68466286536952
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t110",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 6,
+      "mean_error_above_10beats": 10,
+      "lowest_bar_accuracy": [
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.02225047679593134,
+          "within2beat_accuracy": 0.02097902097902098,
+          "mean_abs_beats": 17.442282107936048,
+          "median_abs_beats": 12.772067387466791
+        },
+        {
+          "song": "05-au_privave",
+          "bar_accuracy": 0.03364969801553063,
+          "within2beat_accuracy": 0.03192407247627265,
+          "mean_abs_beats": 41.45813693831932,
+          "median_abs_beats": 48.9290476887287
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.04801920768307323,
+          "within2beat_accuracy": 0.045018007202881155,
+          "mean_abs_beats": 33.03572598198307,
+          "median_abs_beats": 7.775087762050191
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "05-au_privave",
+          "bar_accuracy": 0.03364969801553063,
+          "within2beat_accuracy": 0.03192407247627265,
+          "mean_abs_beats": 41.45813693831932,
+          "median_abs_beats": 48.9290476887287
+        },
+        {
+          "song": "00-a_night_in_tunisia",
+          "bar_accuracy": 0.32017823042647997,
+          "within2beat_accuracy": 0.35073201782304264,
+          "mean_abs_beats": 33.74724293684064,
+          "median_abs_beats": 3.6795092040482302
+        },
+        {
+          "song": "06-autumn_leaves",
+          "bar_accuracy": 0.05017667844522968,
+          "within2beat_accuracy": 0.022614840989399292,
+          "mean_abs_beats": 33.726475673361456,
+          "median_abs_beats": 41.655925897661405
+        }
+      ]
+    },
+    {
+      "run": "07_finalists_tempo_stress",
+      "method": "s06_beam_fine_tempo_t110",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 1,
+      "mean_error_above_10beats": 2,
+      "lowest_bar_accuracy": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.13902439024390245,
+          "within2beat_accuracy": 0.17268292682926828,
+          "mean_abs_beats": 44.572574277835834,
+          "median_abs_beats": 31.635661992530288
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.30103995621237,
+          "within2beat_accuracy": 0.30377668308702793,
+          "mean_abs_beats": 4.993425639049485,
+          "median_abs_beats": 3.9247837130036487
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.3215144230769231,
+          "within2beat_accuracy": 0.31971153846153844,
+          "mean_abs_beats": 28.80919210136271,
+          "median_abs_beats": 6.732258565384569
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.13902439024390245,
+          "within2beat_accuracy": 0.17268292682926828,
+          "mean_abs_beats": 44.572574277835834,
+          "median_abs_beats": 31.635661992530288
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.3215144230769231,
+          "within2beat_accuracy": 0.31971153846153844,
+          "mean_abs_beats": 28.80919210136271,
+          "median_abs_beats": 6.732258565384569
+        },
+        {
+          "song": "69-one_note_samba",
+          "bar_accuracy": 0.5792966157929662,
+          "within2beat_accuracy": 0.6642335766423357,
+          "mean_abs_beats": 8.154791683192613,
+          "median_abs_beats": 0.8244285030820606
+        }
+      ]
+    },
+    {
+      "run": "08_particles_seed1",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 1,
+      "mean_error_above_10beats": 8,
+      "lowest_bar_accuracy": [
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.18690400508582328,
+          "within2beat_accuracy": 0.19389701207883026,
+          "mean_abs_beats": 76.68854339140191,
+          "median_abs_beats": 7.322263702565465
+        },
+        {
+          "song": "20-impressions",
+          "bar_accuracy": 0.2874418604651163,
+          "within2beat_accuracy": 0.26232558139534884,
+          "mean_abs_beats": 4.717616522551872,
+          "median_abs_beats": 3.2927688934321395
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.33613445378151263,
+          "within2beat_accuracy": 0.3469387755102041,
+          "mean_abs_beats": 30.629228168373608,
+          "median_abs_beats": 4.748912936116966
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.18690400508582328,
+          "within2beat_accuracy": 0.19389701207883026,
+          "mean_abs_beats": 76.68854339140191,
+          "median_abs_beats": 7.322263702565465
+        },
+        {
+          "song": "14-freddie_freeloader",
+          "bar_accuracy": 0.5100401606425703,
+          "within2beat_accuracy": 0.5508701472556894,
+          "mean_abs_beats": 76.06657905688256,
+          "median_abs_beats": 1.6851684858249527
+        },
+        {
+          "song": "06-autumn_leaves",
+          "bar_accuracy": 0.49045936395759715,
+          "within2beat_accuracy": 0.5208480565371024,
+          "mean_abs_beats": 46.04105310645479,
+          "median_abs_beats": 1.8433499601071617
+        }
+      ]
+    },
+    {
+      "run": "08_particles_seed1",
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 3,
+      "lowest_bar_accuracy": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.04048780487804878,
+          "within2beat_accuracy": 0.04048780487804878,
+          "mean_abs_beats": 58.78474958108548,
+          "median_abs_beats": 49.47022542693429
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.12643678160919541,
+          "within2beat_accuracy": 0.1330049261083744,
+          "mean_abs_beats": 39.309903523535404,
+          "median_abs_beats": 41.04129994186184
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.41225961538461536,
+          "within2beat_accuracy": 0.44290865384615385,
+          "mean_abs_beats": 29.007543985747773,
+          "median_abs_beats": 12.099507530839379
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.04048780487804878,
+          "within2beat_accuracy": 0.04048780487804878,
+          "mean_abs_beats": 58.78474958108548,
+          "median_abs_beats": 49.47022542693429
+        },
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.12643678160919541,
+          "within2beat_accuracy": 0.1330049261083744,
+          "mean_abs_beats": 39.309903523535404,
+          "median_abs_beats": 41.04129994186184
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.41225961538461536,
+          "within2beat_accuracy": 0.44290865384615385,
+          "mean_abs_beats": 29.007543985747773,
+          "median_abs_beats": 12.099507530839379
+        }
+      ]
+    },
+    {
+      "run": "09_particles_seed2",
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 7,
+      "lowest_bar_accuracy": [
+        {
+          "song": "20-impressions",
+          "bar_accuracy": 0.16744186046511628,
+          "within2beat_accuracy": 0.15906976744186047,
+          "mean_abs_beats": 6.658059501402024,
+          "median_abs_beats": 4.371319418425685
+        },
+        {
+          "song": "03-all_of_me",
+          "bar_accuracy": 0.24789915966386555,
+          "within2beat_accuracy": 0.25990396158463386,
+          "mean_abs_beats": 19.27010761556936,
+          "median_abs_beats": 5.799378810889323
+        },
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.2733630006357279,
+          "within2beat_accuracy": 0.2956134774316593,
+          "mean_abs_beats": 73.94462307360465,
+          "median_abs_beats": 7.6031749538071836
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "05-au_privave",
+          "bar_accuracy": 0.3968938740293356,
+          "within2beat_accuracy": 0.4969801553062985,
+          "mean_abs_beats": 76.44429473468526,
+          "median_abs_beats": 2.0167860679416094
+        },
+        {
+          "song": "42-take_the_a_train",
+          "bar_accuracy": 0.2733630006357279,
+          "within2beat_accuracy": 0.2956134774316593,
+          "mean_abs_beats": 73.94462307360465,
+          "median_abs_beats": 7.6031749538071836
+        },
+        {
+          "song": "14-freddie_freeloader",
+          "bar_accuracy": 0.4926372155287818,
+          "within2beat_accuracy": 0.5247657295850067,
+          "mean_abs_beats": 48.18860122047019,
+          "median_abs_beats": 1.8443536681202914
+        }
+      ]
+    },
+    {
+      "run": "09_particles_seed2",
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "bar_accuracy_below_25pct": 2,
+      "mean_error_above_10beats": 3,
+      "lowest_bar_accuracy": [
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.12424740010946908,
+          "within2beat_accuracy": 0.1319102353585112,
+          "mean_abs_beats": 40.611025514664846,
+          "median_abs_beats": 40.59575752473137
+        },
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.1326829268292683,
+          "within2beat_accuracy": 0.1375609756097561,
+          "mean_abs_beats": 34.62984655736942,
+          "median_abs_beats": 30.248591920982392
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.4182692307692308,
+          "within2beat_accuracy": 0.4453125,
+          "mean_abs_beats": 29.091266982336556,
+          "median_abs_beats": 11.84088067997775
+        }
+      ],
+      "largest_mean_error": [
+        {
+          "song": "55-bye_bye_blackbird",
+          "bar_accuracy": 0.12424740010946908,
+          "within2beat_accuracy": 0.1319102353585112,
+          "mean_abs_beats": 40.611025514664846,
+          "median_abs_beats": 40.59575752473137
+        },
+        {
+          "song": "70-samba_de_orfeu",
+          "bar_accuracy": 0.1326829268292683,
+          "within2beat_accuracy": 0.1375609756097561,
+          "mean_abs_beats": 34.62984655736942,
+          "median_abs_beats": 30.248591920982392
+        },
+        {
+          "song": "58-dont_fence_me_in",
+          "bar_accuracy": 0.4182692307692308,
+          "within2beat_accuracy": 0.4453125,
+          "mean_abs_beats": 29.091266982336556,
+          "median_abs_beats": 11.84088067997775
+        }
+      ]
+    }
+  ],
+  "alternate_controls": [
+    {
+      "method": "yamaha_active",
+      "protocol": "async",
+      "take": "alternate",
+      "performances": 49,
+      "bar_accuracy": 0.47188427663990157,
+      "within2beat_accuracy": 0.5234575490197009,
+      "mean_abs_beats": 8.394793604687646,
+      "median_abs_beats": 5.1041701525208865
+    },
+    {
+      "method": "clock",
+      "protocol": "async",
+      "take": "alternate",
+      "performances": 49,
+      "bar_accuracy": 0.9987161591928337,
+      "within2beat_accuracy": 1.0,
+      "mean_abs_beats": 0.00058457908747316,
+      "median_abs_beats": 0.0005466903303693027
+    },
+    {
+      "method": "uniform_filter",
+      "protocol": "async",
+      "take": "alternate",
+      "performances": 49,
+      "bar_accuracy": 0.9115587424301129,
+      "within2beat_accuracy": 0.9953811403098038,
+      "mean_abs_beats": 0.3504289199620607,
+      "median_abs_beats": 0.3341417043257233
+    }
+  ],
+  "alternate_paired_comparisons": [
+    {
+      "method": "s06_beam_fine_tempo",
+      "baseline": "yamaha_active",
+      "protocol": "async",
+      "take": "alternate",
+      "matched_performances": 49,
+      "bar_accuracy_gain": 0.3714471600469778,
+      "improved": 45,
+      "worse": 4,
+      "tied": 0,
+      "mean_error_change": -3.110732861538039
+    },
+    {
+      "method": "p02_particles_slow",
+      "baseline": "yamaha_active",
+      "protocol": "async",
+      "take": "alternate",
+      "matched_performances": 49,
+      "bar_accuracy_gain": 0.059277301889691304,
+      "improved": 30,
+      "worse": 19,
+      "tied": 0,
+      "mean_error_change": 39.76943790548538
+    },
+    {
+      "method": "s06_beam_fine_tempo",
+      "baseline": "clock",
+      "protocol": "async",
+      "take": "alternate",
+      "matched_performances": 49,
+      "bar_accuracy_gain": -0.15538472250595436,
+      "improved": 0,
+      "worse": 44,
+      "tied": 5,
+      "mean_error_change": 5.283476164062136
+    },
+    {
+      "method": "p02_particles_slow",
+      "baseline": "clock",
+      "protocol": "async",
+      "take": "alternate",
+      "matched_performances": 49,
+      "bar_accuracy_gain": -0.46755458066324085,
+      "improved": 0,
+      "worse": 49,
+      "tied": 0,
+      "mean_error_change": 48.16364693108555
+    },
+    {
+      "method": "s06_beam_fine_tempo",
+      "baseline": "uniform_filter",
+      "protocol": "async",
+      "take": "alternate",
+      "matched_performances": 49,
+      "bar_accuracy_gain": -0.06822730574323341,
+      "improved": 23,
+      "worse": 25,
+      "tied": 1,
+      "mean_error_change": 4.9336318231875484
+    },
+    {
+      "method": "p02_particles_slow",
+      "baseline": "uniform_filter",
+      "protocol": "async",
+      "take": "alternate",
+      "matched_performances": 49,
+      "bar_accuracy_gain": -0.38039716390051986,
+      "improved": 2,
+      "worse": 47,
+      "tied": 0,
+      "mean_error_change": 47.81380259021097
+    }
+  ],
+  "limits": [
+    "Exploratory finalist selection after inspecting this corpus; no untouched external test or significance claim.",
+    "Alternate takes cover the same 49 async compositions only, not independent compositions; no sync alternate evidence.",
+    "All methods use a known unfolded chord plan and synchronized starting position/time; this does not test unknown starts, jumps, or unplanned repeats.",
+    "Stress factors multiply supplied catalog BPM; recordings are not time-stretched. Neither finalist uses rhythm evidence. Beam support therefore changes to 0.63\u20131.17 or 0.77\u20131.43 of catalog BPM.",
+    "Three particle seeds quantify limited Monte Carlo sensitivity; macro stability does not imply stable per-song failure severity.",
+    "AMT MIDI timestamps versus original audio/annotation origin remain independently unverified; reference beats are interpolated within annotated bars.",
+    "Results are causal MIDI simulations, not measured live audio/MIDI processing latency or calibrated reliability.",
+    "Exact bar accuracy, within-two-beat accuracy, and absolute beat error measure different losses; large errors must not be hidden by one aggregate percentage."
+  ],
+  "shared_source_hashes": {
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/run_study.py": "226ee62d1d4a3f834aa81be8f5c06e5d806289562d5d7d91a6e516ab6181c15d",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/adaptive_grid.py": "d9179f1dd88736ab49952a6765ead0f78758ab6d0cb741c8535e391b94b4bf22",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/common.py": "96283e225fd03e724e1c434a7a0be8a3ed22057e0b1fb556bcd4f0de62e06c03",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/run_benchmark.py": "e85f57fb64a879908dcc8c4142e9773e2ec1ed3cfa15d5c59e5f4e050936ef60",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/position_filter.py": "3b74e51a66fb71f7a28f9a4347aa3bdd85df31d640abc054abe6e19a0ad267a9",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/harmony_pilot/run_pilot.py": "10815a5f0f9ec921c63000758b889860b7761a424bc42c66e95a8c2cd9947d35",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/harmony_pilot/yamaha_matcher.py": "abe9ba03b926472fe8469441d2faac7982d677a446bf32f49c7545837cf30e4a",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/rhythm.py": "66e0e23c72c77d915094d272f14abc66ab3dd04ee038530c96148ffb3b4f4c62",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/sequence_follower.py": "9bd3d9745b97c5e71e143d52a0e468cb76379600edafaa04dad8d3212c19f704",
+    "/Users/james/Documents/Workspace/Human AI co-preforming/Research Proposal/experiments/ensemble_benchmark/improvement_study/particle_follower.py": "e90b1c2807bf63603141163378093df1304620078e94dd89fcf60d8a25883c00"
+  }
+}

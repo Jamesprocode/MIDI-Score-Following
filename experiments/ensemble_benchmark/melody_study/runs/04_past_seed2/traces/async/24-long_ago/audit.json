@@ -1,0 +1,15 @@
+{
+  "performance_id": "async/24-long_ago/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 326
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 155,
+  "reference_comparisons": 6302
+}

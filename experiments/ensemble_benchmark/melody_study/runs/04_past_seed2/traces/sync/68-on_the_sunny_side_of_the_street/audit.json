@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/68-on_the_sunny_side_of_the_street/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 552
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 314,
+  "reference_comparisons": 26717
+}

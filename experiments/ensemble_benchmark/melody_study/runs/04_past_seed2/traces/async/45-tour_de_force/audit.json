@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/45-tour_de_force/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 387,
+    "trumpet": 411
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 405,
+  "reference_comparisons": 23246
+}

@@ -1,0 +1,223 @@
+{
+  "song": "67-on_green_dolphin_street",
+  "metadata_bpm": 165.0,
+  "title": "On Green Dolphin Street",
+  "bars": 192,
+  "instruments": [
+    "bass",
+    "saxophone_alto"
+  ],
+  "duration_seconds": 245.0000000000002,
+  "chord_metrics": {
+    "frames": 2451,
+    "coverage": 0.8331293349653203,
+    "chord_accuracy": 0.2872297021623827,
+    "fractional_accuracy": 0.1376984126984127,
+    "balanced_accuracy": 0.16179048032665447,
+    "root_accuracy": 0.3778049775601795,
+    "tie_rate": 0.881488736532811,
+    "n_chord_labels": 16,
+    "chart_majority_accuracy": 0.3361893104855161
+  },
+  "correct_chord_among_best_available": 0.6190009794319294,
+  "uniquely_correct_chord_available": 0.025465230166503428,
+  "bar_bpm_percentiles": [
+    181.13207547169822,
+    188.82769472855796,
+    193.86106623586437
+  ],
+  "time_outside_tempo_range": 0.0,
+  "variants": {
+    "A_gaussian": {
+      "frames": 1226,
+      "bar_accuracy": 0.7243066884176182,
+      "within2beat_accuracy": 0.7960848287112561,
+      "mean_abs_beats": 1.9090681375626743,
+      "median_abs_beats": 0.6947371383546113,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 62.60000000000005,
+          "correct_bar": 0.8403908794788274,
+          "median_signed_beats": -0.3358490566038057,
+          "median_estimated_bpm": 177.375
+        },
+        {
+          "start": 62.800000000000054,
+          "end": 124.00000000000011,
+          "correct_bar": 0.8859934853420195,
+          "median_signed_beats": -0.08692185007998887,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 124.2000000000001,
+          "end": 185.20000000000016,
+          "correct_bar": 0.4477124183006536,
+          "median_signed_beats": -0.30650095878706907,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 185.40000000000018,
+          "end": 246.4000000000002,
+          "correct_bar": 0.7222222222222222,
+          "median_signed_beats": -0.02072754321352477,
+          "median_estimated_bpm": 189.74999999999997
+        }
+      ],
+      "final_signed_error": 1.266460108442402
+    },
+    "B_equal_initial": {
+      "frames": 1226,
+      "bar_accuracy": 0.7210440456769984,
+      "within2beat_accuracy": 0.7952691680261011,
+      "mean_abs_beats": 1.907746131107014,
+      "median_abs_beats": 0.6997783985706718,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 62.60000000000005,
+          "correct_bar": 0.8273615635179153,
+          "median_signed_beats": -0.25386996904032344,
+          "median_estimated_bpm": 177.375
+        },
+        {
+          "start": 62.800000000000054,
+          "end": 124.00000000000011,
+          "correct_bar": 0.8859934853420195,
+          "median_signed_beats": -0.08692185007998887,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 124.2000000000001,
+          "end": 185.20000000000016,
+          "correct_bar": 0.4477124183006536,
+          "median_signed_beats": -0.30650095878706907,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 185.40000000000018,
+          "end": 246.4000000000002,
+          "correct_bar": 0.7222222222222222,
+          "median_signed_beats": -0.02072754321352477,
+          "median_estimated_bpm": 189.74999999999997
+        }
+      ],
+      "final_signed_error": 1.266460108442402
+    },
+    "C_equal_dynamics": {
+      "frames": 1226,
+      "bar_accuracy": 0.6443719412724307,
+      "within2beat_accuracy": 0.734910277324633,
+      "mean_abs_beats": 3.16474431345255,
+      "median_abs_beats": 0.8223222431279282,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 62.60000000000005,
+          "correct_bar": 0.8241042345276873,
+          "median_signed_beats": -0.23207547169815257,
+          "median_estimated_bpm": 177.375
+        },
+        {
+          "start": 62.800000000000054,
+          "end": 124.00000000000011,
+          "correct_bar": 0.7850162866449512,
+          "median_signed_beats": 0.3499999999998238,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 124.2000000000001,
+          "end": 185.20000000000016,
+          "correct_bar": 0.42483660130718953,
+          "median_signed_beats": 0.38646268247302373,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 185.40000000000018,
+          "end": 246.4000000000002,
+          "correct_bar": 0.5424836601307189,
+          "median_signed_beats": 0.18232372053972767,
+          "median_estimated_bpm": 189.74999999999997
+        }
+      ],
+      "final_signed_error": 1.766460108442402
+    },
+    "D_equal_both": {
+      "frames": 1226,
+      "bar_accuracy": 0.6411092985318108,
+      "within2beat_accuracy": 0.734094616639478,
+      "mean_abs_beats": 3.1645918867764258,
+      "median_abs_beats": 0.8223222431279282,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 62.60000000000005,
+          "correct_bar": 0.8110749185667753,
+          "median_signed_beats": -0.1194029850746503,
+          "median_estimated_bpm": 177.375
+        },
+        {
+          "start": 62.800000000000054,
+          "end": 124.00000000000011,
+          "correct_bar": 0.7850162866449512,
+          "median_signed_beats": 0.3499999999998238,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 124.2000000000001,
+          "end": 185.20000000000016,
+          "correct_bar": 0.42483660130718953,
+          "median_signed_beats": 0.38646268247302373,
+          "median_estimated_bpm": 189.74999999999997
+        },
+        {
+          "start": 185.40000000000018,
+          "end": 246.4000000000002,
+          "correct_bar": 0.5424836601307189,
+          "median_signed_beats": 0.18232372053972767,
+          "median_estimated_bpm": 189.74999999999997
+        }
+      ],
+      "final_signed_error": 1.766460108442402
+    },
+    "no_harmony": {
+      "frames": 1226,
+      "bar_accuracy": 0.02365415986949429,
+      "within2beat_accuracy": 0.02202283849918434,
+      "mean_abs_beats": 45.4860207958512,
+      "median_abs_beats": 44.75797448165906,
+      "quarters": [
+        {
+          "start": 1.4000000000000001,
+          "end": 62.60000000000005,
+          "correct_bar": 0.09446254071661238,
+          "median_signed_beats": -8.90440060698036,
+          "median_estimated_bpm": 165.0
+        },
+        {
+          "start": 62.800000000000054,
+          "end": 124.00000000000011,
+          "correct_bar": 0.0,
+          "median_signed_beats": -31.34026079869625,
+          "median_estimated_bpm": 165.0
+        },
+        {
+          "start": 124.2000000000001,
+          "end": 185.20000000000016,
+          "correct_bar": 0.0,
+          "median_signed_beats": -58.21990147050968,
+          "median_estimated_bpm": 165.0
+        },
+        {
+          "start": 185.40000000000018,
+          "end": 246.4000000000002,
+          "correct_bar": 0.0,
+          "median_signed_beats": -83.60000000000059,
+          "median_estimated_bpm": 165.0
+        }
+      ],
+      "final_signed_error": -94.2335398915576
+    }
+  },
+  "inference_uses_reference_tempo": false
+}

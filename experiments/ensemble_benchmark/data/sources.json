@@ -1,0 +1,778 @@
+{
+  "schema_version": 1,
+  "retrieved_at_utc": "2026-10-06 01:14:11 UTC",
+  "repository": "pnlong/jazzsamba-demo",
+  "ref": "main",
+  "catalog": {
+    "path": "catalog.json",
+    "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/catalog.json",
+    "git_blob_sha": "9e59299a5fe5229a721aa7792678bb4b2e93369c"
+  },
+  "sources": [
+    {
+      "song_id": 0,
+      "song": "00-a_night_in_tunisia",
+      "protocol": "async",
+      "path": "annotations/async/00-a_night_in_tunisia.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/00-a_night_in_tunisia.json",
+      "git_blob_sha": "3e31139548618323f2ad7a504e092e3bbbad6598",
+      "chars": 187383,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 1,
+      "song": "01-a_sunday_kind_of_love",
+      "protocol": "async",
+      "path": "annotations/async/01-a_sunday_kind_of_love.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/01-a_sunday_kind_of_love.json",
+      "git_blob_sha": "a3acda522104a9114dd0f6bdd4af1987f6fa5b91",
+      "chars": 315232,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 2,
+      "song": "02-alice_in_wonderland",
+      "protocol": "async",
+      "path": "annotations/async/02-alice_in_wonderland.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/02-alice_in_wonderland.json",
+      "git_blob_sha": "8feee8415aed4a0ea6752fdf4ad000067407711d",
+      "chars": 334629,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 3,
+      "song": "03-all_of_me",
+      "protocol": "async",
+      "path": "annotations/async/03-all_of_me.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/03-all_of_me.json",
+      "git_blob_sha": "369c23ab548f3c80ca94bb3c5cbb3d76bf98f4f9",
+      "chars": 148677,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 4,
+      "song": "04-all_the_things_you_are",
+      "protocol": "async",
+      "path": "annotations/async/04-all_the_things_you_are.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/04-all_the_things_you_are.json",
+      "git_blob_sha": "0a6e6aa20210f5129762cce5cdc4826817873591",
+      "chars": 192875,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 5,
+      "song": "05-au_privave",
+      "protocol": "async",
+      "path": "annotations/async/05-au_privave.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/05-au_privave.json",
+      "git_blob_sha": "cb8eb9812c28067a073cf049ee990da1260ed8fa",
+      "chars": 191017,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 6,
+      "song": "06-autumn_leaves",
+      "protocol": "async",
+      "path": "annotations/async/06-autumn_leaves.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/06-autumn_leaves.json",
+      "git_blob_sha": "663f91bdce30d7eda6db75f3a30138be98c1304e",
+      "chars": 157965,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 7,
+      "song": "07-blue_bossa",
+      "protocol": "async",
+      "path": "annotations/async/07-blue_bossa.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/07-blue_bossa.json",
+      "git_blob_sha": "9e325026950483261e819f6f743fe098d5173fc7",
+      "chars": 162585,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 8,
+      "song": "08-blue_skies",
+      "protocol": "async",
+      "path": "annotations/async/08-blue_skies.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/08-blue_skies.json",
+      "git_blob_sha": "b5742f45e8ecb341f0dd151360ef2c1897bdb4cf",
+      "chars": 231174,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 9,
+      "song": "09-caravan",
+      "protocol": "async",
+      "path": "annotations/async/09-caravan.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/09-caravan.json",
+      "git_blob_sha": "831b70e318f0a5cfb91a1d4c9fc80c6f90865413",
+      "chars": 198158,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 10,
+      "song": "10-desafinado",
+      "protocol": "async",
+      "path": "annotations/async/10-desafinado.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/10-desafinado.json",
+      "git_blob_sha": "ddcf21c28f476361b78b8de2bd9000b38008cded",
+      "chars": 330564,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 12,
+      "song": "12-for_sentimental_reasons",
+      "protocol": "async",
+      "path": "annotations/async/12-for_sentimental_reasons.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/12-for_sentimental_reasons.json",
+      "git_blob_sha": "9d2f8fd504b6cedc4fbbaa279c216983f82e0a0f",
+      "chars": 291489,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 13,
+      "song": "13-four",
+      "protocol": "async",
+      "path": "annotations/async/13-four.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/13-four.json",
+      "git_blob_sha": "42e2b01c7f8fa06ff3157552191a47f7b865e12e",
+      "chars": 177434,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 14,
+      "song": "14-freddie_freeloader",
+      "protocol": "async",
+      "path": "annotations/async/14-freddie_freeloader.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/14-freddie_freeloader.json",
+      "git_blob_sha": "334bc3517be547203301e3caf97d759ef1eca389",
+      "chars": 85489,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 15,
+      "song": "15-frenesi",
+      "protocol": "async",
+      "path": "annotations/async/15-frenesi.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/15-frenesi.json",
+      "git_blob_sha": "5ac7aaa509f92b4194e4b0dc36cce1a351d79d9d",
+      "chars": 236875,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 16,
+      "song": "16-how_high_the_moon",
+      "protocol": "async",
+      "path": "annotations/async/16-how_high_the_moon.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/16-how_high_the_moon.json",
+      "git_blob_sha": "7fea19d1b891771ff95c0f6de3ecfb52b57cc32a",
+      "chars": 192788,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 17,
+      "song": "17-i_could_write_a_book",
+      "protocol": "async",
+      "path": "annotations/async/17-i_could_write_a_book.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/17-i_could_write_a_book.json",
+      "git_blob_sha": "d8a4ac51e9e2a1b0330e0b4a8f1b6adaa7f630e5",
+      "chars": 247264,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 18,
+      "song": "18-i_wish_you_love",
+      "protocol": "async",
+      "path": "annotations/async/18-i_wish_you_love.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/18-i_wish_you_love.json",
+      "git_blob_sha": "0a8072f79f2ef8a7e004d0d7623cbe0fb0f7155f",
+      "chars": 209574,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 19,
+      "song": "19-if_i_were_a_bell",
+      "protocol": "async",
+      "path": "annotations/async/19-if_i_were_a_bell.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/19-if_i_were_a_bell.json",
+      "git_blob_sha": "631f5bda2ba0f5ee5a206d1000a218d287f5695d",
+      "chars": 222728,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 20,
+      "song": "20-impressions",
+      "protocol": "async",
+      "path": "annotations/async/20-impressions.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/20-impressions.json",
+      "git_blob_sha": "ca624a7db408bf7076eba3edea1ae137e33b50d6",
+      "chars": 57829,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 21,
+      "song": "21-isnt_it_romantic",
+      "protocol": "async",
+      "path": "annotations/async/21-isnt_it_romantic.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/21-isnt_it_romantic.json",
+      "git_blob_sha": "01696537152e1213aa251aa926a587302b1928d5",
+      "chars": 286743,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 22,
+      "song": "22-lazy_bird",
+      "protocol": "async",
+      "path": "annotations/async/22-lazy_bird.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/22-lazy_bird.json",
+      "git_blob_sha": "bf5de6d80dd01354c52bda9bb3cdbfbd9e9607de",
+      "chars": 233143,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 23,
+      "song": "23-like_someone_in_love",
+      "protocol": "async",
+      "path": "annotations/async/23-like_someone_in_love.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/23-like_someone_in_love.json",
+      "git_blob_sha": "15636e0019ec19284f577c933bea8b249ec25413",
+      "chars": 228669,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 24,
+      "song": "24-long_ago",
+      "protocol": "async",
+      "path": "annotations/async/24-long_ago.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/24-long_ago.json",
+      "git_blob_sha": "b298db0127bed45e534d4a3345265c0166371a8d",
+      "chars": 242964,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 25,
+      "song": "25-lullaby_of_birdland",
+      "protocol": "async",
+      "path": "annotations/async/25-lullaby_of_birdland.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/25-lullaby_of_birdland.json",
+      "git_blob_sha": "b28b65e578380d87bf50249a8151dc83f71a8454",
+      "chars": 264258,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 26,
+      "song": "26-mas_que_nada",
+      "protocol": "async",
+      "path": "annotations/async/26-mas_que_nada.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/26-mas_que_nada.json",
+      "git_blob_sha": "260aa544b342a631b51bfe79e41c03eeb7f020cc",
+      "chars": 252457,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 27,
+      "song": "27-meditation",
+      "protocol": "async",
+      "path": "annotations/async/27-meditation.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/27-meditation.json",
+      "git_blob_sha": "037af5acd588e947a1a1f910c717ba3b8263eed2",
+      "chars": 255858,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 28,
+      "song": "28-moonglow",
+      "protocol": "async",
+      "path": "annotations/async/28-moonglow.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/28-moonglow.json",
+      "git_blob_sha": "e6ca22ff10495ebb7c7e08e8a59c0beb03df32b2",
+      "chars": 203715,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 29,
+      "song": "29-my_favorite_things",
+      "protocol": "async",
+      "path": "annotations/async/29-my_favorite_things.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/29-my_favorite_things.json",
+      "git_blob_sha": "6145733c94e4262eb8a54335d759b5668b3bb570",
+      "chars": 301835,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 30,
+      "song": "30-nicas_dream",
+      "protocol": "async",
+      "path": "annotations/async/30-nicas_dream.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/30-nicas_dream.json",
+      "git_blob_sha": "38832f4e2bf54c81753a87aa9a0fb8b1fdd2f92c",
+      "chars": 315549,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 31,
+      "song": "31-o_pato",
+      "protocol": "async",
+      "path": "annotations/async/31-o_pato.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/31-o_pato.json",
+      "git_blob_sha": "561ecb3c92c546e97885e1ca9786a04720902e38",
+      "chars": 183687,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 32,
+      "song": "32-ornithology",
+      "protocol": "async",
+      "path": "annotations/async/32-ornithology.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/32-ornithology.json",
+      "git_blob_sha": "589386f66364e6e7e33fb70ba240b8bdd47a3a0e",
+      "chars": 190836,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 33,
+      "song": "33-peris_scope",
+      "protocol": "async",
+      "path": "annotations/async/33-peris_scope.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/33-peris_scope.json",
+      "git_blob_sha": "0a40730f110642ee2e46eb6550b5da6ffc33925c",
+      "chars": 185062,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 34,
+      "song": "34-quiet_nights_of_quiet_stars",
+      "protocol": "async",
+      "path": "annotations/async/34-quiet_nights_of_quiet_stars.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/34-quiet_nights_of_quiet_stars.json",
+      "git_blob_sha": "2af51637e357c83cdc1d13dd1a4db1476ba27446",
+      "chars": 167306,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 35,
+      "song": "35-recordame",
+      "protocol": "async",
+      "path": "annotations/async/35-recordame.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/35-recordame.json",
+      "git_blob_sha": "5734e7386d3bea45dfffbe43d071ef1a68914748",
+      "chars": 156989,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 36,
+      "song": "36-road_song",
+      "protocol": "async",
+      "path": "annotations/async/36-road_song.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/36-road_song.json",
+      "git_blob_sha": "247de451ecd7d6219e8e1d1c39f2cce2f7a15e3e",
+      "chars": 236037,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 37,
+      "song": "37-song_for_my_father",
+      "protocol": "async",
+      "path": "annotations/async/37-song_for_my_father.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/37-song_for_my_father.json",
+      "git_blob_sha": "6e0193c62cbf40070c58c0bccc7230ca9a030ee2",
+      "chars": 99140,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 38,
+      "song": "38-spain",
+      "protocol": "async",
+      "path": "annotations/async/38-spain.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/38-spain.json",
+      "git_blob_sha": "bff5729cfd2af353cee4d5e61b20fbe3361dd5ac",
+      "chars": 146545,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 39,
+      "song": "39-st_thomas",
+      "protocol": "async",
+      "path": "annotations/async/39-st_thomas.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/39-st_thomas.json",
+      "git_blob_sha": "8fdad94a3daa8d2efc28146ab8760e9bc18f73c5",
+      "chars": 253160,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 40,
+      "song": "40-stompin_at_the_savoy",
+      "protocol": "async",
+      "path": "annotations/async/40-stompin_at_the_savoy.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/40-stompin_at_the_savoy.json",
+      "git_blob_sha": "8c0f6cb170d6d8d92e8cf45cf6c24b257c81d359",
+      "chars": 190488,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 41,
+      "song": "41-take_five",
+      "protocol": "async",
+      "path": "annotations/async/41-take_five.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/41-take_five.json",
+      "git_blob_sha": "54ffe548307e84086684785b90f4ccd4bdced9f5",
+      "chars": 206426,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 42,
+      "song": "42-take_the_a_train",
+      "protocol": "async",
+      "path": "annotations/async/42-take_the_a_train.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/42-take_the_a_train.json",
+      "git_blob_sha": "80fe78d28fbc492132d532f873579197870389ff",
+      "chars": 152651,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 43,
+      "song": "43-the_girl_from_ipanema",
+      "protocol": "async",
+      "path": "annotations/async/43-the_girl_from_ipanema.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/43-the_girl_from_ipanema.json",
+      "git_blob_sha": "8d85a70ff0535e01c71c6c3c33a1bf0d8558be80",
+      "chars": 161794,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 44,
+      "song": "44-the_great_pumpkin_waltz",
+      "protocol": "async",
+      "path": "annotations/async/44-the_great_pumpkin_waltz.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/44-the_great_pumpkin_waltz.json",
+      "git_blob_sha": "b979f505167097669951bb965b7bce77c1d421b8",
+      "chars": 240684,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 45,
+      "song": "45-tour_de_force",
+      "protocol": "async",
+      "path": "annotations/async/45-tour_de_force.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/45-tour_de_force.json",
+      "git_blob_sha": "d4019db46f4a1fa8f19bd6ec1b8f99f65286ed71",
+      "chars": 279560,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 46,
+      "song": "46-wait_till_you_see_her",
+      "protocol": "async",
+      "path": "annotations/async/46-wait_till_you_see_her.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/46-wait_till_you_see_her.json",
+      "git_blob_sha": "f29ae352cdfa8576a7c9788a4fe323500ac3e4a2",
+      "chars": 204240,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 47,
+      "song": "47-wave",
+      "protocol": "async",
+      "path": "annotations/async/47-wave.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/47-wave.json",
+      "git_blob_sha": "caa39e9ba353772a7316e4700cba0e99d2c4d73a",
+      "chars": 305814,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 48,
+      "song": "48-when_you_wish_upon_a_star",
+      "protocol": "async",
+      "path": "annotations/async/48-when_you_wish_upon_a_star.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/48-when_you_wish_upon_a_star.json",
+      "git_blob_sha": "283b14e720393c2b66d2658176a4cdcc8260078f",
+      "chars": 250602,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 49,
+      "song": "49-woodchoppers_ball",
+      "protocol": "async",
+      "path": "annotations/async/49-woodchoppers_ball.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/async/49-woodchoppers_ball.json",
+      "git_blob_sha": "7d1849b2ed3409264daeec3cc2e577df20c89812",
+      "chars": 85420,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 50,
+      "song": "50-almost_like_being_in_love",
+      "protocol": "sync",
+      "path": "annotations/sync/50-almost_like_being_in_love.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/50-almost_like_being_in_love.json",
+      "git_blob_sha": "c92657241bba623bea04dc35093c89c723d456a5",
+      "chars": 170990,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 51,
+      "song": "51-amazing_grace",
+      "protocol": "sync",
+      "path": "annotations/sync/51-amazing_grace.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/51-amazing_grace.json",
+      "git_blob_sha": "f4c2edc9e4d02c65da8e36f5445a0ccf69085008",
+      "chars": 74184,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 52,
+      "song": "52-bernies_tune",
+      "protocol": "sync",
+      "path": "annotations/sync/52-bernies_tune.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/52-bernies_tune.json",
+      "git_blob_sha": "d53110d9285979a84cd9fc6b5a26619079012e1a",
+      "chars": 155859,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 53,
+      "song": "53-black_orpheus",
+      "protocol": "sync",
+      "path": "annotations/sync/53-black_orpheus.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/53-black_orpheus.json",
+      "git_blob_sha": "cfce2b9513194e4c3c2fd5f5a2a56d707d4ade53",
+      "chars": 202790,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 54,
+      "song": "54-boplicity",
+      "protocol": "sync",
+      "path": "annotations/sync/54-boplicity.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/54-boplicity.json",
+      "git_blob_sha": "464f0c802a32a210d25ada88966ee8b7f72f924c",
+      "chars": 233300,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 55,
+      "song": "55-bye_bye_blackbird",
+      "protocol": "sync",
+      "path": "annotations/sync/55-bye_bye_blackbird.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/55-bye_bye_blackbird.json",
+      "git_blob_sha": "d38cbe0bcac15e778a048dfc8654a5075973a0b6",
+      "chars": 139722,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 56,
+      "song": "56-ceora",
+      "protocol": "sync",
+      "path": "annotations/sync/56-ceora.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/56-ceora.json",
+      "git_blob_sha": "7cca6f25ade7d9d5db061ce96ebf30a18b621190",
+      "chars": 211897,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 57,
+      "song": "57-chega_de_saudade",
+      "protocol": "sync",
+      "path": "annotations/sync/57-chega_de_saudade.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/57-chega_de_saudade.json",
+      "git_blob_sha": "d38c03bd929ffeadcb96c79826bd29828d96a4b2",
+      "chars": 343914,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 58,
+      "song": "58-dont_fence_me_in",
+      "protocol": "sync",
+      "path": "annotations/sync/58-dont_fence_me_in.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/58-dont_fence_me_in.json",
+      "git_blob_sha": "3672a84832197e848e4d32a1347f7a0be7449e92",
+      "chars": 276582,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 59,
+      "song": "59-groovin_high",
+      "protocol": "sync",
+      "path": "annotations/sync/59-groovin_high.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/59-groovin_high.json",
+      "git_blob_sha": "34dc62df18b8fbc3072d42e3776001db6b315893",
+      "chars": 150369,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 60,
+      "song": "60-in_a_sentimental_mood",
+      "protocol": "sync",
+      "path": "annotations/sync/60-in_a_sentimental_mood.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/60-in_a_sentimental_mood.json",
+      "git_blob_sha": "c82141747bffe4fd1204ad68a481b16106aeeacf",
+      "chars": 233363,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 61,
+      "song": "61-invitation",
+      "protocol": "sync",
+      "path": "annotations/sync/61-invitation.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/61-invitation.json",
+      "git_blob_sha": "c04c8f27df37ecb54c03399122a9255c48a99013",
+      "chars": 164111,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 62,
+      "song": "62-it_dont_mean_a_thing",
+      "protocol": "sync",
+      "path": "annotations/sync/62-it_dont_mean_a_thing.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/62-it_dont_mean_a_thing.json",
+      "git_blob_sha": "21f71688636bd5e2e778a8f852134d2117519ff5",
+      "chars": 201093,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 63,
+      "song": "63-la_vie_en_rose",
+      "protocol": "sync",
+      "path": "annotations/sync/63-la_vie_en_rose.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/63-la_vie_en_rose.json",
+      "git_blob_sha": "e1350418ed9695bbd44a6749f6afcf55c8da89c0",
+      "chars": 143394,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 64,
+      "song": "64-love",
+      "protocol": "sync",
+      "path": "annotations/sync/64-love.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/64-love.json",
+      "git_blob_sha": "9c50a8b04078cb0f133535611e128c5b57db28dc",
+      "chars": 144587,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 65,
+      "song": "65-misty",
+      "protocol": "sync",
+      "path": "annotations/sync/65-misty.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/65-misty.json",
+      "git_blob_sha": "e2d526a46a8470281e17227d4d6c23cabc58cebc",
+      "chars": 242058,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 66,
+      "song": "66-nardis",
+      "protocol": "sync",
+      "path": "annotations/sync/66-nardis.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/66-nardis.json",
+      "git_blob_sha": "3cd44efa8ebb171f2e246ddbea489dcd37b72a3f",
+      "chars": 159418,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 67,
+      "song": "67-on_green_dolphin_street",
+      "protocol": "sync",
+      "path": "annotations/sync/67-on_green_dolphin_street.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/67-on_green_dolphin_street.json",
+      "git_blob_sha": "0bc49fbc072b3caed7c951a49d2136811438cdb9",
+      "chars": 149828,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 68,
+      "song": "68-on_the_sunny_side_of_the_street",
+      "protocol": "sync",
+      "path": "annotations/sync/68-on_the_sunny_side_of_the_street.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/68-on_the_sunny_side_of_the_street.json",
+      "git_blob_sha": "9a2235c4b2281882d5a9777079ed88262672ed55",
+      "chars": 217655,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 69,
+      "song": "69-one_note_samba",
+      "protocol": "sync",
+      "path": "annotations/sync/69-one_note_samba.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/69-one_note_samba.json",
+      "git_blob_sha": "46a6fd8278b34129da9d502e535f8411347cf891",
+      "chars": 213363,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 70,
+      "song": "70-samba_de_orfeu",
+      "protocol": "sync",
+      "path": "annotations/sync/70-samba_de_orfeu.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/70-samba_de_orfeu.json",
+      "git_blob_sha": "ff0a1a20ed27cc31d4930bdb668667041a80d7f5",
+      "chars": 245274,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 71,
+      "song": "71-some_day_my_prince_will_come",
+      "protocol": "sync",
+      "path": "annotations/sync/71-some_day_my_prince_will_come.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/71-some_day_my_prince_will_come.json",
+      "git_blob_sha": "a18934882182406768b307a51d348848bd22371b",
+      "chars": 177240,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 72,
+      "song": "72-sway",
+      "protocol": "sync",
+      "path": "annotations/sync/72-sway.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/72-sway.json",
+      "git_blob_sha": "f0e087c9504aee73191a1281c4b29638847fb856",
+      "chars": 185530,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 73,
+      "song": "73-triste",
+      "protocol": "sync",
+      "path": "annotations/sync/73-triste.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/73-triste.json",
+      "git_blob_sha": "6032d7d61559bb6d95ebc7aead8edefb52b002ea",
+      "chars": 162258,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 74,
+      "song": "74-waltz_for_debby",
+      "protocol": "sync",
+      "path": "annotations/sync/74-waltz_for_debby.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/74-waltz_for_debby.json",
+      "git_blob_sha": "e1ef2dc093e36b6db87d414b214d3afa822ebc3d",
+      "chars": 350580,
+      "encoding": "utf-8"
+    },
+    {
+      "song_id": 75,
+      "song": "75-when_the_saints_go_marching_in",
+      "protocol": "sync",
+      "path": "annotations/sync/75-when_the_saints_go_marching_in.json",
+      "url": "https://github.com/pnlong/jazzsamba-demo/blob/main/data/annotations/sync/75-when_the_saints_go_marching_in.json",
+      "git_blob_sha": "3e93063bce840ebca871f19cd00530ab186ef0b4",
+      "chars": 113504,
+      "encoding": "utf-8"
+    }
+  ],
+  "source_scope": "Official demo annotation exports for preferred takes. Async alternate shares preferred labels by the dataset protocol; synchronous alternate does not.",
+  "async_alternate_sharing_source": "https://arxiv.org/html/2609.34931v1#S3",
+  "official_split_status": "Official train/val/test file IDs not retrieved. The package documents split files in the full release, but Zenodo is inaccessible and the linked processing repository returns 404.",
+  "sync_alternate_status": "No distinct synchronous alternate annotations found in the official demo repository; do not reuse preferred timestamps.",
+  "missing_local_songs": [
+    {
+      "song_id": 11,
+      "song": "11-dream_a_little_dream_of_me",
+      "protocol": "async"
+    }
+  ],
+  "excluded_take_categories": {
+    "extras": "Additional standalone takes: matching timed labels are not established.",
+    "sync_alternate": "Distinct annotations unavailable."
+  }
+}

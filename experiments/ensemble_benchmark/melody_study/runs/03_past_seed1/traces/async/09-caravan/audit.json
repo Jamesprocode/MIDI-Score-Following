@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/09-caravan/preferred",
+  "lead_instruments": [
+    "saxophone_tenor",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 304,
+    "trumpet": 412
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 85,
+  "reference_comparisons": 767
+}

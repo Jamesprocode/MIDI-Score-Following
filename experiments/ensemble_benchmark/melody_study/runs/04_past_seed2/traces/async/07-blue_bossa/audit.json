@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/07-blue_bossa/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 315,
+    "trumpet": 325
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 304,
+  "reference_comparisons": 12155
+}

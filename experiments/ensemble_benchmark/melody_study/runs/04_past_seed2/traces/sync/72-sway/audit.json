@@ -1,0 +1,15 @@
+{
+  "performance_id": "sync/72-sway/preferred",
+  "lead_instruments": [
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "trumpet": 426
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 228,
+  "reference_comparisons": 13209
+}

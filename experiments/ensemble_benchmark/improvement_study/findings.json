@@ -1,0 +1,331 @@
+{
+  "generated_utc": "2026-10-06T14:37:22.275693+00:00",
+  "scope": {
+    "songs": 75,
+    "async": 49,
+    "sync": 26,
+    "primary_settings": 42,
+    "song_method_evaluations": 3897
+  },
+  "fixed_primary": [
+    {
+      "method": "g00_reproduce",
+      "protocol": "async",
+      "songs": 49,
+      "bar_accuracy": 0.5188208326127632,
+      "within2beat_accuracy": 0.5768765344791732,
+      "mean_abs_beats": 8.615029424810022,
+      "median_abs_beats": 6.6545193502077975
+    },
+    {
+      "method": "g00_reproduce",
+      "protocol": "sync",
+      "songs": 26,
+      "bar_accuracy": 0.5411249521503164,
+      "within2beat_accuracy": 0.6041055920679539,
+      "mean_abs_beats": 15.594097401288376,
+      "median_abs_beats": 12.054633969473512
+    },
+    {
+      "method": "g06_bass_root",
+      "protocol": "async",
+      "songs": 49,
+      "bar_accuracy": 0.6195405082819387,
+      "within2beat_accuracy": 0.6714183304199995,
+      "mean_abs_beats": 4.311683029205293,
+      "median_abs_beats": 1.7849564580970918
+    },
+    {
+      "method": "g06_bass_root",
+      "protocol": "sync",
+      "songs": 26,
+      "bar_accuracy": 0.6504878014256418,
+      "within2beat_accuracy": 0.7043563774809185,
+      "mean_abs_beats": 4.572196608325527,
+      "median_abs_beats": 1.7030578977732576
+    },
+    {
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "songs": 49,
+      "bar_accuracy": 0.6660463037230221,
+      "within2beat_accuracy": 0.7236824090756779,
+      "mean_abs_beats": 8.325156747236795,
+      "median_abs_beats": 1.4570813426301643
+    },
+    {
+      "method": "p02_particles_slow",
+      "protocol": "sync",
+      "songs": 26,
+      "bar_accuracy": 0.7295978844663402,
+      "within2beat_accuracy": 0.7938026578407963,
+      "mean_abs_beats": 3.5783652268054658,
+      "median_abs_beats": 2.14751907521566
+    },
+    {
+      "method": "s06_beam_fine_tempo",
+      "protocol": "async",
+      "songs": 49,
+      "bar_accuracy": 0.91407504907095,
+      "within2beat_accuracy": 0.9257757605711046,
+      "mean_abs_beats": 0.5290934353364315,
+      "median_abs_beats": 0.1012664573837023
+    },
+    {
+      "method": "s06_beam_fine_tempo",
+      "protocol": "sync",
+      "songs": 26,
+      "bar_accuracy": 0.631617344044118,
+      "within2beat_accuracy": 0.7239576639900815,
+      "mean_abs_beats": 13.67816593744639,
+      "median_abs_beats": 12.915381676512936
+    }
+  ],
+  "internal_selection": [
+    {
+      "method": "loo_global",
+      "protocol": "async",
+      "songs": 49,
+      "bar_accuracy": 0.91407504907095,
+      "within2beat_accuracy": 0.9257757605711046,
+      "mean_abs_beats": 0.5290934353364315,
+      "median_abs_beats": 0.1012664573837023
+    },
+    {
+      "method": "loo_global",
+      "protocol": "sync",
+      "songs": 26,
+      "bar_accuracy": 0.631617344044118,
+      "within2beat_accuracy": 0.7239576639900815,
+      "mean_abs_beats": 13.67816593744639,
+      "median_abs_beats": 12.915381676512936
+    },
+    {
+      "method": "loo_protocol",
+      "protocol": "async",
+      "songs": 49,
+      "bar_accuracy": 0.91407504907095,
+      "within2beat_accuracy": 0.9257757605711046,
+      "mean_abs_beats": 0.5290934353364315,
+      "median_abs_beats": 0.1012664573837023
+    },
+    {
+      "method": "loo_protocol",
+      "protocol": "sync",
+      "songs": 26,
+      "bar_accuracy": 0.7295978844663402,
+      "within2beat_accuracy": 0.7938026578407963,
+      "mean_abs_beats": 3.5783652268054658,
+      "median_abs_beats": 2.14751907521566
+    }
+  ],
+  "alternate": [
+    {
+      "method": "p02_particles_slow",
+      "protocol": "async",
+      "bar_accuracy": 0.5311615785295928,
+      "within2beat_accuracy": 0.5742302952304839,
+      "mean_abs_beats": 48.16423151017302,
+      "median_abs_beats": 12.872963338688459
+    },
+    {
+      "method": "s06_beam_fine_tempo",
+      "protocol": "async",
+      "bar_accuracy": 0.8433314366868794,
+      "within2beat_accuracy": 0.8561904425129379,
+      "mean_abs_beats": 5.284060743149609,
+      "median_abs_beats": 4.514483312759305
+    }
+  ],
+  "tempo_stress": [
+    {
+      "method": "p02_particles_slow_t090",
+      "protocol": "async",
+      "initial_tempo_factor": 0.9,
+      "bar_accuracy": 0.6758708650830316,
+      "within2beat_accuracy": 0.7320880274397644,
+      "mean_abs_beats": 5.075330915753705,
+      "median_abs_beats": 1.315461591192734
+    },
+    {
+      "method": "p02_particles_slow_t090",
+      "protocol": "sync",
+      "initial_tempo_factor": 0.9,
+      "bar_accuracy": 0.7201531077855814,
+      "within2beat_accuracy": 0.7781611539295864,
+      "mean_abs_beats": 6.281739536939276,
+      "median_abs_beats": 4.230089347542591
+    },
+    {
+      "method": "p02_particles_slow_t110",
+      "protocol": "async",
+      "initial_tempo_factor": 1.1,
+      "bar_accuracy": 0.680032071310178,
+      "within2beat_accuracy": 0.7360167825779551,
+      "mean_abs_beats": 16.373024139927292,
+      "median_abs_beats": 2.334257826900847
+    },
+    {
+      "method": "p02_particles_slow_t110",
+      "protocol": "sync",
+      "initial_tempo_factor": 1.1,
+      "bar_accuracy": 0.7319057565300326,
+      "within2beat_accuracy": 0.7924265214162067,
+      "mean_abs_beats": 5.246991309993356,
+      "median_abs_beats": 3.539307577190959
+    },
+    {
+      "method": "s06_beam_fine_tempo_t090",
+      "protocol": "async",
+      "initial_tempo_factor": 0.9,
+      "bar_accuracy": 0.5221444717561863,
+      "within2beat_accuracy": 0.5897584794222361,
+      "mean_abs_beats": 5.314589868983528,
+      "median_abs_beats": 3.140945455795569
+    },
+    {
+      "method": "s06_beam_fine_tempo_t090",
+      "protocol": "sync",
+      "initial_tempo_factor": 0.9,
+      "bar_accuracy": 0.5241007105475014,
+      "within2beat_accuracy": 0.5877953104962408,
+      "mean_abs_beats": 36.13673850028048,
+      "median_abs_beats": 31.38487447835725
+    },
+    {
+      "method": "s06_beam_fine_tempo_t110",
+      "protocol": "async",
+      "initial_tempo_factor": 1.1,
+      "bar_accuracy": 0.5122062459768886,
+      "within2beat_accuracy": 0.5725735731687848,
+      "mean_abs_beats": 6.895145693777756,
+      "median_abs_beats": 4.199674384677981
+    },
+    {
+      "method": "s06_beam_fine_tempo_t110",
+      "protocol": "sync",
+      "initial_tempo_factor": 1.1,
+      "bar_accuracy": 0.6630568367489744,
+      "within2beat_accuracy": 0.7534626532683965,
+      "mean_abs_beats": 4.444235924675099,
+      "median_abs_beats": 2.383596017936667
+    }
+  ],
+  "particle_seeds": [
+    {
+      "protocol": "async",
+      "bar_accuracy": 0.6660463037230221,
+      "within2beat_accuracy": 0.7236824090756779,
+      "mean_abs_beats": 8.325156747236795,
+      "median_abs_beats": 1.4570813426301643,
+      "seed": 0
+    },
+    {
+      "protocol": "sync",
+      "bar_accuracy": 0.7295978844663401,
+      "within2beat_accuracy": 0.7938026578407964,
+      "mean_abs_beats": 3.578365226805466,
+      "median_abs_beats": 2.14751907521566,
+      "seed": 0
+    },
+    {
+      "protocol": "async",
+      "bar_accuracy": 0.6830800332325698,
+      "within2beat_accuracy": 0.7376018918746959,
+      "mean_abs_beats": 7.669427117883107,
+      "median_abs_beats": 1.1245855028021277,
+      "seed": 1
+    },
+    {
+      "protocol": "sync",
+      "bar_accuracy": 0.7247309149153349,
+      "within2beat_accuracy": 0.7863765169718815,
+      "mean_abs_beats": 5.858584383155257,
+      "median_abs_beats": 4.41184403765428,
+      "seed": 1
+    },
+    {
+      "protocol": "async",
+      "bar_accuracy": 0.6733806042037594,
+      "within2beat_accuracy": 0.7293069976688155,
+      "mean_abs_beats": 7.792458545442011,
+      "median_abs_beats": 1.208205462098035,
+      "seed": 2
+    },
+    {
+      "protocol": "sync",
+      "bar_accuracy": 0.72902805300664,
+      "within2beat_accuracy": 0.790181439221144,
+      "mean_abs_beats": 5.078831956578218,
+      "median_abs_beats": 3.6100352758413594,
+      "seed": 2
+    }
+  ],
+  "ledger": [
+    {
+      "Run": "01_diagnostics",
+      "Performances": 75,
+      "Settings": 15,
+      "Evaluations": 1125,
+      "Status": "Complete"
+    },
+    {
+      "Run": "02_rhythm_sequence",
+      "Performances": 75,
+      "Settings": 16,
+      "Evaluations": 1200,
+      "Status": "Complete"
+    },
+    {
+      "Run": "03_bass_root_alternate",
+      "Performances": 49,
+      "Settings": 1,
+      "Evaluations": 49,
+      "Status": "Complete"
+    },
+    {
+      "Run": "04_bass_root_tempo_stress",
+      "Performances": 75,
+      "Settings": 2,
+      "Evaluations": 150,
+      "Status": "Complete"
+    },
+    {
+      "Run": "05_continuous_tempo",
+      "Performances": 75,
+      "Settings": 11,
+      "Evaluations": 825,
+      "Status": "Complete"
+    },
+    {
+      "Run": "06_finalists_alternate",
+      "Performances": 49,
+      "Settings": 2,
+      "Evaluations": 98,
+      "Status": "Complete"
+    },
+    {
+      "Run": "07_finalists_tempo_stress",
+      "Performances": 75,
+      "Settings": 4,
+      "Evaluations": 300,
+      "Status": "Complete"
+    },
+    {
+      "Run": "08_particles_seed1",
+      "Performances": 75,
+      "Settings": 1,
+      "Evaluations": 75,
+      "Status": "Complete"
+    },
+    {
+      "Run": "09_particles_seed2",
+      "Performances": 75,
+      "Settings": 1,
+      "Evaluations": 75,
+      "Status": "Complete"
+    }
+  ],
+  "validation": "validation.json",
+  "interpretation": "Exploratory corpus-informed development; not an external generalization test."
+}

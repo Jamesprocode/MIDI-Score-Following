@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/49-woodchoppers_ball/preferred",
+  "lead_instruments": [
+    "saxophone_alto",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_alto": 245,
+    "trumpet": 224
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 182,
+  "reference_comparisons": 4433
+}

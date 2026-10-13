@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "executable": "/Users/james/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "numpy": "2.3.5",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "architecture": "arm64",
+  "note": "CPU batch causal replay with3workerprocesses; compute runtime is not live MIDI I/O latency."
+}

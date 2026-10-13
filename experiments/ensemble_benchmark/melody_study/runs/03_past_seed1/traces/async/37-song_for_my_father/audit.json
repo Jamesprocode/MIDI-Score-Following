@@ -1,0 +1,17 @@
+{
+  "performance_id": "async/37-song_for_my_father/preferred",
+  "lead_instruments": [
+    "saxophone_tenor",
+    "trumpet"
+  ],
+  "source_note_counts": {
+    "saxophone_tenor": 225,
+    "trumpet": 300
+  },
+  "reference_file": null,
+  "reference_note_count": null,
+  "prefix_verified": false,
+  "neutral_reproduction": true,
+  "query_updates": 230,
+  "reference_comparisons": 7721
+}
