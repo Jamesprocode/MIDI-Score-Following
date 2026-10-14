@@ -1,0 +1,253 @@
+{
+  "meter": {
+    "4/4": {
+      "files": 8789,
+      "on_grid": 0.837,
+      "with_kick_or_bass_evidence": 7917,
+      "pattern_repeats_every_3_beats": 0.1,
+      "stated_beat1_strongest": 0.84
+    },
+    "changes": {
+      "files": 1487,
+      "on_grid": 0.907,
+      "with_kick_or_bass_evidence": 1219,
+      "pattern_repeats_every_3_beats": 0.135,
+      "stated_beat1_strongest": null
+    },
+    "none": {
+      "files": 774,
+      "on_grid": 0.65,
+      "with_kick_or_bass_evidence": 651,
+      "pattern_repeats_every_3_beats": 0.255,
+      "stated_beat1_strongest": null
+    },
+    "3/4": {
+      "files": 343,
+      "on_grid": 0.752,
+      "with_kick_or_bass_evidence": 190,
+      "pattern_repeats_every_3_beats": 0.921,
+      "stated_beat1_strongest": 0.958
+    },
+    "2/4": {
+      "files": 218,
+      "on_grid": 0.844,
+      "with_kick_or_bass_evidence": 94,
+      "pattern_repeats_every_3_beats": 0.17,
+      "stated_beat1_strongest": 0.862
+    },
+    "6/8": {
+      "files": 120,
+      "on_grid": 0.833,
+      "with_kick_or_bass_evidence": 94,
+      "pattern_repeats_every_3_beats": 1.0,
+      "stated_beat1_strongest": 0.968
+    },
+    "12/8": {
+      "files": 56,
+      "on_grid": 0.875,
+      "with_kick_or_bass_evidence": 44,
+      "pattern_repeats_every_3_beats": 0.932,
+      "stated_beat1_strongest": 0.909
+    },
+    "2/2": {
+      "files": 31,
+      "on_grid": 0.774,
+      "with_kick_or_bass_evidence": 22,
+      "pattern_repeats_every_3_beats": 0.0,
+      "stated_beat1_strongest": 0.909
+    },
+    "6/4": {
+      "files": 28,
+      "on_grid": 0.5,
+      "with_kick_or_bass_evidence": 21,
+      "pattern_repeats_every_3_beats": 0.81,
+      "stated_beat1_strongest": 0.762
+    },
+    "8/8": {
+      "files": 20,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 20,
+      "pattern_repeats_every_3_beats": 0.15,
+      "stated_beat1_strongest": 0.95
+    },
+    "3/8": {
+      "files": 15,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 1,
+      "pattern_repeats_every_3_beats": 1.0,
+      "stated_beat1_strongest": null
+    },
+    "5/4": {
+      "files": 13,
+      "on_grid": 0.923,
+      "with_kick_or_bass_evidence": 9,
+      "pattern_repeats_every_3_beats": 0.111,
+      "stated_beat1_strongest": 0.444
+    },
+    "9/8": {
+      "files": 10,
+      "on_grid": 0.9,
+      "with_kick_or_bass_evidence": 1,
+      "pattern_repeats_every_3_beats": 1.0,
+      "stated_beat1_strongest": null
+    },
+    "8/4": {
+      "files": 9,
+      "on_grid": 0.444,
+      "with_kick_or_bass_evidence": 7,
+      "pattern_repeats_every_3_beats": 0.0,
+      "stated_beat1_strongest": 0.857
+    },
+    "3/2": {
+      "files": 9,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 1,
+      "pattern_repeats_every_3_beats": 0.0,
+      "stated_beat1_strongest": 0.0
+    },
+    "4/8": {
+      "files": 3,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 3,
+      "pattern_repeats_every_3_beats": 0.0,
+      "stated_beat1_strongest": 1.0
+    },
+    "4/2": {
+      "files": 3,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 1,
+      "pattern_repeats_every_3_beats": 0.0,
+      "stated_beat1_strongest": 0.0
+    },
+    "1/4": {
+      "files": 3,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 2,
+      "pattern_repeats_every_3_beats": 0.5,
+      "stated_beat1_strongest": null
+    },
+    "7/4": {
+      "files": 2,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 2,
+      "pattern_repeats_every_3_beats": 0.5,
+      "stated_beat1_strongest": 0.5
+    },
+    "12/16": {
+      "files": 2,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 0,
+      "pattern_repeats_every_3_beats": null,
+      "stated_beat1_strongest": null
+    },
+    "5/8": {
+      "files": 1,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 0,
+      "pattern_repeats_every_3_beats": null,
+      "stated_beat1_strongest": null
+    },
+    "132/4": {
+      "files": 1,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 1,
+      "pattern_repeats_every_3_beats": 0.0,
+      "stated_beat1_strongest": 0.0
+    },
+    "16/16": {
+      "files": 1,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 1,
+      "pattern_repeats_every_3_beats": 0.0,
+      "stated_beat1_strongest": 1.0
+    },
+    "252/8": {
+      "files": 1,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 1,
+      "pattern_repeats_every_3_beats": 1.0,
+      "stated_beat1_strongest": 0.0
+    },
+    "9/16": {
+      "files": 1,
+      "on_grid": 1.0,
+      "with_kick_or_bass_evidence": 0,
+      "pattern_repeats_every_3_beats": null,
+      "stated_beat1_strongest": null
+    },
+    "changes_detail": {
+      "dominant_meter": [
+        [
+          "4/4",
+          1229
+        ],
+        [
+          "3/4",
+          80
+        ],
+        [
+          "2/4",
+          53
+        ],
+        [
+          "6/8",
+          41
+        ],
+        [
+          "12/8",
+          39
+        ]
+      ],
+      "dominant_covers_95pct_or_more": 0.724,
+      "dominant_share_median": 0.98,
+      "meter_sets": [
+        [
+          "2/4 + 4/4",
+          663
+        ],
+        [
+          "3/4 + 4/4",
+          139
+        ],
+        [
+          "2/4 + 3/4 + 4/4",
+          75
+        ],
+        [
+          "1/4 + 4/4",
+          58
+        ],
+        [
+          "4/4 + 6/4",
+          56
+        ],
+        [
+          "4/4 + 5/4",
+          46
+        ],
+        [
+          "2/4 + 4/4 + 5/4",
+          24
+        ],
+        [
+          "2/4 + 4/4 + 6/4",
+          23
+        ]
+      ]
+    }
+  },
+  "duplicates": {
+    "passing_files": 25494,
+    "songs": 11937,
+    "songs_with_1_version": 7211,
+    "songs_with_2_to_5": 3946,
+    "songs_with_6_to_20": 762,
+    "songs_with_over_20": 18,
+    "max_versions": 154,
+    "share_of_files_in_top_1pct_songs": 0.089,
+    "extra_versions": 13557,
+    "extra_versions_identical_note_content": 6289,
+    "distinct_arrangements_in_multi_version_songs": 11994,
+    "identical_content_shared_across_different_song_ids": 745
+  }
+}

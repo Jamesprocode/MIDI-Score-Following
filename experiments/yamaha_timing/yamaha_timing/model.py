@@ -19,11 +19,11 @@ from .config import TimingConfig
 class _CausalConv1d(nn.Module):
     """Left padding preserves length without observing later frames."""
 
-    def __init__(self, channels: int, kernel_size: int, dilation: int) -> None:
+    def __init__(self, in_channels: int, out_channels: int, kernel_size: int, dilation: int) -> None:
         super().__init__()
         self.left_padding = (kernel_size - 1) * dilation
         self.conv = nn.Conv1d(
-            channels, channels, kernel_size=kernel_size, dilation=dilation,
+            in_channels, out_channels, kernel_size=kernel_size, dilation=dilation,
         )
 
     def forward(self, features: Tensor) -> Tensor:
@@ -35,16 +35,19 @@ class _ResidualTCNBlock(nn.Module):
 
     Layout of the TCN layer in Oyama et al. (2021, Fig. 3), the phase-based
     tracker Maezawa cites; no activation follows the residual sum. Causal left
-    padding replaces the cited papers' offline (non-causal) convolution.
+    padding replaces the cited papers' offline (non-causal) convolution. The
+    residual 1x1 conv also maps channel counts, so the first layer can take the
+    88-key piano roll directly.
     """
 
-    def __init__(self, channels: int, kernel_size: int, dilation: int, dropout: float) -> None:
+    def __init__(self, in_channels: int, channels: int, kernel_size: int, dilation: int,
+                 dropout: float) -> None:
         super().__init__()
-        self.dilated = _CausalConv1d(channels, kernel_size, dilation)
+        self.dilated = _CausalConv1d(in_channels, channels, kernel_size, dilation)
         self.activation = nn.ELU()
         self.dropout = nn.Dropout(dropout)
         self.pointwise = nn.Conv1d(channels, channels, kernel_size=1)
-        self.residual = nn.Conv1d(channels, channels, kernel_size=1)
+        self.residual = nn.Conv1d(in_channels, channels, kernel_size=1)
 
     def forward(self, features: Tensor) -> Tensor:
         update = self.pointwise(self.dropout(self.activation(self.dilated(features))))
@@ -86,10 +89,12 @@ class YamahaTimingTCN(nn.Module):
         if not isinstance(self.config, TimingConfig):
             raise TypeError("config must be a TimingConfig")
         cfg = self.config
-        self.input_projection = nn.Conv1d(cfg.input_pitches, cfg.channels, kernel_size=1)
+        # "The backbone takes the piano-roll ... expressed as a 7-layer TCN": no
+        # separate input layer; the first TCN layer maps 88 keys to the features.
         self.backbone = nn.Sequential(*(
-            _ResidualTCNBlock(cfg.channels, cfg.kernel_size, dilation, cfg.dropout)
-            for dilation in cfg.dilations
+            _ResidualTCNBlock(cfg.input_pitches if index == 0 else cfg.channels, cfg.channels,
+                              cfg.kernel_size, dilation, cfg.dropout)
+            for index, dilation in enumerate(cfg.dilations)
         ))
         self.tempo_projection = nn.Linear(8, cfg.channels)
         self.register_buffer(
@@ -157,7 +162,7 @@ class YamahaTimingTCN(nn.Module):
         if not piano_roll.is_floating_point():
             raise TypeError("piano_roll must have a floating dtype")
 
-        features = self.backbone(self.input_projection(piano_roll.transpose(1, 2)))
+        features = self.backbone(piano_roll.transpose(1, 2))
         features = self._condition(features, bpm_hint, hint_valid)
         return {
             "beat_logits": self.beat_head(features).transpose(1, 2),

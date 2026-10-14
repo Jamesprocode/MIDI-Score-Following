@@ -8,8 +8,8 @@ import numpy as np
 
 from yamaha_timing.config import TimingConfig
 from yamaha_timing.lakh import (
-    IGNORE_INDEX, SongPack, SynthesisConfig, check_score, rasterize, read_score,
-    render_example, save_pack, score_to_song,
+    IGNORE_INDEX, SongPack, SynthesisConfig, bar_and_beat_phase, check_score, meter_segments,
+    rasterize, read_score, render_example, save_pack, score_to_song,
 )
 from yamaha_timing.streaming import MidiFrameRasterizer
 
@@ -17,29 +17,35 @@ TIMING = TimingConfig(channels=16, head_hidden=8, dilations=(1, 2, 4), context_f
 NO_AUGMENTATION = SynthesisConfig(max_delete=0, max_insert=0, drift_step_max=0)
 
 
-def song_on_beats(beats=64, bpm=120.0, parts=1):
-    """One note per beat per part, each half a beat long, at a constant tempo."""
+def song_on_beats(beats=64, bpm=120.0, parts=1, meter=((0.0, 4, 4),)):
+    """One note per quarter note per part, each half a quarter long, at a constant tempo."""
     starts = np.repeat(np.arange(beats, dtype=np.float32), parts)
     return {
         "start": starts, "end": starts + 0.5,
         "pitch": (60 + np.tile(np.arange(parts), beats)).astype(np.uint8),
         "part": np.tile(np.arange(parts), beats).astype(np.uint16),
         "tempo_beat": np.array([0.0], dtype=np.float32), "tempo_bpm": np.array([bpm], dtype=np.float32),
+        "meter_beat": np.array([m[0] for m in meter], dtype=np.float64),
+        "meter_num": np.array([m[1] for m in meter], dtype=np.uint8),
+        "meter_den": np.array([m[2] for m in meter], dtype=np.uint8),
     }
 
 
 def write_midi(path, meter=(4, 4), bpm=120, bars=40, onset_jitter_ticks=0, random_onsets=False,
-               snare_beats=(1, 3), signature=True, seed=0):
+               snare_beats=(1, 3), signature=True, extra_signatures=(), seed=0):
     rng = np.random.default_rng(seed)
     tpb = 480
     mid = mido.MidiFile(ticks_per_beat=tpb)
     meta = mido.MidiTrack()
     meta.append(mido.MetaMessage("set_tempo", tempo=mido.bpm2tempo(bpm), time=0))
-    if signature:
-        meta.append(mido.MetaMessage("time_signature", numerator=meter[0], denominator=meter[1], time=0))
+    signatures = ([(0, *meter)] if signature else []) + list(extra_signatures)
+    last = 0
+    for tick, num, den in sorted(signatures):
+        meta.append(mido.MetaMessage("time_signature", numerator=num, denominator=den, time=tick - last))
+        last = tick
     mid.tracks.append(meta)
     events = []
-    total_beats = bars * meter[0]
+    total_beats = bars * meter[0] * 4 // meter[1]  # in quarter notes
     for k in range(total_beats * 2):  # eighth notes
         on = rng.integers(0, total_beats * tpb) if random_onsets else k * tpb // 2
         on = max(0, int(on + rng.integers(-onset_jitter_ticks, onset_jitter_ticks + 1)))
@@ -85,11 +91,55 @@ class RenderTests(unittest.TestCase):
         example = render_example(song_on_beats(bpm=120.0), np.random.default_rng(0), TIMING, NO_AUGMENTATION, lead_in=False)
         frames = np.flatnonzero(example["mask"])
         position = frames / 20 * 2.0  # 120 BPM: two beats per second, first note at beat 0
-        np.testing.assert_array_equal(example["beat"][frames], np.floor((position % 1) * 32).astype(int))
-        np.testing.assert_array_equal(example["bar"][frames], np.floor((position % 4) / 4 * 32).astype(int))
+        np.testing.assert_array_equal(example["beat"][frames],
+                                      np.floor((position % 1) * TIMING.beat_bins).astype(int))
+        np.testing.assert_array_equal(example["bar"][frames],
+                                      np.floor((position % 4) / 4 * TIMING.bar_bins).astype(int))
+        # The bar position folded to one beat agrees with the beat position,
+        # compared at the coarser of the two resolutions.
+        per_beat = TIMING.bar_bins // 4
+        coarse = min(per_beat, TIMING.beat_bins)
+        np.testing.assert_array_equal(example["bar"][frames] % per_beat * coarse // per_beat,
+                                      example["beat"][frames] * coarse // TIMING.beat_bins)
         np.testing.assert_allclose(example["bpm"][frames], 120.0, rtol=1e-6)
         # Notes start on beats: every half second at 120 BPM.
         np.testing.assert_array_equal(np.flatnonzero(example["roll"][:, 60 - 21])[:3], [0, 1, 2])
+
+    def test_three_four_and_six_eight_labels(self):
+        # 3/4: bar = 3 quarter notes, beat = quarter note.
+        example = render_example(song_on_beats(meter=((0.0, 3, 4),)), np.random.default_rng(0), TIMING,
+                                 NO_AUGMENTATION, lead_in=False)
+        frames = np.flatnonzero(example["mask"])
+        position = frames / 20 * 2.0
+        np.testing.assert_array_equal(example["bar"][frames], np.floor((position % 3) / 3 * 32).astype(int))
+        np.testing.assert_array_equal(example["beat"][frames], np.floor((position % 1) * 32).astype(int))
+        np.testing.assert_allclose(example["bpm"][frames], 120.0, rtol=1e-6)
+        # 6/8: bar = 3 quarter notes, beat = eighth note (the denominator), so the
+        # beat cycle is half a quarter and the hint counts eighths per minute.
+        example = render_example(song_on_beats(meter=((0.0, 6, 8),)), np.random.default_rng(0), TIMING,
+                                 NO_AUGMENTATION, lead_in=False)
+        np.testing.assert_array_equal(example["bar"][frames], np.floor((position % 3) / 3 * 32).astype(int))
+        np.testing.assert_array_equal(example["beat"][frames], np.floor((position % 0.5) / 0.5 * 32).astype(int))
+        np.testing.assert_allclose(example["bpm"][frames], 240.0, rtol=1e-6)
+
+    def test_bars_follow_meter_changes(self):
+        # One 4/4 bar, one 2/4 bar, then 4/4 again.
+        meter = (np.array([0.0, 4.0, 6.0]), np.array([4, 2, 4], np.uint8), np.array([4, 4, 4], np.uint8))
+        bar, beat, unit = bar_and_beat_phase([0.0, 2.0, 4.0, 5.0, 6.0, 7.0, 10.0], *meter)
+        np.testing.assert_allclose(bar, [0.0, 0.5, 0.0, 0.5, 0.0, 0.25, 0.0])
+        np.testing.assert_allclose(beat, 0.0)
+        np.testing.assert_allclose(unit, 1.0)
+
+    def test_meter_segments(self):
+        raw = lambda *sigs: {"tpb": 480, "signatures": list(sigs)}
+        self.assertEqual(meter_segments(raw((0, 4, 4), (1920, 2, 4), (2880, 4, 4))),
+                         ([(0, 4, 4), (1920, 2, 4), (2880, 4, 4)], None))
+        self.assertEqual(meter_segments(raw((0, 4, 4), (1920, 4, 4))), ([(0, 4, 4)], None))  # restatement
+        self.assertEqual(meter_segments(raw((1920, 3, 4))), ([(0, 4, 4), (1920, 3, 4)], None))  # 4/4 before
+        self.assertEqual(meter_segments(raw((0, 6, 8), (1440, 4, 4))), ([(0, 6, 8), (1440, 4, 4)], None))
+        self.assertEqual(meter_segments(raw((0, 4, 4), (960, 3, 4)))[1], "meter_event_off_bar_line")
+        self.assertEqual(meter_segments(raw((0, 9, 4)))[1], "unsupported_meter")  # 9 quarters > 8
+        self.assertEqual(meter_segments(raw())[1], "no_time_signature")
 
     def test_labels_follow_notes_under_tempo_drift(self):
         synth = SynthesisConfig(max_delete=0, max_insert=0, drift_step_max=0.03)
@@ -138,20 +188,24 @@ class CheckTests(unittest.TestCase):
             return check_score(read_score(path))
 
     def test_rules(self):
-        cases = {
-            "ok": {},
-            "humanized_ok": {"onset_jitter_ticks": 12},
-            "not_constant_4_4": {"meter": (3, 4)},
-            "no_time_signature": {"signature": False},
-            "off_grid": {"random_onsets": True},
-            "snare_on_1_3": {"snare_beats": (0, 2)},
-            "too_short": {"bars": 10},  # 80 notes but only 20 s
-        }
-        for expected, kwargs in cases.items():
-            with self.subTest(expected=expected):
+        cases = [  # (name, file settings, expected reason)
+            ("clean 4/4", {}, "ok"),
+            ("humanized", {"onset_jitter_ticks": 12}, "ok"),
+            ("3/4", {"meter": (3, 4)}, "ok"),
+            ("6/8", {"meter": (6, 8)}, "ok"),
+            ("one 2/4 bar inside 4/4", {"extra_signatures": [(16 * 480, 2, 4), (18 * 480, 4, 4)]}, "ok"),
+            ("no time signature", {"signature": False}, "no_time_signature"),
+            ("bar longer than 8 quarter notes", {"meter": (9, 4)}, "unsupported_meter"),
+            ("meter event mid-bar", {"extra_signatures": [(2 * 480, 4, 4)]}, "meter_event_off_bar_line"),
+            ("played in", {"random_onsets": True}, "off_grid"),
+            ("snare on 1 and 3", {"snare_beats": (0, 2)}, "snare_on_1_3"),
+            ("too short", {"bars": 10}, "too_short"),  # 80 notes but only 20 s
+        ]
+        for name, kwargs, expected in cases:
+            with self.subTest(case=name):
                 passed, reason, _ = self.check(**kwargs)
-                self.assertEqual(reason, expected.replace("humanized_", ""))
-                self.assertEqual(passed, expected.endswith("ok"))
+                self.assertEqual(reason, expected)
+                self.assertEqual(passed, expected == "ok")
 
     def test_song_keeps_pitched_parts_only_and_pack_round_trips(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -161,10 +215,13 @@ class CheckTests(unittest.TestCase):
             self.assertEqual(set(song["part"].tolist()), {0})        # drums removed
             self.assertEqual(len(song["start"]), 40 * 4 * 2)
             np.testing.assert_allclose(song["start"][:3], [0.0, 0.5, 1.0])
-            other = song_on_beats(parts=2)
-            save_pack(Path(folder) / "pack.npz", [song, other], ["a", "b"])
+            other = song_on_beats(parts=2, meter=((0.0, 4, 4), (8.0, 3, 4)))
+            save_pack(Path(folder) / "pack.npz", [song, other], ["a", "b"],
+                      {"group": np.array([0, 0]), "meter": np.array(["4/4", "changes"])})
             pack = SongPack(Path(folder) / "pack.npz")
             self.assertEqual(list(pack.ids), ["a", "b"])
+            self.assertEqual(list(pack.meta["meter"]), ["4/4", "changes"])
+            self.assertEqual(list(pack.meta["group"]), [0, 0])
             for original, restored in ((song, pack.song(0)), (other, pack.song(1))):
                 for key in original:
                     np.testing.assert_array_equal(original[key], restored[key])

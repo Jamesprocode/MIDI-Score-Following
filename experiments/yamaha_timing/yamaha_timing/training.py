@@ -16,7 +16,8 @@ from .config import TimingConfig
 from .model import YamahaTimingTCN
 
 # 2: cited-paper TCN layer (dilated conv + 1x1 conv, 1x1 residual) and dropout.
-CHECKPOINT_SCHEMA = 2
+# 3: no separate input projection; the first TCN layer takes the 88-key roll.
+CHECKPOINT_SCHEMA = 3
 
 
 def masked_phase_loss(outputs: dict[str, torch.Tensor],
@@ -74,7 +75,7 @@ def load_checkpoint(path: str | Path, device: str | torch.device = "cpu") -> tup
     if not isinstance(payload, dict) or payload.get("schema_version") != CHECKPOINT_SCHEMA:
         raise ValueError(
             f"unsupported timing checkpoint schema {payload.get('schema_version') if isinstance(payload, dict) else None}; "
-            f"expected {CHECKPOINT_SCHEMA} (schema 1 used the earlier two-dilated-conv layer)"
+            f"expected {CHECKPOINT_SCHEMA} (earlier schemas used a different layer layout)"
         )
     config = TimingConfig(**payload["config"])
     model = YamahaTimingTCN(config).to(device)

@@ -98,7 +98,8 @@ class ModelTests(FrameworkTestCase):
         model = YamahaTimingTCN(tiny_config())
         outputs = model(torch.rand(2, 18, 88), bpm_hint=torch.tensor([100.0, 140.0]))
         loss = sum(
-            F.cross_entropy(outputs[name].reshape(-1, 32), torch.randint(0, 32, (36,)))
+            F.cross_entropy(outputs[name].reshape(-1, outputs[name].shape[-1]),
+                            torch.randint(0, outputs[name].shape[-1], (36,)))
             for name in ("beat_logits", "bar_logits")
         )
         loss.backward()

@@ -4,8 +4,10 @@ Where Maezawa is silent, training follows Oyama et al. (2021), the phase-based
 tracker Maezawa cites: Adam at 1e-3, one whole song per step, learning rate
 halved after 15 epochs without validation improvement, stop after 50 such
 epochs or at 200 epochs, gradients clipped at 0.5 (by value). Each epoch
-visits every training song once with fresh augmentation; validation songs use
-fixed augmentation, so the validation loss is comparable across epochs.
+visits every training song group once, using one of its arrangements chosen
+at random, with fresh augmentation. Validation uses each group's best-matched
+arrangement with fixed augmentation, so the validation loss is comparable
+across epochs.
 
 Resumable (PACE ICE contract): the newest checkpoint in --out is loaded on
 start; SIGUSR1/SIGTERM save a checkpoint and exit 0; a checkpoint is written
@@ -15,7 +17,7 @@ Curves go to W&B (project midi-score-following). On ICE the job chain sets the
 run id, name and a temporary W&B directory, so every resumed job extends one
 run. For local smoke tests set WANDB_MODE=disabled.
 
-  python train_lakh.py --data data/lakh_v1 --out runs/lakh_r1
+  python train_lakh.py --data data/lakh_v2 --out runs/lakh_r1
 """
 from __future__ import annotations
 
@@ -45,17 +47,22 @@ STOP = {"signal": None}
 
 
 class SongExamples(Dataset):
-    """Item ``(epoch, index)`` -> one rendered song; the key fixes the augmentation."""
+    """Item ``(epoch, index)`` -> one rendered song; the key fixes the augmentation.
+
+    ``groups`` lists each song group's file indices, best-matched first.
+    """
 
     def __init__(self, pack_path, timing, synth, seed, limit=0):
         self.pack_path, self.timing, self.synth, self.seed = Path(pack_path), timing, synth, seed
         self.pack = None
         with np.load(self.pack_path, allow_pickle=False) as data:
-            total = len(data["ids"])
-        self.size = min(total, limit) if limit else total
+            group, self.meters = data["meta_group"], data["meta_meter"]
+        self.groups = [list(np.flatnonzero(group == g)) for g in range(group.max() + 1)]
+        if limit:
+            self.groups = self.groups[:limit]
 
     def __len__(self):
-        return self.size
+        return len(self.meters)
 
     def __getitem__(self, key):
         epoch, index = key
@@ -68,7 +75,18 @@ class SongExamples(Dataset):
             "beat": torch.from_numpy(example["beat"]), "bar": torch.from_numpy(example["bar"]),
             "mask": torch.from_numpy(example["mask"]), "bpm": torch.from_numpy(example["bpm"]),
             "hint_valid": torch.from_numpy(example["hint_valid"]),
+            "four_four": torch.tensor(self.meters[index] == "4/4"),
         }
+
+    def epoch_keys(self, epoch):
+        """One randomly chosen arrangement per group, groups in random order."""
+        rng = np.random.default_rng([self.seed, epoch])
+        order = rng.permutation(len(self.groups))
+        return [(epoch, int(self.groups[g][rng.integers(len(self.groups[g]))])) for g in order]
+
+    def fixed_keys(self):
+        """Each group's best-matched arrangement, for validation."""
+        return [(FIXED_EPOCH, int(members[0])) for members in self.groups]
 
 
 def loader(dataset, keys, workers, device):
@@ -88,18 +106,20 @@ def forward(model, item, device):
 
 @torch.no_grad()
 def validate(model, dataset, workers, device):
-    """Frame-weighted loss and accuracy over all validation songs, split by hint."""
+    """Frame-weighted loss and accuracy over the validation groups, also split by
+    hint given / withheld and by meter (4/4 / other)."""
     model.eval()
     sums = {}
-    for item in loader(dataset, [(FIXED_EPOCH, i) for i in range(len(dataset))], workers, device):
+    for item in loader(dataset, dataset.fixed_keys(), workers, device):
         outputs, beat, bar, mask, hint = forward(model, item, device)
-        group = "hint" if bool(hint[mask].any()) else "no_hint"
+        hint_key = "hint" if bool(hint[mask].any()) else "no_hint"
+        meter_key = "meter_4_4" if bool(item["four_four"]) else "meter_other"
         for task, target in (("beat", beat), ("bar", bar)):
             logits, labels = outputs[f"{task}_logits"][mask], target[mask]
             bins = logits.shape[-1]
             error = (logits.argmax(-1) - labels).remainder(bins)
             near = torch.minimum(error, bins - error) <= 1
-            for key in ("all", group):
+            for key in ("all", hint_key, meter_key):
                 stats = sums.setdefault(f"{key}/{task}", np.zeros(4))
                 stats += [F.cross_entropy(logits, labels, reduction="sum").item(), len(labels),
                           (error == 0).sum().item(), near.sum().item()]
@@ -177,7 +197,8 @@ def main():
         state = {key: saved[key] for key in state}
         print(json.dumps({"resumed": str(latest), "epoch": state["epoch"], "next_index": state["next_index"]}), flush=True)
     else:
-        print(json.dumps({"start": True, "device": str(device), "train_songs": len(train), "val_songs": len(val),
+        print(json.dumps({"start": True, "device": str(device), "train_groups": len(train.groups),
+                          "train_files": len(train), "val_groups": len(val.groups),
                           "parameters": sum(p.numel() for p in model.parameters()),
                           "config": timing.to_dict(), "synthesis": synth.to_dict(),
                           "data": manifest.get("packs"), "torch": torch.__version__,
@@ -187,7 +208,8 @@ def main():
         "args": {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()},
         "model": timing.to_dict(), "synthesis": synth.to_dict(), "data": manifest.get("packs"),
         "data_funnel": manifest.get("funnel"), "parameters": sum(p.numel() for p in model.parameters()),
-        "device": str(device), "torch": torch.__version__, "train_songs": len(train), "val_songs": len(val),
+        "device": str(device), "torch": torch.__version__, "train_groups": len(train.groups),
+        "train_files": len(train), "val_groups": len(val.groups),
     })
 
     def checkpoint(reason):
@@ -205,8 +227,7 @@ def main():
         epoch = state["epoch"]
         if epoch >= args.epochs or state["bad_epochs"] >= args.stop_patience:
             break
-        order = np.random.default_rng([args.seed, epoch]).permutation(len(train))
-        keys = [(epoch, int(i)) for i in order[state["next_index"]:]]
+        keys = train.epoch_keys(epoch)[state["next_index"]:]
         window = {"loss": 0.0, "steps": 0, "frames": 0, "start": time.time()}
         for item in loader(train, keys, args.workers, device):
             outputs, beat, bar, mask, _ = forward(model, item, device)
@@ -222,7 +243,7 @@ def main():
             window["frames"] += int(mask.sum())
             if window["steps"] == args.log_every:
                 elapsed = time.time() - window["start"]
-                row = {"epoch": epoch, "song": state["next_index"], "of": len(train),
+                row = {"epoch": epoch, "song": state["next_index"], "of": len(train.groups),
                        "train_loss": round(window["loss"] / window["steps"], 4),
                        "lr": optimizer.param_groups[0]["lr"],
                        "songs_per_s": round(window["steps"] / elapsed, 2),
@@ -230,7 +251,7 @@ def main():
                 print(json.dumps(row), flush=True)
                 wandb.log({"train/loss": row["train_loss"], "lr": row["lr"],
                            "train/songs_per_s": row["songs_per_s"], "train/frames_per_s": row["frames_per_s"],
-                           "epoch": epoch + state["next_index"] / len(train)}, step=state["steps"])
+                           "epoch": epoch + state["next_index"] / len(train.groups)}, step=state["steps"])
                 window = {"loss": 0.0, "steps": 0, "frames": 0, "start": time.time()}
             if STOP["signal"]:
                 checkpoint(STOP["signal"])

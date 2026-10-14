@@ -9,9 +9,12 @@ Boeck 2019; Oyama et al. 2021, Fig. 3): one dilated convolution, ELU, dropout,
 and a 1x1 convolution, with a 1x1 convolution on the residual path. With
 kernel size 2 and dilations 1..64 the receptive field is 128 frames (6.4 s),
 which matches the paper's six seconds; the cited papers' kernel size 5 would
-give 25 s. Dropout 0.1 follows both cited papers. Head width and the
-beat-phase class count remain reconstruction choices. The rolling streaming
-window equals the receptive field, so streaming and whole-sequence outputs agree.
+give 25 s. Dropout 0.1 follows both cited papers. The beat-phase class count
+is unstated; like Oyama et al., who quantize beat and downbeat phase into the
+same number of classes, we use 32 for both cycles (in 4/4 the beat head is
+therefore 4x finer in time than the bar head). Head width remains a
+reconstruction choice. The rolling streaming window equals the receptive
+field, so streaming and whole-sequence outputs agree.
 """
 
 from dataclasses import asdict, dataclass
@@ -32,8 +35,8 @@ class TimingConfig:
     dilations: tuple[int, ...] = (1, 2, 4, 8, 16, 32, 64)
     kernel_size: int = 2
     head_hidden: int = 128
-    beat_bins: int = 32
-    bar_bins: int = 32
+    beat_bins: int = 32  # positions within a beat (paper: unstated; same count as the bar, as in Oyama et al.)
+    bar_bins: int = 32   # positions within a bar (paper: 32 segments)
     dropout: float = 0.1
 
     def __post_init__(self) -> None:
