@@ -8,7 +8,7 @@ import torch.nn.functional as F
 
 from yamaha_timing.config import TimingConfig
 from yamaha_timing.model import YamahaTimingTCN
-from yamaha_timing.streaming import MidiFrameRasterizer, StreamingTimingTracker
+from yamaha_timing.streaming import CachedStreamingTracker, MidiFrameRasterizer, StreamingTimingTracker
 from yamaha_timing.training import masked_phase_loss
 
 
@@ -298,6 +298,20 @@ class MidiRasterizerTests(FrameworkTestCase):
         with self.assertRaises(ValueError):
             rasterizer.push_event("note_on", 60, 100, 0.03)
 
+
+    def test_cached_streaming_matches_reference(self):
+        torch.manual_seed(3)
+        model = YamahaTimingTCN(TimingConfig(channels=32, head_hidden=16))  # full dilations and context
+        reference, cached = StreamingTimingTracker(model), CachedStreamingTracker(model)
+        rng = torch.Generator().manual_seed(0)
+        for k in range(300):  # beyond the 128-frame context
+            frame = (torch.rand(88, generator=rng) < .05).float()
+            hint = None if k % 7 == 0 else 90.0 + k / 10
+            a = reference.push_frame(frame, k / 20, hint)
+            b = cached.push_frame(frame, k / 20, hint)
+            for name in ("beat_phase_probabilities", "bar_phase_probabilities"):
+                torch.testing.assert_close(torch.tensor(b[name]), torch.tensor(a[name]), atol=1e-5, rtol=1e-4)
+            self.assertEqual(a["context_ready"], b["context_ready"])
 
 if __name__ == "__main__":
     unittest.main()

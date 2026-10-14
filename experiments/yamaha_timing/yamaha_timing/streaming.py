@@ -23,10 +23,11 @@ import math
 from numbers import Integral
 
 import torch
+import torch.nn.functional as F
 
 from .config import TimingConfig
 
-__all__ = ["StreamingTimingTracker", "MidiFrameRasterizer"]
+__all__ = ["StreamingTimingTracker", "CachedStreamingTracker", "MidiFrameRasterizer"]
 
 
 def _timestamp(value, name="timestamp_s"):
@@ -161,6 +162,106 @@ class StreamingTimingTracker:
             "context_frames_seen": len(history),
             "context_ready": len(history) == self.config.context_frames,
         }
+
+
+class CachedStreamingTracker:
+    """Same inputs and outputs as StreamingTimingTracker, one TCN time step per frame.
+
+    StreamingTimingTracker re-runs the whole 128-frame context for every frame.
+    Here each dilated causal layer keeps its last ``dilation`` inputs in a ring
+    buffer, so a frame costs one time step of every layer (about 1/128 of the
+    work). ``reset`` primes the buffers with context_frames - 1 silent frames,
+    the training lead-in that StreamingTimingTracker's zero-padded window also
+    represents; since the receptive field equals the context, outputs then equal
+    StreamingTimingTracker's up to float rounding (tests check this).
+
+    The BPM gate is computed on the CPU in float64 exactly as in the model
+    (8 numbers in, ``channels`` out), so the network itself can run on devices
+    without float64 such as Apple MPS: pass ``device`` to move a copy there.
+    Uses only the current and past frames.
+    """
+
+    def __init__(self, model, device=None):
+        import copy
+
+        source = model
+        if device is not None:
+            source = copy.deepcopy(model)
+            source._buffers["tempo_centers"] = source.tempo_centers.float()  # gate math stays on the CPU
+            source = source.to(device)
+        source.eval()
+        self.model, self.config = source, source.config
+        parameter = next(source.parameters())
+        self.device, self.dtype = parameter.device, parameter.dtype
+        self.layers = []
+        for block in source.backbone:
+            conv = block.dilated.conv
+            if conv.kernel_size[0] != 2:
+                raise ValueError("CachedStreamingTracker supports kernel size 2")
+            self.layers.append({
+                "dilation": conv.dilation[0], "past": conv.weight[:, :, 0], "now": conv.weight[:, :, 1],
+                "bias": conv.bias, "activation": block.activation,
+                "pointwise": (block.pointwise.weight[:, :, 0], block.pointwise.bias),
+                "residual": (block.residual.weight[:, :, 0], block.residual.bias)})
+        self._projection = (model.tempo_projection.weight.detach().double().cpu(),
+                            model.tempo_projection.bias.detach().double().cpu())
+        self._centers = model.tempo_centers.detach().double().cpu()
+        self.reset()
+
+    def reset(self):
+        self._buffers = [torch.zeros(layer["dilation"], layer["past"].shape[1], device=self.device, dtype=self.dtype)
+                         for layer in self.layers]
+        self._step = 0
+        self._last_timestamp = None
+        self._seen = 0
+        with torch.no_grad():
+            silent = torch.zeros(self.config.input_pitches, device=self.device, dtype=self.dtype)
+            for _ in range(self.config.context_frames - 1):  # silent lead-in, as in training
+                self._backbone_step(silent)
+
+    def _backbone_step(self, x):
+        for layer, buffer in zip(self.layers, self._buffers):
+            slot = self._step % layer["dilation"]
+            hidden = layer["activation"](F.linear(buffer[slot], layer["past"]) + F.linear(x, layer["now"], layer["bias"]))
+            y = F.linear(x, *layer["residual"]) + F.linear(hidden, *layer["pointwise"])
+            buffer[slot] = x  # becomes this layer's x[t - dilation] in `dilation` steps
+            x = y
+        self._step += 1
+        return x
+
+    def _gate(self, bpm):
+        """model._condition's gate for one valid hint, in float64."""
+        reference = self._centers[-1]
+        logits = bpm * (2 * (self._centers - reference)) + (reference.square() - self._centers.square())
+        encoded = torch.softmax(logits, dim=-1)
+        gate = torch.sigmoid(F.linear(encoded, *self._projection))
+        return gate.to(device=self.device, dtype=self.dtype)
+
+    def push_frame(self, frame, timestamp_s, bpm_hint=None):
+        timestamp_s = _timestamp(timestamp_s)
+        if self._last_timestamp is not None and not math.isclose(
+                timestamp_s - self._last_timestamp, 1.0 / self.config.frame_rate, rel_tol=0.0, abs_tol=1e-6):
+            raise ValueError("Frame timestamps must increase at the configured frame rate")
+        if bpm_hint is not None:
+            bpm_hint = float(bpm_hint)
+            if not math.isfinite(bpm_hint) or bpm_hint <= 0:
+                raise ValueError("bpm_hint must be a finite positive scalar or None")
+        with torch.no_grad():
+            x = torch.as_tensor(frame, dtype=self.dtype).to(self.device)
+            if x.shape != (self.config.input_pitches,):
+                raise ValueError(f"frame must have shape [{self.config.input_pitches}]")
+            x = self._backbone_step(x)
+            if bpm_hint is not None:
+                x = x * self._gate(bpm_hint)
+            features = x[None, :, None]
+            probabilities = {f"{name}_phase_probabilities": torch.softmax(
+                getattr(self.model, f"{name}_head")(features)[0, :, 0].float(), dim=-1).cpu().tolist()
+                for name in ("beat", "bar")}
+        self._last_timestamp = timestamp_s
+        self._seen += 1
+        seen = min(self._seen, self.config.context_frames)
+        return {"timestamp_s": timestamp_s, **probabilities, "context_frames_seen": seen,
+                "context_ready": seen == self.config.context_frames}
 
 
 class MidiFrameRasterizer:
