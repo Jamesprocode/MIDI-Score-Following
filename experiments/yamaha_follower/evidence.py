@@ -58,3 +58,48 @@ class DownbeatEvidence:
         classes = np.minimum((phase * self.bins).astype(int), self.bins - 1)
         row = self.log_probs[self.frames[frame_index], classes]
         return np.broadcast_to(row, (self.n_tempi, len(row)))
+
+
+class NetworkPhase:
+    """Bar-phase log-probabilities for any BPM condition, one frame at a time.
+
+    The backbone does not see the BPM condition (the gate multiplies its output),
+    so it runs once per take (causal, with the silent lead-in); each call then
+    applies the gate for that frame's hint and the bar head, as the full model
+    does. This lets the follower feed its own tempo back as the condition
+    (Maezawa 2023, sec. 2.2) without re-running the network. Equal to
+    timing_log_probs for a constant hint (tests check this).
+    """
+
+    @torch.no_grad()
+    def __init__(self, model, take, device="cpu"):
+        cfg = model.config
+        self.rate, lead = cfg.frame_rate, cfg.context_frames - 1
+        end = max(take.span[1], float(take.offsets.max()) if len(take.offsets) else 0.0)
+        frames = int(np.ceil(end * self.rate)) + 1
+        offsets = np.minimum(take.offsets, take.onsets + SynthesisConfig().max_note_seconds)
+        roll = np.concatenate([np.zeros((lead, cfg.input_pitches), np.uint8),
+                               rasterize(take.onsets, offsets, take.pitches, frames, self.rate)])
+        features = model.backbone(torch.from_numpy(roll).float()[None].transpose(1, 2).to(device))
+        self.features = features[0, :, lead:].T.double().cpu().numpy()  # (frames, channels)
+        head = model.bar_head
+        self.w1, self.b1 = head[1].weight[:, :, 0].double().cpu().numpy(), head[1].bias.double().cpu().numpy()
+        self.w2, self.b2 = head[4].weight[:, :, 0].double().cpu().numpy(), head[4].bias.double().cpu().numpy()
+        self.proj_w = model.tempo_projection.weight.double().cpu().numpy()
+        self.proj_b = model.tempo_projection.bias.double().cpu().numpy()
+        self.centers = model.tempo_centers.double().cpu().numpy()
+
+    def frame_at(self, time_s):
+        return int(np.clip(np.floor(time_s * self.rate + 1e-9), 0, len(self.features) - 1))
+
+    def bar_log_probs(self, frame, bpm):
+        reference = self.centers[-1]
+        logits = bpm * (2 * (self.centers - reference)) + (reference ** 2 - self.centers ** 2)
+        encoded = np.exp(logits - logits.max())
+        encoded /= encoded.sum()
+        gate = 1 / (1 + np.exp(-(self.proj_w @ encoded + self.proj_b)))
+        hidden = self.w1 @ (self.features[frame] * gate) + self.b1
+        hidden = np.where(hidden > 0, hidden, np.expm1(np.minimum(hidden, 0)))  # ELU
+        out = self.w2 @ hidden + self.b2
+        out -= out.max()
+        return out - np.log(np.exp(out).sum())
