@@ -24,7 +24,11 @@ Curves go to W&B (project midi-score-following). On ICE the job chain sets the
 run id, name and a temporary W&B directory, so every resumed job extends one
 run. For local smoke tests set WANDB_MODE=disabled.
 
-  python train_lakh.py --data data/lakh_v2 --out runs/lakh_r1
+Settings can come from a JSON file in configs/ (--config); flags given on the
+command line override it. Data, output and machine settings stay on the
+command line. On resume, training settings must match the checkpoint's.
+
+  python train_lakh.py --config configs/oyama.json --data data/lakh_v2 --out runs/lakh_r2
 """
 from __future__ import annotations
 
@@ -233,8 +237,14 @@ def save_state(path, state):
     os.replace(tmp, path)
 
 
-def main():
+# Settings that change the trained model; a resumed run must keep them.
+TRAINING_ARGS = ("epochs", "lr", "warmup_steps", "schedule", "min_lr", "batch_size", "crop_seconds",
+                 "lr_patience", "stop_patience", "clip", "channels", "head_hidden", "seed")
+
+
+def parse_args(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--config", type=Path, help="JSON file of training settings (configs/); flags override it")
     parser.add_argument("--data", type=Path, required=True, help="folder with train.npz, val.npz, manifest.json")
     parser.add_argument("--out", type=Path, default=Path(os.environ.get("RUN_DIR", "runs/lakh")))
     parser.add_argument("--epochs", type=int, default=200)
@@ -266,7 +276,20 @@ def main():
     parser.add_argument("--limit-val", type=int, default=0, help="smoke tests only")
     parser.add_argument("--device", default="auto", choices=("auto", "cuda", "cpu"))
     parser.add_argument("--threads", type=int, default=0)
-    args = parser.parse_args()
+    first, _ = parser.parse_known_args(argv)
+    if first.config:
+        settings = json.loads(first.config.read_text())
+        settings.pop("description", None)
+        settings = {key.replace("-", "_"): value for key, value in settings.items()}
+        unknown = sorted(set(settings) - set(TRAINING_ARGS))
+        if unknown:
+            parser.error(f"{first.config}: not training settings: {', '.join(unknown)}")
+        parser.set_defaults(**settings)
+    return parser.parse_args(argv)
+
+
+def main():
+    args = parse_args()
 
     for name in ("SIGUSR1", "SIGTERM"):
         signal.signal(getattr(signal, name), lambda signum, _: STOP.update(signal=signal.Signals(signum).name))
@@ -295,6 +318,10 @@ def main():
         saved = torch.load(latest, map_location=device, weights_only=True)
         if saved["config"] != timing.to_dict() or saved["synthesis"] != synth.to_dict():
             sys.exit(f"{latest} was made with a different model or synthesis config; use a new --out")
+        changed = {key: (saved["args"][key], getattr(args, key)) for key in TRAINING_ARGS
+                   if key in saved["args"] and saved["args"][key] != getattr(args, key)}
+        if changed:
+            sys.exit(f"{latest} was trained with other settings (saved, now): {changed}; use a new --out")
         model.load_state_dict(saved["model"])
         optimizer.load_state_dict(saved["optimizer"])
         scheduler.load_state_dict(saved["scheduler"])

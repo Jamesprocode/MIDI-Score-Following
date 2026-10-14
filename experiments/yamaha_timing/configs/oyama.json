@@ -1,0 +1,16 @@
+{
+  "description": "Oyama et al. 2021 recipe at lr 1e-4, as run by lakh_r2: one whole song per step, Adam, learning rate halved after 15 epochs without validation improvement, stop after 50 such epochs or at 200 epochs, gradients clipped at 0.5 by value.",
+  "epochs": 200,
+  "lr": 1e-4,
+  "warmup_steps": 0,
+  "schedule": "plateau",
+  "min_lr": 0.0,
+  "batch_size": 1,
+  "crop_seconds": 0,
+  "lr_patience": 15,
+  "stop_patience": 50,
+  "clip": 0.5,
+  "channels": 512,
+  "head_hidden": 128,
+  "seed": 0
+}

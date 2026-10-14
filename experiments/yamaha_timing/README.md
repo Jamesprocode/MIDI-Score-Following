@@ -108,7 +108,9 @@ create a Python 3.10+ virtual environment and install `requirements.txt` there.
   `--warmup-steps N` adds a linear learning-rate warm-up (off by default).
 - `train_lakh.py`: whole-song training (Oyama defaults; optional batches of
   cropped excerpts with a cosine schedule: `--batch-size --crop-seconds
-  --schedule cosine --min-lr`) with validation (phase loss and accuracy,
+  --schedule cosine --min-lr`; settings can come from `configs/*.json` via
+  `--config`, flags override: `oyama.json` is lakh_r2's setup,
+  `batch16_cosine.json` is lakh_r3b's) with validation (phase loss and accuracy,
   plus beat/downbeat F-measure, CMLt, AMLt and the other mir_eval measures), best-model export, and
   exact resume (SIGUSR1/SIGTERM checkpoint and exit, periodic checkpoints,
   `DONE` marker) for PACE ICE job chains.

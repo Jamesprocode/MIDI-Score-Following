@@ -1,0 +1,16 @@
+{
+  "description": "As run by lakh_r3b: 16 two-minute excerpts per step (each with the 6.4 s before it as unlabelled context), linear warm-up over the first epoch (806 steps) to 1e-3, cosine decay to 1e-5 by epoch 100, stop after 20 epochs without validation improvement.",
+  "epochs": 100,
+  "lr": 1e-3,
+  "warmup_steps": 806,
+  "schedule": "cosine",
+  "min_lr": 1e-5,
+  "batch_size": 16,
+  "crop_seconds": 120,
+  "lr_patience": 15,
+  "stop_patience": 20,
+  "clip": 0.5,
+  "channels": 512,
+  "head_hidden": 128,
+  "seed": 0
+}

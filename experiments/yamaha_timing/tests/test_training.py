@@ -9,7 +9,7 @@ from yamaha_timing.config import TimingConfig
 from yamaha_timing.model import YamahaTimingTCN
 from yamaha_timing.synthetic import overfit_windows
 from yamaha_timing.training import load_checkpoint, masked_phase_loss, save_checkpoint
-from train_lakh import pad_batch, scheduled_lr  # discovery runs from the experiment folder
+from train_lakh import TRAINING_ARGS, pad_batch, parse_args, scheduled_lr  # run from the experiment folder
 
 
 class TrainingTests(unittest.TestCase):
@@ -35,6 +35,19 @@ class TrainingTests(unittest.TestCase):
                 alone = model(item["roll"][None], bpm_hint=item["bpm"][None], hint_valid=item["hint_valid"][None])
                 for name in ("beat_logits", "bar_logits"):
                     torch.testing.assert_close(together[name][k, :len(item["roll"])], alone[name][0])
+
+    def test_config_files(self):
+        defaults = parse_args(["--data", "d"])
+        oyama = parse_args(["--data", "d", "--config", "configs/oyama.json"])
+        for key in TRAINING_ARGS:  # lakh_r2 ran on the defaults
+            self.assertEqual(getattr(oyama, key), getattr(defaults, key), key)
+        batched = parse_args(["--data", "d", "--config", "configs/batch16_cosine.json", "--lr", "5e-4"])
+        self.assertEqual((batched.batch_size, batched.schedule, batched.lr), (16, "cosine", 5e-4))
+        with tempfile.TemporaryDirectory() as folder:
+            bad = Path(folder) / "bad.json"
+            bad.write_text('{"lr": 1e-3, "workers": 2}')
+            with self.assertRaises(SystemExit):
+                parse_args(["--data", "d", "--config", str(bad)])
 
     def test_learning_rate_schedules(self):
         self.assertAlmostEqual(scheduled_lr(0, 1e-4, 10, "cosine", 110), 1e-5)
