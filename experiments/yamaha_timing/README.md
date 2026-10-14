@@ -99,12 +99,16 @@ create a Python 3.10+ virtual environment and install `requirements.txt` there.
   `files.csv` with every file's decision, `manifest.json` with input hashes,
   rules and the cleaning funnel). Needs `mido`; training does not.
 - `yamaha_timing/evaluation.py`: causal phase-wrap decoder (phase outputs to beat
-  and downbeat times; ours) and mir_eval beat-tracking metrics.
+  and downbeat times; ours) and mir_eval beat-tracking metrics. P-score is computed
+  by an exact equivalent of mir_eval's (tested equal), ~14x faster per song;
+  mir_eval's own took ~4 min of every validation.
 - `yamaha_timing/plots.py`: validation figure for one song (piano roll, beat/bar
   phase probabilities with the true phase, true vs predicted beats). Each epoch
   draws 2 random validation songs (`--plot-songs`) into `RUN_DIR/plots/` and W&B.
   `--warmup-steps N` adds a linear learning-rate warm-up (off by default).
-- `train_lakh.py`: whole-song training with validation (phase loss and accuracy,
+- `train_lakh.py`: whole-song training (Oyama defaults; optional batches of
+  cropped excerpts with a cosine schedule: `--batch-size --crop-seconds
+  --schedule cosine --min-lr`) with validation (phase loss and accuracy,
   plus beat/downbeat F-measure, CMLt, AMLt and the other mir_eval measures), best-model export, and
   exact resume (SIGUSR1/SIGTERM checkpoint and exit, periodic checkpoints,
   `DONE` marker) for PACE ICE job chains.

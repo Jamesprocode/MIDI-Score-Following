@@ -51,11 +51,35 @@ def decode_events(phase, frame_rate):
     return np.asarray(times)
 
 
-def tracking_metrics(reference, estimated):
-    """mir_eval beat measures with short snake_case names; NaN-free."""
+def p_score(reference_beats, estimated_beats, p_score_threshold=0.2):
+    """mir_eval.beat.p_score, exactly, in a fraction of the time.
+
+    mir_eval correlates two 100 Hz impulse trains at every lag (quadratic in
+    song length: ~0.2 s for a 3-minute song, 90% of validation time) and then
+    sums only the lags within the window. That sum is the number of
+    (reference, estimate) impulse pairs at most ``window`` samples apart.
+    """
     import mir_eval
 
-    with warnings.catch_warnings():
+    mir_eval.beat.validate(reference_beats, estimated_beats)
+    if estimated_beats.size <= 1 or reference_beats.size <= 1:
+        return 0.0
+    offset = min(estimated_beats.min(), reference_beats.min())
+    reference = np.unique(np.ceil((reference_beats - offset) * 100).astype(np.int64))
+    estimated = np.unique(np.ceil((estimated_beats - offset) * 100).astype(np.int64))
+    window = int(np.round(p_score_threshold * np.median(np.diff(reference))))
+    pairs = (np.searchsorted(estimated, reference + window, side="right")
+             - np.searchsorted(estimated, reference - window, side="left")).sum()
+    return pairs / np.max([estimated_beats.shape[0], reference_beats.shape[0]])
+
+
+def tracking_metrics(reference, estimated):
+    """mir_eval beat measures with short snake_case names; NaN-free."""
+    from unittest import mock
+
+    import mir_eval
+
+    with warnings.catch_warnings(), mock.patch.object(mir_eval.beat, "p_score", p_score):
         warnings.simplefilter("ignore")  # empty estimates are scored 0, with a warning
         scores = mir_eval.beat.evaluate(np.sort(np.asarray(reference, dtype=float)),
                                         np.sort(np.asarray(estimated, dtype=float)))

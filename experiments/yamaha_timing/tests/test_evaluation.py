@@ -1,10 +1,11 @@
 """Beat/downbeat decoding and tracking metrics, against known references."""
 import unittest
+import warnings
 
 import numpy as np
 
 from yamaha_timing.config import TimingConfig
-from yamaha_timing.evaluation import decode_events, expected_phase, tracking_metrics
+from yamaha_timing.evaluation import decode_events, expected_phase, p_score, tracking_metrics
 from yamaha_timing.plots import plot_tracking
 from yamaha_timing.lakh import SynthesisConfig, render_example
 
@@ -96,6 +97,29 @@ class PlotTests(unittest.TestCase):
             path = Path(folder) / "figure.png"
             plot_tracking(figure, path)
             self.assertGreater(path.stat().st_size, 10_000)
+
+
+class PScoreTests(unittest.TestCase):
+    def test_matches_mir_eval_exactly(self):
+        import mir_eval
+
+        rng = np.random.default_rng(3)
+        for case in range(300):
+            period = rng.uniform(0.25, 1.2)
+            reference = np.cumsum(np.full(int(rng.integers(0, 120)), period) + rng.normal(0, 0.01, 1).clip(-0.1))
+            reference = reference + rng.uniform(0, 8)
+            kind = case % 4
+            estimated = (reference + rng.normal(0, rng.uniform(0, 0.08), len(reference)) if kind == 0
+                         else reference[::2] + rng.uniform(-0.2, 0.2) if kind == 1
+                         else np.sort(rng.uniform(0, 70, int(rng.integers(0, 150)))) if kind == 2
+                         else np.sort(np.concatenate([reference[rng.random(len(reference)) < 0.7],
+                                                      rng.uniform(0, 70, 10)])))
+            reference, estimated = np.sort(reference), np.sort(estimated)
+            with self.subTest(case=case):
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore")
+                    expected = mir_eval.beat.p_score(reference, estimated)
+                    self.assertEqual(p_score(reference, estimated), expected)
 
 
 if __name__ == "__main__":
