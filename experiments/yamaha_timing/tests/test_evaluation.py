@@ -5,6 +5,7 @@ import numpy as np
 
 from yamaha_timing.config import TimingConfig
 from yamaha_timing.evaluation import decode_events, expected_phase, tracking_metrics
+from yamaha_timing.plots import plot_tracking
 from yamaha_timing.lakh import SynthesisConfig, render_example
 
 from test_lakh import song_on_beats  # same folder; discovery puts tests/ on sys.path
@@ -72,6 +73,29 @@ class ReferenceTimeTests(unittest.TestCase):
             scores = tracking_metrics(example[reference], events)
             self.assertEqual(scores["f_measure"], 1.0, labels)
             self.assertEqual(scores["cmlt"], 1.0, labels)
+
+
+class PlotTests(unittest.TestCase):
+    def test_validation_figure_is_written(self):
+        import tempfile
+        from pathlib import Path
+        example = render_example(song_on_beats(beats=120), np.random.default_rng(0), TIMING)
+        song = example["mask"]
+        probs = {name: one_hot(example[name][song]) for name in ("beat", "bar")}
+        decoded = {name: decode_events(expected_phase(probs[name]), 20) for name in probs}
+        figure = {
+            "title": "test song", "roll": example["roll"][song],
+            "beat_probs": probs["beat"], "bar_probs": probs["bar"],
+            "beat_labels": example["beat"][song], "bar_labels": example["bar"][song],
+            "true_beats": example["beat_times"], "true_downbeats": example["downbeat_times"],
+            "pred_beats": decoded["beat"], "pred_downbeats": decoded["bar"],
+            "scores": {"beat": tracking_metrics(example["beat_times"], decoded["beat"]),
+                       "downbeat": tracking_metrics(example["downbeat_times"], decoded["bar"])},
+        }
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "figure.png"
+            plot_tracking(figure, path)
+            self.assertGreater(path.stat().st_size, 10_000)
 
 
 if __name__ == "__main__":

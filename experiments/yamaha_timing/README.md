@@ -100,6 +100,10 @@ create a Python 3.10+ virtual environment and install `requirements.txt` there.
   rules and the cleaning funnel). Needs `mido`; training does not.
 - `yamaha_timing/evaluation.py`: causal phase-wrap decoder (phase outputs to beat
   and downbeat times; ours) and mir_eval beat-tracking metrics.
+- `yamaha_timing/plots.py`: validation figure for one song (piano roll, beat/bar
+  phase probabilities with the true phase, true vs predicted beats). Each epoch
+  draws 2 random validation songs (`--plot-songs`) into `RUN_DIR/plots/` and W&B.
+  `--warmup-steps N` adds a linear learning-rate warm-up (off by default).
 - `train_lakh.py`: whole-song training with validation (phase loss and accuracy,
   plus beat/downbeat F-measure, CMLt, AMLt and the other mir_eval measures), best-model export, and
   exact resume (SIGUSR1/SIGTERM checkpoint and exit, periodic checkpoints,

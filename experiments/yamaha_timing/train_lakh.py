@@ -4,7 +4,9 @@ Where Maezawa is silent, training follows Oyama et al. (2021), the phase-based
 tracker Maezawa cites: Adam (at 1e-4, not Oyama's 1e-3, which left this
 512-channel model at chance), one whole song per step, learning rate
 halved after 15 epochs without validation improvement, stop after 50 such
-epochs or at 200 epochs, gradients clipped at 0.5 (by value). Each epoch
+epochs or at 200 epochs, gradients clipped at 0.5 (by value). An optional
+linear warm-up (--warmup-steps, off by default) ramps the learning rate up from
+0 over the first steps, a guard for trying higher learning rates. Each epoch
 visits every training song group once, using one of its arrangements chosen
 at random, with fresh augmentation. Validation uses each group's best-matched
 arrangement with fixed augmentation, so the validation loss is comparable
@@ -43,6 +45,7 @@ import wandb
 
 from yamaha_timing.config import TimingConfig
 from yamaha_timing.evaluation import decode_events, expected_phase, tracking_metrics
+from yamaha_timing.plots import plot_tracking
 from yamaha_timing.lakh import SongPack, SynthesisConfig, render_example
 from yamaha_timing.model import YamahaTimingTCN
 from yamaha_timing.training import masked_phase_loss, save_checkpoint
@@ -61,7 +64,7 @@ class SongExamples(Dataset):
         self.pack_path, self.timing, self.synth, self.seed = Path(pack_path), timing, synth, seed
         self.pack = None
         with np.load(self.pack_path, allow_pickle=False) as data:
-            group, self.meters = data["meta_group"], data["meta_meter"]
+            group, self.meters, self.ids = data["meta_group"], data["meta_meter"], data["ids"]
         self.groups = [list(np.flatnonzero(group == g)) for g in range(group.max() + 1)]
         if limit:
             self.groups = self.groups[:limit]
@@ -112,27 +115,43 @@ def forward(model, item, device):
 
 
 @torch.no_grad()
-def validate(model, dataset, workers, device):
+def validate(model, dataset, workers, device, sample=()):
     """Frame-weighted loss and accuracy over the validation groups, plus beat and
     downbeat tracking metrics (mir_eval, averaged per song) from the decoded
     phase outputs; everything also split by hint given / withheld and by meter
-    (4/4 / other)."""
+    (4/4 / other). Returns ``(metrics, examples)``: ``examples`` holds what
+    plots.plot_tracking needs for the validation groups at positions ``sample``."""
     model.eval()
-    sums, tracking = {}, {}
-    for item in loader(dataset, dataset.fixed_keys(), workers, device):
+    sums, tracking, examples = {}, {}, []
+    keys = dataset.fixed_keys()
+    for position, item in enumerate(loader(dataset, keys, workers, device)):
         outputs, beat, bar, mask, hint = forward(model, item, device)
         hint_key = "hint" if bool(hint[mask].any()) else "no_hint"
         meter_key = "meter_4_4" if bool(item["four_four"]) else "meter_other"
         song_frames = mask[0]  # labelled frames: the song after the silent lead-in
+        decoded = {}
         for task, reference, event in (("beat", "beat_times", "beat"), ("bar", "downbeat_times", "downbeat")):
             probabilities = outputs[f"{task}_logits"][0][song_frames].softmax(-1).float().cpu().numpy()
             estimated = decode_events(expected_phase(probabilities), dataset.timing.frame_rate)
             scores = tracking_metrics(item[reference].numpy(), estimated)
+            decoded[event] = (probabilities, estimated, scores)
             for key in ("all", hint_key, meter_key):
                 totals = tracking.setdefault(f"{key}/{event}", [defaultdict(float), 0])
                 for metric, value in scores.items():
                     totals[0][metric] += value
                 totals[1] += 1
+        if position in sample:
+            index, song = keys[position][1], item["mask"]
+            examples.append({
+                "title": f"{dataset.ids[index][:12]}   meter {dataset.meters[index]}   "
+                         f"BPM hint {'given' if hint_key == 'hint' else 'withheld'}",
+                "roll": item["roll"][song].numpy(),
+                "beat_probs": decoded["beat"][0], "bar_probs": decoded["downbeat"][0],
+                "beat_labels": item["beat"][song].numpy(), "bar_labels": item["bar"][song].numpy(),
+                "true_beats": item["beat_times"].numpy(), "true_downbeats": item["downbeat_times"].numpy(),
+                "pred_beats": decoded["beat"][1], "pred_downbeats": decoded["downbeat"][1],
+                "scores": {"beat": decoded["beat"][2], "downbeat": decoded["downbeat"][2]},
+            })
         for task, target in (("beat", beat), ("bar", bar)):
             logits, labels = outputs[f"{task}_logits"][mask], target[mask]
             bins = logits.shape[-1]
@@ -152,7 +171,7 @@ def validate(model, dataset, workers, device):
             result[f"{name}_{metric}"] = float(total / songs)
     result["loss"] = result["all/beat_loss"] + result["all/bar_loss"]
     model.train()
-    return result
+    return result, examples
 
 
 def save_state(path, state):
@@ -172,6 +191,9 @@ def main():
     # Oyama's 1e-3 (for a 20-channel TCN) left this 512-channel model at chance
     # with loss spikes; on 2,000 songs 1e-4 learned (val loss 6.69 vs 6.93).
     parser.add_argument("--lr", type=float, default=1e-4)
+    parser.add_argument("--warmup-steps", type=int, default=0,
+                        help="linear learning-rate warm-up from 0 to --lr over the first N steps "
+                             "(one song each; keep it shorter than an epoch); 0 = off")
     parser.add_argument("--lr-patience", type=int, default=15)
     parser.add_argument("--stop-patience", type=int, default=50)
     parser.add_argument("--clip", type=float, default=0.5)
@@ -181,6 +203,8 @@ def main():
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--checkpoint-minutes", type=float, default=20)
     parser.add_argument("--log-every", type=int, default=200)
+    parser.add_argument("--plot-songs", type=int, default=2,
+                        help="validation songs drawn at random each epoch for the predicted-vs-true beat figure")
     parser.add_argument("--limit-train", type=int, default=0, help="smoke tests only")
     parser.add_argument("--limit-val", type=int, default=0, help="smoke tests only")
     parser.add_argument("--device", default="auto", choices=("auto", "cuda", "cpu"))
@@ -259,6 +283,9 @@ def main():
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
             torch.nn.utils.clip_grad_value_(model.parameters(), args.clip)
+            if state["steps"] < args.warmup_steps:  # linear warm-up; resumes from the saved step count
+                for group in optimizer.param_groups:
+                    group["lr"] = args.lr * (state["steps"] + 1) / args.warmup_steps
             optimizer.step()
             state["next_index"] += 1
             state["steps"] += 1
@@ -287,7 +314,18 @@ def main():
                 checkpoint("periodic")
                 last_save = time.time()
 
-        metrics = validate(model, val, args.workers, device)
+        picks = np.random.default_rng([args.seed, epoch, 7]).choice(
+            len(val.groups), size=min(args.plot_songs, len(val.groups)), replace=False)
+        metrics, examples = validate(model, val, args.workers, device, sample=set(int(p) for p in picks))
+        images = []
+        for k, example in enumerate(examples):  # figures must never stop training
+            try:
+                path = args.out / "plots" / f"epoch{epoch:03d}_song{k}.png"
+                path.parent.mkdir(exist_ok=True)
+                plot_tracking(example, path, timing.frame_rate)
+                images.append(wandb.Image(str(path), caption=example["title"]))
+            except Exception as exc:
+                print(json.dumps({"plot_failed": repr(exc)}), flush=True)
         scheduler.step(metrics["loss"])
         improved = metrics["loss"] < state["best_val"]
         if improved:
@@ -306,7 +344,7 @@ def main():
         print(json.dumps(record), flush=True)
         wandb.log({**{f"val/{k}": v for k, v in metrics.items()}, "val/best_loss": state["best_val"],
                    "val/bad_epochs": state["bad_epochs"], "lr": optimizer.param_groups[0]["lr"],
-                   "epoch": epoch + 1}, step=state["steps"])
+                   "epoch": epoch + 1, **({"val/examples": images} if images else {})}, step=state["steps"])
         state["epoch"], state["next_index"] = epoch + 1, 0
         checkpoint("epoch_end")
         last_save = time.time()
