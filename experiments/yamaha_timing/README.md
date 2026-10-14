@@ -181,14 +181,16 @@ and reports results for 4/4 and other meters separately.
 Run `ice` (`~/.claude/skills/pace-ice/scripts/ice`) from the repo root.
 `.ice.env` holds the settings: project name `MIDI-Score-Following` (the local
 folder name has spaces), the `midi-score-following` conda env (Python 3.10,
-torch 2.10.0+cu128, numpy 1.26.4, wandb 0.25.0, matching the local env), one
-H200, 8 CPUs, 32 GB, and the data-ready marker. `ice submit` refuses
+torch 2.10.0+cu128, numpy 1.26.4, wandb 0.25.0, mir_eval 0.8.2, matching the
+local env), any NVIDIA GPU (`gpu:1` with the `nvidia-gpu` node feature, so never
+the AMD MI210; the model is small and the V100 works), 8 CPUs, 32 GB, and the
+data-ready marker. `ice submit` refuses
 uncommitted code, so commit and push first.
 
 ```sh
 ice sync                     # ICE checkout fast-forwards to the pushed commit
 # GPU check (5 min)
-ice sh 'srun -p ice-gpu --gres=gpu:h200:1 -t 5 bash -c "source /usr/local/pace-apps/manual/packages/anaconda3/2023.03/etc/profile.d/conda.sh && conda activate midi-score-following && python -c \"import torch; print(torch.cuda.get_device_name())\""'
+ice sh 'srun -p ice-gpu --gres=gpu:1 --constraint=nvidia-gpu -t 5 bash -c "source /usr/local/pace-apps/manual/packages/anaconda3/2023.03/etc/profile.d/conda.sh && conda activate midi-score-following && python -c \"import torch; print(torch.cuda.get_device_name())\""'
 # Data: copy, verify against manifest.json, mark ready
 rsync -a --partial --progress experiments/yamaha_timing/data/lakh_v2 ice:scratch/MIDI-Score-Following/data/
 ice sh 'source /usr/local/pace-apps/manual/packages/anaconda3/2023.03/etc/profile.d/conda.sh && conda activate midi-score-following && python experiments/yamaha_timing/verify_data.py ~/scratch/MIDI-Score-Following/data/lakh_v2 --mark'
