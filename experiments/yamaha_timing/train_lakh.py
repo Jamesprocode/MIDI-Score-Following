@@ -1,7 +1,8 @@
 """Train the Maezawa (2023) beat/downbeat-phase TCN on synthetic Lakh performances.
 
 Where Maezawa is silent, training follows Oyama et al. (2021), the phase-based
-tracker Maezawa cites: Adam at 1e-3, one whole song per step, learning rate
+tracker Maezawa cites: Adam (at 1e-4, not Oyama's 1e-3, which left this
+512-channel model at chance), one whole song per step, learning rate
 halved after 15 epochs without validation improvement, stop after 50 such
 epochs or at 200 epochs, gradients clipped at 0.5 (by value). Each epoch
 visits every training song group once, using one of its arrangements chosen
@@ -168,7 +169,9 @@ def main():
     parser.add_argument("--data", type=Path, required=True, help="folder with train.npz, val.npz, manifest.json")
     parser.add_argument("--out", type=Path, default=Path(os.environ.get("RUN_DIR", "runs/lakh")))
     parser.add_argument("--epochs", type=int, default=200)
-    parser.add_argument("--lr", type=float, default=1e-3)
+    # Oyama's 1e-3 (for a 20-channel TCN) left this 512-channel model at chance
+    # with loss spikes; on 2,000 songs 1e-4 learned (val loss 6.69 vs 6.93).
+    parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--lr-patience", type=int, default=15)
     parser.add_argument("--stop-patience", type=int, default=50)
     parser.add_argument("--clip", type=float, default=0.5)

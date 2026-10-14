@@ -44,7 +44,7 @@ downbeat estimation based on periodicity of metrical structure* (ISMIR).
 | Heads | Separate two-layer 1x1 beat/downbeat-phase heads; 32 downbeat-phase classes | Oyama's decoder (dropout, dense, ELU, dropout, dense) as 1x1 convs; 32 bar-phase classes; 32 beat-phase classes per beat (unstated in the paper; Oyama et al. use the same class count for beat and downbeat phase); hidden width 128 is our choice |
 | Tempo condition | Eight-dimensional rough-BPM representation, linear/sigmoid multiplicative gate | As written: exp(-(b - 30*2^i)^2), linear layer, sigmoid gate; masked when absent |
 | Training data | Popular-song scores; random combination of tracks; random tempo drift; random note insertion/deletion; BPM condition given with 50% probability | Cleaned Lakh LMD-matched songs (`prepare_lakh.py`); the four operations in `yamaha_timing/lakh.py`, with sizes we chose (`SynthesisConfig`) |
-| Loss and schedule | Not stated | Cross-entropy per head, summed. Oyama: Adam 1e-3, one whole song per step, LR halved after 15 epochs without validation gain, stop after 50 such epochs or 200 epochs, gradients clipped at 0.5 |
+| Loss and schedule | Not stated | Cross-entropy per head, summed. Oyama: one whole song per step, LR halved after 15 epochs without validation gain, stop after 50 such epochs or 200 epochs, gradients clipped at 0.5. Learning rate 1e-4, not Oyama's 1e-3: at 1e-3 this 512-channel model stayed at chance with loss spikes (first run, 2026-10-13); on 2,000 songs 1e-4 reached validation loss 6.69 and beat F 0.20, 1e-3 stayed at 6.93 and 0 |
 | Full following | Temporal state model plus phase and harmonic likelihoods; tempo feedback | Outside the current timing-module scope |
 
 Maezawa's "two layers of 1d convolution with dilation 2^i" and "six seconds"
@@ -172,6 +172,8 @@ every training group once, with one of its arrangements chosen at random:
   from the position within the current bar;
 - the BPM condition (local drifted tempo, in the meter's beats per minute)
   given for 50% of examples, as in the paper.
+Notes are cut to at most 10 s after timing (`max_note_seconds`): Lakh has
+stuck notes (377 training songs hold a note over 60 s, up to 45 min).
 The paper names these operations but not their sizes; the sizes are ours.
 Validation uses each group's best-matched arrangement with one fixed rendering,
 and reports results for 4/4 and other meters separately.

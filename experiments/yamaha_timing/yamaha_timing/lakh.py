@@ -324,6 +324,10 @@ class SynthesisConfig:
     kept note ~ U(0, max_insert); log-tempo random-walk step std per quarter
     note ~ U(0, drift_step_max), pulled back toward the score tempo by
     ``drift_reversion`` per quarter note and capped at +-``drift_limit``.
+
+    ``max_note_seconds`` is cleaning, not augmentation: Lakh files contain stuck
+    notes (missing note-offs; 1.7% of training songs hold a note over 60 s, up
+    to 45 min), which no pianist plays. Performed notes are cut to this length.
     """
 
     max_delete: float = 0.1
@@ -332,6 +336,7 @@ class SynthesisConfig:
     drift_reversion: float = 0.02
     drift_limit: float = 0.4
     hint_probability: float = 0.5
+    max_note_seconds: float = 10.0
 
     def to_dict(self):
         return asdict(self)
@@ -427,7 +432,7 @@ def render_example(song, rng, timing=TimingConfig(), synth=SynthesisConfig(), le
     knots -= np.interp(first, quarters, knots)
 
     onsets = np.interp(start, quarters, knots)
-    offsets = np.interp(end, quarters, knots)
+    offsets = np.minimum(np.interp(end, quarters, knots), onsets + synth.max_note_seconds)
     fr = timing.frame_rate
     frames = int(math.ceil(offsets.max() * fr)) + 1
     roll = rasterize(onsets, offsets, pitch, frames, fr, timing.midi_low, timing.input_pitches)

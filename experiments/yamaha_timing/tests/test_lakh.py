@@ -141,6 +141,14 @@ class RenderTests(unittest.TestCase):
         self.assertEqual(meter_segments(raw((0, 9, 4)))[1], "unsupported_meter")  # 9 quarters > 8
         self.assertEqual(meter_segments(raw())[1], "no_time_signature")
 
+    def test_stuck_notes_are_cut(self):
+        song = song_on_beats(beats=64)
+        song["end"][0], song["pitch"][0] = 200.0, 30  # held 100 s at 120 BPM (missing note-off), own key
+        example = render_example(song, np.random.default_rng(0), TIMING, NO_AUGMENTATION, lead_in=False)
+        held = np.flatnonzero(example["roll"][:, 30 - 21])
+        self.assertEqual(held.min(), 0)
+        self.assertEqual(held.max(), 10 * 20 - 1)  # sounding for exactly 10 s, not 100 s
+
     def test_labels_follow_notes_under_tempo_drift(self):
         synth = SynthesisConfig(max_delete=0, max_insert=0, drift_step_max=0.03)
         song = song_on_beats(beats=200, bpm=100.0)
