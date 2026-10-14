@@ -45,6 +45,8 @@ VARIANTS = {
     "B3 paper": (YamahaConfig(), True, "written"),
     "B4 paper, harmony only": (YamahaConfig(feedback=False), False, "written"),
     "B5 paper, played tempo": (YamahaConfig(), True, "played"),
+    "B6 paper + reversion": (YamahaConfig(beat_tempo_reversion=0.02), True, "written"),
+    "B7 paper + reversion, played tempo": (YamahaConfig(beat_tempo_reversion=0.02), True, "played"),
 }
 STEP = 0.05
 _MODEL = None

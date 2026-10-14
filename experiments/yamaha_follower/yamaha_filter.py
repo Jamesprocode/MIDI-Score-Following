@@ -43,6 +43,8 @@ class YamahaConfig:
     initial_tempo_log_std: float = 0.10     # ours, as Stage A's initial_tempo_ratio_std
     tempo_model: str = "beat"               # "beat" (paper) or "continuous" (Stage A's dynamics)
     beat_tempo_log_std: float = 0.03        # ours: random-walk step per beat
+    beat_tempo_reversion: float = 0.0       # ours: per-beat pull of log tempo toward the start tempo (0 = pure
+                                            # random walk); 0.02 gives a stationary spread of about 15%
     continuous_rate_per_second: float = .45  # Stage A's diffusion on 2.5% bins (benchmark s07)
     emission_power_per_second: float = 1.0
     downbeat_power_per_second: float = 1.0
@@ -62,6 +64,15 @@ def _beat_kernel(config):
     taps = np.arange(-int(np.ceil(3 * sigma)), int(np.ceil(3 * sigma)) + 1)
     weights = np.exp(-.5 * (taps / sigma) ** 2)
     return taps, weights / weights.sum()
+
+
+def _beat_transition(config, ratios):
+    """Per-beat tempo transition matrix (to, from) with reversion toward ratio 1."""
+    k = np.log(ratios) / np.log1p(config.tempo_step)
+    sigma = config.beat_tempo_log_std / np.log1p(config.tempo_step)
+    mean = k * (1 - config.beat_tempo_reversion)
+    weights = np.exp(-.5 * ((k[:, None] - mean[None, :]) / sigma) ** 2)
+    return weights / weights.sum(axis=0, keepdims=True)
 
 
 def _walk(mass, taps, weights):
@@ -96,6 +107,7 @@ def follow(times, chord_probabilities, available, chord_starts_beats, chord_ends
     posterior = np.zeros((len(tempi), len(positions)))
     posterior[:, 0] = prior
     taps, weights = _beat_kernel(config)
+    transition = _beat_transition(config, ratios) if config.beat_tempo_reversion else None
     n_classes = probability.shape[1]
     reachable, hint, previous = 0, float(initial_bpm), float(start_time)
     out = {key: np.empty(len(times)) for key in ("position_beats", "tempo_bpm", "mean_tempo_bpm", "bpm_condition",
@@ -116,7 +128,8 @@ def follow(times, chord_probabilities, available, chord_starts_beats, chord_ends
             if config.tempo_model == "beat":
                 fraction = np.mod(positions + 1e-9, 1.0)
                 crossed = posterior * (fraction[None, :] < beats_moved[:, None] - 1e-9)
-                posterior = posterior - crossed + _walk(crossed, taps, weights)
+                moved = _walk(crossed, taps, weights) if transition is None else transition @ crossed
+                posterior = posterior - crossed + moved
             known = state_chords >= 0
             log_weight = np.zeros(len(positions))
             if available[frame] and config.emission_power_per_second:
