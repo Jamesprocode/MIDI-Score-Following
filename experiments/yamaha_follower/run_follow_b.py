@@ -101,9 +101,12 @@ def main():
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--out", type=Path, default=Path(os.environ.get("RUN_DIR", "runs/follow_b")))
     parser.add_argument("--workers", type=int, default=os.cpu_count())
-    parser.add_argument("--variants", nargs="*", default=list(VARIANTS))
+    parser.add_argument("--variants", nargs="*", default=list(VARIANTS),
+                        help="variant names or their codes (B1 ... B7)")
     parser.add_argument("--only", nargs="*", default=[], help="performance ids (smoke tests)")
     args = parser.parse_args()
+    codes = {name.split()[0]: name for name in VARIANTS}
+    args.variants = [codes.get(v, v) for v in args.variants if v in VARIANTS or v in codes]
     args.out.mkdir(parents=True, exist_ok=True)
     takes = follower_data.samba_follow_takes(args.samba)
     if args.only:
