@@ -106,6 +106,14 @@ create a Python 3.10+ virtual environment and install `requirements.txt` there.
   phase probabilities with the true phase, true vs predicted beats). Each epoch
   draws 2 random validation songs (`--plot-songs`) into `RUN_DIR/plots/` and W&B.
   `--warmup-steps N` adds a linear learning-rate warm-up (off by default).
+- `eval_real.py`: scores a checkpoint on real piano performances, JazzSAMBA
+  (piano MIDI, annotated bars) or ASAP (performance MIDI, annotated beats),
+  with the BPM condition given and withheld; per-take rows, subset summaries,
+  figures and W&B. Loaders and data notes: `yamaha_timing/real_data.py`.
+  SAMBA sync piano MIDI is mistimed as distributed (175 BPM session ticks
+  stamped with the song's tempo, plus a start offset); `samba_sync_timing.py`
+  fits each take's shift from its own piano audio into
+  `samba_sync_timing.csv`, and those takes are reported as "repaired timing".
 - `train_lakh.py`: whole-song training (Oyama defaults; optional batches of
   cropped excerpts with a cosine schedule: `--batch-size --crop-seconds
   --schedule cosine --min-lr`; settings can come from `configs/*.json` via
