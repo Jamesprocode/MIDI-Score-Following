@@ -7,7 +7,9 @@ epochs or at 200 epochs, gradients clipped at 0.5 (by value). Each epoch
 visits every training song group once, using one of its arrangements chosen
 at random, with fresh augmentation. Validation uses each group's best-matched
 arrangement with fixed augmentation, so the validation loss is comparable
-across epochs.
+across epochs. Validation also decodes beat and downbeat times from the phase
+outputs and reports mir_eval's beat-tracking metrics (F-measure, CMLt, AMLt,
+...); the best checkpoint is still chosen by validation loss.
 
 Resumable (PACE ICE contract): the newest checkpoint in --out is loaded on
 start; SIGUSR1/SIGTERM save a checkpoint and exit 0; a checkpoint is written
@@ -22,6 +24,7 @@ run. For local smoke tests set WANDB_MODE=disabled.
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict
 import json
 import math
 import os
@@ -38,6 +41,7 @@ from torch.utils.data import DataLoader, Dataset
 import wandb
 
 from yamaha_timing.config import TimingConfig
+from yamaha_timing.evaluation import decode_events, expected_phase, tracking_metrics
 from yamaha_timing.lakh import SongPack, SynthesisConfig, render_example
 from yamaha_timing.model import YamahaTimingTCN
 from yamaha_timing.training import masked_phase_loss, save_checkpoint
@@ -76,6 +80,8 @@ class SongExamples(Dataset):
             "mask": torch.from_numpy(example["mask"]), "bpm": torch.from_numpy(example["bpm"]),
             "hint_valid": torch.from_numpy(example["hint_valid"]),
             "four_four": torch.tensor(self.meters[index] == "4/4"),
+            "beat_times": torch.from_numpy(example["beat_times"]),
+            "downbeat_times": torch.from_numpy(example["downbeat_times"]),
         }
 
     def epoch_keys(self, epoch):
@@ -106,14 +112,26 @@ def forward(model, item, device):
 
 @torch.no_grad()
 def validate(model, dataset, workers, device):
-    """Frame-weighted loss and accuracy over the validation groups, also split by
-    hint given / withheld and by meter (4/4 / other)."""
+    """Frame-weighted loss and accuracy over the validation groups, plus beat and
+    downbeat tracking metrics (mir_eval, averaged per song) from the decoded
+    phase outputs; everything also split by hint given / withheld and by meter
+    (4/4 / other)."""
     model.eval()
-    sums = {}
+    sums, tracking = {}, {}
     for item in loader(dataset, dataset.fixed_keys(), workers, device):
         outputs, beat, bar, mask, hint = forward(model, item, device)
         hint_key = "hint" if bool(hint[mask].any()) else "no_hint"
         meter_key = "meter_4_4" if bool(item["four_four"]) else "meter_other"
+        song_frames = mask[0]  # labelled frames: the song after the silent lead-in
+        for task, reference, event in (("beat", "beat_times", "beat"), ("bar", "downbeat_times", "downbeat")):
+            probabilities = outputs[f"{task}_logits"][0][song_frames].softmax(-1).float().cpu().numpy()
+            estimated = decode_events(expected_phase(probabilities), dataset.timing.frame_rate)
+            scores = tracking_metrics(item[reference].numpy(), estimated)
+            for key in ("all", hint_key, meter_key):
+                totals = tracking.setdefault(f"{key}/{event}", [defaultdict(float), 0])
+                for metric, value in scores.items():
+                    totals[0][metric] += value
+                totals[1] += 1
         for task, target in (("beat", beat), ("bar", bar)):
             logits, labels = outputs[f"{task}_logits"][mask], target[mask]
             bins = logits.shape[-1]
@@ -128,6 +146,9 @@ def validate(model, dataset, workers, device):
         result[f"{name}_loss"] = float(loss / count)
         result[f"{name}_acc"] = float(exact / count)
         result[f"{name}_acc_within1"] = float(near / count)
+    for name, (totals, songs) in tracking.items():
+        for metric, total in totals.items():
+            result[f"{name}_{metric}"] = float(total / songs)
     result["loss"] = result["all/beat_loss"] + result["all/bar_loss"]
     model.train()
     return result

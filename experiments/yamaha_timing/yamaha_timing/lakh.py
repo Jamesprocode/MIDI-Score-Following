@@ -384,16 +384,31 @@ def _choose_notes(song, rng, synth):
     return start[order], end[order], pitch[order]
 
 
+def _grid_positions(meter_beat, meter_num, meter_den, lo, hi, bars):
+    """Quarter-note positions of beats (or bar starts) within [lo, hi]."""
+    positions = []
+    for i, (start, num, den) in enumerate(zip(meter_beat, meter_num, meter_den)):
+        end = meter_beat[i + 1] if i + 1 < len(meter_beat) else np.inf
+        step = num * 4.0 / den if bars else 4.0 / den
+        first = start + step * max(0, math.ceil((lo - start) / step - 1e-9))
+        stop = min(end, hi + 1e-9)
+        if first < stop:
+            positions.append(np.arange(first, stop - 1e-9, step))
+    return np.concatenate(positions) if positions else np.zeros(0)
+
+
 def render_example(song, rng, timing=TimingConfig(), synth=SynthesisConfig(), lead_in=True):
     """One synthetic performance of ``song`` with frame-level phase labels.
 
     Returns numpy arrays over L frames: ``roll`` [L, keys] uint8; ``beat`` and
     ``bar`` [L] int64 bins (IGNORE_INDEX where masked); ``mask`` [L] bool;
     ``bpm`` [L] float32 in the meter's beats (denominator notes) per minute;
-    ``hint_valid`` [L] bool; ``beats`` [L] quarter-note position.
+    ``hint_valid`` [L] bool; ``beats`` [L] quarter-note position; and the
+    reference event times ``beat_times`` and ``downbeat_times`` (seconds from
+    time zero, within the rendered frames) for tracking evaluation.
     Time zero is the first selected note. With ``lead_in``, context_frames - 1
     silent, unlabelled frames come first so a whole-song causal pass equals
-    live streaming.
+    live streaming; event times do not count the lead-in.
     """
     start, end, pitch = _choose_notes(song, rng, synth)
     first, last = start.min(), max(end.max(), start.max())
@@ -425,6 +440,11 @@ def render_example(song, rng, timing=TimingConfig(), synth=SynthesisConfig(), le
     quarter_bpm = 60.0 / durations[np.clip(np.floor(position).astype(np.int64) - k0, 0, len(durations) - 1)]
     local_bpm = quarter_bpm / unit  # tempo in the meter's beats, e.g. eighth notes in 6/8
     given = rng.random() < synth.hint_probability
+    meter = (song["meter_beat"], song["meter_num"], song["meter_den"])
+    event_times = {
+        name: np.interp(_grid_positions(*meter, position[0], position[-1], bars), quarters, knots)
+        for name, bars in (("beat_times", False), ("downbeat_times", True))
+    }
 
     lead = timing.context_frames - 1 if lead_in else 0
     pad = lambda values, fill: np.concatenate((np.full(lead, fill, dtype=values.dtype), values))
@@ -435,4 +455,5 @@ def render_example(song, rng, timing=TimingConfig(), synth=SynthesisConfig(), le
         "bpm": pad(local_bpm.astype(np.float32), np.float32(120.0)),
         "hint_valid": pad(np.full(frames, given, dtype=bool), False),
         "beats": pad(position.astype(np.float32), np.float32(np.nan)),
+        **event_times,
     }

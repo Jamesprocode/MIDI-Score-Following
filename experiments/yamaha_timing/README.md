@@ -98,7 +98,10 @@ create a Python 3.10+ virtual environment and install `requirements.txt` there.
 - `prepare_lakh.py`: builds `data/lakh_v2` (`train.npz`, `val.npz`,
   `files.csv` with every file's decision, `manifest.json` with input hashes,
   rules and the cleaning funnel). Needs `mido`; training does not.
-- `train_lakh.py`: whole-song training with validation, best-model export, and
+- `yamaha_timing/evaluation.py`: causal phase-wrap decoder (phase outputs to beat
+  and downbeat times; ours) and mir_eval beat-tracking metrics.
+- `train_lakh.py`: whole-song training with validation (phase loss and accuracy,
+  plus beat/downbeat F-measure, CMLt, AMLt and the other mir_eval measures), best-model export, and
   exact resume (SIGUSR1/SIGTERM checkpoint and exit, periodic checkpoints,
   `DONE` marker) for PACE ICE job chains.
 - `../lakh_survey/`: the 2,000-file survey behind the cleaning rules.
