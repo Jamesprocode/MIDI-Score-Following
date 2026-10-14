@@ -315,7 +315,8 @@ def main():
 
     latest = args.out / "ckpt_latest.pt"
     if latest.exists():
-        saved = torch.load(latest, map_location=device, weights_only=True)
+        # On the CPU: RNG states must be CPU tensors; load_state_dict moves weights and Adam state.
+        saved = torch.load(latest, map_location="cpu", weights_only=True)
         if saved["config"] != timing.to_dict() or saved["synthesis"] != synth.to_dict():
             sys.exit(f"{latest} was made with a different model or synthesis config; use a new --out")
         changed = {key: (saved["args"][key], getattr(args, key)) for key in TRAINING_ARGS
