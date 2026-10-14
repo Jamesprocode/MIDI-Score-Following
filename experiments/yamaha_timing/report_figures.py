@@ -2,9 +2,8 @@
 
 One PNG per dataset (Lakh validation, ASAP, JazzSAMBA) for one typical take:
 the take whose beat and downbeat F-measure are closest to its dataset's median
-(BPM condition given). Rows: the input piano roll and the true vs predicted
-beat/downbeat events over a 30 s excerpt, then the tempo map over the whole
-take: tempo from the annotated beats, tempo implied by the predicted beats
+(BPM condition given). Top: true vs predicted beat/downbeat events over a
+30 s excerpt. Bottom: the tempo map over the whole take: tempo from the annotated beats, tempo implied by the predicted beats
 (the network outputs phase, not tempo), and the BPM condition. Predictions are
 the causal decoder's, as in validation and eval_real.py.
 
@@ -25,8 +24,6 @@ from yamaha_timing.lakh import SongPack, SynthesisConfig, render_example
 from yamaha_timing.real_data import asap_takes, samba_takes
 from yamaha_timing.training import load_checkpoint
 
-INK, MUTED, GRID, SURFACE = "#0b0b0b", "#52514e", "#e4e3df", "#fcfcfb"
-TRUTH, PRED, CONDITION = "#52514e", "#2a78d6", "#eb6834"
 
 
 @torch.no_grad()
@@ -59,70 +56,51 @@ def tempo_curve(beats, smooth=4):
 
 
 def figure(example, title, subtitle, path, rate, excerpt=(20.0, 50.0)):
+    """Plain matplotlib: true vs predicted beats over an excerpt, and the tempo map."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 15, "axes.edgecolor": GRID,
-                         "axes.labelcolor": MUTED, "xtick.color": MUTED, "ytick.color": MUTED})
+    plt.style.use("default")
     duration = len(example["roll"]) / rate
     t0 = min(excerpt[0], max(0.0, duration - (excerpt[1] - excerpt[0])))
     t1 = min(duration, t0 + (excerpt[1] - excerpt[0]))
-    fig = plt.figure(figsize=(16, 9), dpi=120, facecolor=SURFACE)
-    grid = fig.add_gridspec(3, 1, height_ratios=[2.0, 1.0, 2.3], hspace=0.58, left=0.1, right=0.98, top=0.86, bottom=0.08)
+    fig, (top, bottom) = plt.subplots(2, 1, figsize=(12, 6.75), dpi=150,
+                                      gridspec_kw={"height_ratios": [1, 2.2]})
 
-    ax = fig.add_subplot(grid[0])
-    k0, k1 = int(t0 * rate), int(t1 * rate)
-    roll = example["roll"][k0:k1]
-    keys = np.flatnonzero(roll.any(axis=0))
-    lo, hi = (keys.min(), keys.max() + 1) if len(keys) else (30, 60)
-    ax.imshow(roll[:, lo:hi].T, aspect="auto", origin="lower", cmap="Greys", interpolation="nearest",
-              extent=[t0, t1, lo + 21, hi + 21], vmin=0, vmax=1.6)
-    ax.set_ylabel("MIDI pitch")
-    ax.set_title("Input: piano roll (30 s excerpt)", loc="left", fontsize=15, color=MUTED)
-    ax.set_xlim(t0, t1)
-    ax.set_facecolor(SURFACE)
+    within = lambda v: np.asarray(v)[(np.asarray(v) >= t0) & (np.asarray(v) <= t1)]
+    top.vlines(within(example["true_beats"]), 0.55, 0.85, color="k", lw=0.8, label="ground truth")
+    top.vlines(within(example["true_downbeats"]), 0.55, 0.95, color="k", lw=2.2)
+    top.vlines(within(example["pred_beats"]), 0.1, 0.4, color="C0", lw=0.8, label="predicted")
+    top.vlines(within(example["pred_downbeats"]), 0.05, 0.4, color="C0", lw=2.2)
+    top.set_yticks([0.25, 0.7], ["predicted", "ground truth"])
+    top.set_ylim(0, 1)
+    top.set_xlim(t0, t1)
+    top.set_xlabel("time (s)")
+    top.set_title("Beats (thin) and downbeats (thick), 30 s excerpt")
 
-    ax = fig.add_subplot(grid[1], sharex=fig.axes[0])
-    within = lambda v: v[(v >= t0) & (v <= t1)]
-    ax.vlines(within(example["true_beats"]), 0.58, 0.88, color=TRUTH, lw=1.2)
-    ax.vlines(within(example["true_downbeats"]), 0.58, 1.0, color=TRUTH, lw=3.2)
-    ax.vlines(within(example["pred_beats"]), 0.12, 0.42, color=PRED, lw=1.2)
-    ax.vlines(within(example["pred_downbeats"]), 0.0, 0.42, color=PRED, lw=3.2)
-    ax.set_yticks([0.25, 0.75], ["predicted", "ground truth"])
-    ax.set_ylim(0, 1)
-    ax.set_xlabel("seconds   (thin = beats, thick = downbeats)")
-    ax.set_title("Beats and downbeats", loc="left", fontsize=15, color=MUTED)
-    ax.set_facecolor(SURFACE)
-    for side in ("top", "right", "left"):
-        ax.spines[side].set_visible(False)
-
-    ax = fig.add_subplot(grid[2])
     tt, bt = tempo_curve(np.asarray(example["true_beats"]))
     tp, bp = tempo_curve(np.asarray(example["pred_beats"]))
-    ax.axvspan(t0, t1, color=GRID, alpha=0.6, lw=0)
+    bottom.plot(tt, bt, color="k", lw=1.2, label="ground truth (annotated beats)")
+    bottom.plot(tp, bp, color="C0", lw=1.0, label="predicted (from predicted beats)")
     if example.get("bpm_condition") is not None:
         condition = np.asarray(example["bpm_condition"], dtype=float)
-        ax.plot(np.arange(len(condition)) / rate, condition, color=CONDITION, lw=2, ls=(0, (5, 4)),
-                label="BPM condition given to the network")
-    ax.plot(tp, bp, color=PRED, lw=2, label="tempo implied by predicted beats")
-    ax.plot(tt, bt, color=TRUTH, lw=2.4, label="ground-truth tempo (annotated beats)")
+        bottom.plot(np.arange(len(condition)) / rate, condition, color="C1", ls="--", lw=1.2,
+                    label="BPM condition given to the network")
+    bottom.axvspan(t0, t1, color="0.9", zorder=0)
     ref = np.median(bt) if len(bt) else 120
-    ax.set_ylim(max(0, ref * 0.4), ref * 1.8)
-    ax.set_xlim(0, duration)
-    ax.set_ylabel("beats per minute")
-    ax.set_xlabel("seconds   (whole take; shaded = excerpt above)")
-    ax.set_title("Tempo map", loc="left", fontsize=15, color=MUTED)
-    ax.grid(axis="y", color=GRID, lw=1)
-    ax.set_facecolor(SURFACE)
-    ax.legend(loc="lower right", bbox_to_anchor=(1.0, 1.0), frameon=False, fontsize=13, ncol=3, borderaxespad=0.2)
-    for side in ("top", "right"):
-        ax.spines[side].set_visible(False)
+    bottom.set_ylim(max(0, ref * 0.4), ref * 1.8)
+    bottom.set_xlim(0, duration)
+    bottom.set_xlabel("time (s)  (shaded: the excerpt above)")
+    bottom.set_ylabel("tempo (BPM)")
+    bottom.set_title("Tempo map")
+    bottom.legend(loc="upper right", fontsize=9)
+    bottom.grid(alpha=0.3)
 
     s = example["scores"]
-    fig.text(0.1, 0.945, title, fontsize=23, color=INK, weight="bold")
-    fig.text(0.1, 0.905, f"Example: {subtitle}   ·   this take: beat F1 {s['beat']['f_measure']:.2f}, "
-                         f"downbeat F1 {s['downbeat']['f_measure']:.2f}", fontsize=16, color=MUTED)
-    fig.savefig(path, facecolor=SURFACE)
+    fig.suptitle(f"{title}\nExample: {subtitle}: beat F1 {s['beat']['f_measure']:.2f}, "
+                 f"downbeat F1 {s['downbeat']['f_measure']:.2f}", fontsize=12)
+    fig.tight_layout()
+    fig.savefig(path)
     plt.close(fig)
 
 
@@ -151,7 +129,7 @@ def main():
     md = np.median([e["scores"]["downbeat"]["f_measure"] for _, e in examples])
     index, ex = min(examples, key=lambda p: abs(p[1]["scores"]["beat"]["f_measure"] - mb)
                     + abs(p[1]["scores"]["downbeat"]["f_measure"] - md))
-    figure(ex, "Lakh validation  ·  717 held-out songs  ·  beat F1 0.81  ·  downbeat F1 0.61",
+    figure(ex, "Lakh validation (717 held-out songs): beat F1 0.81, downbeat F1 0.61",
            "a synthetic performance of a held-out song", args.out / "1_lakh_validation.png", rate)
     print("lakh song", pack.ids[index] if hasattr(pack, "ids") else index, ex["scores"]["beat"]["f_measure"],
           ex["scores"]["downbeat"]["f_measure"])
@@ -159,9 +137,9 @@ def main():
     max_note = SynthesisConfig().max_note_seconds
     for name, takes, wanted, title, subtitle, path in (
             ("asap", asap_takes(args.asap), args.asap_label,
-             "ASAP  ·  1,067 classical performances  ·  beat F1 0.58  ·  downbeat F1 0.25", None, "2_asap.png"),
+             "ASAP (1,067 classical piano performances): beat F1 0.58, downbeat F1 0.25", None, "2_asap.png"),
             ("samba", [t for t in samba_takes(args.samba) if t.name == args.samba_take], args.samba_label,
-             "JazzSAMBA  ·  152 jazz piano takes  ·  beat F1 0.52  ·  downbeat F1 0.33", None, "3_samba.png")):
+             "JazzSAMBA (152 jazz piano takes): beat F1 0.52, downbeat F1 0.33", None, "3_samba.png")):
         take = takes[0]
         _, example = run_take(model, take, take.bpm, torch.device("cpu"), max_note)
         rows = int(np.ceil(take.span[1] * rate)) + 1
