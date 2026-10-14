@@ -8,7 +8,7 @@ import numpy as np
 
 from yamaha_timing.config import TimingConfig
 from yamaha_timing.lakh import (
-    IGNORE_INDEX, SongPack, SynthesisConfig, bar_and_beat_phase, check_score, meter_segments,
+    IGNORE_INDEX, SongPack, SynthesisConfig, bar_and_beat_phase, check_score, crop_example, meter_segments,
     rasterize, read_score, render_example, save_pack, score_to_song,
 )
 from yamaha_timing.streaming import MidiFrameRasterizer
@@ -186,6 +186,24 @@ class RenderTests(unittest.TestCase):
             chosen_keys.add(tuple(np.flatnonzero(example["roll"].any(axis=0))))
         self.assertTrue(0.4 < np.mean(given) < 0.6)
         self.assertGreater(len(chosen_keys), 5)
+
+
+    def test_crop_keeps_real_context_unlabelled(self):
+        example = render_example(song_on_beats(beats=200), np.random.default_rng(0), TIMING, SynthesisConfig())
+        context, frames = TIMING.context_frames - 1, 60
+        crop = crop_example(example, np.random.default_rng(1), frames, context)
+        start = int(np.random.default_rng(1).integers(0, len(example["roll"]) - context - frames + 1))
+        window = slice(start, start + context + frames)
+        self.assertEqual(len(crop["roll"]), context + frames)
+        np.testing.assert_array_equal(crop["roll"], example["roll"][window])  # real past as context
+        for name in ("beat", "bar"):
+            self.assertTrue((crop[name][:context] == IGNORE_INDEX).all())
+            np.testing.assert_array_equal(crop[name][context:], example[name][window][context:])
+        self.assertFalse(crop["mask"][:context].any())
+        np.testing.assert_array_equal(crop["mask"][context:], example["mask"][window][context:])
+        np.testing.assert_array_equal(crop["bpm"], example["bpm"][window])
+        short = crop_example(example, np.random.default_rng(1), 10**6, context)
+        self.assertIs(short, example)
 
 
 class CheckTests(unittest.TestCase):

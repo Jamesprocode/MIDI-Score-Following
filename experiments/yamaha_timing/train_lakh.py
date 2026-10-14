@@ -4,11 +4,13 @@ Where Maezawa is silent, training follows Oyama et al. (2021), the phase-based
 tracker Maezawa cites: Adam (at 1e-4, not Oyama's 1e-3, which left this
 512-channel model at chance), one whole song per step, learning rate
 halved after 15 epochs without validation improvement, stop after 50 such
-epochs or at 200 epochs, gradients clipped at 0.5 (by value). An optional
-linear warm-up (--warmup-steps, off by default) ramps the learning rate up from
-0 over the first steps, a guard for trying higher learning rates. Each epoch
-visits every training song group once, using one of its arrangements chosen
-at random, with fresh augmentation. Validation uses each group's best-matched
+epochs or at 200 epochs, gradients clipped at 0.5 (by value). Those are the
+defaults. Options beyond Oyama, to use the GPU better: --batch-size songs per
+step, each a random --crop-seconds excerpt with the 6.4 s before it as
+unlabelled context (end-padded and masked, exact for a causal model); a linear
+--warmup-steps; and --schedule cosine (decay to --min-lr by --epochs, early
+stopping kept). Each epoch visits every training song group once, using one of
+its arrangements chosen at random, with fresh augmentation. Validation uses each group's best-matched
 arrangement with fixed augmentation, so the validation loss is comparable
 across epochs. Validation also decodes beat and downbeat times from the phase
 outputs and reports mir_eval's beat-tracking metrics (F-measure, CMLt, AMLt,
@@ -46,7 +48,7 @@ import wandb
 from yamaha_timing.config import TimingConfig
 from yamaha_timing.evaluation import decode_events, expected_phase, tracking_metrics
 from yamaha_timing.plots import plot_tracking
-from yamaha_timing.lakh import SongPack, SynthesisConfig, render_example
+from yamaha_timing.lakh import IGNORE_INDEX, SongPack, SynthesisConfig, crop_example, render_example
 from yamaha_timing.model import YamahaTimingTCN
 from yamaha_timing.training import masked_phase_loss, save_checkpoint
 
@@ -60,8 +62,9 @@ class SongExamples(Dataset):
     ``groups`` lists each song group's file indices, best-matched first.
     """
 
-    def __init__(self, pack_path, timing, synth, seed, limit=0):
+    def __init__(self, pack_path, timing, synth, seed, limit=0, crop_frames=0):
         self.pack_path, self.timing, self.synth, self.seed = Path(pack_path), timing, synth, seed
+        self.crop_frames = crop_frames  # 0 = whole songs
         self.pack = None
         with np.load(self.pack_path, allow_pickle=False) as data:
             group, self.meters, self.ids = data["meta_group"], data["meta_meter"], data["ids"]
@@ -76,17 +79,21 @@ class SongExamples(Dataset):
         epoch, index = key
         if self.pack is None:  # load lazily so each DataLoader worker reads its own copy
             self.pack = SongPack(self.pack_path)
-        example = render_example(self.pack.song(index), np.random.default_rng([self.seed, epoch, index]),
-                                 self.timing, self.synth)
-        return {
+        rng = np.random.default_rng([self.seed, epoch, index])
+        example = render_example(self.pack.song(index), rng, self.timing, self.synth)
+        if self.crop_frames:
+            example = crop_example(example, rng, self.crop_frames, self.timing.context_frames - 1)
+        item = {
             "roll": torch.from_numpy(example["roll"]).float(),
             "beat": torch.from_numpy(example["beat"]), "bar": torch.from_numpy(example["bar"]),
             "mask": torch.from_numpy(example["mask"]), "bpm": torch.from_numpy(example["bpm"]),
             "hint_valid": torch.from_numpy(example["hint_valid"]),
             "four_four": torch.tensor(self.meters[index] == "4/4"),
-            "beat_times": torch.from_numpy(example["beat_times"]),
-            "downbeat_times": torch.from_numpy(example["downbeat_times"]),
         }
+        for name in ("beat_times", "downbeat_times"):  # whole songs only (validation)
+            if name in example:
+                item[name] = torch.from_numpy(example[name])
+        return item
 
     def epoch_keys(self, epoch):
         """One randomly chosen arrangement per group, groups in random order."""
@@ -106,6 +113,49 @@ def loader(dataset, keys, workers, device):
     return DataLoader(dataset, batch_size=None, sampler=keys, num_workers=workers,
                       pin_memory=device.type == "cuda", prefetch_factor=4 if workers else None,
                       generator=torch.Generator().manual_seed(0))
+
+
+TRAIN_FIELDS = (("roll", 0.0), ("beat", IGNORE_INDEX), ("bar", IGNORE_INDEX), ("mask", False),
+                ("bpm", 120.0), ("hint_valid", False))
+
+
+def pad_batch(items):
+    """Stack songs into one batch, padding at the end. The TCN is causal, so
+    trailing padding cannot change any real frame's output; it is masked out."""
+    length = max(len(item["roll"]) for item in items)
+    batch = {}
+    for name, fill in TRAIN_FIELDS:
+        first = items[0][name]
+        out = torch.full((len(items), length, *first.shape[1:]), fill, dtype=first.dtype)
+        for k, item in enumerate(items):
+            out[k, :len(item[name])] = item[name]
+        batch[name] = out
+    return batch
+
+
+def train_loader(dataset, keys, batch_size, workers, device):
+    """Batches of songs (collated in the workers); same private generator as ``loader``."""
+    return DataLoader(dataset, batch_size=batch_size, sampler=keys, collate_fn=pad_batch, num_workers=workers,
+                      pin_memory=device.type == "cuda", prefetch_factor=4 if workers else None,
+                      generator=torch.Generator().manual_seed(0))
+
+
+def scheduled_lr(step, peak, warmup, schedule, total, minimum=0.0):
+    """Learning rate for optimizer step ``step``: linear warm-up to ``peak``, then
+    either cosine decay to ``minimum`` at ``total`` steps (``cosine``) or None
+    (``plateau``: ReduceLROnPlateau keeps control after the warm-up)."""
+    if step < warmup:
+        return peak * (step + 1) / warmup
+    if schedule == "cosine":
+        progress = min(1.0, (step - warmup) / max(1, total - warmup))
+        return minimum + (peak - minimum) * 0.5 * (1 + math.cos(math.pi * progress))
+    return None
+
+
+def forward_batch(model, batch, device):
+    to = lambda name: batch[name].to(device, non_blocking=True)
+    outputs = model(to("roll"), bpm_hint=to("bpm"), hint_valid=to("hint_valid"))
+    return outputs, to("beat"), to("bar"), to("mask")
 
 
 def forward(model, item, device):
@@ -192,8 +242,15 @@ def main():
     # with loss spikes; on 2,000 songs 1e-4 learned (val loss 6.69 vs 6.93).
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--warmup-steps", type=int, default=0,
-                        help="linear learning-rate warm-up from 0 to --lr over the first N steps "
-                             "(one song each; keep it shorter than an epoch); 0 = off")
+                        help="linear learning-rate warm-up from 0 to --lr over the first N optimizer steps; 0 = off")
+    parser.add_argument("--schedule", default="plateau", choices=("plateau", "cosine"),
+                        help="after warm-up: plateau = halve on --lr-patience epochs without improvement (Oyama); "
+                             "cosine = decay to --min-lr by the end of --epochs")
+    parser.add_argument("--min-lr", type=float, default=0.0, help="cosine floor")
+    parser.add_argument("--batch-size", type=int, default=1, help="songs per optimizer step (1 = Oyama)")
+    parser.add_argument("--crop-seconds", type=float, default=0,
+                        help="train on a random excerpt of each song this long, with the 6.4 s before it as "
+                             "unlabelled context; 0 = whole songs (Oyama). Validation always uses whole songs")
     parser.add_argument("--lr-patience", type=int, default=15)
     parser.add_argument("--stop-patience", type=int, default=50)
     parser.add_argument("--clip", type=float, default=0.5)
@@ -222,7 +279,9 @@ def main():
 
     timing = TimingConfig(channels=args.channels, head_hidden=args.head_hidden)
     synth = SynthesisConfig()
-    train = SongExamples(args.data / "train.npz", timing, synth, args.seed, args.limit_train)
+    train = SongExamples(args.data / "train.npz", timing, synth, args.seed, args.limit_train,
+                         crop_frames=round(args.crop_seconds * timing.frame_rate))
+    steps_per_epoch = math.ceil(len(train.groups) / args.batch_size)
     val = SongExamples(args.data / "val.npz", timing, synth, args.seed, args.limit_val)
     torch.manual_seed(args.seed)
     model = YamahaTimingTCN(timing).to(device).train()
@@ -276,34 +335,37 @@ def main():
         if epoch >= args.epochs or state["bad_epochs"] >= args.stop_patience:
             break
         keys = train.epoch_keys(epoch)[state["next_index"]:]
-        window = {"loss": 0.0, "steps": 0, "frames": 0, "start": time.time()}
-        for item in loader(train, keys, args.workers, device):
-            outputs, beat, bar, mask, _ = forward(model, item, device)
+        window = {"loss": 0.0, "steps": 0, "songs": 0, "frames": 0, "start": time.time()}
+        for batch in train_loader(train, keys, args.batch_size, args.workers, device):
+            outputs, beat, bar, mask = forward_batch(model, batch, device)
             loss = masked_phase_loss(outputs, beat, bar, mask, mask)["total"]
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
             torch.nn.utils.clip_grad_value_(model.parameters(), args.clip)
-            if state["steps"] < args.warmup_steps:  # linear warm-up; resumes from the saved step count
+            lr = scheduled_lr(state["steps"], args.lr, args.warmup_steps, args.schedule,
+                              args.epochs * steps_per_epoch, args.min_lr)  # from the saved step count on resume
+            if lr is not None:
                 for group in optimizer.param_groups:
-                    group["lr"] = args.lr * (state["steps"] + 1) / args.warmup_steps
+                    group["lr"] = lr
             optimizer.step()
-            state["next_index"] += 1
+            state["next_index"] += len(batch["roll"])
             state["steps"] += 1
             window["loss"] += loss.item()
             window["steps"] += 1
+            window["songs"] += len(batch["roll"])
             window["frames"] += int(mask.sum())
             if window["steps"] == args.log_every:
                 elapsed = time.time() - window["start"]
                 row = {"epoch": epoch, "song": state["next_index"], "of": len(train.groups),
                        "train_loss": round(window["loss"] / window["steps"], 4),
                        "lr": optimizer.param_groups[0]["lr"],
-                       "songs_per_s": round(window["steps"] / elapsed, 2),
+                       "songs_per_s": round(window["songs"] / elapsed, 2),
                        "frames_per_s": round(window["frames"] / elapsed)}
                 print(json.dumps(row), flush=True)
                 wandb.log({"train/loss": row["train_loss"], "lr": row["lr"],
                            "train/songs_per_s": row["songs_per_s"], "train/frames_per_s": row["frames_per_s"],
                            "epoch": epoch + state["next_index"] / len(train.groups)}, step=state["steps"])
-                window = {"loss": 0.0, "steps": 0, "frames": 0, "start": time.time()}
+                window = {"loss": 0.0, "steps": 0, "songs": 0, "frames": 0, "start": time.time()}
             if STOP["signal"]:
                 checkpoint(STOP["signal"])
                 print(json.dumps({"stopped_by": STOP["signal"], "epoch": epoch, "next_index": state["next_index"]}),
@@ -326,7 +388,8 @@ def main():
                 images.append(wandb.Image(str(path), caption=example["title"]))
             except Exception as exc:
                 print(json.dumps({"plot_failed": repr(exc)}), flush=True)
-        scheduler.step(metrics["loss"])
+        if args.schedule == "plateau" and state["steps"] >= args.warmup_steps:
+            scheduler.step(metrics["loss"])
         improved = metrics["loss"] < state["best_val"]
         if improved:
             state["best_val"], state["bad_epochs"] = metrics["loss"], 0

@@ -389,6 +389,26 @@ def _choose_notes(song, rng, synth):
     return start[order], end[order], pitch[order]
 
 
+def crop_example(example, rng, frames, context):
+    """Random excerpt of ``frames`` labelled frames from a rendered example.
+
+    The excerpt keeps the ``context`` frames before it (the real past, or the
+    silent lead-in at the song start) as unlabelled input, so the causal TCN
+    sees exactly what it would see live at that point. Event times are not
+    carried over. Examples no longer than ``frames`` are returned whole.
+    """
+    song = len(example["roll"]) - context
+    if song <= frames:
+        return example
+    start = int(rng.integers(0, song - frames + 1))
+    window = slice(start, start + context + frames)
+    out = {name: example[name][window].copy() for name in ("roll", "beat", "bar", "mask", "bpm", "hint_valid", "beats")}
+    out["mask"][:context] = False
+    out["beat"][:context] = IGNORE_INDEX
+    out["bar"][:context] = IGNORE_INDEX
+    return out
+
+
 def _grid_positions(meter_beat, meter_num, meter_den, lo, hi, bars):
     """Quarter-note positions of beats (or bar starts) within [lo, hi]."""
     positions = []
