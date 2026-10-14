@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lead-sheet follower replay</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div><h1 id="piece-title">Following the performance</h1><p>MIDI playback & performance position</p></div>
+      <div class="piece-info"><span id="piece-tempo"></span><span id="piece-meter"></span><span id="piece-key"></span><span class="cadence">Checks every 200 ms</span></div>
+    </header>
+    <div class="song-row"><label for="song">Recording</label><select id="song"></select><span id="tempo-note" class="small"></span></div>
+    <div class="tracking-row"><label for="evidence">Follower</label><select id="evidence" disabled></select><span id="evidence-instruments" class="small"></span><p class="small">Changes the orange follower; every follower uses the piano MIDI only. Playback track switches below control sound only.</p></div>
+
+    <section class="transport" aria-label="MIDI playback">
+      <div class="transport-row">
+        <button id="play" class="primary" disabled>Play MIDI</button>
+        <button id="restart" disabled>Restart</button>
+        <div class="steps"><button id="back" aria-label="Step back 200 milliseconds" disabled>−200 ms</button><button id="forward" aria-label="Step forward 200 milliseconds" disabled>+200 ms</button></div>
+        <output id="time" class="time">0:00.00 / 6:01.37</output>
+        <label class="volume">Volume <input id="volume" type="range" min="0" max="1" step="0.01" value="0.45" aria-label="Playback volume"></label>
+      </div>
+      <label class="scrubber"><span class="sr-only">Playback position</span><input id="seek" type="range" min="0" max="361.37" step="0.01" value="0" disabled></label>
+      <div class="transport-meta"><div id="tracks" class="tracks"></div><label>Jump to <select id="sections" aria-label="Jump to section"><option value="0">Beginning</option></select></label></div>
+      <p class="small" id="playback-note">Original MIDI note timing, synthesized in your browser. Track switches mute playback only.</p>
+    </section>
+
+    <div id="status" class="status" role="status">Loading the MIDI notes and annotations…</div>
+
+    <section class="positions" aria-label="Current positions">
+      <div class="position reference"><div class="position-label"><span class="line-swatch"></span>Ground truth <span class="hint" id="truth-hint">Annotated bars</span></div><div class="position-main"><strong id="truth-bar">—</strong><span id="truth-chord" class="chord">—</span></div><p id="truth-detail">Annotation reference</p><p id="truth-section" class="section-name">—</p></div>
+      <div class="position estimate"><div class="position-label"><span class="line-swatch"></span>Follower <span class="hint" id="evidence-hint"></span></div><div class="position-main"><strong id="estimate-bar">—</strong><span id="estimate-chord" class="chord">—</span></div><p id="estimate-detail">Position and tempo filter</p><p id="estimate-section" class="section-name">—</p></div>
+      <div class="position tempo"><div class="position-label"><span class="line-swatch"></span>Tempo-only clock <span class="hint" id="tempo-hint">Starting tempo</span></div><div class="position-main"><strong id="tempo-bar">—</strong><span id="tempo-chord" class="chord">—</span></div><p id="tempo-detail">Tempo × elapsed time</p><p id="tempo-section" class="section-name">—</p><p id="tempo-error"></p></div>
+    </section>
+
+    <section class="comparison" aria-label="Position comparison">
+      <div class="chart-heading"><h2>Three paths through the same performance</h2><span id="difference" class="difference">Waiting for the first musical bar</span></div>
+      <label class="chart-view"><input id="whole" type="checkbox"> Show the entire performance</label>
+      <p class="run-metrics" id="run-metrics"></p>
+      <p class="run-metrics clock-metrics" id="clock-metrics"></p>
+      <p class="small">Timing errors are approximate milliseconds, converted using the reference tempo in each bar. Musical positions remain in bars and beats.</p>
+      <div class="chart-wrap"><svg id="chart" viewBox="0 0 1100 300" role="img" aria-label="Blue ground truth, orange follower, and green tempo-only clock over playback time"></svg></div>
+      <div class="chart-footer"><span>Click the plot to seek. Faint lines show the rest of this replay.</span><span id="check-time">Last position check: —</span></div>
+    </section>
+
+    <section class="chart-context" aria-label="Score positions in the performance plan">
+      <div class="chart-heading"><h2>Score positions</h2><span id="context-caption" class="small">Repeated choruses have separate performance bar numbers.</span></div>
+      <div id="bar-strip" class="bar-strip"></div>
+      <p class="small">Bar numbers count forward through the performance. “Chart” is the written measure number. Chord labels come from each line’s estimated location in the plan.</p>
+    </section>
+
+    <details class="method"><summary>What am I seeing?</summary>
+      <p id="reference-method"></p>
+      <p id="follower-method"></p>
+      <p id="clock-method"></p>
+      <p>All followers start at the known first bar with the written (catalog) tempo and the untimed chord plan, and see only piano notes up to the current moment. Harmony: binary key activity against triad templates. Network: the beat/downbeat-phase TCN trained on synthetic Lakh performances (Maezawa 2023 recreation). Rule-based onset cue: the earlier onset-phase heuristic (beat phase only).</p>
+      <p>For each check, the beat difference is converted to milliseconds using the average reference tempo of the current annotated bar; this is a time equivalent of the position error, not processing latency.</p>
+      <p id="sampling-method"></p>
+      <p>The piano MIDI is recorded, not transcribed; bass and drums are dataset MIDI for listening only. “Ground truth” refers to annotated bar positions.</p>
+      <div id="sources" class="sources"></div>
+    </details>
+    <footer id="piece-footer"></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+ "recordings": {
+  "green_dolphin": {
+   "file": "green_dolphin.json",
+   "title": "On Green Dolphin Street",
+   "protocol": "Synchronous",
+   "metrics": {
+    "paper": 0.06443719412724307,
+    "downbeat": 0.8694942903752039,
+    "onset": 0.8311582381729201,
+    "harmony": 0.8246329526916802
+   }
+  },
+  "dont_fence_me_in": {
+   "file": "dont_fence_me_in.json",
+   "title": "Don't Fence Me In",
+   "protocol": "Synchronous",
+   "metrics": {
+    "paper": 0.6159855769230769,
+    "downbeat": 0.10336538461538461,
+    "onset": 0.08173076923076923,
+    "harmony": 0.033052884615384616
+   }
+  },
+  "samba_de_orfeu": {
+   "file": "samba_de_orfeu.json",
+   "title": "Samba de Orfeu",
+   "protocol": "Synchronous",
+   "metrics": {
+    "paper": 0.36585365853658536,
+    "downbeat": 0.8326829268292683,
+    "onset": 0.6926829268292682,
+    "harmony": 0.6624390243902439
+   }
+  },
+  "blue_bossa": {
+   "file": "blue_bossa.json",
+   "title": "Blue Bossa",
+   "protocol": "Asynchronous",
+   "metrics": {
+    "paper": 0.8873396542108198,
+    "downbeat": 0.9414389291689905,
+    "onset": 0.8611266034578918,
+    "harmony": 0.7300613496932515
+   }
+  }
+ },
+ "followers": {
+  "paper": "Paper version (Stage B)",
+  "downbeat": "Harmony + network downbeat (Stage A)",
+  "onset": "Harmony + rule-based onset cue",
+  "harmony": "Harmony only"
+ },
+ "defaultFollower": "paper"
+}

@@ -21,6 +21,8 @@ experiments/*/data/annotations/
 experiments/ground_truth_player/data.json
 experiments/ground_truth_player/green_dolphin.json
 experiments/ground_truth_player/samba_de_orfeu.json
+experiments/yamaha_follower/player/*.json
+!experiments/yamaha_follower/player/recordings.json
 
 # Per-file Lakh survey rows (local paths); regenerate with lakh_survey.py.
 experiments/lakh_survey/results/rows.jsonl
