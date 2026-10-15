@@ -103,8 +103,30 @@ def _split_ids(path):
     return {line.strip() for line in Path(path).read_text().splitlines() if line.strip() and not line.startswith("#")}
 
 
-def samba_takes(root, protocols=("async", "sync"), timing_table=SYNC_TIMING):
-    """All takes; sync takes without a confident timing fix carry info["excluded"]."""
+TRANSCRIBED = {"bass": ("bass",), "horns": ("saxophone_alto", "saxophone_tenor", "trumpet"), "drums": ("drums",)}
+
+
+def _band_notes(root, protocol, song, take, instruments):
+    """Dataset MIDI of the other players: transcriptions in {protocol}_midi (derived
+    from the audio, so on the annotation clock), recorded drums for async takes."""
+    parts, present = [], []
+    for group in instruments:
+        for name in TRANSCRIBED[group]:
+            path = Path(root) / f"{protocol}_midi/songs/{song}/{take}/{name}.transcribed.derived.mid"
+            if group == "drums" and protocol == "async":
+                path = Path(root) / f"{protocol}_audio/songs/{song}/{take}/drums.mid"
+            if path.exists():
+                parts.append(np.column_stack(read_midi_notes(path)))
+                present.append(name)
+    return parts, present
+
+
+def samba_takes(root, protocols=("async", "sync"), timing_table=SYNC_TIMING, instruments=("piano",)):
+    """All takes; sync takes without a confident timing fix carry info["excluded"].
+
+    ``instruments``: "piano" (recorded MIDI, the default and the paper's input)
+    plus any of "bass", "horns", "drums" (dataset transcriptions), merged into
+    one note list. info["instruments"] lists the files actually found."""
     root = Path(root)
     repairs = sync_timing(timing_table) if "sync" in protocols else {}
     catalog = {row["song_subdir_basename"]: row for row in csv.DictReader(open(root / "JazzSAMBA-catalog/songs.csv"))}
@@ -138,6 +160,15 @@ def samba_takes(root, protocols=("async", "sync"), timing_table=SYNC_TIMING):
                     info.update({"timing": "repaired", "scale": scale, "shift_s": shift,
                                  "timing_confidence": float(fix["confidence"])})
             info["concentration"] = round(beat_concentration(onsets, grid), 3)
+            others = [i for i in instruments if i != "piano"]
+            parts, present = _band_notes(root, protocol, take_dir.parent.name, take_dir.name, others)
+            if "piano" in instruments:
+                parts.insert(0, np.column_stack([onsets, offsets, pitches]))
+                present.insert(0, "piano")
+            merged = np.concatenate(parts) if parts else np.empty((0, 3))
+            merged = merged[np.argsort(merged[:, 0], kind="stable")]
+            onsets, offsets, pitches = merged[:, 0], merged[:, 1], merged[:, 2].astype(np.int64)
+            info["instruments"] = "+".join(present)
             takes.append(Take("samba", f"{take_dir.parent.name}/{take_dir.name}", onsets, offsets, pitches,
                               beats, starts, (float(starts[0]), float(ends[-1])), float(song["bpm"]), info))
     return takes
