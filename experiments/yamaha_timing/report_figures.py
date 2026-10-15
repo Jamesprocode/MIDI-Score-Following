@@ -55,7 +55,7 @@ def tempo_curve(beats, smooth=4):
     return beats[1:], bpm
 
 
-def figure(example, title, subtitle, path, rate, excerpt=(20.0, 80.0), source=""):
+def figure(example, title, subtitle, path, rate, excerpt=(20.0, 50.0), source=""):
     """Plain matplotlib: true vs predicted beats over an excerpt, and the tempo map."""
     import matplotlib
     matplotlib.use("Agg")
@@ -76,7 +76,7 @@ def figure(example, title, subtitle, path, rate, excerpt=(20.0, 80.0), source=""
     top.set_ylim(0, 1)
     top.set_xlim(t0, t1)
     top.set_xlabel("time (s)")
-    top.set_title("Beats (thin) and downbeats (thick), 60 s excerpt")
+    top.set_title(f"Beats (thin) and downbeats (thick), {t1 - t0:.0f} s excerpt")
 
     tt, bt = tempo_curve(np.asarray(example["true_beats"]))
     tp, bp = tempo_curve(np.asarray(example["pred_beats"]))
@@ -98,7 +98,7 @@ def figure(example, title, subtitle, path, rate, excerpt=(20.0, 80.0), source=""
 
     s = example["scores"]
     fig.suptitle(f"{title}\nExample: {subtitle}: beat F1 {s['beat']['f_measure']:.2f}, "
-                 f"downbeat F1 {s['downbeat']['f_measure']:.2f}\nInput: {source}", fontsize=12)
+                 f"downbeat F1 {s['downbeat']['f_measure']:.2f}\nInput: {source}", fontsize=11)
     fig.tight_layout()
     fig.savefig(path)
     plt.close(fig)
@@ -107,12 +107,19 @@ def figure(example, title, subtitle, path, rate, excerpt=(20.0, 80.0), source=""
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--checkpoint", type=Path, required=True)
+    parser.add_argument("--datasets", nargs="*", default=["lakh", "asap", "samba"])
     parser.add_argument("--lakh", type=Path, default=Path("data/lakh_v2"))
-    parser.add_argument("--samba", type=Path, required=True)
-    parser.add_argument("--samba-take", default="52-bernies_tune/alternate")
+    parser.add_argument("--asap", type=Path)
     parser.add_argument("--asap-label", default="Haydn, Keyboard Sonata Hob. XVI:32, mvt. 1")
-    parser.add_argument("--samba-label", default="Bernie's Tune, alternate take (live band, steady swing)")
-    parser.add_argument("--asap", type=Path, required=True)
+    parser.add_argument("--samba", type=Path)
+    parser.add_argument("--samba-take", default="52-bernies_tune/alternate")
+    parser.add_argument("--samba-label", default="Bernie's Tune, alternate take (live, steady swing)")
+    parser.add_argument("--samba-instruments", default="piano",
+                        help="comma-separated: piano, bass, horns, drums (merged into one piano roll)")
+    parser.add_argument("--samba-tempo", default="written", choices=("written", "played"),
+                        help="BPM condition: the catalog's written tempo or the take's median played tempo")
+    parser.add_argument("--samba-title", default="JazzSAMBA (152 jazz piano takes): beat F1 0.52, downbeat F1 0.33")
+    parser.add_argument("--samba-out", default="3_samba.png")
     parser.add_argument("--lakh-songs", type=int, default=80, help="validation songs scanned for a median one")
     parser.add_argument("--out", type=Path, default=Path("report_figures"))
     args = parser.parse_args()
@@ -120,36 +127,46 @@ def main():
     model, _ = load_checkpoint(args.checkpoint, "cpu")
     model.eval()
     rate = model.config.frame_rate
-
-    pack = SongPack(args.lakh / "val.npz")
-    group = np.asarray(pack.meta["group"])
-    firsts = [int(np.flatnonzero(group == g)[0]) for g in np.unique(group)][:args.lakh_songs]
-    examples = [(i, lakh_example(model, pack, i)) for i in firsts]
-    mb = np.median([e["scores"]["beat"]["f_measure"] for _, e in examples])
-    md = np.median([e["scores"]["downbeat"]["f_measure"] for _, e in examples])
-    index, ex = min(examples, key=lambda p: abs(p[1]["scores"]["beat"]["f_measure"] - mb)
-                    + abs(p[1]["scores"]["downbeat"]["f_measure"] - md))
-    figure(ex, "Lakh validation (717 held-out songs): beat F1 0.81, downbeat F1 0.61",
-           "a synthetic performance of a held-out song", args.out / "1_lakh_validation.png", rate,
-           source="a random combination of the song's pitched tracks (no drums), merged into one piano roll")
-    print("lakh song", pack.ids[index] if hasattr(pack, "ids") else index, ex["scores"]["beat"]["f_measure"],
-          ex["scores"]["downbeat"]["f_measure"])
-
     max_note = SynthesisConfig().max_note_seconds
-    for name, takes, wanted, title, source, path in (
-            ("asap", asap_takes(args.asap), args.asap_label,
-             "ASAP (1,067 classical piano performances): beat F1 0.58, downbeat F1 0.25",
-             "solo piano performance MIDI", "2_asap.png"),
-            ("samba", [t for t in samba_takes(args.samba) if t.name == args.samba_take], args.samba_label,
-             "JazzSAMBA (152 jazz piano takes): beat F1 0.52, downbeat F1 0.33",
-             "the piano part only (recorded piano MIDI); the rest of the band is not given to the model",
-             "3_samba.png")):
-        take = takes[0]
+
+    if "lakh" in args.datasets:
+        pack = SongPack(args.lakh / "val.npz")
+        group = np.asarray(pack.meta["group"])
+        firsts = [int(np.flatnonzero(group == g)[0]) for g in np.unique(group)][:args.lakh_songs]
+        examples = [(i, lakh_example(model, pack, i)) for i in firsts]
+        mb = np.median([e["scores"]["beat"]["f_measure"] for _, e in examples])
+        md = np.median([e["scores"]["downbeat"]["f_measure"] for _, e in examples])
+        index, ex = min(examples, key=lambda p: abs(p[1]["scores"]["beat"]["f_measure"] - mb)
+                        + abs(p[1]["scores"]["downbeat"]["f_measure"] - md))
+        figure(ex, "Lakh validation (717 held-out songs): beat F1 0.81, downbeat F1 0.61",
+               "a synthetic performance of a held-out song", args.out / "1_lakh_validation.png", rate,
+               source="a random combination of the song's pitched tracks (no drums), merged into one piano roll")
+        print("lakh", index, ex["scores"]["beat"]["f_measure"], ex["scores"]["downbeat"]["f_measure"])
+
+    if "asap" in args.datasets:
+        take = asap_takes(args.asap)[0]
         _, example = run_take(model, take, take.bpm, torch.device("cpu"), max_note)
-        rows = int(np.ceil(take.span[1] * rate)) + 1
-        example["bpm_condition"] = np.full(rows, take.bpm)
-        figure(example, title, wanted, args.out / path, rate, source=source)
-        print(name, take.name, example["scores"]["beat"]["f_measure"], example["scores"]["downbeat"]["f_measure"])
+        example["bpm_condition"] = np.full(int(np.ceil(take.span[1] * rate)) + 1, take.bpm)
+        figure(example, "ASAP (1,067 classical piano performances): beat F1 0.58, downbeat F1 0.25",
+               args.asap_label, args.out / "2_asap.png", rate, source="solo piano performance MIDI")
+        print("asap", take.name, example["scores"]["beat"]["f_measure"], example["scores"]["downbeat"]["f_measure"])
+
+    if "samba" in args.datasets:
+        instruments = tuple(args.samba_instruments.split(","))
+        take = next(t for t in samba_takes(args.samba, instruments=instruments) if t.name == args.samba_take)
+        bpm = take.bpm if args.samba_tempo == "written" else float(60 / np.median(np.diff(take.beats)))
+        _, example = run_take(model, take, bpm, torch.device("cpu"), max_note)
+        example["bpm_condition"] = np.full(int(np.ceil(take.span[1] * rate)) + 1, bpm)
+        if instruments == ("piano",):
+            source = "the piano part only (recorded piano MIDI); the rest of the band is not given to the model"
+        else:
+            source = f"{take.info['instruments'].replace('+', ' + ').replace('_', ' ')} merged into one piano roll"
+        tempo = (f"BPM condition {take.bpm:.0f} (written)" if args.samba_tempo == "written"
+                 else f"BPM condition {bpm:.0f} (played; written {take.bpm:.0f})")
+        figure(example, args.samba_title, f"{args.samba_label}; {tempo}",
+               args.out / args.samba_out, rate, source=source)
+        print("samba", take.name, take.info["instruments"], f"bpm {bpm:.1f}",
+              example["scores"]["beat"]["f_measure"], example["scores"]["downbeat"]["f_measure"])
 
 
 if __name__ == "__main__":
