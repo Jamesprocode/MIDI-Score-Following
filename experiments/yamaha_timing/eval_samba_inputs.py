@@ -47,7 +47,12 @@ def main():
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = load_checkpoint(args.checkpoint, "cpu")[0].to(device).eval()
+    model = load_checkpoint(args.checkpoint, "cpu")[0].eval()
+    try:
+        model = model.to(device)
+    except RuntimeError as exc:  # a node's GPU can be busy or unavailable; this pass is light on the CPU
+        print(f"CUDA unavailable ({exc.__class__.__name__}); running on the CPU", flush=True)
+        device = torch.device("cpu")
     max_note = SynthesisConfig().max_note_seconds
     rows, sections_rows = [], []
     for input_name, instruments in INPUTS.items():
