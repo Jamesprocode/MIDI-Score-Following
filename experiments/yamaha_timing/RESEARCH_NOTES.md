@@ -77,6 +77,7 @@ and the tracker loses the downbeat on it.
 
 **Hypothesis:**
 - A steady bass and drums would give much stronger beat evidence.
+- **Measured 2026-10-15:** piano + transcribed bass raises SAMBA beat/downbeat F from 0.52/0.33 to 0.61/0.39 (live takes: downbeat 0.37 to 0.48). Adding the horns does not add more. Bass alone marks beats but not bars. Drums are still untested, since the network never saw them. Details are in REPORT_2026-10-15.md §4b.
 - With piano alone, the follower should lean on harmony.
 - That is the case for weighting the cues by their reliability.
 
