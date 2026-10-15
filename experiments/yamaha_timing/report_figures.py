@@ -55,7 +55,7 @@ def tempo_curve(beats, smooth=4):
     return beats[1:], bpm
 
 
-def figure(example, title, subtitle, path, rate, excerpt=(20.0, 50.0)):
+def figure(example, title, subtitle, path, rate, excerpt=(20.0, 80.0), source=""):
     """Plain matplotlib: true vs predicted beats over an excerpt, and the tempo map."""
     import matplotlib
     matplotlib.use("Agg")
@@ -76,11 +76,11 @@ def figure(example, title, subtitle, path, rate, excerpt=(20.0, 50.0)):
     top.set_ylim(0, 1)
     top.set_xlim(t0, t1)
     top.set_xlabel("time (s)")
-    top.set_title("Beats (thin) and downbeats (thick), 30 s excerpt")
+    top.set_title("Beats (thin) and downbeats (thick), 60 s excerpt")
 
     tt, bt = tempo_curve(np.asarray(example["true_beats"]))
     tp, bp = tempo_curve(np.asarray(example["pred_beats"]))
-    bottom.plot(tt, bt, color="k", lw=1.2, label="ground truth (annotated beats)")
+    bottom.plot(tt, bt, color="k", lw=1.4, zorder=3, label="ground truth (annotated beats)")
     bottom.plot(tp, bp, color="C0", lw=1.0, label="predicted (from predicted beats)")
     if example.get("bpm_condition") is not None:
         condition = np.asarray(example["bpm_condition"], dtype=float)
@@ -98,7 +98,7 @@ def figure(example, title, subtitle, path, rate, excerpt=(20.0, 50.0)):
 
     s = example["scores"]
     fig.suptitle(f"{title}\nExample: {subtitle}: beat F1 {s['beat']['f_measure']:.2f}, "
-                 f"downbeat F1 {s['downbeat']['f_measure']:.2f}", fontsize=12)
+                 f"downbeat F1 {s['downbeat']['f_measure']:.2f}\nInput: {source}", fontsize=12)
     fig.tight_layout()
     fig.savefig(path)
     plt.close(fig)
@@ -109,9 +109,9 @@ def main():
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--lakh", type=Path, default=Path("data/lakh_v2"))
     parser.add_argument("--samba", type=Path, required=True)
-    parser.add_argument("--samba-take", default="65-misty/alternate")
+    parser.add_argument("--samba-take", default="52-bernies_tune/alternate")
     parser.add_argument("--asap-label", default="Haydn, Keyboard Sonata Hob. XVI:32, mvt. 1")
-    parser.add_argument("--samba-label", default="Misty, alternate take (live band)")
+    parser.add_argument("--samba-label", default="Bernie's Tune, alternate take (live band, steady swing)")
     parser.add_argument("--asap", type=Path, required=True)
     parser.add_argument("--lakh-songs", type=int, default=80, help="validation songs scanned for a median one")
     parser.add_argument("--out", type=Path, default=Path("report_figures"))
@@ -130,21 +130,25 @@ def main():
     index, ex = min(examples, key=lambda p: abs(p[1]["scores"]["beat"]["f_measure"] - mb)
                     + abs(p[1]["scores"]["downbeat"]["f_measure"] - md))
     figure(ex, "Lakh validation (717 held-out songs): beat F1 0.81, downbeat F1 0.61",
-           "a synthetic performance of a held-out song", args.out / "1_lakh_validation.png", rate)
+           "a synthetic performance of a held-out song", args.out / "1_lakh_validation.png", rate,
+           source="a random combination of the song's pitched tracks (no drums), merged into one piano roll")
     print("lakh song", pack.ids[index] if hasattr(pack, "ids") else index, ex["scores"]["beat"]["f_measure"],
           ex["scores"]["downbeat"]["f_measure"])
 
     max_note = SynthesisConfig().max_note_seconds
-    for name, takes, wanted, title, subtitle, path in (
+    for name, takes, wanted, title, source, path in (
             ("asap", asap_takes(args.asap), args.asap_label,
-             "ASAP (1,067 classical piano performances): beat F1 0.58, downbeat F1 0.25", None, "2_asap.png"),
+             "ASAP (1,067 classical piano performances): beat F1 0.58, downbeat F1 0.25",
+             "solo piano performance MIDI", "2_asap.png"),
             ("samba", [t for t in samba_takes(args.samba) if t.name == args.samba_take], args.samba_label,
-             "JazzSAMBA (152 jazz piano takes): beat F1 0.52, downbeat F1 0.33", None, "3_samba.png")):
+             "JazzSAMBA (152 jazz piano takes): beat F1 0.52, downbeat F1 0.33",
+             "the piano part only (recorded piano MIDI); the rest of the band is not given to the model",
+             "3_samba.png")):
         take = takes[0]
         _, example = run_take(model, take, take.bpm, torch.device("cpu"), max_note)
         rows = int(np.ceil(take.span[1] * rate)) + 1
         example["bpm_condition"] = np.full(rows, take.bpm)
-        figure(example, title, wanted, args.out / path, rate)
+        figure(example, title, wanted, args.out / path, rate, source=source)
         print(name, take.name, example["scores"]["beat"]["f_measure"], example["scores"]["downbeat"]["f_measure"])
 
 
