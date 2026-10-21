@@ -82,11 +82,24 @@ def main():
     parser.add_argument("--out", type=Path, default=HERE / "runs" / "tempo_variants")
     parser.add_argument("--workers", type=int, default=max(1, (os.cpu_count() or 2) - 1))
     parser.add_argument("--variants", nargs="*", default=["B3", "B5", "B6", "B7"])
+    parser.add_argument("--shard", type=int, nargs=2, default=(0, 1), metavar=("K", "N"),
+                        help="run only shard K of N; takes are spread so each shard gets a similar amount of work")
     args = parser.parse_args()
     (args.out / "frames").mkdir(parents=True, exist_ok=True)
     takes = follower_data.samba_follow_takes(args.samba, protocols=("sync",))
+    k, n = args.shard
+    if n > 1:  # greedy by cost (grows with the square of take length), deterministic
+        load, owner = [0.0] * n, {}
+        for data, _ in sorted(takes, key=lambda t: (-len(t[0]["times"]), t[0]["performance_id"])):
+            i = load.index(min(load))
+            owner[data["performance_id"]] = i
+            load[i] += len(data["times"]) ** 2
+        takes = [t for t in takes if owner[t[0]["performance_id"]] == k]
+    done = {f.stem.replace("__", "/") for f in (args.out / "frames").glob("*.npz")}
+    takes = [t for t in takes if t[0]["performance_id"] not in done]  # resume: skip takes already saved
     takes.sort(key=lambda t: -len(t[0]["times"]))
-    print(json.dumps({"takes": len(takes), "variants": args.variants, "workers": args.workers}), flush=True)
+    print(json.dumps({"takes": len(takes), "skipped_done": len(done), "variants": args.variants,
+                      "workers": args.workers, "shard": [k, n]}), flush=True)
     pending = {}
     with ProcessPoolExecutor(args.workers, initializer=_init, initargs=(str(args.checkpoint),)) as pool:
         jobs = [pool.submit(run_variant, data, take, name) for data, take in takes for name in args.variants]
