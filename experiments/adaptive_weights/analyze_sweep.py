@@ -19,7 +19,6 @@ Three readings of the same runs:
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 from pathlib import Path
 
@@ -31,24 +30,22 @@ ROLE_NAMES = {"head": "head\n(melody)", "piano_solo": "piano\nsolo", "comping": 
 
 
 def load(run):
-    with open(run / "metrics.csv") as handle:
-        rows = list(csv.DictReader(handle))
-    takes = sorted({r["performance_id"] for r in rows})
-    grid = sorted({(float(r["w_h"]), float(r["w_d"])) for r in rows})
+    """Per take and setting: bar accuracy and whether the take is lost (median |error| > 4 beats), computed
+    from frames/<take>.npz (the same quantities as run_follow.position_metrics), plus passage accuracies."""
+    files = sorted((run / "frames").glob("*.npz"))
+    takes = [f.stem.replace("__", "/") for f in files]
+    grid = sorted({tuple(map(float, g)) for f in files for g in np.load(f)["grid"]})
     index = {g: i for i, g in enumerate(grid)}
     accuracy = np.full((len(takes), len(grid)), np.nan)
     lost = np.zeros((len(takes), len(grid)), dtype=bool)
-    for r in rows:
-        t, g = takes.index(r["performance_id"]), index[(float(r["w_h"]), float(r["w_d"]))]
-        accuracy[t, g] = float(r["bar_accuracy"])
-        lost[t, g] = float(r["median_abs_beats"]) > 4
-    # passage-level accuracy per take and setting
     role_acc = np.full((len(ROLES), len(takes), len(grid)), np.nan)
     role_frames = np.zeros((len(ROLES), len(takes)), dtype=int)
-    for t, take in enumerate(takes):
-        z = np.load(run / "frames" / f"{take.replace('/', '__')}.npz")
+    for t, f in enumerate(files):
+        z = np.load(f)
         order = [index[(float(h), float(d))] for h, d in z["grid"]]
         correct = z["predicted_bar"] == z["truth_bar"][None, :]
+        accuracy[t, order] = correct.mean(axis=1)
+        lost[t, order] = np.median(np.abs(z["predicted_position"] - z["truth_position"][None, :]), axis=1) > 4
         for k, role in enumerate(ROLES):
             mask = z["role"] == role
             role_frames[k, t] = mask.sum()
@@ -92,7 +89,7 @@ def summarise(takes, grid, accuracy, lost, role_acc, role_frames):
     return out
 
 
-def figures(summary, grid, accuracy, out_dir):
+def figures(summary, takes, grid, accuracy, out_dir):
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -142,6 +139,35 @@ def figures(summary, grid, accuracy, out_dir):
     fig.savefig(out_dir / "sweep_per_take.pdf")
     plt.close(fig)
 
+    # 4. one dot per take: rhythm only vs harmony only, by bar accuracy (which cue finds the bar depends on the take)
+    g01, g10 = grid.index((0.0, 1.0)), grid.index((1.0, 0.0))
+    fig, ax = plt.subplots(figsize=(4.4, 4.2))
+    ax.plot([0, 1], [0, 1], color="#c9d5de", lw=1, zorder=0)
+    x, y = accuracy[:, g01], accuracy[:, g10]
+    ax.scatter(x, y, s=22, color=np.where(x > y, rhythm, harmony), edgecolor="white", lw=.5, zorder=3)
+    for name, label in (("sync/63-la_vie_en_rose/preferred", "La Vie en Rose"),
+                        ("sync/55-bye_bye_blackbird/preferred", "Bye Bye Blackbird")):
+        if name in takes:
+            i = takes.index(name)
+            ax.annotate(label, (x[i], y[i]), xytext=(-8 if x[i] > .5 else 8, 10), textcoords="offset points",
+                        ha="right" if x[i] > .5 else "left", fontsize=9, color=grey,
+                        arrowprops=dict(arrowstyle="-", color=grey, lw=.6))
+    ax.text(.97, .05, f"rhythm better\n({(x > y).sum()} takes)", ha="right", va="bottom", color=rhythm, fontsize=9,
+            transform=ax.transAxes)
+    ax.text(.04, .95, f"harmony better\n({(y > x).sum()} takes)", ha="left", va="top", color=harmony, fontsize=9,
+            transform=ax.transAxes)
+    ax.set_xlim(0, 1.02)
+    ax.set_ylim(0, 1.02)
+    ticks = [0, .25, .5, .75, 1]
+    ax.set_xticks(ticks, ["0%", "25%", "50%", "75%", "100%"])
+    ax.set_yticks(ticks, ["0%", "25%", "50%", "75%", "100%"])
+    ax.set_xlabel("rhythm only: time in correct bar")
+    ax.set_ylabel("harmony only: time in correct bar")
+    ax.set_aspect("equal")
+    fig.tight_layout()
+    fig.savefig(out_dir / "sweep_rhythm_vs_harmony.pdf")
+    plt.close(fig)
+
     # 3. the whole grid: mean accuracy for every fixed setting
     levels_h = sorted({h for h, _ in grid})
     levels_d = sorted({d for _, d in grid})
@@ -177,7 +203,7 @@ def main():
         p.pop("accuracy by setting")
     print(json.dumps(brief, indent=1, default=lambda v: round(float(v), 3)))
     if args.figures:
-        figures(summary, grid, accuracy, args.figures)
+        figures(summary, takes, grid, accuracy, args.figures)
 
 
 if __name__ == "__main__":

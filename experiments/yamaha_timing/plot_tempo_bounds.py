@@ -1,7 +1,7 @@
 """Tempo maps before and after bounding the tempo (eval_tempo_bounds.py), for the slide examples.
 
 Reads results/tempo_bounds/examples.npz (played-tempo condition; the current
-decoder and min-gap+fill r=1.3) and draws, per take, the tempo implied by the
+decoder and min-gap+fill r=1.5) and draws, per take, the tempo implied by the
 annotated beats, the current decoder's beats and the bounded decoder's beats.
 
   python plot_tempo_bounds.py --data "../../Dataset/SAMBA dataset"
@@ -18,7 +18,7 @@ from yamaha_timing.real_data import samba_takes
 
 EXAMPLES = {"52-bernies_tune/alternate": "Bernie's Tune (alternate, live swing)",
             "65-misty/alternate": "Misty (alternate, live ballad)"}
-BOUNDED = "min-gap+fill r=1.3"
+BOUNDED = "min-gap+fill r=1.5"
 
 
 def tempo_curve(beats):
@@ -46,7 +46,7 @@ def main():
         played = 60 / np.median(np.diff(take.beats))
         for label, beats, color, width in (
                 ("current decoder", cache[f"{name}|current|beat"], "#9ab6e8", 1.0),
-                (f"tempo bounded to ±30% of {played:.0f} BPM", cache[f"{name}|{BOUNDED}|beat"], "#2a78d6", 1.4),
+                (f"tempo bounded to ±50% of {played:.0f} BPM", cache[f"{name}|{BOUNDED}|beat"], "#2a78d6", 1.4),
                 ("annotated beats", truth, "black", 1.6)):
             x, y = tempo_curve(beats)
             ax.plot(x, y, color=color, lw=width, label=label)

@@ -129,3 +129,51 @@ and the tracker loses the downbeat on it.
   played tempo (On Green Dolphin Street: written 165, played about 189).
 - **Sync beats:** sync-take beats are interpolated within annotated bars, so
   they are approximate.
+
+## 2026-10-18: does bounding the tempo fix the tempo spikes? (advisor's suggestion)
+
+**Question:** the tempo maps of the decoded beats spike to 2–3x (two beats fired
+0.1–0.3 s apart) and dip where a beat is missed. Would bounding the highest and
+lowest tempo remove these, and would that make the beat tracker more accurate?
+
+**Test:** `eval_tempo_bounds.py`, all 152 SAMBA takes, checkpoint lakh_r3b
+(`runs/lakh_r3b/best_model.pt`). Its unbounded row reproduces samba_breakdown
+exactly (0.532 / 0.337). Decoder variants, all our choice (Maezawa's follower
+never decodes beats):
+- **min-gap:** drop a beat that comes sooner than period / r after the last one,
+  so the tempo can be at most r times the BPM condition. This is causal.
+- **min-gap+fill:** also add a beat when none has come for period * r, so every
+  interval lies within [period / r, period * r]. An added beat is decided up to
+  (r − 1) beats late, so a live system would hear it late.
+
+**Results**, BPM condition = played tempo, mir_eval ±70 ms:
+
+| | beat F | beat CMLt | downbeat F | downbeat CMLt |
+|---|---|---|---|---|
+| all 152, current decoder | 0.532 | 0.301 | 0.337 | 0.325 |
+| all 152, min-gap r=1.5 (causal) | 0.524 | 0.297 | 0.340 | 0.420 |
+| all 152, min-gap+fill r=1.5 | 0.549 | 0.380 | 0.343 | 0.517 |
+| all 152, min-gap+fill r=1.3 | 0.528 | 0.428 | 0.318 | 0.553 |
+| live 52, current decoder | 0.584 | 0.356 | 0.404 | 0.412 |
+| live 52, min-gap+fill r=1.5 | 0.606 | 0.434 | 0.410 | 0.583 |
+| live 52, written tempo, current decoder | 0.544 | 0.293 | 0.366 | 0.321 |
+| live 52, written tempo, min-gap+fill r=1.3 | 0.511 | 0.333 | 0.297 | 0.420 |
+
+**What this shows:**
+- **The obvious spikes go away**, by construction. Continuity improves a lot:
+  beat CMLt +0.08 to +0.13, downbeat CMLt +0.19 to +0.23.
+- **Hit rates barely move.** Beat F is +0.02 at best and downbeat F changes by
+  ±0.02. Filled-in beats are extrapolated and often miss the ±70 ms window.
+  The causal drop-only version does not raise F at all.
+- **The downbeat problem is not a tempo problem.** Bounding cannot tell which
+  beat is "1", and in 149 of 152 takes the "1" wanders rather than sitting at a
+  fixed offset. Argument 2 (beat tracking alone can't follow a lead sheet) stands.
+- **A bound is only as good as the tempo it is centred on.** Around the written
+  tempo, tight bounds hurt the live takes (beat F 0.544 → 0.511, downbeat F
+  0.366 → 0.297), because written tempos there are often 20–50% off.
+- **The follower already has the bound where it matters.** Its tempo grid spans
+  0.5–2x, and B7 adds a per-beat pull toward the target tempo (about ±15%). That
+  is the change from B3 to B7: bar accuracy 0.68 → 0.85, lost takes 10 → 0.
+
+Figure: `results/tempo_bounds/tempo_bounds_examples.png` (Bernie's Tune and
+Misty, the slide examples).
