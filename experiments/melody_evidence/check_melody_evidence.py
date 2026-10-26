@@ -11,6 +11,8 @@ solo, other):
   top    share of firing checks where no place in another measure scores higher than the true place
 
 ``--reference same`` scores against the take's own head: a code check, which should be near perfect in the heads.
+``--cue harmony`` runs the same check on B5's harmony cue (piano chord match, as the follower sees it), for
+comparison; "fires" is then the share of checks where the piano gives chord evidence.
 
   ../yamaha_timing/.venv/bin/python check_melody_evidence.py --samba "../../Dataset/SAMBA dataset" \
       --out runs/check_other
@@ -31,8 +33,36 @@ import follower_data
 KINDS = ("head", "horn_solo", "other_solo", "other")
 
 
-def check_take(data, root, config):
-    evidence = MelodyEvidence(data, root, config)
+class HarmonyCue:
+    """B5's harmony cue on the same grid: the chord-class probability of the chord written at each place."""
+
+    def __init__(self, data, bins_per_beat=8, step_seconds=.05):
+        import run_study
+        self.step, self.frame0, self.step_seconds = 1. / bins_per_beat, data["times"][0], step_seconds
+        times = np.round(np.arange(data["times"][0], data["times"][-1] + 1e-9, step_seconds), 6)
+        case = run_study.get_features(dict(data, times=times), {"triad"})["triad"]
+        scores, self.available, mass = case["features"]["active_pooled"]
+        probability, _ = run_study.observation(scores, self.available, mass, {"scaling": "zscore", "reliability": "none"})
+        self.probability = probability / probability.sum(axis=1, keepdims=True)
+        per_bar = int(round(data["beats_per_bar"] * bins_per_beat))
+        positions = np.arange(len(data["bars"]) * per_bar) * self.step
+        starts, ends = data["chord_starts_beats"], data["chord_ends_beats"]
+        interval = np.searchsorted(starts, positions, side="right") - 1
+        self.known = (interval >= 0) & (positions < ends[np.maximum(interval, 0)])
+        self.chord = np.where(self.known, np.asarray(case["targets"]["ids"])[np.maximum(interval, 0)], 0)
+        self.tune = self.known  # same length as the grid
+        self.horns = ["piano"]
+        self.reference = {"beat": []}
+
+    def scores(self, now, bpm, n_positions):
+        frame = min(int(round((now - self.frame0) / self.step_seconds)), len(self.available) - 1)
+        if not self.available[frame]:
+            return None
+        return np.where(self.known, self.probability[frame][self.chord], 0.)[:n_positions]
+
+
+def check_take(data, root, config, cue="melody"):
+    evidence = MelodyEvidence(data, root, config) if cue == "melody" else HarmonyCue(data)
     sample = np.arange(0, len(data["times"]), 2)
     times, truth = data["times"][sample], data["truth_position_beats"][sample]
     bpm = 60 * np.gradient(data["truth_position_beats"], data["times"])[sample]
@@ -67,6 +97,7 @@ def main():
     parser.add_argument("--samba", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--reference", choices=("other", "same"), default="other")
+    parser.add_argument("--cue", choices=("melody", "harmony"), default="melody")
     parser.add_argument("--window-beats", type=float, default=MelodyConfig.window_beats)
     parser.add_argument("--min-notes", type=int, default=MelodyConfig.min_notes)
     parser.add_argument("--limit", type=int, default=0, help="only the first N takes (quick look)")
@@ -78,14 +109,14 @@ def main():
         takes = takes[:args.limit]
     rows = []
     for data, _ in takes:
-        rows += check_take(data, args.samba, config)
+        rows += check_take(data, args.samba, config, args.cue)
         print(data["performance_id"], flush=True)
     args.out.mkdir(parents=True, exist_ok=True)
     with open(args.out / "per_take.csv", "w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
-    summary = {"config": vars(config) if hasattr(config, "__dict__") else str(config), "takes": len(takes)}
+    summary = {"cue": args.cue, "config": vars(config) if args.cue == "melody" else None, "takes": len(takes)}
     for kind in KINDS:
         part = [r for r in rows if r["kind"] == kind]
         checks, fired = sum(r["checks"] for r in part), sum(r["fired"] for r in part)
