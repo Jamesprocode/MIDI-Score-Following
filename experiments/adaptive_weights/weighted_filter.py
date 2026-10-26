@@ -11,6 +11,11 @@ With a constant array it gives identical output (tests/test_weighted_filter.py
 checks this). Anything that produces weights causally (a rule, or a small
 network reading the music) can drive it; a schedule from annotated passage
 types is an oracle, used only to show what moving the faders could do.
+
+An optional third cue, ``melody`` (an object with ``log_likelihood(now, bpm,
+n_positions)``, e.g. melody_evidence.MelodyEvidence), adds
+``elapsed * w_m * log M_t(s)``; then ``weights[t] = (w_h, w_d, w_m)``. It reads
+the same fed-back tempo as the network. Without it the filter is unchanged.
 """
 from __future__ import annotations
 
@@ -28,11 +33,11 @@ from yamaha_filter import YamahaConfig, _beat_kernel, _beat_transition, _tempo_g
 
 def follow_weighted(times, chord_probabilities, available, chord_starts_beats, chord_ends_beats, chord_ids,
                     bar_starts_beats, beats_per_bar, initial_bpm, weights, *, start_time, network=None,
-                    config=YamahaConfig()):
+                    config=YamahaConfig(), melody=None):
     """yamaha_filter.follow with weights[t] = (w_harmony, w_downbeat) per update instead of the config's
-    emission_power_per_second / downbeat_power_per_second."""
+    emission_power_per_second / downbeat_power_per_second; (w_harmony, w_downbeat, w_melody) with ``melody``."""
     times = np.asarray(times, dtype=float)
-    weights = np.broadcast_to(np.asarray(weights, dtype=float), (len(times), 2))
+    weights = np.broadcast_to(np.asarray(weights, dtype=float), (len(times), 2 if melody is None else 3))
     probability = np.asarray(chord_probabilities, dtype=float)
     probability = probability / np.maximum(probability.sum(axis=1, keepdims=True), np.finfo(float).tiny)
     starts, ends, ids = map(np.asarray, (chord_starts_beats, chord_ends_beats, chord_ids))
@@ -57,7 +62,8 @@ def follow_weighted(times, chord_probabilities, available, chord_starts_beats, c
                                                  "position_confidence")}
     for frame, now in enumerate(times):
         elapsed = now - previous
-        w_h, w_d = weights[frame]
+        w_h, w_d = weights[frame][:2]
+        w_m = weights[frame][2] if melody is not None else 0.
         if elapsed:
             beats_moved = tempi * elapsed / 60.
             reachable += int(np.ceil(beats_moved.max() / step))
@@ -87,6 +93,10 @@ def follow_weighted(times, chord_probabilities, available, chord_starts_beats, c
                 phase = np.mod(positions, beats_per_bar) / beats_per_bar
                 log_pd = log_d[np.minimum((phase * len(log_d)).astype(int), len(log_d) - 1)]
                 log_weight += (log_pd - log_pd.max()) * elapsed * w_d
+            if melody is not None and w_m:
+                log_m = melody.log_likelihood(now, hint, len(positions))
+                if log_m is not None:
+                    log_weight += (log_m - log_m.max()) * elapsed * w_m
             posterior *= np.exp(log_weight)[None, :]
         total = posterior.sum()
         if not np.isfinite(total) or total <= 0:

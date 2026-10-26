@@ -144,7 +144,10 @@ def follower_track(args):
         return (np.array([s["time"] for s in samples]), np.array([s["truthPositionBeats"] for s in samples]),
                 np.array([s["estimatedPositionBeats"] for s in samples]))
     z = np.load(args.run / "frames" / f"{args.take.replace('/', '__')}.npz")
-    g = [tuple(map(float, x)) for x in z["grid"]].index(tuple(args.weights))
+    if args.variant:  # a run_tempo_variants.py run: pick the follower by name
+        g = [str(v) for v in z["variants"]].index(args.variant)
+    else:  # a weight sweep: pick the follower by its (w_h, w_d)
+        g = [tuple(map(float, x)) for x in z["grid"]].index(tuple(args.weights))
     return z["times"], z["truth_position"], z["predicted_position"][g]
 
 
@@ -154,6 +157,8 @@ def main():
     parser.add_argument("--run", type=Path, default=HERE / "runs" / "sweep_b7")
     parser.add_argument("--demo-json", type=Path, default=None, help="demo_player/<take>.json instead of --run")
     parser.add_argument("--follower", default="fixed", help="follower id in --demo-json")
+    parser.add_argument("--variant", default=None,
+                        help="follower name in a run_tempo_variants.py run given as --run (e.g. B5, B5_harmony_only)")
     parser.add_argument("--take", required=True)
     parser.add_argument("--start", type=float, required=True)
     parser.add_argument("--end", type=float, required=True)
