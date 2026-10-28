@@ -15,7 +15,9 @@ data):
   <part>.crepe.activation.npz      CREPE's pitch activation (360 bins, float16) and times, kept for the audio
                                    melody cue
 The f0, onset and envelope files let the note segmentation be re-run with other settings without CREPE.
-Stems already transcribed are skipped, so a rerun resumes. progress.ckpt is touched after each stem (the job chain
+Stems already transcribed are skipped, and a stem whose CREPE files exist reuses them, so a rerun resumes without
+repeating CREPE. madmom reads the FLAC through ffmpeg, so ffmpeg must be on PATH (it is in the amt-tools
+environment). progress.ckpt is touched after each stem (the job chain
 takes a new *ckpt* file as proof of progress), and one JSON line per stem goes to stdout and <out>/stems.jsonl.
 
   python ../transcription/run_crepe_notes.py --samba ~/scratch/MIDI-Score-Following/data/samba --out $RUN_DIR \
@@ -43,10 +45,8 @@ def shard_of(paths, k, n):
 
 
 def transcribe(stem, out_root):
-    import crepe
     import numpy as np
-    from crepe_notes.crepe_notes import process
-    from librosa import load
+    from crepe_notes.crepe_notes import parse_f0, process, save_f0
 
     song, take, part = stem.parent.parent.name, stem.parent.name, stem.stem
     folder = out_root / "sync" / song / take
@@ -58,13 +58,19 @@ def transcribe(stem, out_root):
     if midi.exists():
         return None
     started = time.time()
-    audio, sr = load(str(link), sr=None, mono=True)
-    times, frequency, confidence, activation = crepe.predict(audio, sr, viterbi=True, verbose=0)
-    np.savez_compressed(folder / f"{part}.crepe.activation.npz", time=times.astype("float32"),
-                        activation=activation.astype("float16"))
+    f0_path, activation_path = folder / f"{part}.crepe.f0.csv", folder / f"{part}.crepe.activation.npz"
+    if f0_path.exists() and activation_path.exists():
+        frequency, confidence = parse_f0(f0_path)
+    else:
+        import crepe
+        from librosa import load
+        audio, sr = load(str(link), sr=None, mono=True)
+        times, frequency, confidence, activation = crepe.predict(audio, sr, viterbi=True, verbose=0)
+        np.savez_compressed(activation_path, time=times.astype("float32"), activation=activation.astype("float16"))
+        save_f0(f0_path, frequency, confidence)
     process(frequency, confidence, link, output_label="crepe.transcription", use_cwd=False,
             min_duration=MIN_DURATION.get(part, 0.03), save_analysis_files=True, pitch_tracker="crepe")
-    return {"stem": f"sync/{song}/{take}/{part}", "audio_s": round(len(audio) / sr, 1),
+    return {"stem": f"sync/{song}/{take}/{part}", "audio_s": round(len(frequency) * 0.01, 1),
             "seconds": round(time.time() - started, 1)}
 
 
