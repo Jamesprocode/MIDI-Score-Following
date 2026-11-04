@@ -68,7 +68,7 @@ def start_params():
 
 @dataclass(frozen=True)
 class NoteHMMConfig:
-    params: str = ""                 # folder with fit_on_sync.json and fit_on_async.json
+    params: str = ""                 # folder with fit_on_sync.json and fit_on_async.json (or assign.json, see below)
     window_beats: float = 8.0        # as v1
     min_notes: int = 2               # as v1
     max_tune_notes: int = 48         # tune notes looked at per place (the window plus a beat each side)
@@ -306,9 +306,12 @@ class NoteHMMEvidence:
     is better) and ``log_likelihood``, on the follower's grid."""
 
     def __init__(self, data, root, config=NoteHMMConfig(), bins_per_beat=8):
-        protocol = data["performance_id"].split("/")[0]
+        protocol, song = data["performance_id"].split("/")[:2]
         other = {"sync": "async", "async": "sync"}[protocol]
         self.params_file = Path(config.params) / f"fit_on_{other}.json"  # cross-fitting: never this protocol's songs
+        assign = Path(config.params) / "assign.json"
+        if assign.exists():  # per-song files instead (fit_note_hmm_folds.py: song k-fold or in-sample)
+            self.params_file = Path(config.params) / json.loads(assign.read_text())[f"{protocol}/{song}"]
         self.t = Tables(json.loads(self.params_file.read_text()))
         self.config, self.step = config, 1. / bins_per_beat
         self.tune_onset, self.tune_pc, known_bar = tune_notes(data, config.lead_sheets)
