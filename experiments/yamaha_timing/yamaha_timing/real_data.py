@@ -33,6 +33,7 @@ from __future__ import annotations
 import csv
 from dataclasses import dataclass, field
 import json
+import os
 from pathlib import Path
 
 import numpy as np
@@ -104,6 +105,9 @@ def _split_ids(path):
 
 
 TRANSCRIBED = {"bass": ("bass",), "horns": ("saxophone_alto", "saxophone_tenor", "trumpet"), "drums": ("drums",)}
+# Dataset/JazzSAMBA-MIDI, the cleaned dataset: its live horn and bass parts are CREPE Notes
+# (transcription/apply_crepe_parts.py, 2026-11-03). Unset, every part is read as distributed.
+CLEANED_MIDI = os.environ.get("SAMBA_CLEANED_MIDI")
 
 
 def _band_notes(root, protocol, song, take, instruments):
@@ -115,6 +119,9 @@ def _band_notes(root, protocol, song, take, instruments):
             path = Path(root) / f"{protocol}_midi/songs/{song}/{take}/{name}.transcribed.derived.mid"
             if group == "drums" and protocol == "async":
                 path = Path(root) / f"{protocol}_audio/songs/{song}/{take}/drums.mid"
+            cleaned = Path(CLEANED_MIDI or "") / protocol / song / take / f"{name}.mid"
+            if CLEANED_MIDI and group in ("horns", "bass") and cleaned.exists():
+                path = cleaned
             if path.exists():
                 parts.append(np.column_stack(read_midi_notes(path)))
                 present.append(name)

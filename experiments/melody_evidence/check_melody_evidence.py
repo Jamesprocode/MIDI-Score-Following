@@ -11,6 +11,8 @@ solo, other):
   top    share of firing checks where no place in another measure scores higher than the true place
 
 ``--reference same`` scores against the take's own head: a code check, which should be near perfect in the heads.
+``--reference written`` scores against the lead sheet's melody (melody.csv). ``--skip-broken`` leaves out the 7 takes
+whose horn transcription broke down.
 ``--cue harmony`` runs the same check on B5's harmony cue (piano chord match, as the follower sees it), for
 comparison; "fires" is then the share of checks where the piano gives chord evidence.
 
@@ -27,7 +29,7 @@ from pathlib import Path
 
 import numpy as np
 
-from melody_evidence import MelodyConfig, MelodyEvidence, section_kinds
+from melody_evidence import BROKEN_HORNS, MelodyConfig, MelodyEvidence, section_kinds
 import follower_data
 
 KINDS = ("head", "horn_solo", "other_solo", "other")
@@ -61,9 +63,9 @@ class HarmonyCue:
         return np.where(self.known, self.probability[frame][self.chord], 0.)[:n_positions]
 
 
-def check_take(data, root, config, cue="melody"):
+def check_take(data, root, config, cue="melody", stride=2):
     evidence = MelodyEvidence(data, root, config) if cue == "melody" else HarmonyCue(data)
-    sample = np.arange(0, len(data["times"]), 2)
+    sample = np.arange(0, len(data["times"]), stride)
     times, truth = data["times"][sample], data["truth_position_beats"][sample]
     bpm = 60 * np.gradient(data["truth_position_beats"], data["times"])[sample]
     kinds = section_kinds(root, data["performance_id"], times)
@@ -96,27 +98,34 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--samba", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
-    parser.add_argument("--reference", choices=("other", "same"), default="other")
+    parser.add_argument("--reference", choices=("other", "same", "written"), default="other")
+    parser.add_argument("--lead-sheets", default=MelodyConfig.lead_sheets, help="for --reference written")
+    parser.add_argument("--skip-broken", action="store_true", help="leave out the takes whose horn part broke down")
     parser.add_argument("--cue", choices=("melody", "harmony"), default="melody")
     parser.add_argument("--window-beats", type=float, default=MelodyConfig.window_beats)
     parser.add_argument("--min-notes", type=int, default=MelodyConfig.min_notes)
     parser.add_argument("--limit", type=int, default=0, help="only the first N takes (quick look)")
+    parser.add_argument("--stride", type=int, default=2, help="check every Nth frame (2 = the follower's checks; "
+                                                               "more = a lighter, coarser look)")
     args = parser.parse_args()
-    config = replace(MelodyConfig(), reference=args.reference, window_beats=args.window_beats,
-                     min_notes=args.min_notes)
+    config = replace(MelodyConfig(), reference=args.reference, lead_sheets=str(args.lead_sheets),
+                     window_beats=args.window_beats, min_notes=args.min_notes)
     takes = follower_data.samba_follow_takes(args.samba, protocols=("sync",))
+    if args.skip_broken:
+        takes = [t for t in takes if t[0]["performance_id"] not in BROKEN_HORNS]
     if args.limit:
         takes = takes[:args.limit]
     rows = []
     for data, _ in takes:
-        rows += check_take(data, args.samba, config, args.cue)
+        rows += check_take(data, args.samba, config, args.cue, args.stride)
         print(data["performance_id"], flush=True)
     args.out.mkdir(parents=True, exist_ok=True)
     with open(args.out / "per_take.csv", "w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
-    summary = {"cue": args.cue, "config": vars(config) if args.cue == "melody" else None, "takes": len(takes)}
+    summary = {"cue": args.cue, "config": vars(config) if args.cue == "melody" else None, "takes": len(takes),
+               "stride": args.stride, "skip_broken": args.skip_broken}
     for kind in KINDS:
         part = [r for r in rows if r["kind"] == kind]
         checks, fired = sum(r["checks"] for r in part), sum(r["fired"] for r in part)

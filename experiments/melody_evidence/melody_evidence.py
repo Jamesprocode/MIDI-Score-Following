@@ -5,7 +5,9 @@ pitch class. JazzSAMBA has no written melodies, so the reference is the *other* 
 (dataset transcriptions) played during that take's head-in and head-out, placed on the chart with that take's
 annotated bars. It stands in for a lead-sheet melody. It is a different performance of the same tune by the same
 band, so it never contains the notes being followed. ``reference="same"`` uses the followed take's own head
-instead, which is only a sanity check of the code (it should be near perfect in the heads).
+instead, which is only a sanity check of the code (it should be near perfect in the heads). ``reference="written"``
+uses the lead sheet: the Real Book melody imported into Dataset/JazzSAMBA-MIDI (<song>/melody.csv, chart measure and
+beat). It covers every measure of the chart, so no take's playing is needed to build it.
 
 At each update the follower asks, for every place q in the unfolded chart: of the horn notes started in the last
 ``window_beats`` beats, what share match a tune note of the same pitch class (any octave) within
@@ -30,8 +32,12 @@ if str(EXPERIMENTS / "yamaha_follower") not in sys.path:
     sys.path.insert(0, str(EXPERIMENTS / "yamaha_follower"))
 import follower_data  # noqa: E402,F401  (sys.path for yamaha_timing)
 from yamaha_timing.real_data import _band_notes  # noqa: E402
+sys.path.insert(0, str(EXPERIMENTS / "transcription"))
+from evaluate_transcriptions import BROKEN  # noqa: E402
 
 OTHER_TAKE = {"preferred": "alternate", "alternate": "preferred"}
+# Live takes whose horn transcription broke down (transcription/RESULTS.md); the runs' --skip-broken leaves them out
+BROKEN_HORNS = {f"sync/{song}/{take}" for song, take, part in BROKEN if part != "bass"}
 
 
 @dataclass(frozen=True)
@@ -40,7 +46,9 @@ class MelodyConfig:
     tolerance_beats: float = 0.5    # slack for swing, anticipation and transcription timing
     min_notes: int = 2              # fewer recent notes: no evidence
     floor: float = 0.1              # likelihood of a place where no recent note matches
-    reference: str = "other"        # "other" take's head (the test) or the "same" take's head (code check only)
+    reference: str = "other"        # "other" take's head (the test), the "same" take's head (code check only), or the
+                                    # "written" tune of the lead sheet
+    lead_sheets: str = str(EXPERIMENTS.parent / "Dataset" / "JazzSAMBA-MIDI")  # <protocol>/<song>/melody.csv, for "written"
 
 
 def _rows(path):
@@ -81,6 +89,17 @@ def reference_tune(root, protocol, song, take, beats_per_bar):
             "source": f"{protocol}/{song}/{take}"}
 
 
+def written_tune(lead_sheets, protocol, song):
+    """The lead sheet's melody: form measure, beat in the bar, pitch class. Every measure of the chart is covered, the
+    written rests included."""
+    folder = Path(lead_sheets) / protocol / song
+    rows = _rows(folder / "melody.csv")
+    return {"measure": np.array([int(r["measure"]) for r in rows]), "beat": np.array([float(r["beat"]) for r in rows]),
+            "pitch_class": np.array([int(r["pitch"]) % 12 for r in rows]),
+            "covered": {int(r["measure"]) for r in _rows(folder / "chart.csv")}, "horns": ["lead sheet"],
+            "source": str(folder / "melody.csv")}
+
+
 class MelodyEvidence:
     """The melody cue for one take, on the follower's position grid (``bins_per_beat`` steps per beat)."""
 
@@ -88,8 +107,11 @@ class MelodyEvidence:
         protocol, song, take = data["performance_id"].split("/")
         self.config, self.step = config, 1. / bins_per_beat
         per_bar = int(round(data["beats_per_bar"] * bins_per_beat))
-        source = take if config.reference == "same" else OTHER_TAKE[take]
-        self.reference = reference_tune(root, protocol, song, source, data["beats_per_bar"])
+        if config.reference == "written":
+            self.reference = written_tune(config.lead_sheets, protocol, song)
+        else:
+            source = take if config.reference == "same" else OTHER_TAKE[take]
+            self.reference = reference_tune(root, protocol, song, source, data["beats_per_bar"])
         measures = np.array([int(b["measure"]) for b in data["bars"]])  # unfolded bar -> form measure
         tune = np.zeros((len(measures) * per_bar, 12), dtype=bool)
         ref = self.reference
