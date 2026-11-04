@@ -63,8 +63,16 @@ class HarmonyCue:
         return np.where(self.known, self.probability[frame][self.chord], 0.)[:n_positions]
 
 
-def check_take(data, root, config, cue="melody", stride=2):
-    evidence = MelodyEvidence(data, root, config) if cue == "melody" else HarmonyCue(data)
+def check_take(data, root, config, cue="melody", stride=2, params=""):
+    if cue == "melody":
+        evidence = MelodyEvidence(data, root, config)
+    elif cue == "melody_v2":
+        from note_hmm import NoteHMMConfig, NoteHMMEvidence
+        evidence = NoteHMMEvidence(data, root, NoteHMMConfig(params=params, lead_sheets=config.lead_sheets,
+                                                              window_beats=config.window_beats,
+                                                              min_notes=config.min_notes))
+    else:
+        evidence = HarmonyCue(data)
     sample = np.arange(0, len(data["times"]), stride)
     times, truth = data["times"][sample], data["truth_position_beats"][sample]
     bpm = 60 * np.gradient(data["truth_position_beats"], data["times"])[sample]
@@ -101,31 +109,36 @@ def main():
     parser.add_argument("--reference", choices=("other", "same", "written"), default="other")
     parser.add_argument("--lead-sheets", default=MelodyConfig.lead_sheets, help="for --reference written")
     parser.add_argument("--skip-broken", action="store_true", help="leave out the takes whose horn part broke down")
-    parser.add_argument("--cue", choices=("melody", "harmony"), default="melody")
+    parser.add_argument("--cue", choices=("melody", "melody_v2", "harmony"), default="melody",
+                        help="melody_v2: the note HMM (note_hmm.py), with --params")
+    parser.add_argument("--params", default="", help="for melody_v2: folder with fit_on_sync.json and fit_on_async.json")
     parser.add_argument("--window-beats", type=float, default=MelodyConfig.window_beats)
     parser.add_argument("--min-notes", type=int, default=MelodyConfig.min_notes)
+    parser.add_argument("--protocols", nargs="+", choices=("sync", "async"), default=["sync"],
+                        help="live takes (sync, the default) and/or click takes (async)")
     parser.add_argument("--limit", type=int, default=0, help="only the first N takes (quick look)")
     parser.add_argument("--stride", type=int, default=2, help="check every Nth frame (2 = the follower's checks; "
                                                                "more = a lighter, coarser look)")
     args = parser.parse_args()
     config = replace(MelodyConfig(), reference=args.reference, lead_sheets=str(args.lead_sheets),
                      window_beats=args.window_beats, min_notes=args.min_notes)
-    takes = follower_data.samba_follow_takes(args.samba, protocols=("sync",))
+    takes = follower_data.samba_follow_takes(args.samba, protocols=tuple(args.protocols))
     if args.skip_broken:
         takes = [t for t in takes if t[0]["performance_id"] not in BROKEN_HORNS]
     if args.limit:
         takes = takes[:args.limit]
     rows = []
     for data, _ in takes:
-        rows += check_take(data, args.samba, config, args.cue, args.stride)
+        rows += check_take(data, args.samba, config, args.cue, args.stride, args.params)
         print(data["performance_id"], flush=True)
     args.out.mkdir(parents=True, exist_ok=True)
     with open(args.out / "per_take.csv", "w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
-    summary = {"cue": args.cue, "config": vars(config) if args.cue == "melody" else None, "takes": len(takes),
-               "stride": args.stride, "skip_broken": args.skip_broken}
+    summary = {"cue": args.cue, "config": vars(config) if args.cue != "harmony" else None, "params": args.params,
+               "takes": len(takes),
+               "stride": args.stride, "skip_broken": args.skip_broken, "protocols": args.protocols}
     for kind in KINDS:
         part = [r for r in rows if r["kind"] == kind]
         checks, fired = sum(r["checks"] for r in part), sum(r["fired"] for r in part)

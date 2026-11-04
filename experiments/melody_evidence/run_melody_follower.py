@@ -10,6 +10,9 @@ Each variant adds the melody cue (melody_evidence.py; the tune is the other take
   B5+M0.5 ... w_m = 0.5, 1, 2
   B5+M1same   w_m = 1 with the take's own head as the tune (a ceiling for the heads, not a result)
   B5+W0.5 ... w_m = 0.5, 1, 2 with the lead sheet's melody as the tune (melody.csv, --lead-sheets)
+  B5+H0.25 .. w_m = 0.25, 0.5, 1 with melody cue v2, the note HMM (note_hmm.py; lead sheet, --params)
+
+--protocols sync async also runs the click takes (default: the live takes only).
 
 --skip-broken leaves out the 7 takes whose horn transcription broke down (melody_evidence.BROKEN_HORNS).
 
@@ -34,6 +37,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "adaptive_weights"))
 from melody_evidence import BROKEN_HORNS, MelodyConfig, MelodyEvidence, section_kinds  # noqa: E402
+from note_hmm import NoteHMMConfig, NoteHMMEvidence  # noqa: E402
 import follower_data  # noqa: E402
 import run_study  # noqa: E402
 from evidence import NetworkPhase  # noqa: E402
@@ -52,12 +56,17 @@ VARIANTS = {  # name: (w_m, melody config or None)
     "B5+W0.5": (.5, replace(MelodyConfig(), reference="written")),
     "B5+W1": (1., replace(MelodyConfig(), reference="written")),
     "B5+W2": (2., replace(MelodyConfig(), reference="written")),
+    "B5+H0.25": (.25, "note_hmm"),
+    "B5+H0.5": (.5, "note_hmm"),
+    "B5+H1": (1., "note_hmm"),
 }
 
 
-def run_variant(data, take, name, samba, lead_sheets=MelodyConfig.lead_sheets):
+def run_variant(data, take, name, samba, lead_sheets=MelodyConfig.lead_sheets, params=""):
     w_m, melody_config = VARIANTS[name]
-    if melody_config is not None and melody_config.reference == "written":
+    if melody_config == "note_hmm":
+        melody_config = NoteHMMConfig(params=str(params), lead_sheets=str(lead_sheets))
+    elif melody_config is not None and melody_config.reference == "written":
         melody_config = replace(melody_config, lead_sheets=str(lead_sheets))
     sample = np.arange(0, len(data["times"]), 2)
     eval_times = data["times"][sample]
@@ -67,7 +76,12 @@ def run_variant(data, take, name, samba, lead_sheets=MelodyConfig.lead_sheets):
     scores, available, mass = case["features"]["active_pooled"]
     probabilities, _ = run_study.observation(scores, available, mass, {"scaling": "zscore", "reliability": "none"})
     network = NetworkPhase(sweep_fixed_weights._MODEL, take)
-    melody = None if melody_config is None else MelodyEvidence(data, samba, melody_config)
+    if melody_config is None:
+        melody = None
+    elif isinstance(melody_config, NoteHMMConfig):
+        melody = NoteHMMEvidence(data, samba, melody_config)
+    else:
+        melody = MelodyEvidence(data, samba, melody_config)
     weights = (1., 1.) if melody is None else (1., 1., w_m)
     out = follow_weighted(times, probabilities, available, data["chord_starts_beats"], data["chord_ends_beats"],
                           case["targets"]["ids"], data["bar_starts_beats"], data["beats_per_bar"], played_bpm(data),
@@ -89,9 +103,11 @@ def main():
                         help="run only shard K of N; takes are spread so each shard gets a similar amount of work")
     parser.add_argument("--lead-sheets", default=MelodyConfig.lead_sheets, help="for the B5+W variants")
     parser.add_argument("--skip-broken", action="store_true", help="leave out the takes whose horn part broke down")
+    parser.add_argument("--params", default=str(HERE / "params" / "crepe_all"), help="for the B5+H variants")
+    parser.add_argument("--protocols", nargs="+", choices=("sync", "async"), default=["sync"])
     args = parser.parse_args()
     (args.out / "frames").mkdir(parents=True, exist_ok=True)
-    takes = follower_data.samba_follow_takes(args.samba, protocols=("sync",))
+    takes = follower_data.samba_follow_takes(args.samba, protocols=tuple(args.protocols))
     if args.skip_broken:
         takes = [t for t in takes if t[0]["performance_id"] not in BROKEN_HORNS]
     k, n = args.shard
@@ -109,8 +125,8 @@ def main():
                       "workers": args.workers, "shard": [k, n]}), flush=True)
     pending = {}
     with ProcessPoolExecutor(args.workers, initializer=_init, initargs=(str(args.checkpoint),)) as pool:
-        jobs = [pool.submit(run_variant, data, take, name, args.samba, args.lead_sheets) for data, take in takes
-                for name in args.variants]
+        jobs = [pool.submit(run_variant, data, take, name, args.samba, args.lead_sheets, args.params)
+                for data, take in takes for name in args.variants]
         for count, job in enumerate(as_completed(jobs), 1):
             r = job.result()
             parts = pending.setdefault(r["performance_id"], {})
