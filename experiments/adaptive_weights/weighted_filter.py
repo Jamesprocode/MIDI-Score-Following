@@ -33,9 +33,10 @@ from yamaha_filter import YamahaConfig, _beat_kernel, _beat_transition, _tempo_g
 
 def follow_weighted(times, chord_probabilities, available, chord_starts_beats, chord_ends_beats, chord_ids,
                     bar_starts_beats, beats_per_bar, initial_bpm, weights, *, start_time, network=None,
-                    config=YamahaConfig(), melody=None):
+                    config=YamahaConfig(), melody=None, start_position=0.):
     """yamaha_filter.follow with weights[t] = (w_harmony, w_downbeat) per update instead of the config's
-    emission_power_per_second / downbeat_power_per_second; (w_harmony, w_downbeat, w_melody) with ``melody``."""
+    emission_power_per_second / downbeat_power_per_second; (w_harmony, w_downbeat, w_melody) with ``melody``.
+    ``start_position`` (beats) starts the follower there at ``start_time`` instead of at the top of the chart."""
     times = np.asarray(times, dtype=float)
     weights = np.broadcast_to(np.asarray(weights, dtype=float), (len(times), 2 if melody is None else 3))
     probability = np.asarray(chord_probabilities, dtype=float)
@@ -53,11 +54,12 @@ def follow_weighted(times, chord_probabilities, available, chord_starts_beats, c
     prior = np.exp(-.5 * (np.log(ratios) / config.initial_tempo_log_std) ** 2)
     prior /= prior.sum()
     posterior = np.zeros((len(tempi), len(positions)))
-    posterior[:, 0] = prior
+    start = int(round(start_position / step))
+    posterior[:, start] = prior
     taps, kernel = _beat_kernel(config)
     transition = _beat_transition(config, ratios) if config.beat_tempo_reversion else None
     n_classes = probability.shape[1]
-    reachable, hint, previous = 0, float(initial_bpm), float(start_time)
+    reachable, hint, previous = start, float(initial_bpm), float(start_time)
     out = {key: np.empty(len(times)) for key in ("position_beats", "tempo_bpm", "mean_tempo_bpm", "bpm_condition",
                                                  "position_confidence")}
     for frame, now in enumerate(times):
