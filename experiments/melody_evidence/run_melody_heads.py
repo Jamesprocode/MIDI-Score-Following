@@ -13,6 +13,11 @@ scored. The single-cue followers use weight 1, as B5 does for harmony and downbe
   v2          melody cue v2 only (note_hmm.py)
   v2+rhythm   v2 x downbeat: melody in place of harmony
   B5+v2       B5 plus v2 at weight 0.5 (the whole-take best)
+  v2max, v2max+rhythm, B5+v2max   the same with v2 scored by its best explanation only (NoteHMMConfig.combine="max",
+              the Viterbi score of Nakamura et al.'s online matching) instead of the sum over explanations (11-05)
+  B5+v1w1, B5+v2w1, B5+v2maxw1   B5 plus the melody cue at weight 1, equal to harmony and downbeat (11-05)
+
+--split test runs only the test songs of samba_split.py (the 11-04 train/test split).
 
 Frame files have the same layout as run_melody_follower.py (summarize_melody_follower.py reads them); the heads of a
 take are put one after another, with ``segment`` saying which head each check belongs to.
@@ -36,6 +41,7 @@ import numpy as np
 import run_melody_follower  # noqa: F401  (sets up the import paths)
 from melody_evidence import MelodyConfig, MelodyEvidence, section_kinds
 from note_hmm import NoteHMMConfig, NoteHMMEvidence
+from samba_split import SPLITS, in_split
 import follower_data
 import run_study
 from evidence import NetworkPhase
@@ -56,6 +62,12 @@ VARIANTS = {  # name: ((w_harmony, w_downbeat, w_melody), melody cue or None)
     "v2": ((0., 0., 1.), "v2"),
     "v2+rhythm": ((0., 1., 1.), "v2"),
     "B5+v2": ((1., 1., .5), "v2"),
+    "v2max": ((0., 0., 1.), "v2max"),
+    "v2max+rhythm": ((0., 1., 1.), "v2max"),
+    "B5+v2max": ((1., 1., .5), "v2max"),
+    "B5+v1w1": ((1., 1., 1.), "v1"),      # equal weight: melody counts as much as harmony and downbeat (11-05)
+    "B5+v2w1": ((1., 1., 1.), "v2"),
+    "B5+v2maxw1": ((1., 1., 1.), "v2max"),
 }
 
 
@@ -77,8 +89,9 @@ def run_variant(data, take, name, samba, lead_sheets, params):
     network = NetworkPhase(sweep_fixed_weights._MODEL, take) if w_d else None
     if cue == "v1":
         melody = MelodyEvidence(data, samba, MelodyConfig(reference="written", lead_sheets=str(lead_sheets)))
-    elif cue == "v2":
-        melody = NoteHMMEvidence(data, samba, NoteHMMConfig(params=str(params), lead_sheets=str(lead_sheets)))
+    elif cue in ("v2", "v2max"):
+        melody = NoteHMMEvidence(data, samba, NoteHMMConfig(params=str(params), lead_sheets=str(lead_sheets),
+                                                            combine="max" if cue == "v2max" else "sum"))
     else:
         melody = None
     weights = (w_h, w_d) if melody is None else (w_h, w_d, w_m)
@@ -115,9 +128,11 @@ def main():
     parser.add_argument("--params", default=str(HERE / "params" / "crepe_all"), help="for the v2 variants")
     parser.add_argument("--protocols", nargs="+", choices=("sync", "async"), default=["sync"])
     parser.add_argument("--limit", type=int, default=0, help="only the first N takes (quick look)")
+    parser.add_argument("--split", choices=SPLITS, default="all", help="takes of these songs only (samba_split.py)")
     args = parser.parse_args()
     (args.out / "frames").mkdir(parents=True, exist_ok=True)
     takes = follower_data.samba_follow_takes(args.samba, protocols=tuple(args.protocols))
+    takes = [t for t in takes if in_split(t[0]["performance_id"], args.split)]
     if args.limit:
         takes = takes[:args.limit]
     k, n = args.shard

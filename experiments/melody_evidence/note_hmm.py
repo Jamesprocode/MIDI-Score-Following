@@ -73,6 +73,8 @@ class NoteHMMConfig:
     min_notes: int = 2               # as v1
     max_tune_notes: int = 48         # tune notes looked at per place (the window plus a beat each side)
     lead_sheets: str = MelodyConfig.lead_sheets
+    combine: str = "sum"             # "sum": forward algorithm (Pardo & Birmingham); "max": the best explanation only
+                                     # (Viterbi score, as Nakamura et al.'s online matching). Added 11-05 to compare.
 
 
 class Tables:
@@ -332,8 +334,10 @@ class NoteHMMEvidence:
         self.parts = [(on, pcs, ioi_bins(on)) for on, pcs in parts]
 
     def _horn(self, x, pcs, ioi):
-        """log P(notes | place) summed over explanations, for every place (rows of x: landing places of the notes)."""
+        """log P(notes | place) summed over explanations, for every place (rows of x: landing places of the notes).
+        With ``combine="max"``: log P(notes, best explanation | place) instead."""
         t, Y, C = self.t, self.tune_onset, self.tune_pc
+        best = self.config.combine == "max"
         base = np.clip(np.searchsorted(Y, x.min(axis=1) - TIME_SPAN) - 1, 0, None)
         top = np.searchsorted(Y, x.max(axis=1) + TIME_SPAN)
         K = int(min(max((top - base).max(), 1) + 1, self.config.max_tune_notes))
@@ -349,19 +353,35 @@ class NoteHMMEvidence:
             ok = (tb >= 0) & valid
             d = distance(pcs[n], Cw)
             emission = t.pitch[:, d] * np.where(ok, t.time[:, np.maximum(tb, 0)], 0.) * t.ioi[:, ioi[n], None, None]
-            after, pre = alpha[:, :, MAIN] + alpha[:, :, POST], alpha[:, :, PRE]
             a, p = t.after, t.pre
             new = np.empty_like(alpha)
-            new[:, :, MAIN] = _shift(after, 1) * a[0] + _shift(after, 2) * a[3] + pre * p[1] + _shift(pre, 1) * p[2]
-            new[:, :, PRE] = _shift(after, 1) * a[1] + _shift(after, 2) * a[4] + pre * p[0] + _shift(pre, 1) * p[3]
-            new[:, :, POST] = after * a[2]
-            new *= 1 - t.jump
-            reenter = t.jump * ok / np.maximum(ok.sum(axis=1, keepdims=True), 1)  # alpha sums to 1 per place
-            new[:, :, PRE] += reenter * t.jump_role[0]
-            new[:, :, MAIN] += reenter * t.jump_role[1]
-            new *= np.moveaxis(emission, 0, -1)
-            total = (1 - t.noise) * new + t.noise * t.noise_emission * t.noise_ioi[ioi[n]] * alpha
-            c = np.maximum(total.sum(axis=(1, 2)), TINY)
+            if not best:
+                after, pre = alpha[:, :, MAIN] + alpha[:, :, POST], alpha[:, :, PRE]
+                new[:, :, MAIN] = _shift(after, 1) * a[0] + _shift(after, 2) * a[3] + pre * p[1] + _shift(pre, 1) * p[2]
+                new[:, :, PRE] = _shift(after, 1) * a[1] + _shift(after, 2) * a[4] + pre * p[0] + _shift(pre, 1) * p[3]
+                new[:, :, POST] = after * a[2]
+                new *= 1 - t.jump
+                reenter = t.jump * ok / np.maximum(ok.sum(axis=1, keepdims=True), 1)  # alpha sums to 1 per place
+                new[:, :, PRE] += reenter * t.jump_role[0]
+                new[:, :, MAIN] += reenter * t.jump_role[1]
+                new *= np.moveaxis(emission, 0, -1)
+                total = (1 - t.noise) * new + t.noise * t.noise_emission * t.noise_ioi[ioi[n]] * alpha
+                c = np.maximum(total.sum(axis=(1, 2)), TINY)
+            else:  # the same recursion, each sum over the ways into a state replaced by the best way in
+                after, pre = np.maximum(alpha[:, :, MAIN], alpha[:, :, POST]), alpha[:, :, PRE]
+                new[:, :, MAIN] = np.maximum.reduce([_shift(after, 1) * a[0], _shift(after, 2) * a[3], pre * p[1],
+                                                     _shift(pre, 1) * p[2]])
+                new[:, :, PRE] = np.maximum.reduce([_shift(after, 1) * a[1], _shift(after, 2) * a[4], pre * p[0],
+                                                    _shift(pre, 1) * p[3]])
+                new[:, :, POST] = after * a[2]
+                new *= 1 - t.jump
+                reenter = (t.jump * ok / np.maximum(ok.sum(axis=1, keepdims=True), 1)
+                           * alpha.max(axis=(1, 2))[:, None])  # a jump comes from the best state so far
+                new[:, :, PRE] = np.maximum(new[:, :, PRE], reenter * t.jump_role[0])
+                new[:, :, MAIN] = np.maximum(new[:, :, MAIN], reenter * t.jump_role[1])
+                new *= np.moveaxis(emission, 0, -1)
+                total = np.maximum((1 - t.noise) * new, t.noise * t.noise_emission * t.noise_ioi[ioi[n]] * alpha)
+                c = np.maximum(total.max(axis=(1, 2)), TINY)
             alpha = total / c[:, None, None]
             logp += np.log(c)
         return logp
