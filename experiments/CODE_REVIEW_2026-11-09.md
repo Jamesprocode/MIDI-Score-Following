@@ -129,8 +129,27 @@ class Cue(Protocol):
    - **Mac check, against the frames PACE saved on 11-05:** on the shortest test take (click, Impressions, alternate), bit-identical in both modes:
      - heads: all 7 followers;
      - whole take: B5, and B5+v2w1 (the old "B5+H1").
-   - **Still to do:** the full 32-take rerun on PACE. It needs `hmm_follower/` committed and pushed, since PACE runs only committed code.
+   - **Done 11-10: the PACE rerun of all 32 split test takes is bit-identical to the saved runs.**
+     - **Code:** commit `6bb0508`, with the same settings as 11-05.
+     - **Jobs:** `hft_s0/1` (heads) and `wft_s0..2` (whole), each about 10–20 minutes on `ice-cpu`.
+     - **Comparison** with `same_frames.py`:
+       - heads: 32 of 32 takes identical to `runs/split_heads_test`, all 7 followers;
+       - whole take: 32 of 32 identical to `runs/split_whole_test`, B5 and B5+v2w1.
+     - **Saved** as `melody_evidence/runs/hmmf_split_{heads,whole}_test`, with each shard's `run.json`.
+   - **From now on,** new follower runs use `python -m hmm_follower.run`. The old runners stay as the record of the runs they made.
 3. **Resets mode, `metrics`, `compare`, `check_cue`.**
+   - **Built 11-10** (the resets mode is not yet built):
+     - **`sections.py`: one labelling of what the band is doing.** It gives the 8 kinds, the 4 coarse kinds and the piano's role, and equals all three old labellings on all 152 takes (`tests/test_sections.py`).
+     - **`metrics.py`: one definition of the follower metrics, with `compare` folded in.**
+       - It gives bar, beat, off, ms and lost; live, click and all; per-song Wilcoxon tests; and `--section` to keep one kind of section.
+       - It equals `summarize_bar_beat`, `jiang_metrics.frame_metrics` and `metrics_from_frames` on every take of the saved split test runs (`tests/test_metrics.py`).
+       - On `split_heads_test` it prints the same table as `summarize_split_heads.py`.
+     - **`check_cue.py`: any cue in `followers.CUES` on its own,** at every 0.2 s check, against every place of the chart, with the annotated tempo as the hint.
+       - Metrics: place AUC (as `chord_rank.py`, over grid places), measure AUC, top, bar hit and beat hit (as `check_melody_evidence.py`).
+       - For Alex's scaling work it also saves the cue's raw numbers: s at the true place minus the max, as a log-softmax and as a z-score, and s at 8 random places in other measures.
+       - **Checked against `chord_rank.py`** on live Black Orpheus (alternate), harmony: 928 of 934 checks give the same place AUC (0.688 vs 0.684 overall). The other 6 have the true place within 1/16 beat before a chord change, where rounding to the 1/8-beat grid lands in the next chord.
+       - **One difference from `check_melody_evidence.py`:** checks where the tune does not cover the true bar are no longer skipped. A melody cue firing in an intro is therefore counted, and scored as wrong.
+       - **Toy cues** (`tests/test_check_cue.py`): a perfect cue gives 1, a flat cue 0.5, and a cue that knows the measure but not the chorus gives measure AUC 1 with place AUC below 1.
 4. **Then Alex's probability step:**
    - plot each cue's output distribution with `check_cue` (at the true place vs elsewhere, by section);
    - redesign `scaling.py` (log probabilities; z-score vs bounded);
