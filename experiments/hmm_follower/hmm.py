@@ -8,7 +8,7 @@ steps per beat; a tempo is one of a grid of BPMs around the start tempo. At each
               continuously ("continuous", Stage A of the benchmark);
   2. update   each plugged cue c gives log L_c(place) (or abstains with None), and the posterior is multiplied by
                   exp( sum_c  scale_c(log L_c) * elapsed * w_c )
-              (scaling.py; "max" for every cue so far);
+              (scaling.py: "max", or a per-cue z-score fitted on the training songs);
   3. output   the place with the most probability, and the tempo marginal. The posterior-mean tempo, low-pass filtered,
               is the BPM hint the cues get at the next update (Maezawa's tempo feedback).
 
@@ -27,7 +27,7 @@ from dataclasses import asdict, dataclass, fields
 
 import numpy as np
 
-from .scaling import SCALINGS
+from .scaling import function as scaling_function
 
 
 @dataclass(frozen=True)
@@ -53,10 +53,11 @@ class HMMConfig:
 
 @dataclass
 class Plugged:
-    """A cue in the follower, with its weight (per second of evidence) and the scaling of its log-likelihood."""
+    """A cue in the follower, with its weight (per second of evidence) and the scaling of its log-likelihood: a
+    rule's name (scaling.SCALINGS) or a function built for this cue (scaling.resolve)."""
     cue: object
     weight: float = 1.
-    scaling: str = "max"
+    scaling: object = "max"
 
 
 class Follower:
@@ -92,7 +93,7 @@ class Follower:
                     continue
                 log_l = plug.cue.log_likelihood(now, self.hint, self.positions)
                 if log_l is not None:
-                    log_weight += SCALINGS[plug.scaling](log_l) * elapsed * w
+                    log_weight += scaling_function(plug.scaling)(log_l) * elapsed * w
             self.posterior *= np.exp(log_weight)[None, :]
         total = self.posterior.sum()
         if not np.isfinite(total) or total <= 0:

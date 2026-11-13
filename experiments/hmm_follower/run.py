@@ -18,6 +18,8 @@ New: ``info``, JSON with the fitted file each melody cue used for that take.
       --samba "../Dataset/SAMBA dataset" --horns ../Dataset/horn_sets/crepe_all \\
       --checkpoint yamaha_timing/runs/lakh_r3b/best_model.pt --melody-params melody_evidence/params/crepe_split \\
       --split test --followers B5 v1 v2 v2max B5+v1w1 B5+v2w1 B5+v2maxw1 --workers 10 --shard 0 2
+
+The per-cue z-score followers (B5z, B5+v2z, B5+v2zraw, B5+v2zw) also need --scaling-params hmm_follower/params/zscore_train.json.
 """
 from __future__ import annotations
 
@@ -40,6 +42,7 @@ import numpy as np
 from . import takes as T
 from .followers import FOLLOWERS, Inputs, Resources, build, needs, parse
 from .hmm import follow
+from .scaling import FITTED, resolve
 
 MODES = ("whole", "heads")
 
@@ -151,6 +154,8 @@ def main():
     parser.add_argument("--checkpoint", default="", help="the timing network (needed by the rhythm cue)")
     parser.add_argument("--melody-params", default="", help="fitted note-HMM tables, a folder (needed by melody v2)")
     parser.add_argument("--lead-sheets", default="", help="lead-sheet melodies (default: MelodyConfig's)")
+    parser.add_argument("--scaling-params", default="",
+                        help="each cue's fitted mean and std, fit_scaling.py's file (needed by the z, zraw and zw rules)")
     parser.add_argument("--protocols", nargs="+", choices=("sync", "async"), default=["sync", "async"])
     parser.add_argument("--split", choices=("all", "train", "test"), default="all", help="samba_split.py")
     parser.add_argument("--takes", nargs="*", default=[], help="only these performance ids (a quick check)")
@@ -165,10 +170,17 @@ def main():
     if len(followers) != len(args.followers):
         raise SystemExit("two followers have the same label")
     resources = Resources(*(str(Path(p).resolve()) if p else "" for p in
-                            (args.checkpoint, args.melody_params, args.lead_sheets)))
+                            (args.checkpoint, args.melody_params, args.lead_sheets, args.scaling_params)))
     missing = [n for n in needs(followers.values()) if not getattr(resources, n)]
     if missing:
         raise SystemExit(f"these followers need --{', --'.join(m.replace('_', '-') for m in missing)}")
+    for label, spec in followers.items():  # the fitted numbers, read now: a bad file is refused before any work
+        for cue, weight in spec.cues.items():
+            if weight and spec.scaling.get(cue) in FITTED:
+                try:
+                    resolve(spec.scaling[cue], cue, resources.scaling_params)
+                except (ValueError, OSError) as error:
+                    raise SystemExit(f"{label}: {error}")
     horns = T.use_horns(args.horns)
     import torch  # noqa: F401  (recorded below)
     record = {"mode": args.mode, "followers": {k: s.record() for k, s in followers.items()}, "horns": horns,

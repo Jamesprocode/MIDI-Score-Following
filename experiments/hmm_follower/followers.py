@@ -11,7 +11,7 @@ here or on run.py's command line:
   B5+v2w1                                      a named follower
   "B5new=harmony_new:1,rhythm:1"               written out: label=cue:weight,...
   "B5fix=harmony:1,rhythm:1;exact_beat_crossing=true"   HMM settings after ";" (hmm.HMMConfig fields)
-  "B5z=harmony@zscore:1,rhythm:1"              a scaling rule per cue after "@" (scaling.py; default "max")
+  "B5z=harmony@z:1,rhythm@z:1"                a scaling rule per cue after "@" (scaling.py; default "max")
 """
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ from .cues.harmony import b5_harmony
 from .cues.melody import melody_v1, melody_v2
 from .cues.rhythm import network_downbeat
 from .hmm import HMMConfig, Plugged
-from .scaling import SCALINGS
+from .scaling import FITTED, RULES, resolve
 
 
 @dataclass(frozen=True)
@@ -34,6 +34,7 @@ class Resources:
     checkpoint: str = ""        # the timing network (rhythm cue)
     melody_params: str = ""     # a folder of fitted note-HMM tables (melody v2); see note_hmm.NoteHMMEvidence
     lead_sheets: str = ""       # the lead-sheet melodies (melody v1 and v2); "" = MelodyConfig's default
+    scaling_params: str = ""    # fit_scaling.py's file: each cue's mean and std (the "z" and "zraw" rules)
 
     def model(self):
         if not self.checkpoint:
@@ -85,9 +86,9 @@ class Spec:
         unknown = [c for c in self.cues if c not in CUES]
         if unknown:
             raise ValueError(f"unknown cue(s) {unknown}; known: {sorted(CUES)}")
-        bad = {c: s for c, s in self.scaling.items() if s not in SCALINGS or c not in self.cues}
+        bad = {c: s for c, s in self.scaling.items() if s not in RULES or c not in self.cues}
         if bad:
-            raise ValueError(f"bad scaling {bad}; rules: {sorted(SCALINGS)}")
+            raise ValueError(f"bad scaling {bad}; rules: {list(RULES)}")
         replace(HMMConfig(), **self.hmm)  # raises on an unknown field
 
     def config(self):
@@ -119,6 +120,16 @@ FOLLOWERS = {
     "B5+v1w1": Spec(_b5(melody_v1=1.)),                   # equal weights (11-05)
     "B5+v2w1": Spec(_b5(melody_v2=1.)),                   # "B5+H1" in run_melody_follower.py
     "B5+v2maxw1": Spec(_b5(melody_v2max=1.)),
+    # per-cue z-score, mean and std from the 60 training songs (11-13; scaling.py, fit_scaling.py): weights 1, so
+    # each cue's evidence is its score over its own std
+    "B5z": Spec(_b5(), scaling={"harmony": "z", "rhythm": "z"}),
+    "B5+v2z": Spec(_b5(melody_v2=1.), scaling={"harmony": "z", "rhythm": "z", "melody_v2": "z"}),
+    "B5+v2zraw": Spec(_b5(melody_v2=1.), scaling={"harmony": "zraw", "rhythm": "zraw", "melody_v2": "zraw"}),
+    "B5+v2zw": Spec(_b5(melody_v2=1.), scaling={"harmony": "zw", "rhythm": "zw", "melody_v2": "zw"}),
+    # control for B5+v2z: B5+v2's weights all times 0.838, which gives the same total evidence as B5+v2z (sum over
+    # cues of weight x within-moment spread, params/zscore_train.json: 1.886 vs B5+v2's 2.249), so z's effect on the
+    # balance between cues can be told apart from its effect on the total
+    "B5+v2s": Spec({"harmony": .838, "rhythm": .838, "melody_v2": .419}),
 }
 
 
@@ -161,13 +172,21 @@ def build(spec, inputs):
         if not weight:
             continue
         cue = CUES[name](inputs)
-        plugged.append(Plugged(cue, float(weight), spec.scaling.get(name, "max")))
+        rule = spec.scaling.get(name, "max")
+        scaling = resolve(rule, name, inputs.resources.scaling_params)
+        plugged.append(Plugged(cue, float(weight), scaling))
         params_file = getattr(getattr(cue, "matcher", None), "params_file", None)
         if params_file is not None:
-            info[name] = {"params_file": str(params_file)}
+            info.setdefault(name, {})["params_file"] = str(params_file)
+        if rule in FITTED:
+            info.setdefault(name, {})["scaling"] = {"rule": rule, "mean": scaling.mean, "std": scaling.std,
+                                                    "base": scaling.base}
     return plugged, spec.config(), info
 
 
 def needs(specs):
     """Which Resources fields the followers need."""
-    return sorted({NEEDS[c] for s in specs for c, w in s.cues.items() if w and c in NEEDS})
+    specs = list(specs)
+    fitted = any(s.scaling.get(c) in FITTED for s in specs for c, w in s.cues.items() if w)
+    return sorted({NEEDS[c] for s in specs for c, w in s.cues.items() if w and c in NEEDS}
+                  | ({"scaling_params"} if fitted else set()))

@@ -1,0 +1,87 @@
+{
+ "what": "per-cue mean and std of every score, for scaling.py's z (base max), zraw (base raw) and zw (base within)",
+ "split": "train",
+ "pool": "every chart place at every check where the cue fired; each check counts the same",
+ "cues": {
+  "harmony": {
+   "max": {
+    "mean": -1.504347654437084,
+    "std": 1.099264102022206,
+    "within_moment_share": 0.7510426500184586
+   },
+   "raw": {
+    "mean": -2.814307538276446,
+    "std": 1.0468265593663837,
+    "within_moment_share": 0.828169488776127
+   },
+   "within": {
+    "mean": 0.0,
+    "std": 0.9526521366994903,
+    "within_moment_share": 1.0
+   }
+  },
+  "rhythm": {
+   "max": {
+    "mean": -2.5414199070268007,
+    "std": 1.7689098329501889,
+    "within_moment_share": 0.3991124690046244
+   },
+   "raw": {
+    "mean": -4.237355946475762,
+    "std": 1.3151540688277978,
+    "within_moment_share": 0.7220269738650492
+   },
+   "within": {
+    "mean": 0.0,
+    "std": 1.1175149560900206,
+    "within_moment_share": 1.0
+   }
+  },
+  "melody_v2": {
+   "max": {
+    "mean": -1.7937599962097694,
+    "std": 0.9248503870582625,
+    "within_moment_share": 0.14990859907690185
+   },
+   "raw": {
+    "mean": -7.392208107187045,
+    "std": 0.452607894660385,
+    "within_moment_share": 0.6259292705619942
+   },
+   "within": {
+    "mean": 0.0,
+    "std": 0.3580838674775907,
+    "within_moment_share": 1.0
+   }
+  }
+ },
+ "sources": {
+  "harmony": {
+   "run": "melody_evidence/runs/hmmf_check_harmony",
+   "run_commit": "3b89580cce53b376af872d04c252c95a5565a2fd",
+   "run_split": "all",
+   "bpm_hint": "annotated tempo (60 * d truth_position / dt)",
+   "takes": 120,
+   "checks": 233905,
+   "checks_fired": 146901
+  },
+  "rhythm": {
+   "run": "melody_evidence/runs/hmmf_check_rhythm",
+   "run_commit": "3b89580cce53b376af872d04c252c95a5565a2fd",
+   "run_split": "all",
+   "bpm_hint": "annotated tempo (60 * d truth_position / dt)",
+   "takes": 120,
+   "checks": 233905,
+   "checks_fired": 233893
+  },
+  "melody_v2": {
+   "run": "melody_evidence/runs/hmmf_check_melody_v2",
+   "run_commit": "3b89580cce53b376af872d04c252c95a5565a2fd",
+   "run_split": "all",
+   "bpm_hint": "annotated tempo (60 * d truth_position / dt)",
+   "takes": 120,
+   "checks": 233905,
+   "checks_fired": 127701
+  }
+ }
+}
